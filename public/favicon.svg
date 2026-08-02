@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#3B0A5C"/>
+      <stop offset="100%" stop-color="#0B0221"/>
+    </radialGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFC94D"/>
+      <stop offset="35%" stop-color="#FF7A3D"/>
+      <stop offset="70%" stop-color="#FF2E9A"/>
+      <stop offset="100%" stop-color="#FF2E9A"/>
+    </linearGradient>
+    <filter id="neonGlow" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="8" result="blur1"/>
+      <feFlood flood-color="#FF2E9A" flood-opacity="0.7" result="color1"/>
+      <feComposite in="color1" in2="blur1" operator="in" result="glow1"/>
+      <feGaussianBlur stdDeviation="3" result="blur2"/>
+      <feFlood flood-color="#FFC94D" flood-opacity="0.4" result="color2"/>
+      <feComposite in="color2" in2="blur2" operator="in" result="glow2"/>
+      <feMerge>
+        <feMergeNode in="glow1"/>
+        <feMergeNode in="glow2"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="cyanGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#22D3EE" flood-opacity="0.6" result="color"/>
+      <feComposite in="color" in2="blur" operator="in" result="glow"/>
+      <feMerge>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="256" height="256" rx="40" ry="40" fill="url(#bgGrad)"/>
+  <ellipse cx="128" cy="110" rx="100" ry="80" fill="#FF2E9A" fill-opacity="0.08"/>
+  <ellipse cx="128" cy="110" rx="65" ry="50" fill="#FF7A3D" fill-opacity="0.1"/>
+  <path d="M48,140 A80,80 0 0,1 208,140" fill="none" stroke="#FFC94D" stroke-width="2" stroke-opacity="0.3"/>
+  <path d="M55,60 C52,40 46,20 50,0 C52,10 56,22 54,30 C60,15 68,2 64,-10 C66,5 62,25 58,38 C64,25 72,14 70,4 C68,20 62,35 56,45 L56,60Z" fill="#0B0221" fill-opacity="0.55"/>
+  <text x="128" y="165" text-anchor="middle" font-family="Impact, Arial Black, sans-serif" font-size="120" font-weight="bold" letter-spacing="4" fill="url(#textGrad)" filter="url(#neonGlow)" transform="skewX(-10)">G6</text>
+  <rect x="68" y="185" width="120" height="3" rx="1.5" fill="#22D3EE" fill-opacity="0.6" filter="url(#cyanGlow)"/>
+  <text x="128" y="212" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="11" letter-spacing="5" fill="#FFC94D" fill-opacity="0.7">CODE TRICHE</text>
+</svg>

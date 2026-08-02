@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360" width="900" height="360">
+  <defs>
+    <!-- Sunset gradient -->
+    <radialGradient id="sunsetGlow" cx="50%" cy="45%" r="45%">
+      <stop offset="0%" stop-color="#FFC94D" stop-opacity="0.9"/>
+      <stop offset="35%" stop-color="#FF7A3D" stop-opacity="0.7"/>
+      <stop offset="65%" stop-color="#FF2E9A" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#3B0A5C" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Text gradient -->
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFC94D"/>
+      <stop offset="40%" stop-color="#FF7A3D"/>
+      <stop offset="70%" stop-color="#FF2E9A"/>
+      <stop offset="100%" stop-color="#FF2E9A"/>
+    </linearGradient>
+
+    <!-- GTA text gradient -->
+    <linearGradient id="gtaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFC94D"/>
+      <stop offset="30%" stop-color="#FF7A3D"/>
+      <stop offset="60%" stop-color="#FF2E9A"/>
+      <stop offset="100%" stop-color="#FF2E9A"/>
+    </linearGradient>
+
+    <!-- Cyan accent gradient -->
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22D3EE"/>
+      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0.6"/>
+    </linearGradient>
+
+    <!-- Neon glow filter - magenta -->
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur1"/>
+      <feFlood flood-color="#FF2E9A" flood-opacity="0.8" result="color1"/>
+      <feComposite in="color1" in2="blur1" operator="in" result="glow1"/>
+      <feGaussianBlur stdDeviation="2" result="blur2"/>
+      <feMerge>
+        <feMergeNode in="glow1"/>
+        <feMergeNode in="blur2"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Strong neon glow - for big text -->
+    <filter id="strongGlow" x="-15%" y="-15%" width="130%" height="130%">
+      <feGaussianBlur stdDeviation="8" result="blur1"/>
+      <feFlood flood-color="#FF2E9A" flood-opacity="0.7" result="color1"/>
+      <feComposite in="color1" in2="blur1" operator="in" result="glow1"/>
+      <feGaussianBlur stdDeviation="3" result="blur2"/>
+      <feFlood flood-color="#FFC94D" flood-opacity="0.4" result="color2"/>
+      <feComposite in="color2" in2="blur2" operator="in" result="glow2"/>
+      <feMerge>
+        <feMergeNode in="glow1"/>
+        <feMergeNode in="glow2"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Cyan glow -->
+    <filter id="cyanGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feFlood flood-color="#22D3EE" flood-opacity="0.6" result="color"/>
+      <feComposite in="color" in2="blur" operator="in" result="glow"/>
+      <feMerge>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Drop shadow for contrast -->
+    <filter id="darkOutline" x="-5%" y="-5%" width="110%" height="110%">
+      <feMorphology in="SourceAlpha" operator="dilate" radius="2" result="outline"/>
+      <feFlood flood-color="#0B0221" flood-opacity="1" result="outlineColor"/>
+      <feComposite in="outlineColor" in2="outline" operator="in" result="outlineFilled"/>
+      <feMerge>
+        <feMergeNode in="outlineFilled"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Palm tree silhouette -->
+    <g id="palmTree">
+      <path d="M0,0 C-3,-15 -8,-35 -6,-55 C-5,-50 -2,-45 0,-40 C2,-50 5,-55 3,-65 C5,-55 10,-45 8,-35 C12,-45 18,-55 15,-65 C17,-50 14,-40 10,-30 C15,-38 22,-45 20,-55 C20,-40 16,-30 10,-22 C14,-28 20,-32 22,-40 C18,-28 12,-20 6,-14 L6,0 Z" fill="#0B0221" fill-opacity="0.9"/>
+    </g>
+
+    <!-- Small palm tree -->
+    <g id="palmTreeSmall">
+      <path d="M0,0 C-2,-10 -5,-25 -4,-40 C-3,-36 -1,-32 0,-28 C1,-36 3,-40 2,-47 C3,-40 7,-32 5,-25 C8,-32 13,-40 11,-47 C12,-36 10,-28 7,-20 C10,-25 14,-29 15,-36 C12,-25 8,-18 4,-10 L4,0 Z" fill="#0B0221" fill-opacity="0.85"/>
+    </g>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="360" fill="#0B0221"/>
+
+  <!-- Sunset glow behind -->
+  <ellipse cx="450" cy="160" rx="320" ry="220" fill="url(#sunsetGlow)"/>
+
+  <!-- Sun circle -->
+  <circle cx="450" cy="155" r="90" fill="#FFC94D" fill-opacity="0.15"/>
+  <circle cx="450" cy="155" r="65" fill="#FF7A3D" fill-opacity="0.2"/>
+  <circle cx="450" cy="155" r="40" fill="#FF2E9A" fill-opacity="0.15"/>
+
+  <!-- Horizontal neon lines -->
+  <line x1="80" y1="200" x2="350" y2="200" stroke="#FF2E9A" stroke-width="0.5" stroke-opacity="0.4"/>
+  <line x1="550" y1="200" x2="820" y2="200" stroke="#FF2E9A" stroke-width="0.5" stroke-opacity="0.4"/>
+  <line x1="150" y1="280" x2="750" y2="280" stroke="#22D3EE" stroke-width="0.5" stroke-opacity="0.3"/>
+
+  <!-- Left palm trees -->
+  <use href="#palmTree" x="100" y="210" transform="translate(100,210) scale(1.6)"/>
+  <use href="#palmTreeSmall" x="55" y="240" transform="translate(55,240) scale(1.3)"/>
+
+  <!-- Right palm trees -->
+  <use href="#palmTree" x="760" y="215" transform="translate(760,215) scale(1.5) scale(-1,1)"/>
+  <use href="#palmTreeSmall" x="820" y="245" transform="translate(820,245) scale(1.2) scale(-1,1)"/>
+
+  <!-- "CODE TRICHE" text -->
+  <text x="450" y="110" text-anchor="middle" font-family="Impact, Arial Black, sans-serif" font-size="32" font-weight="bold" letter-spacing="18" fill="url(#cyanGrad)" filter="url(#cyanGlow)" transform="skewX(-8)">
+    CODE TRICHE
+  </text>
+
+  <!-- "GTA 6" main title with neon glow -->
+  <text x="450" y="200" text-anchor="middle" font-family="Impact, Arial Black, sans-serif" font-size="110" font-weight="bold" letter-spacing="8" fill="url(#gtaGrad)" filter="url(#strongGlow)" transform="skewX(-10)">
+    GTA 6
+  </text>
+
+  <!-- Dark outline version behind for contrast -->
+  <text x="450" y="200" text-anchor="middle" font-family="Impact, Arial Black, sans-serif" font-size="110" font-weight="bold" letter-spacing="8" fill="url(#gtaGrad)" filter="url(#darkOutline)" transform="skewX(-10)" opacity="0.3">
+    GTA 6
+  </text>
+
+  <!-- Tagline -->
+  <text x="450" y="255" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" letter-spacing="6" fill="#FFC94D" fill-opacity="0.8" filter="url(#neonGlow)">
+    TOUS LES CODES &amp; INFOS
+  </text>
+
+  <!-- Decorative dots -->
+  <circle cx="350" cy="255" r="2" fill="#22D3EE" fill-opacity="0.6"/>
+  <circle cx="550" cy="255" r="2" fill="#22D3EE" fill-opacity="0.6"/>
+
+  <!-- Bottom accent line -->
+  <rect x="300" y="275" width="300" height="2" rx="1" fill="url(#textGrad)" fill-opacity="0.5"/>
+
+  <!-- Small palm silhouette bottom corners -->
+  <path d="M0,360 C10,340 25,310 20,280 C22,295 30,310 25,320 C30,300 40,285 35,270 C40,290 35,310 28,330 L0,360Z" fill="#0B0221" fill-opacity="0.5"/>
+  <path d="M900,360 C890,340 875,310 880,280 C878,295 870,310 875,320 C870,300 860,285 865,270 C860,290 865,310 872,330 L900,360Z" fill="#0B0221" fill-opacity="0.5"/>
+</svg>
