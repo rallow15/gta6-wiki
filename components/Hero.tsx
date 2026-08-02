@@ -6,6 +6,7 @@ import CountdownTimer from "./CountdownTimer";
 import { MagneticButton } from "@/components/magnetic";
 import { ParallaxTiltCard } from "@/components/ParallaxTiltCard";
 import { TextScramble } from "@/components/TextScramble";
+import { NeonBeams } from "@/components/NeonBeams";
 
 const sections = [
   { href: "/codes", label: "Codes de triche", desc: "PS5, Xbox, PC", icon: "code", color: "neon-pink" },
@@ -38,24 +39,8 @@ export default function Hero() {
       {/* Background gradient */}
       <div className="absolute inset-0 hero-gradient" />
 
-      {/* Animated background lines */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <motion.div
-          className="absolute top-1/4 -left-20 w-1/2 h-1 bg-gradient-to-r from-transparent via-neon-pink/40 to-transparent rotate-45 blur-sm"
-          animate={{ x: [0, 100, 0], opacity: [0.3, 0.6, 0.3] }}
-          transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-        />
-        <motion.div
-          className="absolute bottom-1/3 -right-20 w-1/2 h-0.5 bg-gradient-to-r from-transparent via-lagoon-cyan/30 to-transparent -rotate-12 blur-sm"
-          animate={{ x: [0, -80, 0], opacity: [0.2, 0.5, 0.2] }}
-          transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
-        />
-        <motion.div
-          className="absolute top-2/3 left-1/4 w-1/3 h-0.5 bg-gradient-to-r from-transparent via-sunset-orange/20 to-transparent blur-sm"
-          animate={{ x: [0, 60, 0], opacity: [0.15, 0.35, 0.15] }}
-          transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
-        />
-      </div>
+      {/* Animated neon beams background */}
+      <NeonBeams />
 
       <div className="relative z-10 mx-auto max-w-5xl px-4 sm:px-6 text-center pt-20 sm:pt-24">
         {/* Title — animated logo with spring */}
