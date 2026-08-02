@@ -21,7 +21,7 @@ export default function PolitiqueConfidentialitePage() {
         </div>
         <div>
           <h2 className="font-display text-lg tracking-wider text-text-primary mb-2">4. LIENS EXTERNES</h2>
-          <p>Notre site contient des liens vers des sites tiers (Discord, YouTube). Nous ne sommes pas responsables des pratiques de confidentialite de ces sites.</p>
+          <p>Notre site contient des liens vers des sites tiers (YouTube). Nous ne sommes pas responsables des pratiques de confidentialite de ces sites.</p>
         </div>
         <div>
           <h2 className="font-display text-lg tracking-wider text-text-primary mb-2">5. CONTACT</h2>

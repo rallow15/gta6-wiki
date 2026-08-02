@@ -23,7 +23,6 @@ const footerLinks = [
     title: "Communaute",
     links: [
       { label: "Actualites", href: "/actualites" },
-      { label: "Discord", href: "https://discord.gg/PXDdQF4TPr" },
     ],
   },
   {

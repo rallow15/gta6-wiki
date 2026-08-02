@@ -27,7 +27,7 @@ export default function AProposPage() {
             </li>
             <li className="flex items-start gap-2">
               <span className="text-neon-pink mt-1">&#x25B8;</span>
-              Une communaute active sur Discord
+              Une communaute active de fans
             </li>
             <li className="flex items-start gap-2">
               <span className="text-neon-pink mt-1">&#x25B8;</span>
@@ -46,7 +46,7 @@ export default function AProposPage() {
         <div className="border-t border-night-violet/50 pt-6">
           <h2 className="font-display text-xl tracking-wider text-sand-yellow mb-3">CONTACT</h2>
           <p className="text-text-secondary">
-            Pour toute question ou suggestion, rejoignez notre serveur Discord ou envoyez-nous un email a contact@vicecitytropical.fr
+            Pour toute question ou suggestion, envoyez-nous un email a contact@vicecitytropical.fr
           </p>
         </div>
       </div>
