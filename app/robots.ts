@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/api/"],
     },
-    sitemap: "https://gta6-wiki.vercel.app/sitemap.xml",
+    sitemap: "https://gta6codetriche.fr/sitemap.xml",
   };
 }
