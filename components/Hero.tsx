@@ -36,7 +36,11 @@ const colorMap: Record<string, { border: string; hover: string; text: string; gl
 export default function Hero() {
   return (
     <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
-      {/* Background gradient */}
+      {/* Background image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: "url('/images/hero-bg.png')" }}
+      />
       <div className="absolute inset-0 hero-gradient" />
 
       {/* Animated neon beams background */}
@@ -50,55 +54,14 @@ export default function Hero() {
           transition={{ duration: 1, type: "spring", bounce: 0.3 }}
         >
           <h1 className="flex flex-col items-center gap-2">
-            {/* Logo horizontal SVG */}
-            <svg className="w-full max-w-[640px] sm:max-w-[780px]" viewBox="0 0 900 360" xmlns="http://www.w3.org/2000/svg">
-              <defs>
-                <radialGradient id="heroSunGlow" cx="50%" cy="45%" r="45%">
-                  <stop offset="0%" stopColor="#FFC94D" stopOpacity="0.9"/>
-                  <stop offset="35%" stopColor="#FF7A3D" stopOpacity="0.7"/>
-                  <stop offset="65%" stopColor="#FF2E9A" stopOpacity="0.5"/>
-                  <stop offset="100%" stopColor="#3B0A5C" stopOpacity="0"/>
-                </radialGradient>
-                <linearGradient id="heroTextGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stopColor="#FFC94D"/>
-                  <stop offset="40%" stopColor="#FF7A3D"/>
-                  <stop offset="70%" stopColor="#FF2E9A"/>
-                  <stop offset="100%" stopColor="#FF2E9A"/>
-                </linearGradient>
-                <linearGradient id="heroCyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-                  <stop offset="0%" stopColor="#22D3EE"/>
-                  <stop offset="100%" stopColor="#22D3EE" stopOpacity="0.6"/>
-                </linearGradient>
-                <filter id="heroNeon" x="-20%" y="-20%" width="140%" height="140%">
-                  <feGaussianBlur stdDeviation="8" result="b1"/>
-                  <feFlood floodColor="#FF2E9A" floodOpacity="0.7"/>
-                  <feComposite in2="b1" operator="in" result="g1"/>
-                  <feGaussianBlur stdDeviation="3" result="b2"/>
-                  <feFlood floodColor="#FFC94D" floodOpacity="0.4"/>
-                  <feComposite in2="b2" operator="in" result="g2"/>
-                  <feMerge><feMergeNode in="g1"/><feMergeNode in="g2"/><feMergeNode in="SourceGraphic"/></feMerge>
-                </filter>
-                <filter id="heroCyanF" x="-20%" y="-20%" width="140%" height="140%">
-                  <feGaussianBlur stdDeviation="4" result="b"/>
-                  <feFlood floodColor="#22D3EE" floodOpacity="0.6"/>
-                  <feComposite in2="b" operator="in" result="g"/>
-                  <feMerge><feMergeNode in="g"/><feMergeNode in="SourceGraphic"/></feMerge>
-                </filter>
-              </defs>
-              <ellipse cx="450" cy="160" rx="320" ry="220" fill="url(#heroSunGlow)"/>
-              <circle cx="450" cy="155" r="90" fill="#FFC94D" fillOpacity="0.1"/>
-              <circle cx="450" cy="155" r="55" fill="#FF7A3D" fillOpacity="0.12"/>
-              <path d="M80,360 C77,340 72,310 75,280 C76,290 82,305 78,315 C84,295 92,280 88,265 C90,285 86,310 80,330Z" fill="#0B0221" fillOpacity="0.8"/>
-              <path d="M50,360 C48,345 45,320 48,300 C49,308 52,315 50,320 C54,308 60,298 57,290 C59,305 56,325 52,340Z" fill="#0B0221" fillOpacity="0.6"/>
-              <path d="M820,360 C823,340 828,310 825,280 C824,290 818,305 822,315 C816,295 808,280 812,265 C810,285 814,310 820,330Z" fill="#0B0221" fillOpacity="0.8"/>
-              <path d="M850,360 C852,345 855,320 852,300 C851,308 848,315 850,320 C846,308 840,298 843,290 C841,305 844,325 848,340Z" fill="#0B0221" fillOpacity="0.6"/>
-              <line x1="120" y1="200" x2="340" y2="200" stroke="#FF2E9A" strokeWidth="0.5" strokeOpacity="0.35"/>
-              <line x1="560" y1="200" x2="780" y2="200" stroke="#FF2E9A" strokeWidth="0.5" strokeOpacity="0.35"/>
-              <text x="450" y="112" textAnchor="middle" fontFamily="Impact, Arial Black, sans-serif" fontSize="32" fontWeight="bold" letterSpacing="16" fill="url(#heroCyanGrad)" filter="url(#heroCyanF)" transform="skewX(-8)">CODE TRICHE</text>
-              <text x="450" y="200" textAnchor="middle" fontFamily="Impact, Arial Black, sans-serif" fontSize="115" fontWeight="bold" letterSpacing="8" fill="url(#heroTextGrad)" filter="url(#heroNeon)" transform="skewX(-10)">GTA 6</text>
-              <text x="450" y="255" textAnchor="middle" fontFamily="Arial, Helvetica, sans-serif" fontSize="14" letterSpacing="5" fill="#FFC94D" fillOpacity="0.8" filter="url(#heroNeon)">TOUS LES CODES &amp; INFOS</text>
-              <rect x="310" y="275" width="280" height="2" rx="1" fill="url(#heroTextGrad)" fillOpacity="0.4"/>
-            </svg>
+            {/* AI-generated Logo — Neon Sign */}
+            <motion.img
+              src="/images/logo/logo-neon-sign.png"
+              alt="GTA 6 CodeTriche — Codes de triche, infos et guides"
+              className="w-full max-w-[640px] sm:max-w-[780px] h-auto drop-shadow-[0_0_40px_rgba(255,46,154,0.3)] cursor-pointer"
+              whileHover={{ scale: 1.02, filter: "drop-shadow(0 0 60px rgba(255,46,154,0.5))" }}
+              transition={{ type: "spring", stiffness: 300, damping: 20 }}
+            />
           </h1>
         </motion.div>
 

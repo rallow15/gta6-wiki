@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
+  <defs>
+    <filter id="neonPink" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="neonCyan" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="neonOrange" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="bigGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feGaussianBlur stdDeviation="4" result="blur2" in="SourceGraphic"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur2"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="pinkCyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF2E9A"/>
+      <stop offset="100%" stop-color="#22D3EE"/>
+    </linearGradient>
+    <linearGradient id="orangeYellowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF7A3D"/>
+      <stop offset="100%" stop-color="#FFC94D"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="300" fill="#0B0221"/>
+
+  <!-- Background glow circle -->
+  <circle cx="400" cy="145" r="130" fill="none" stroke="#FF2E9A" stroke-width="1" opacity="0.1" filter="url(#bigGlow)"/>
+  <circle cx="400" cy="145" r="110" fill="none" stroke="#22D3EE" stroke-width="0.5" opacity="0.08" filter="url(#neonCyan)"/>
+
+  <!-- Diamond shape behind monogram -->
+  <polygon points="400,30 520,145 400,260 280,145" fill="none" stroke="#FF2E9A" stroke-width="1.5" filter="url(#neonPink)" opacity="0.5"/>
+  <polygon points="400,45 508,145 400,245 292,145" fill="none" stroke="#22D3EE" stroke-width="0.8" filter="url(#neonCyan)" opacity="0.3"/>
+
+  <!-- 3D Shadow for G6 -->
+  <text x="400" y="175" text-anchor="middle" font-family="'Impact','Arial Black',sans-serif" font-size="140" font-weight="900" fill="#0B0221" transform="translate(7,7)">G6</text>
+  <text x="400" y="175" text-anchor="middle" font-family="'Impact','Arial Black',sans-serif" font-size="140" font-weight="900" fill="#1a0a3e" transform="translate(4,4)">G6</text>
+  <text x="400" y="175" text-anchor="middle" font-family="'Impact','Arial Black',sans-serif" font-size="140" font-weight="900" fill="#2d1060" transform="translate(2,2)">G6</text>
+
+  <!-- Main G6 Monogram -->
+  <text x="400" y="175" text-anchor="middle" font-family="'Impact','Arial Black',sans-serif" font-size="140" font-weight="900" fill="url(#pinkCyanGrad)" filter="url(#bigGlow)">G6</text>
+
+  <!-- CODETRICHE.FR arc text -->
+  <!-- Top arc text -->
+  <text x="400" y="60" text-anchor="middle" font-family="'Courier New',monospace" font-size="16" font-weight="700" letter-spacing="6" fill="#FFC94D" filter="url(#neonOrange)">CODETRICHE</text>
+
+  <!-- Bottom arc text -->
+  <text x="400" y="290" text-anchor="middle" font-family="'Courier New',monospace" font-size="16" font-weight="700" letter-spacing="6" fill="#22D3EE" filter="url(#neonCyan)">.FR</text>
+
+  <!-- Decorative corner stars -->
+  <text x="310" y="55" font-family="sans-serif" font-size="10" fill="#FFC94D" filter="url(#neonOrange)">✦</text>
+  <text x="490" y="55" font-family="sans-serif" font-size="10" fill="#FFC94D" filter="url(#neonOrange)">✦</text>
+
+  <!-- Horizontal accent lines -->
+  <line x1="200" y1="70" x2="305" y2="70" stroke="#FF7A3D" stroke-width="1" filter="url(#neonOrange)" opacity="0.6"/>
+  <line x1="495" y1="70" x2="600" y2="70" stroke="#FF7A3D" stroke-width="1" filter="url(#neonOrange)" opacity="0.6"/>
+</svg>

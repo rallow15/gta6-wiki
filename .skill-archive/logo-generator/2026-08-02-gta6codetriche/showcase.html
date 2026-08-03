@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GTA6 CODETRICHE.FR — Logo Showcase</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=JetBrains+Mono:wght@400;700&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #0B0221;
+    color: #e0e0e0;
+    font-family: 'JetBrains Mono', 'Courier New', monospace;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* Animated background */
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background:
+      radial-gradient(ellipse at 20% 50%, rgba(255,46,154,0.08) 0%, transparent 50%),
+      radial-gradient(ellipse at 80% 50%, rgba(34,211,238,0.08) 0%, transparent 50%),
+      radial-gradient(ellipse at 50% 80%, rgba(255,122,61,0.06) 0%, transparent 50%);
+    z-index: -1;
+  }
+
+  header {
+    text-align: center;
+    padding: 60px 20px 30px;
+  }
+
+  header h1 {
+    font-family: 'Orbitron', 'Impact', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+    background: linear-gradient(90deg, #FF2E9A, #FF7A3D, #FFC94D);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: none;
+    margin-bottom: 10px;
+  }
+
+  header p {
+    color: #22D3EE;
+    font-size: 0.9rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .variant-card {
+    background: rgba(11,2,33,0.8);
+    border: 1px solid rgba(255,46,154,0.2);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    position: relative;
+  }
+
+  .variant-card:hover {
+    border-color: rgba(255,46,154,0.6);
+    box-shadow: 0 0 30px rgba(255,46,154,0.15), 0 0 60px rgba(34,211,238,0.08);
+    transform: translateY(-4px);
+  }
+
+  .variant-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #FF2E9A, #22D3EE, #FF7A3D);
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  .variant-card:hover::before {
+    opacity: 1;
+  }
+
+  .variant-number {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: rgba(255,46,154,0.15);
+    color: #FF2E9A;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 4px;
+    border: 1px solid rgba(255,46,154,0.3);
+    z-index: 2;
+  }
+
+  .variant-name {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    color: #22D3EE;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    z-index: 2;
+  }
+
+  .logo-display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 20px;
+    min-height: 220px;
+    background: #0B0221;
+  }
+
+  .logo-display img {
+    max-width: 100%;
+    max-height: 200px;
+    object-fit: contain;
+  }
+
+  .variant-desc {
+    padding: 16px 20px;
+    border-top: 1px solid rgba(34,211,238,0.1);
+    background: rgba(11,2,33,0.5);
+  }
+
+  .variant-desc h3 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.9rem;
+    color: #FF7A3D;
+    margin-bottom: 6px;
+  }
+
+  .variant-desc p {
+    font-size: 0.8rem;
+    color: #888;
+    line-height: 1.5;
+  }
+
+  .tags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+
+  .tag {
+    font-size: 0.65rem;
+    padding: 3px 8px;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  .tag-pink { background: rgba(255,46,154,0.15); color: #FF2E9A; border: 1px solid rgba(255,46,154,0.3); }
+  .tag-cyan { background: rgba(34,211,238,0.15); color: #22D3EE; border: 1px solid rgba(34,211,238,0.3); }
+  .tag-orange { background: rgba(255,122,61,0.15); color: #FF7A3D; border: 1px solid rgba(255,122,61,0.3); }
+  .tag-yellow { background: rgba(255,201,77,0.15); color: #FFC94D; border: 1px solid rgba(255,201,77,0.3); }
+
+  footer {
+    text-align: center;
+    padding: 40px 20px;
+    color: #444;
+    font-size: 0.75rem;
+  }
+
+  @media (min-width: 768px) {
+    .grid {
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>GTA 6 CODETRICHE.FR</h1>
+  <p>Logo Showcase — 6 Variantes Néon Vice City</p>
+</header>
+
+<div class="grid">
+
+  <div class="variant-card">
+    <span class="variant-number">V1</span>
+    <span class="variant-name">NEON WORDMARK</span>
+    <div class="logo-display">
+      <img src="variant-1-neon-wordmark.svg" alt="Variant 1 — Neon Wordmark">
+    </div>
+    <div class="variant-desc">
+      <h3>Neon Wordmark</h3>
+      <p>Logo typographique 3D avec effet d'extrusion et éclat néon. Texte principal en dégradé sunset avec sous-titre cyan et lignes décoratives orange.</p>
+      <div class="tags">
+        <span class="tag tag-pink">3D extrusion</span>
+        <span class="tag tag-cyan">Néon glow</span>
+        <span class="tag tag-orange">Sunset gradient</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="variant-card">
+    <span class="variant-number">V2</span>
+    <span class="variant-name">SUNSET EMBLEM</span>
+    <div class="logo-display">
+      <img src="variant-2-sunset-emblem.svg" alt="Variant 2 — Sunset Emblem">
+    </div>
+    <div class="variant-desc">
+      <h3>Sunset Emblem</h3>
+      <p>Emblème circulaire avec coucher de soleil tropical, palmiers en silhouette et reflets sur l'eau. Anneau néon rose et cyan avec texte doré.</p>
+      <div class="tags">
+        <span class="tag tag-orange">Coucher de soleil</span>
+        <span class="tag tag-pink">Emblème</span>
+        <span class="tag tag-cyan">Reflets eau</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="variant-card">
+    <span class="variant-number">V3</span>
+    <span class="variant-name">SPEED RACER</span>
+    <div class="logo-display">
+      <img src="variant-3-speed-racer.svg" alt="Variant 3 — Speed Racer">
+    </div>
+    <div class="variant-desc">
+      <h3>Speed Racer</h3>
+      <p>Logo incliné avec effet de vitesse, chevrons latéraux et barres lumineuses. Texte en skew pour un effet dynamique et racing.</p>
+      <div class="tags">
+        <span class="tag tag-pink">Vitesse</span>
+        <span class="tag tag-orange">Chevrons</span>
+        <span class="tag tag-cyan">Skew 3D</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="variant-card">
+    <span class="variant-number">V4</span>
+    <span class="variant-name">RETRO GRID</span>
+    <div class="logo-display">
+      <img src="variant-4-retro-grid.svg" alt="Variant 4 — Retro Grid">
+    </div>
+    <div class="variant-desc">
+      <h3>Retro Grid</h3>
+      <p>Perspective rétro 80s avec grille en perspective, soleil à l'horizon et silhouette de montagnes. L'esthétique synthwave classique.</p>
+      <div class="tags">
+        <span class="tag tag-pink">Synthwave</span>
+        <span class="tag tag-orange">Grille perspective</span>
+        <span class="tag tag-cyan">Montagnes</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="variant-card">
+    <span class="variant-number">V5</span>
+    <span class="variant-name">NEON MONOGRAM</span>
+    <div class="logo-display">
+      <img src="variant-5-neon-monogram.svg" alt="Variant 5 — Neon Monogram">
+    </div>
+    <div class="variant-desc">
+      <h3>Neon Monogram</h3>
+      <p>Monogramme "G6" massif en dégradé rose-cyan avec éclat néon intense. Cadre en losange et accents dorés Art Déco.</p>
+      <div class="tags">
+        <span class="tag tag-pink">Monogramme</span>
+        <span class="tag tag-cyan">Losange</span>
+        <span class="tag tag-yellow">Big glow</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="variant-card">
+    <span class="variant-number">V6</span>
+    <span class="variant-name">VICE CITY SIGN</span>
+    <div class="logo-display">
+      <img src="variant-6-vice-sign.svg" alt="Variant 6 — Vice City Sign">
+    </div>
+    <div class="variant-desc">
+      <h3>Vice City Sign</h3>
+      <p>Enseigne Art Déco avec palmiers, cadre néon, texte "VICE CITY" en arc et lignes de scan CRT. L'esthétique authentique GTA Vice City.</p>
+      <div class="tags">
+        <span class="tag tag-pink">Art Déco</span>
+        <span class="tag tag-cyan">Palmiers</span>
+        <span class="tag tag-orange">Enseigne</span>
+        <span class="tag tag-yellow">Scan lines</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  GTA 6 CODETRICHE.FR — Logo Showcase — Choisir une variante pour itération
+</footer>
+
+</body>
+</html>

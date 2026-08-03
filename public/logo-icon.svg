@@ -1,35 +1,44 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
   <defs>
-    <radialGradient id="bgGrad" cx="50%" cy="40%" r="70%">
-      <stop offset="0%" stop-color="#3B0A5C"/>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A0533"/>
       <stop offset="100%" stop-color="#0B0221"/>
-    </radialGradient>
-
+    </linearGradient>
     <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#FFC94D"/>
-      <stop offset="35%" stop-color="#FF7A3D"/>
+      <stop offset="40%" stop-color="#FF7A3D"/>
       <stop offset="70%" stop-color="#FF2E9A"/>
-      <stop offset="100%" stop-color="#FF2E9A"/>
     </linearGradient>
-
-    <filter id="neonGlow" x="-25%" y="-25%" width="150%" height="150%">
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22D3EE"/>
+      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0.6"/>
+    </linearGradient>
+    <filter id="neonGlow" x="-30%" y="-30%" width="160%" height="160%">
       <feGaussianBlur stdDeviation="8" result="blur1"/>
-      <feFlood flood-color="#FF2E9A" flood-opacity="0.7" result="color1"/>
-      <feComposite in="color1" in2="blur1" operator="in" result="glow1"/>
+      <feFlood flood-color="#FF2E9A" flood-opacity="0.7"/>
+      <feComposite in2="blur1" operator="in" result="pinkGlow"/>
       <feGaussianBlur stdDeviation="3" result="blur2"/>
-      <feFlood flood-color="#FFC94D" flood-opacity="0.4" result="color2"/>
-      <feComposite in="color2" in2="blur2" operator="in" result="glow2"/>
+      <feFlood flood-color="#FFC94D" flood-opacity="0.4"/>
+      <feComposite in2="blur2" operator="in" result="goldGlow"/>
       <feMerge>
-        <feMergeNode in="glow1"/>
-        <feMergeNode in="glow2"/>
+        <feMergeNode in="pinkGlow"/>
+        <feMergeNode in="goldGlow"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
-
-    <filter id="cyanGlow" x="-30%" y="-30%" width="160%" height="160%">
+    <filter id="cyanGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feFlood flood-color="#22D3EE" flood-opacity="0.6"/>
+      <feComposite in2="blur" operator="in" result="glow"/>
+      <feMerge>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="orangeGlow" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur stdDeviation="3" result="blur"/>
-      <feFlood flood-color="#22D3EE" flood-opacity="0.6" result="color"/>
-      <feComposite in="color" in2="blur" operator="in" result="glow"/>
+      <feFlood flood-color="#FF7A3D" flood-opacity="0.5"/>
+      <feComposite in2="blur" operator="in" result="glow"/>
       <feMerge>
         <feMergeNode in="glow"/>
         <feMergeNode in="SourceGraphic"/>
@@ -38,30 +47,66 @@
   </defs>
 
   <!-- Background -->
-  <rect width="256" height="256" rx="40" ry="40" fill="url(#bgGrad)"/>
+  <rect width="512" height="512" rx="80" fill="url(#bgGrad)"/>
 
-  <!-- Sunset glow -->
-  <ellipse cx="128" cy="110" rx="100" ry="80" fill="#FF2E9A" fill-opacity="0.08"/>
-  <ellipse cx="128" cy="110" rx="65" ry="50" fill="#FF7A3D" fill-opacity="0.1"/>
+  <!-- Outer neon ring -->
+  <rect x="16" y="16" width="480" height="480" rx="72" fill="none" stroke="#FF2E9A" stroke-width="2" filter="url(#neonGlow)" opacity="0.4"/>
+  <rect x="28" y="28" width="456" height="456" rx="64" fill="none" stroke="#22D3EE" stroke-width="1" filter="url(#cyanGlow)" opacity="0.25"/>
 
-  <!-- Sun arc -->
-  <path d="M48,140 A80,80 0 0,1 208,140" fill="none" stroke="#FFC94D" stroke-width="2" stroke-opacity="0.3"/>
-
-  <!-- Palm tree silhouette -->
-  <g transform="translate(55, 60) scale(0.8)" fill="#0B0221" fill-opacity="0.6">
-    <path d="M0,50 C-2,35 -8,15 -5,-5 C-4,0 -2,5 0,10 C1,2 3,-5 2,-15 C3,-5 8,5 6,15 C10,5 18,-5 15,-15 C17,-2 12,12 8,22 C13,14 20,8 18,0 C16,14 10,24 5,30 L5,50Z"/>
+  <!-- Palm tree left -->
+  <g transform="translate(60, 80)" opacity="0.3">
+    <rect x="12" y="160" width="7" height="200" fill="#FF2E9A" rx="3"/>
+    <path d="M15,160 Q15,130 -20,80 Q0,110 8,135 Q-15,95 -55,50 Q-25,100 -5,140 L15,160" fill="#22D3EE" filter="url(#cyanGlow)"/>
+    <path d="M15,160 Q15,130 50,75 Q25,110 12,135 Q35,90 70,45 Q40,100 20,140 L15,160" fill="#22D3EE" filter="url(#cyanGlow)"/>
   </g>
 
-  <!-- "G6" text -->
-  <text x="128" y="165" text-anchor="middle" font-family="Impact, Arial Black, sans-serif" font-size="120" font-weight="bold" letter-spacing="4" fill="url(#textGrad)" filter="url(#neonGlow)" transform="skewX(-10)">
-    G6
-  </text>
+  <!-- Palm tree right -->
+  <g transform="translate(380, 100)" opacity="0.25">
+    <rect x="8" y="140" width="5" height="170" fill="#FF2E9A" rx="2"/>
+    <path d="M10,140 Q10,115 -15,70 Q0,95 5,115 Q-10,80 -40,40 Q-15,85 -2,120 L10,140" fill="#22D3EE" filter="url(#cyanGlow)"/>
+    <path d="M10,140 Q10,115 35,65 Q18,95 8,115 Q25,78 55,35 Q30,85 15,120 L10,140" fill="#22D3EE" filter="url(#cyanGlow)"/>
+  </g>
 
-  <!-- Accent line -->
-  <rect x="68" y="185" width="120" height="3" rx="1.5" fill="#22D3EE" fill-opacity="0.6" filter="url(#cyanGlow)"/>
+  <!-- Sun glow -->
+  <ellipse cx="256" cy="240" rx="180" ry="140" fill="#FF7A3D" opacity="0.06"/>
+  <circle cx="256" cy="230" r="60" fill="#FFC94D" opacity="0.08"/>
 
-  <!-- Small "CODE TRICHE" text -->
-  <text x="128" y="212" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="11" letter-spacing="5" fill="#FFC94D" fill-opacity="0.7">
-    CODE TRICHE
-  </text>
+  <!-- "VICE CITY" top text -->
+  <text x="256" y="140" text-anchor="middle" font-family="Impact, Arial Black, sans-serif" font-size="42" font-weight="900" letter-spacing="18" fill="#FFC94D" filter="url(#orangeGlow)" opacity="0.6">VICE CITY</text>
+
+  <!-- 3D Shadow -->
+  <text x="256" y="310" text-anchor="middle" font-family="Impact, Arial Black, sans-serif" font-size="200" font-weight="900" fill="#0B0221" transform="translate(8,8)">GTA 6</text>
+  <text x="256" y="310" text-anchor="middle" font-family="Impact, Arial Black, sans-serif" font-size="200" font-weight="900" fill="#1a0a3e" transform="translate(4,4)">GTA 6</text>
+  <text x="256" y="310" text-anchor="middle" font-family="Impact, Arial Black, sans-serif" font-size="200" font-weight="900" fill="#2d1060" transform="translate(2,2)">GTA 6</text>
+
+  <!-- Main GTA 6 -->
+  <text x="256" y="310" text-anchor="middle" font-family="Impact, Arial Black, sans-serif" font-size="200" font-weight="900" fill="url(#textGrad)" filter="url(#neonGlow)">GTA 6</text>
+
+  <!-- Diamond accent -->
+  <polygon points="256,345 268,360 256,375 244,360" fill="#FFC94D" filter="url(#orangeGlow)" opacity="0.8"/>
+
+  <!-- Horizontal lines -->
+  <line x1="80" y1="360" x2="240" y2="360" stroke="#FF7A3D" stroke-width="2" filter="url(#orangeGlow)" opacity="0.5"/>
+  <line x1="272" y1="360" x2="432" y2="360" stroke="#FF7A3D" stroke-width="2" filter="url(#orangeGlow)" opacity="0.5"/>
+
+  <!-- CODETRICHE.FR bottom -->
+  <text x="256" y="420" text-anchor="middle" font-family="Courier New, monospace" font-size="36" font-weight="700" letter-spacing="8" fill="#22D3EE" filter="url(#cyanGlow)">CODETRICHE.FR</text>
+
+  <!-- Color dots -->
+  <circle cx="200" cy="450" r="4" fill="#FF2E9A" opacity="0.5"/>
+  <circle cx="220" cy="450" r="4" fill="#FF7A3D" opacity="0.5"/>
+  <circle cx="240" cy="450" r="4" fill="#FFC94D" opacity="0.5"/>
+  <circle cx="256" cy="450" r="4" fill="#22D3EE" opacity="0.5"/>
+  <circle cx="272" cy="450" r="4" fill="#FFC94D" opacity="0.5"/>
+  <circle cx="292" cy="450" r="4" fill="#FF7A3D" opacity="0.5"/>
+  <circle cx="312" cy="450" r="4" fill="#FF2E9A" opacity="0.5"/>
+
+  <!-- Subtle scan lines -->
+  <g opacity="0.03">
+    <rect x="16" y="80" width="480" height="1" fill="white"/>
+    <rect x="16" y="160" width="480" height="1" fill="white"/>
+    <rect x="16" y="240" width="480" height="1" fill="white"/>
+    <rect x="16" y="320" width="480" height="1" fill="white"/>
+    <rect x="16" y="400" width="480" height="1" fill="white"/>
+  </g>
 </svg>

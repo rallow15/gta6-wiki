@@ -10,6 +10,7 @@ const navLinks = [
   { href: "/armes", label: "Armes" },
   { href: "/personnages", label: "Personnages" },
   { href: "/lieux", label: "Lieux" },
+  { href: "/galerie", label: "Galerie" },
   { href: "/actualites", label: "Actus" },
 ];
 
@@ -22,29 +23,14 @@ export default function Navbar() {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2.5 group shrink-0">
-            {/* Icon G6 */}
-            <svg className="h-9 w-9 shrink-0 transition-transform group-hover:scale-105" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="256" height="256" rx="40" fill="#1A0533"/>
-              <ellipse cx="128" cy="100" rx="80" ry="65" fill="#FF2E9A" fillOpacity="0.1"/>
-              <path d="M55 140A80 80 0 01201 140" stroke="#FFC94D" strokeWidth="2.5" strokeOpacity="0.35"/>
-              <text x="128" y="168" textAnchor="middle" fontFamily="Impact, Arial Black, sans-serif" fontSize="115" fontWeight="bold" letterSpacing="4" fill="url(#g6Grad)" transform="skewX(-10)" filter="url(#g6Glow)">G6</text>
-              <defs>
-                <linearGradient id="g6Grad" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stopColor="#FFC94D"/>
-                  <stop offset="40%" stopColor="#FF7A3D"/>
-                  <stop offset="75%" stopColor="#FF2E9A"/>
-                </linearGradient>
-                <filter id="g6Glow" x="-15%" y="-15%" width="130%" height="130%">
-                  <feGaussianBlur stdDeviation="6" result="b1"/>
-                  <feFlood floodColor="#FF2E9A" floodOpacity="0.6"/>
-                  <feComposite in2="b1" operator="in" result="g1"/>
-                  <feGaussianBlur stdDeviation="2" result="b2"/>
-                  <feFlood floodColor="#FFC94D" floodOpacity="0.3"/>
-                  <feComposite in2="b2" operator="in" result="g2"/>
-                  <feMerge><feMergeNode in="g1"/><feMergeNode in="g2"/><feMergeNode in="SourceGraphic"/></feMerge>
-                </filter>
-              </defs>
-            </svg>
+            {/* Logo Icon */}
+            <img
+              src="/images/logo/logo-icon.png"
+              alt="GTA 6 CodeTriche"
+              width={40}
+              height={40}
+              className="h-10 w-10 shrink-0 rounded-lg transition-all duration-300 group-hover:scale-110 group-hover:drop-shadow-[0_0_12px_rgba(255,46,154,0.6)]"
+            />
             <span className="font-display text-lg sm:text-xl tracking-wider text-text-primary transition-all group-hover:text-neon-pink">
               CODE TRICHE
               <span className="text-neon-pink"> GTA6</span>

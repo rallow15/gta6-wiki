@@ -1,64 +1,88 @@
-import SectionPage from "@/components/SectionPage";
-import Link from "next/link";
+"use client";
 
-const articles = [
-  {
-    id: "gta6-trailer-2",
-    title: "GTA VI : La bande-annonce officielle enfin devoilee",
-    date: "5 Dec 2023",
-    excerpt: "Rockstar Games a devoile la toute premiere bande-annonce de GTA VI, montrant Vice City, les deux protagonistes et l'ambiance tropicale tant attendue.",
-    tag: "Annonce",
-  },
-  {
-    id: "release-date-confirmed",
-    title: "Date de sortie confirme : Novembre 2026",
-    date: "18 Nov 2024",
-    excerpt: "Apres des mois de speculation, Rockstar confirme officiellement la date de sortie de GTA VI pour novembre 2026 sur PS5, Xbox Series et PC.",
-    tag: "Date de sortie",
-  },
-  {
-    id: "vice-city-details",
-    title: "Vice City dans GTA VI : tout ce qu'on sait",
-    date: "10 Jan 2025",
-    excerpt: "Vice City sera plus grande que jamais dans GTA VI. Decouvrez les quartiers, les activites et les secrets de la metropole neonnee de Leonida.",
-    tag: "Gameplay",
-  },
-  {
-    id: "dual-protagonists",
-    title: "Jason et Lucia : le systeme a deux protagonistes",
-    date: "22 Fev 2025",
-    excerpt: "GTA VI introduit Jason Duval et Lucia Caminos comme protagonistes jouables. Un systeme inedit qui permet de basculer entre les deux personnages.",
-    tag: "Personnages",
-  },
-];
+import { useState } from "react";
+import Link from "next/link";
+import { motion } from "framer-motion";
+import SectionPage from "@/components/SectionPage";
+import AnimatedContainer from "@/components/AnimatedContainer";
+import { articlesLatestFirst } from "@/lib/articles";
+
+const tagColors: Record<string, string> = {
+  "Annonce": "bg-neon-pink/10 text-neon-pink border-neon-pink/20",
+  "Bande-annonce": "bg-sunset-orange/10 text-sunset-orange border-sunset-orange/20",
+  "Date de sortie": "bg-lagoon-cyan/10 text-lagoon-cyan border-lagoon-cyan/20",
+  "Personnages": "bg-sunset-orange/10 text-sunset-orange border-sunset-orange/20",
+  "Gameplay": "bg-lagoon-cyan/10 text-lagoon-cyan border-lagoon-cyan/20",
+  "Pré-commande": "bg-sand-yellow/10 text-sand-yellow border-sand-yellow/20",
+};
 
 export default function ActualitesPage() {
+  const [filter, setFilter] = useState<string>("all");
+  const tags = ["all", ...Array.from(new Set(articlesLatestFirst.map((a) => a.tag)))];
+
+  const filtered = filter === "all" ? articlesLatestFirst : articlesLatestFirst.filter((a) => a.tag === filter);
+
   return (
     <SectionPage
-      title="ACTUALITES"
-      subtitle="Les dernieres news et rumeurs sur GTA VI."
+      title="ACTUALITÉS"
+      subtitle={`${articlesLatestFirst.length} articles — dernières nouvelles sur GTA VI`}
     >
-      <div className="space-y-4">
-        {articles.map((article) => (
-          <article key={article.id} className="glass-card p-5 sm:p-6 group">
-            <div className="flex items-start gap-4">
-              <div className="flex-1 min-w-0">
-                <div className="flex items-center gap-2 mb-2">
-                  <span className="text-[10px] px-2 py-0.5 rounded-full bg-neon-pink/10 text-neon-pink border border-neon-pink/20 font-medium uppercase tracking-wider">
-                    {article.tag}
-                  </span>
-                  <span className="text-xs text-text-muted">{article.date}</span>
+      {/* Filter tabs */}
+      <div className="mb-8 flex flex-wrap gap-2">
+        {tags.map((tag) => (
+          <button
+            key={tag}
+            onClick={() => setFilter(tag)}
+            className={`px-4 py-2 rounded-lg text-sm font-medium transition-all whitespace-nowrap ${
+              filter === tag
+                ? "bg-neon-pink text-white shadow-lg shadow-neon-pink/25"
+                : "bg-white/5 text-text-secondary hover:bg-white/10 hover:text-text-primary"
+            }`}
+          >
+            {tag === "all" ? "Tout" : tag}
+          </button>
+        ))}
+      </div>
+
+      {/* Articles grid */}
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        {filtered.map((article, i) => (
+          <AnimatedContainer key={article.id} animation="fadeInUp" delay={i * 0.05}>
+            <Link href={`/actualites/${article.id}`} className="group block">
+              <div className="glass-card overflow-hidden transition-all duration-300 group-hover:border-neon-pink/40">
+                {/* Image */}
+                <div className="relative aspect-[16/9] overflow-hidden">
+                  <img
+                    src={article.image}
+                    alt={article.title}
+                    loading="lazy"
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-deep-bg/80 via-transparent to-transparent" />
+                  {/* Tag + Date overlay */}
+                  <div className="absolute bottom-3 left-3 right-3 flex items-center gap-2">
+                    <span className={`text-[10px] px-2 py-0.5 rounded-full border font-medium uppercase tracking-wider ${tagColors[article.tag] ?? tagColors["Annonce"]}`}>
+                      {article.tag}
+                    </span>
+                    <span className="text-xs text-white/70">{article.date}</span>
+                  </div>
                 </div>
-                <h3 className="font-semibold text-text-primary group-hover:text-neon-pink transition-colors">
-                  {article.title}
-                </h3>
-                <p className="mt-2 text-sm text-text-muted line-clamp-2">{article.excerpt}</p>
+                {/* Content */}
+                <div className="p-4">
+                  <h3 className="font-semibold text-text-primary group-hover:text-neon-pink transition-colors line-clamp-2 leading-snug">
+                    {article.title}
+                  </h3>
+                  <p className="mt-2 text-sm text-text-muted line-clamp-2">{article.excerpt}</p>
+                  <div className="mt-3 flex items-center gap-1.5 text-xs text-text-muted">
+                    <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+                    </svg>
+                    {article.sourceName}
+                  </div>
+                </div>
               </div>
-              <svg className="h-5 w-5 text-text-muted group-hover:text-neon-pink transition-colors shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-              </svg>
-            </div>
-          </article>
+            </Link>
+          </AnimatedContainer>
         ))}
       </div>
     </SectionPage>

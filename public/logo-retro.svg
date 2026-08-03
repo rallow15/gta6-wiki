@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
+  <defs>
+    <filter id="neonPink" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="neonCyan" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="neonOrange" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="sunsetGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF2E9A"/>
+      <stop offset="50%" stop-color="#FF7A3D"/>
+      <stop offset="100%" stop-color="#FFC94D"/>
+    </linearGradient>
+    <linearGradient id="gridFade" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FF2E9A" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0.4"/>
+    </linearGradient>
+    <radialGradient id="sunGlow" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#FF7A3D" stop-opacity="0.3"/>
+      <stop offset="50%" stop-color="#FF2E9A" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#0B0221" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="300" fill="#0B0221"/>
+
+  <!-- Sun glow -->
+  <ellipse cx="400" cy="160" rx="300" ry="150" fill="url(#sunGlow)"/>
+
+  <!-- Retro Perspective Grid -->
+  <g opacity="0.25">
+    <!-- Horizontal lines (perspective) -->
+    <line x1="100" y1="180" x2="700" y2="180" stroke="#FF2E9A" stroke-width="0.8"/>
+    <line x1="50" y1="210" x2="750" y2="210" stroke="#FF2E9A" stroke-width="1"/>
+    <line x1="0" y1="240" x2="800" y2="240" stroke="#FF2E9A" stroke-width="1.2"/>
+    <line x1="-50" y1="270" x2="850" y2="270" stroke="#FF2E9A" stroke-width="1.5"/>
+    <line x1="-100" y1="300" x2="900" y2="300" stroke="#FF2E9A" stroke-width="1.8"/>
+    <!-- Vertical lines (perspective from center) -->
+    <line x1="400" y1="160" x2="350" y2="300" stroke="#22D3EE" stroke-width="0.5"/>
+    <line x1="400" y1="160" x2="450" y2="300" stroke="#22D3EE" stroke-width="0.5"/>
+    <line x1="400" y1="160" x2="250" y2="300" stroke="#22D3EE" stroke-width="0.6"/>
+    <line x1="400" y1="160" x2="550" y2="300" stroke="#22D3EE" stroke-width="0.6"/>
+    <line x1="400" y1="160" x2="150" y2="300" stroke="#22D3EE" stroke-width="0.7"/>
+    <line x1="400" y1="160" x2="650" y2="300" stroke="#22D3EE" stroke-width="0.7"/>
+    <line x1="400" y1="160" x2="50" y2="300" stroke="#22D3EE" stroke-width="0.8"/>
+    <line x1="400" y1="160" x2="750" y2="300" stroke="#22D3EE" stroke-width="0.8"/>
+  </g>
+
+  <!-- Sun on horizon -->
+  <circle cx="400" cy="175" r="35" fill="#FF7A3D" opacity="0.5" filter="url(#neonOrange)"/>
+  <circle cx="400" cy="175" r="25" fill="#FFC94D" opacity="0.7" filter="url(#neonOrange)"/>
+  <!-- Sun lines (half-circle stripes) -->
+  <line x1="365" y1="175" x2="370" y2="175" stroke="#0B0221" stroke-width="1.5" opacity="0.4"/>
+  <line x1="373" y1="175" x2="380" y2="175" stroke="#0B0221" stroke-width="1.5" opacity="0.4"/>
+  <line x1="420" y1="175" x2="427" y2="175" stroke="#0B0221" stroke-width="1.5" opacity="0.4"/>
+  <line x1="430" y1="175" x2="435" y2="175" stroke="#0B0221" stroke-width="1.5" opacity="0.4"/>
+
+  <!-- 3D Shadow -->
+  <text x="400" y="140" text-anchor="middle" font-family="'Impact','Arial Black',sans-serif" font-size="95" font-weight="900" fill="#0B0221" transform="translate(5,5)">GTA 6</text>
+  <text x="400" y="140" text-anchor="middle" font-family="'Impact','Arial Black',sans-serif" font-size="95" font-weight="900" fill="#1a0a3e" transform="translate(2,2)">GTA 6</text>
+
+  <!-- Main Text -->
+  <text x="400" y="140" text-anchor="middle" font-family="'Impact','Arial Black',sans-serif" font-size="95" font-weight="900" fill="url(#sunsetGrad)" filter="url(#neonPink)">GTA 6</text>
+
+  <!-- CODETRICHE.FR -->
+  <text x="400" y="270" text-anchor="middle" font-family="'Courier New','monospace'" font-size="20" font-weight="700" letter-spacing="10" fill="#22D3EE" filter="url(#neonCyan)">CODETRICHE.FR</text>
+
+  <!-- Mountain silhouette -->
+  <path d="M0,180 L80,130 L150,155 L250,90 L320,140 L400,100 L480,140 L550,90 L650,155 L720,130 L800,180 L800,300 L0,300 Z" fill="#0B0221" opacity="0.7"/>
+</svg>

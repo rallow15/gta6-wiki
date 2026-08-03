@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300">
+  <defs>
+    <filter id="neonPink" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="neonCyan" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="neonOrange" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="speedGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22D3EE"/>
+      <stop offset="50%" stop-color="#FF2E9A"/>
+      <stop offset="100%" stop-color="#FF7A3D"/>
+    </linearGradient>
+    <linearGradient id="barGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF2E9A" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#FF2E9A" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#FF7A3D" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="300" fill="#0B0221"/>
+
+  <!-- Speed Lines -->
+  <g opacity="0.15">
+    <line x1="-50" y1="40" x2="350" y2="40" stroke="#22D3EE" stroke-width="1" filter="url(#neonCyan)"/>
+    <line x1="-50" y1="70" x2="300" y2="70" stroke="#FF2E9A" stroke-width="1.5" filter="url(#neonPink)"/>
+    <line x1="500" y1="55" x2="850" y2="55" stroke="#22D3EE" stroke-width="0.8" filter="url(#neonCyan)"/>
+    <line x1="450" y1="85" x2="850" y2="85" stroke="#FF2E9A" stroke-width="1" filter="url(#neonPink)"/>
+    <line x1="-50" y1="230" x2="300" y2="230" stroke="#FF7A3D" stroke-width="1.2" filter="url(#neonOrange)"/>
+    <line x1="-50" y1="260" x2="250" y2="260" stroke="#22D3EE" stroke-width="0.8" filter="url(#neonCyan)"/>
+    <line x1="550" y1="240" x2="850" y2="240" stroke="#FF2E9A" stroke-width="1" filter="url(#neonPink)"/>
+    <line x1="500" y1="265" x2="850" y2="265" stroke="#FF7A3D" stroke-width="0.8" filter="url(#neonOrange)"/>
+  </g>
+
+  <!-- Top Speed Bar -->
+  <rect x="0" y="95" width="800" height="4" fill="url(#barGrad)" filter="url(#neonPink)" opacity="0.6"/>
+
+  <!-- Bottom Speed Bar -->
+  <rect x="0" y="205" width="800" height="4" fill="url(#barGrad)" filter="url(#neonPink)" opacity="0.6"/>
+
+  <!-- 3D Shadow for GTA6 -->
+  <text x="400" y="175" text-anchor="middle" font-family="'Impact','Arial Black',sans-serif" font-size="100" font-weight="900" fill="#0B0221" opacity="0.5" transform="skewX(-8) translate(6,6)">GTA 6</text>
+  <text x="400" y="175" text-anchor="middle" font-family="'Impact','Arial Black',sans-serif" font-size="100" font-weight="900" fill="#1a0a3e" transform="skewX(-8) translate(3,3)">GTA 6</text>
+
+  <!-- Main GTA6 with speed skew -->
+  <text x="400" y="175" text-anchor="middle" font-family="'Impact','Arial Black',sans-serif" font-size="100" font-weight="900" fill="url(#speedGrad)" filter="url(#neonPink)" transform="skewX(-8)">GTA 6</text>
+
+  <!-- CODETRICHE.FR -->
+  <text x="400" y="260" text-anchor="middle" font-family="'Courier New','monospace'" font-size="24" font-weight="700" letter-spacing="14" fill="#22D3EE" filter="url(#neonCyan)">CODETRICHE.FR</text>
+
+  <!-- Speed accent chevrons -->
+  <g opacity="0.4" filter="url(#neonOrange)">
+    <polygon points="60,140 80,150 60,160" fill="#FF7A3D"/>
+    <polygon points="40,140 60,150 40,160" fill="#FF7A3D" opacity="0.6"/>
+    <polygon points="20,140 40,150 20,160" fill="#FF7A3D" opacity="0.3"/>
+    <polygon points="740,140 720,150 740,160" fill="#FF7A3D"/>
+    <polygon points="760,140 740,150 760,160" fill="#FF7A3D" opacity="0.6"/>
+    <polygon points="780,140 760,150 780,160" fill="#FF7A3D" opacity="0.3"/>
+  </g>
+</svg>

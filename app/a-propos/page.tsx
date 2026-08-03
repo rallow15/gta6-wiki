@@ -7,6 +7,10 @@ export default function AProposPage() {
       subtitle="Vice City Tropical — le site fan de reference sur GTA VI."
     >
       <div className="glass-card p-6 sm:p-8 space-y-6">
+        {/* Logo badge */}
+        <div className="flex justify-center">
+          <img src="/images/logo/logo-badge.png" alt="GTA 6 CodeTriche Badge" className="w-48 h-auto rounded-xl" />
+        </div>
         <div>
           <h2 className="font-display text-xl tracking-wider text-neon-pink mb-3">QU'EST-CE QUE VICE CITY TROPICAL ?</h2>
           <p className="text-text-secondary leading-relaxed">

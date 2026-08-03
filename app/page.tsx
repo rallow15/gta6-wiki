@@ -39,6 +39,7 @@ export default function Home() {
               <h2 className="font-display text-3xl sm:text-4xl tracking-wider text-text-primary text-center mb-12">
                 <span className="text-neon-pink neon-text">TOUT</span> SUR <span className="text-sunset-orange">GTA VI</span>
               </h2>
+
               <div className="grid sm:grid-cols-3 gap-6">
                 <AnimatedContainer animation="scaleIn" delay={0.1}>
                   <div className="glass-card p-6 text-center group">
