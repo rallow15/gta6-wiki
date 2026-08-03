@@ -5,7 +5,9 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import SectionPage from "@/components/SectionPage";
 import AnimatedContainer from "@/components/AnimatedContainer";
+import { JsonLd } from "@/components/JsonLd";
 import { articlesLatestFirst } from "@/lib/articles";
+import { sectionBreadcrumb } from "@/lib/sectionMeta";
 
 const tagColors: Record<string, string> = {
   "Annonce": "bg-neon-pink/10 text-neon-pink border-neon-pink/20",
@@ -23,10 +25,12 @@ export default function ActualitesPage() {
   const filtered = filter === "all" ? articlesLatestFirst : articlesLatestFirst.filter((a) => a.tag === filter);
 
   return (
-    <SectionPage
-      title="ACTUALITÉS"
-      subtitle={`${articlesLatestFirst.length} articles — dernières nouvelles sur GTA VI`}
-    >
+    <>
+      <JsonLd data={sectionBreadcrumb("Actualités", "/actualites")} />
+      <SectionPage
+        title="ACTUALITÉS"
+        subtitle={`${articlesLatestFirst.length} articles — dernières nouvelles sur GTA VI`}
+      >
       {/* Filter tabs */}
       <div className="mb-8 flex flex-wrap gap-2">
         {tags.map((tag) => (
@@ -86,5 +90,6 @@ export default function ActualitesPage() {
         ))}
       </div>
     </SectionPage>
+    </>
   );
 }

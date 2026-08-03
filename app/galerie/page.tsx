@@ -4,7 +4,9 @@ import { useState, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import SectionPage from "@/components/SectionPage";
 import Lightbox from "@/components/Lightbox";
+import { JsonLd } from "@/components/JsonLd";
 import { galleryCategories, type GalleryImage } from "@/lib/gallery";
+import { sectionBreadcrumb } from "@/lib/sectionMeta";
 
 export default function GaleriePage() {
   const [activeCategory, setActiveCategory] = useState<string>(galleryCategories[0].id);
@@ -32,10 +34,12 @@ export default function GaleriePage() {
   }, [filteredImages.length]);
 
   return (
-    <SectionPage
-      title="GALERIE"
-      subtitle={`${activeCat.emoji} ${activeCat.label} — ${activeCat.images.length} captures d'écran`}
-    >
+    <>
+      <JsonLd data={sectionBreadcrumb("Galerie", "/galerie")} />
+      <SectionPage
+        title="GALERIE"
+        subtitle={`${activeCat.emoji} ${activeCat.label} — ${activeCat.images.length} captures d'écran`}
+      >
       {/* Category Tabs */}
       <div className="mb-8 flex flex-wrap gap-2">
         {galleryCategories.map((cat) => (
@@ -106,5 +110,6 @@ export default function GaleriePage() {
         />
       )}
     </SectionPage>
+    </>
   );
 }

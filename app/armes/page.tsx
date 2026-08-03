@@ -1,5 +1,8 @@
+import type { Metadata } from "next";
 import SectionPage from "@/components/SectionPage";
 import GameCard from "@/components/GameCard";
+import { JsonLd } from "@/components/JsonLd";
+import { sectionMeta, sectionBreadcrumb } from "@/lib/sectionMeta";
 
 interface OfficialWeapon {
   id: string;
@@ -60,12 +63,30 @@ const categories = [
   { id: "Special", label: "Special" },
 ];
 
+export const metadata: Metadata = sectionMeta({
+  title: "Armes GTA 6 — Arsenal complet de GTA VI",
+  description:
+    "Toutes les armes officiellement confirmées dans GTA 6 (GTA VI) : pistolets, revolvers, fusils à pompe, mitraillettes, fusils d'assaut, snipers et armes lourdes. Sources officielles Rockstar.",
+  path: "/armes",
+  keywords: [
+    "armes GTA 6",
+    "armes GTA VI",
+    "arsenal GTA 6",
+    "pistolets GTA 6",
+    "sniper GTA 6",
+    "fusil d'assaut GTA 6",
+    "armes Vice City",
+  ],
+});
+
 export default function ArmesPage() {
   return (
-    <SectionPage
-      title="ARMES"
-      subtitle="Toutes les armes officiellement confirmees dans GTA VI. Sources : Trailer 1 & 2, screenshots officiels Rockstar."
-    >
+    <>
+      <JsonLd data={sectionBreadcrumb("Armes", "/armes")} />
+      <SectionPage
+        title="ARMES"
+        subtitle="Toutes les armes officiellement confirmees dans GTA VI. Sources : Trailer 1 & 2, screenshots officiels Rockstar."
+      >
       <div className="mb-6 neon-glow-card-cyan p-4 border-lagoon-cyan/20">
         <div className="flex items-start gap-3">
           <svg className="h-5 w-5 text-lagoon-cyan shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
@@ -136,5 +157,6 @@ export default function ArmesPage() {
         </ul>
       </div>
     </SectionPage>
+    </>
   );
 }

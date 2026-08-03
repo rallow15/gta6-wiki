@@ -1,9 +1,22 @@
+import type { Metadata } from "next";
 import SectionPage from "@/components/SectionPage";
+import { JsonLd } from "@/components/JsonLd";
+import { sectionMeta, sectionBreadcrumb } from "@/lib/sectionMeta";
+
+export const metadata: Metadata = sectionMeta({
+  title: "À propos — CodeTricheGTA6, site fan GTA VI",
+  description:
+    "CodeTricheGTA6 (Vice City Tropical) est un site fan francophone non officiel dédié à Grand Theft Auto VI : codes de triche, véhicules, armes, personnages, lieux et actualités.",
+  path: "/a-propos",
+  keywords: ["CodeTricheGTA6", "Vice City Tropical", "site fan GTA 6", "à propos GTA VI"],
+});
 
 export default function AProposPage() {
   return (
-    <SectionPage
-      title="A PROPOS"
+    <>
+      <JsonLd data={sectionBreadcrumb("À propos", "/a-propos")} />
+      <SectionPage
+        title="A PROPOS"
       subtitle="Vice City Tropical — le site fan de reference sur GTA VI."
     >
       <div className="glass-card p-6 sm:p-8 space-y-6">
@@ -55,5 +68,6 @@ export default function AProposPage() {
         </div>
       </div>
     </SectionPage>
+    </>
   );
 }

@@ -1,4 +1,13 @@
+import type { Metadata } from "next";
 import SectionPage from "@/components/SectionPage";
+
+export const metadata: Metadata = {
+  title: "Mentions légales — CodeTricheGTA6",
+  description:
+    "Mentions légales du site CodeTricheGTA6 (Vice City Tropical), site fan non officiel dédié à Grand Theft Auto VI.",
+  alternates: { canonical: "/mentions-legales" },
+  robots: { index: false, follow: true },
+};
 
 export default function MentionsLegalesPage() {
   return (

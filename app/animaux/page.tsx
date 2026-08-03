@@ -1,4 +1,13 @@
+import type { Metadata } from "next";
 import SectionPage from "@/components/SectionPage";
+
+export const metadata: Metadata = {
+  title: "Animaux GTA 6 — Faune de Leonida",
+  description:
+    "La faune de GTA 6 : alligators, poissons tropicaux et toute la vie sauvage de Leonida. Bientôt disponible après la sortie du jeu.",
+  alternates: { canonical: "/animaux" },
+  robots: { index: false, follow: true },
+};
 
 export default function AnimauxPage() {
   return (

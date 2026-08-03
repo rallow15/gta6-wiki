@@ -1,4 +1,13 @@
+import type { Metadata } from "next";
 import SectionPage from "@/components/SectionPage";
+
+export const metadata: Metadata = {
+  title: "Politique de confidentialité — CodeTricheGTA6",
+  description:
+    "Politique de confidentialité et protection des données du site CodeTricheGTA6 (Vice City Tropical).",
+  alternates: { canonical: "/politique-confidentialite" },
+  robots: { index: false, follow: true },
+};
 
 export default function PolitiqueConfidentialitePage() {
   return (

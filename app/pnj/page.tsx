@@ -1,4 +1,14 @@
+import type { Metadata } from "next";
 import SectionPage from "@/components/SectionPage";
+
+export const metadata: Metadata = {
+  title: "PNJ GTA 6 — Personnages non jouables",
+  description:
+    "Base de données des personnages non jouables (PNJ) de GTA 6. Bientôt disponible après la sortie du jeu.",
+  alternates: { canonical: "/pnj" },
+  // Placeholder page with no real content yet — keep it out of the index.
+  robots: { index: false, follow: true },
+};
 
 export default function PnjPage() {
   return (

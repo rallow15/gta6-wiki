@@ -1,7 +1,30 @@
+import type { Metadata } from "next";
 import SectionPage from "@/components/SectionPage";
 import Image from "next/image";
 import Link from "next/link";
+import { JsonLd } from "@/components/JsonLd";
 import { vehicles } from "@/lib/data";
+import { BASE_URL } from "@/lib/site";
+import { sectionMeta, sectionBreadcrumb } from "@/lib/sectionMeta";
+import { itemListJsonLd } from "@/lib/seo";
+
+export const metadata: Metadata = sectionMeta({
+  title: "Véhicules GTA 6 — Voitures, motos, bateaux de GTA VI",
+  description:
+    "Tous les véhicules officiellement confirmés dans GTA 6 (GTA VI) : sportives, supercars, muscle cars, SUV, motos et bateaux. Fiches détaillées avec inspiration réelle et source officielle.",
+  path: "/vehicules",
+  keywords: [
+    "véhicules GTA 6",
+    "voitures GTA 6",
+    "voitures GTA VI",
+    "meilleures voitures GTA 6",
+    "supercars GTA 6",
+    "motos GTA 6",
+    "bateaux GTA 6",
+    "Cheetah GTA 6",
+    "véhicules Vice City",
+  ],
+});
 
 const categoryLabels: Record<string, string> = {
   "Sportive": "Sportives & Supercars",
@@ -18,10 +41,25 @@ const categoryOrder = ["Sportive", "Supercar", "Muscle", "SUV", "Sport compact",
 
 export default function VehiculesPage() {
   return (
-    <SectionPage
-      title="VEHICULES"
-      subtitle="Tous les vehicules officiellement confirmees dans GTA VI. Sources : Trailer 1 & 2, screenshots Rockstar, catalogue officiel."
-    >
+    <>
+      <JsonLd
+        data={[
+          sectionBreadcrumb("Véhicules", "/vehicules"),
+          itemListJsonLd(
+            "Véhicules GTA 6",
+            `${BASE_URL}/vehicules`,
+            vehicles.map((v) => ({
+              name: v.name,
+              url: `${BASE_URL}/vehicules/${v.id}`,
+              image: `${BASE_URL}${v.image}`,
+            })),
+          ),
+        ]}
+      />
+      <SectionPage
+        title="VEHICULES"
+        subtitle="Tous les vehicules officiellement confirmees dans GTA VI. Sources : Trailer 1 & 2, screenshots Rockstar, catalogue officiel."
+      >
       <div className="mb-6 glass-card p-4 border-lagoon-cyan/20">
         <div className="flex items-start gap-3">
           <svg className="h-5 w-5 text-lagoon-cyan shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
@@ -120,5 +158,6 @@ export default function VehiculesPage() {
         </ul>
       </div>
     </SectionPage>
+    </>
   );
 }

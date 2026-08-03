@@ -5,6 +5,9 @@ const footerLinks = [
     title: "Guides",
     links: [
       { label: "Codes de triche", href: "/codes" },
+      { label: "Codes GTA 6 PS5", href: "/codes-gta-6-ps5" },
+      { label: "Codes GTA 6 Xbox", href: "/codes-gta-6-xbox" },
+      { label: "Codes GTA 6 PC", href: "/codes-gta-6-pc" },
       { label: "Véhicules", href: "/vehicules" },
       { label: "Armes", href: "/armes" },
       { label: "Personnages", href: "/personnages" },
@@ -14,8 +17,9 @@ const footerLinks = [
     title: "Explorer",
     links: [
       { label: "Lieux", href: "/lieux" },
-      { label: "PNJ", href: "/pnj" },
-      { label: "Animaux", href: "/animaux" },
+      { label: "Carte GTA 6", href: "/carte-vice-city-gta-6" },
+      { label: "Meilleures voitures", href: "/meilleures-voitures-gta-6" },
+      { label: "Date de sortie", href: "/date-de-sortie-gta-6" },
       { label: "Galerie", href: "/galerie" },
     ],
   },

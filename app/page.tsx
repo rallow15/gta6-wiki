@@ -1,11 +1,58 @@
+import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Footer from "@/components/Footer";
 import AnimatedContainer from "@/components/AnimatedContainer";
+import { JsonLd } from "@/components/JsonLd";
+import { videoGameJsonLd, faqJsonLd } from "@/lib/seo";
+
+export const metadata: Metadata = {
+  title: "CodeTricheGTA6 — Codes GTA 6, Infos & Guides",
+  description:
+    "Tous les codes de triche GTA 6 (PS5, Xbox, PC), fiches personnages, véhicules, armes, lieux de Vice City et actualités. Sortie GTA VI le 19 novembre 2026.",
+  alternates: { canonical: "/" },
+  openGraph: {
+    title: "CodeTricheGTA6 — Codes GTA 6, Infos & Guides",
+    description:
+      "Tous les codes de triche GTA 6, fiches personnages, véhicules, armes et lieux. Sortie GTA VI le 19 novembre 2026.",
+    url: "/",
+    type: "website",
+  },
+};
 
 export default function Home() {
   return (
     <>
+      <JsonLd
+        data={[
+          videoGameJsonLd(),
+          faqJsonLd(
+            [
+              {
+                question: "Quand sort GTA 6 ?",
+                answer:
+                  "Grand Theft Auto VI (GTA 6) sort le 19 novembre 2026 sur PlayStation 5, Xbox Series X|S et PC, après deux reports officiels annoncés par Rockstar Games.",
+              },
+              {
+                question: "Où trouver les codes de triche GTA 6 ?",
+                answer:
+                  "Les codes de triche GTA 6 seront disponibles sur CodeTricheGTA6 à la sortie du jeu, classés par plateforme (PS5, Xbox Series, PC) avec copier en 1 clic.",
+              },
+              {
+                question: "Dans quelle ville se déroule GTA 6 ?",
+                answer:
+                  "GTA 6 se déroule à Vice City et dans tout l'état fictif de Leonida, incluant les Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia et le Mont Kalaga.",
+              },
+              {
+                question: "Qui sont les protagonistes de GTA 6 ?",
+                answer:
+                  "Jason Duval et Lucia Caminos sont les deux protagonistes jouables de GTA 6, formant un duo à la Bonnie et Clyde. Lucia est la première héroïne jouable de la série.",
+              },
+            ],
+            "/",
+          ),
+        ]}
+      />
       <Navbar />
       <main>
         <Hero />

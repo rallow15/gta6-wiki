@@ -1,51 +1,35 @@
 import type { MetadataRoute } from "next";
-import { vehicles } from "@/lib/data";
-import { characters } from "@/lib/characters";
-import { locations } from "@/lib/data";
+import { BASE_URL } from "@/lib/site";
 
-const baseUrl = "https://gta6codetriche.fr";
-
+// Root sitemap: top-level static pages, section listing pages and the
+// keyword-targeted landing pages. Dynamic [slug] detail pages live in their
+// own per-section sitemaps (see app/vehicules/sitemap.ts etc.) and are
+// referenced from robots.ts. Pages marked noindex (pnj, animaux, legal) are
+// intentionally excluded.
 export default function sitemap(): MetadataRoute.Sitemap {
-  // Static pages
+  const now = new Date();
+
   const staticPages: MetadataRoute.Sitemap = [
-    { url: baseUrl, lastModified: new Date(), changeFrequency: "daily", priority: 1 },
-    { url: `${baseUrl}/codes`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.9 },
-    { url: `${baseUrl}/vehicules`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.8 },
-    { url: `${baseUrl}/armes`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.8 },
-    { url: `${baseUrl}/personnages`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.8 },
-    { url: `${baseUrl}/lieux`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.7 },
-    { url: `${baseUrl}/pnj`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.5 },
-    { url: `${baseUrl}/animaux`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.5 },
-    { url: `${baseUrl}/galerie`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.6 },
-    { url: `${baseUrl}/actualites`, lastModified: new Date(), changeFrequency: "daily", priority: 0.7 },
-    { url: `${baseUrl}/a-propos`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.3 },
-    { url: `${baseUrl}/mentions-legales`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.2 },
-    { url: `${baseUrl}/politique-confidentialite`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.2 },
+    { url: `${BASE_URL}/`, lastModified: now, changeFrequency: "daily", priority: 1 },
+    { url: `${BASE_URL}/codes`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
+    { url: `${BASE_URL}/vehicules`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
+    { url: `${BASE_URL}/armes`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
+    { url: `${BASE_URL}/personnages`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
+    { url: `${BASE_URL}/lieux`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
+    { url: `${BASE_URL}/galerie`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
+    { url: `${BASE_URL}/actualites`, lastModified: now, changeFrequency: "daily", priority: 0.7 },
+    { url: `${BASE_URL}/a-propos`, lastModified: now, changeFrequency: "yearly", priority: 0.3 },
   ];
 
-  // Dynamic vehicle pages
-  const vehiclePages: MetadataRoute.Sitemap = vehicles.map((vehicle) => ({
-    url: `${baseUrl}/vehicules/${vehicle.id}`,
-    lastModified: new Date(),
-    changeFrequency: "weekly" as const,
-    priority: 0.7,
-  }));
+  // Keyword-targeted landing pages (real content, high search volume).
+  const landingPages: MetadataRoute.Sitemap = [
+    { url: `${BASE_URL}/date-de-sortie-gta-6`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
+    { url: `${BASE_URL}/codes-gta-6-ps5`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
+    { url: `${BASE_URL}/codes-gta-6-xbox`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
+    { url: `${BASE_URL}/codes-gta-6-pc`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
+    { url: `${BASE_URL}/meilleures-voitures-gta-6`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
+    { url: `${BASE_URL}/carte-vice-city-gta-6`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
+  ];
 
-  // Dynamic character pages
-  const characterPages: MetadataRoute.Sitemap = characters.map((character) => ({
-    url: `${baseUrl}/personnages/${character.id}`,
-    lastModified: new Date(),
-    changeFrequency: "weekly" as const,
-    priority: 0.7,
-  }));
-
-  // Dynamic location pages
-  const locationPages: MetadataRoute.Sitemap = locations.map((location) => ({
-    url: `${baseUrl}/lieux/${location.id}`,
-    lastModified: new Date(),
-    changeFrequency: "weekly" as const,
-    priority: 0.7,
-  }));
-
-  return [...staticPages, ...vehiclePages, ...characterPages, ...locationPages];
+  return [...staticPages, ...landingPages];
 }

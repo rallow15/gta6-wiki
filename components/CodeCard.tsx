@@ -14,11 +14,18 @@ interface CodeCardProps {
     codePC: string;
     effect: string;
   };
+  // When set, the platform selector is hidden and the card always shows the
+  // code for this platform — used by the per-platform landing pages.
+  lockedPlatform?: "PS5" | "Xbox" | "PC";
 }
 
-export default function CodeCard({ code }: CodeCardProps) {
+export default function CodeCard({ code, lockedPlatform }: CodeCardProps) {
   const [copied, setCopied] = useState<string | null>(null);
-  const [platform, setPlatform] = useState<"PS5" | "Xbox" | "PC">("PS5");
+  const [selectedPlatform, setPlatform] = useState<"PS5" | "Xbox" | "PC">(
+    lockedPlatform ?? "PS5",
+  );
+
+  const platform = lockedPlatform ?? selectedPlatform;
 
   const codeValue =
     platform === "PS5"
@@ -69,22 +76,24 @@ export default function CodeCard({ code }: CodeCardProps) {
           </span>
         </div>
 
-        {/* Platform selector */}
-        <div className="flex gap-1.5">
-          {(["PS5", "Xbox", "PC"] as const).map((p) => (
-            <button
-              key={p}
-              onClick={() => setPlatform(p)}
-              className={`text-xs px-2.5 py-1 rounded font-medium transition-all ${
-                platform === p
-                  ? platformStyles[p]
-                  : "bg-deep-bg-light text-text-muted border border-night-violet/50 hover:text-text-secondary"
-              }`}
-            >
-              {p}
-            </button>
-          ))}
-        </div>
+        {/* Platform selector (hidden when locked to a single platform) */}
+        {!lockedPlatform && (
+          <div className="flex gap-1.5">
+            {(["PS5", "Xbox", "PC"] as const).map((p) => (
+              <button
+                key={p}
+                onClick={() => setPlatform(p)}
+                className={`text-xs px-2.5 py-1 rounded font-medium transition-all ${
+                  platform === p
+                    ? platformStyles[p]
+                    : "bg-deep-bg-light text-text-muted border border-night-violet/50 hover:text-text-secondary"
+                }`}
+              >
+                {p}
+              </button>
+            ))}
+          </div>
+        )}
 
         {/* Code display */}
         <div className="flex items-center gap-2">
