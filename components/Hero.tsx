@@ -38,7 +38,7 @@ export default function Hero() {
     <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
       {/* Background image */}
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 bg-cover bg-center sm:bg-top bg-no-repeat"
         style={{ backgroundImage: "url('/images/hero-bg.png')" }}
       />
       <div className="absolute inset-0 hero-gradient" />
