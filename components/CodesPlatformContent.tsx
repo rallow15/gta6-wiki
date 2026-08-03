@@ -1,7 +1,5 @@
 import Link from "next/link";
 import SectionPage from "@/components/SectionPage";
-import CodeCard from "@/components/CodeCard";
-import { cheatCodes } from "@/lib/codes";
 import { BASE_URL } from "@/lib/site";
 import { JsonLd } from "@/components/JsonLd";
 import { breadcrumbJsonLd, faqJsonLd } from "@/lib/seo";
@@ -99,8 +97,8 @@ const PLATFORMS: Record<Platform, PlatformInfo> = {
 export function codesPlatformMetadata(platform: Platform): Metadata {
   const info = PLATFORMS[platform];
   return {
-    title: `${info.heading} — Codes de triche à copier en 1 clic`,
-    description: `Tous les codes de triche GTA 6 ${info.label} : santé, armure, armes, véhicules, police, météo et gameplay. Séquences ${info.label} avec copier en 1 clic.`,
+    title: `${info.heading} — Codes de triche GTA 6`,
+    description: `Tous les codes de triche GTA 6 ${info.label} : santé, armure, armes, véhicules, police, météo et gameplay. Disponibles dès la sortie du jeu le 19 novembre 2026.`,
     alternates: { canonical: `/${info.slug}` },
     keywords: [
       `codes GTA 6 ${info.label}`,
@@ -111,7 +109,7 @@ export function codesPlatformMetadata(platform: Platform): Metadata {
     ],
     openGraph: {
       title: `${info.heading} | CodeTricheGTA6`,
-      description: `Tous les codes de triche GTA 6 ${info.label} avec copier en 1 clic.`,
+      description: `Codes de triche GTA 6 ${info.label} — disponibles dès la sortie du jeu le 19 novembre 2026.`,
       url: `/${info.slug}`,
       type: "website",
     },
@@ -134,20 +132,8 @@ export function CodesPlatformContent({ platform }: { platform: Platform }) {
       />
       <SectionPage
         title={info.heading.toUpperCase()}
-        subtitle={`Tous les codes de triche GTA 6 pour ${info.label} — séquences ${info.label}, copier en 1 clic.`}
+        subtitle={`Tous les codes de triche GTA 6 pour ${info.label} — disponibles dès la sortie du jeu.`}
       >
-        {/* Disclaimer */}
-        <div className="mb-6 neon-glow-card-cyan p-4 border-lagoon-cyan/20">
-          <div className="flex items-start gap-3">
-            <svg className="h-5 w-5 text-lagoon-cyan shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z" />
-            </svg>
-            <p className="text-sm text-text-secondary">
-              <strong className="text-lagoon-cyan">Codes à confirmer.</strong> Ces codes sont basés sur les habitudes des opus précédents et seront vérifiés et mis à jour dès la sortie de GTA 6 le 19 novembre 2026. Les codes de triche peuvent désactiver les trophées/succès pendant la session.
-            </p>
-          </div>
-        </div>
-
         {/* How to enter */}
         <div className="mb-8 glass-card p-5">
           <h2 className="font-display text-lg tracking-wider text-neon-pink mb-2">
@@ -159,11 +145,15 @@ export function CodesPlatformContent({ platform }: { platform: Platform }) {
           </p>
         </div>
 
-        {/* Codes grid */}
-        <div className="grid sm:grid-cols-2 gap-4">
-          {cheatCodes.map((code) => (
-            <CodeCard key={code.id} code={code} lockedPlatform={platform} />
-          ))}
+        {/* Coming soon */}
+        <div className="glass-card p-8 text-center">
+          <div className="text-4xl mb-4">🎮</div>
+          <h3 className="font-display text-2xl tracking-wider text-text-primary mb-2">
+            ARRIVE PROCHAINEMENT
+          </h3>
+          <p className="text-text-muted max-w-md mx-auto">
+            Les codes de triche GTA 6 pour {info.label} seront publiés ici dès la sortie du jeu, le <strong className="text-lagoon-cyan">19 novembre 2026</strong>. Revenez bientôt pour tous les codes avec copier en 1 clic.
+          </p>
         </div>
 
         {/* FAQ */}
