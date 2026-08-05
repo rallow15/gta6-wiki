@@ -7,6 +7,7 @@ import { vehicles } from "@/lib/data";
 import { BASE_URL } from "@/lib/site";
 import { sectionMeta, sectionBreadcrumb } from "@/lib/sectionMeta";
 import { itemListJsonLd } from "@/lib/seo";
+import { Info, Star, CheckCircle, ChevronRight } from "lucide-react";
 
 export const metadata: Metadata = sectionMeta({
   title: "Véhicules GTA 6 — Voitures, motos, bateaux de GTA VI",
@@ -62,9 +63,7 @@ export default function VehiculesPage() {
       >
       <div className="mb-6 glass-card p-4 border-lagoon-cyan/20">
         <div className="flex items-start gap-3">
-          <svg className="h-5 w-5 text-lagoon-cyan shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
-            <path strokeLinecap="round" strokeLinejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z" />
-          </svg>
+          <Info className="h-5 w-5 text-lagoon-cyan shrink-0 mt-0.5" />
           <p className="text-sm text-text-secondary">
             <strong className="text-lagoon-cyan">Sources officielles uniquement.</strong> Chaque vehicule liste a ete confirme par les trailers officiels, les screenshots Rockstar ou le catalogue GTA VI. Les stats detaillees seront ajoutees apres la sortie du jeu.
           </p>
@@ -111,15 +110,11 @@ export default function VehiculesPage() {
                     </div>
                     <p className="mt-2 text-sm text-text-muted">{vehicle.description}</p>
                     <div className="mt-2 flex items-center gap-1.5 text-xs text-text-muted">
-                      <svg className="h-3.5 w-3.5 text-sunset-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.33.988l-4.19 3.857a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.857a.563.563 0 01.33-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
-                      </svg>
+                      <Star className="h-3.5 w-3.5 text-sunset-orange" />
                       <span className="italic">Inspire de : {vehicle.inspired}</span>
                     </div>
                     <div className="mt-3 flex items-center gap-1.5 text-xs text-text-muted">
-                      <svg className="h-3.5 w-3.5 text-lagoon-cyan" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                      </svg>
+                      <CheckCircle className="h-3.5 w-3.5 text-lagoon-cyan" />
                       {vehicle.source}
                     </div>
                   </div>
@@ -136,23 +131,23 @@ export default function VehiculesPage() {
         </h3>
         <ul className="space-y-2 text-sm text-text-secondary">
           <li className="flex items-start gap-2">
-            <span className="text-sunset-orange mt-0.5">&#x25B8;</span>
+            <ChevronRight className="h-4 w-4 text-sunset-orange mt-0.5 shrink-0" />
             <span><strong>Inventaire limite</strong> — Systeme de sacoche, impossible de porter toutes les armes et vehicules a la fois</span>
           </li>
           <li className="flex items-start gap-2">
-            <span className="text-sunset-orange mt-0.5">&#x25B8;</span>
+            <ChevronRight className="h-4 w-4 text-sunset-orange mt-0.5 shrink-0" />
             <span><strong>Coffre de vehicule</strong> — Stockez des armes et objets dans le coffre de votre voiture</span>
           </li>
           <li className="flex items-start gap-2">
-            <span className="text-sunset-orange mt-0.5">&#x25B8;</span>
+            <ChevronRight className="h-4 w-4 text-sunset-orange mt-0.5 shrink-0" />
             <span><strong>Personnalisation poussee</strong> — Rideout Customs et One-Eyed Willie&apos;s Mod Shop (Edition Ultime), restauration de voitures classiques</span>
           </li>
           <li className="flex items-start gap-2">
-            <span className="text-sunset-orange mt-0.5">&#x25B8;</span>
+            <ChevronRight className="h-4 w-4 text-sunset-orange mt-0.5 shrink-0" />
             <span><strong>Nouveaux types</strong> — Kayaks, airboats, scooters de mobilite, velos en libre-service (LomBike), donked cars</span>
           </li>
           <li className="flex items-start gap-2">
-            <span className="text-sunset-orange mt-0.5">&#x25B8;</span>
+            <ChevronRight className="h-4 w-4 text-sunset-orange mt-0.5 shrink-0" />
             <span><strong>Navigation expansive</strong> — Bateaux, yachts, jet skis, sous-marins et hydravions confirms</span>
           </li>
         </ul>

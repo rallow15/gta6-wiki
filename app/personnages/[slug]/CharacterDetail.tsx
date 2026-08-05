@@ -24,7 +24,7 @@ export default function CharacterDetail({ character }: { character: Character })
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="relative h-64 sm:h-80 md:h-96 rounded-2xl overflow-hidden glass-card border-0"
+            className="relative h-64 sm:h-80 md:h-96 rounded-xl overflow-hidden glass-card border-0"
           >
             <Image
               src={character.image}

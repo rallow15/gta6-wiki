@@ -36,7 +36,7 @@ export default function ArticleDetail({ article }: { article: Article }) {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="relative aspect-[2/1] rounded-2xl overflow-hidden glass-card border-0"
+            className="relative aspect-[2/1] rounded-xl overflow-hidden glass-card border-0"
           >
             <img
               src={article.image}

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { ChevronRight } from "lucide-react";
 import SectionPage from "@/components/SectionPage";
 import { JsonLd } from "@/components/JsonLd";
 import { BASE_URL } from "@/lib/site";
@@ -131,9 +132,9 @@ export default function DateSortiePage() {
             </h3>
             <p className="text-2xl font-bold text-text-primary mb-3">79,99 $</p>
             <ul className="text-sm text-text-secondary space-y-1.5">
-              <li className="flex gap-2"><span className="text-neon-pink">&#x25B8;</span> Jeu de base GTA VI</li>
-              <li className="flex gap-2"><span className="text-neon-pink">&#x25B8;</span> Vintage Vice City Pack (pré-commande)</li>
-              <li className="flex gap-2"><span className="text-neon-pink">&#x25B8;</span> 1 mois GTA+ (pré-commande digitale)</li>
+              <li className="flex gap-2"><ChevronRight className="h-4 w-4 text-neon-pink shrink-0" /> Jeu de base GTA VI</li>
+              <li className="flex gap-2"><ChevronRight className="h-4 w-4 text-neon-pink shrink-0" /> Vintage Vice City Pack (pré-commande)</li>
+              <li className="flex gap-2"><ChevronRight className="h-4 w-4 text-neon-pink shrink-0" /> 1 mois GTA+ (pré-commande digitale)</li>
             </ul>
           </div>
           <div className="neon-glow-card-orange p-6">
@@ -142,9 +143,9 @@ export default function DateSortiePage() {
             </h3>
             <p className="text-2xl font-bold text-text-primary mb-3">99,99 $</p>
             <ul className="text-sm text-text-secondary space-y-1.5">
-              <li className="flex gap-2"><span className="text-sunset-orange">&#x25B8;</span> Véhicules exclusifs (Cheetah &apos;95, Dominator Buggy &apos;67)</li>
-              <li className="flex gap-2"><span className="text-sunset-orange">&#x25B8;</span> Boutiques de customisation (Rideout Customs, One-Eyed Willie&apos;s)</li>
-              <li className="flex gap-2"><span className="text-sunset-orange">&#x25B8;</span> Collection de voitures classiques & armes FAILE</li>
+              <li className="flex gap-2"><ChevronRight className="h-4 w-4 text-sunset-orange shrink-0" /> Véhicules exclusifs (Cheetah &apos;95, Dominator Buggy &apos;67)</li>
+              <li className="flex gap-2"><ChevronRight className="h-4 w-4 text-sunset-orange shrink-0" /> Boutiques de customisation (Rideout Customs, One-Eyed Willie&apos;s)</li>
+              <li className="flex gap-2"><ChevronRight className="h-4 w-4 text-sunset-orange shrink-0" /> Collection de voitures classiques & armes FAILE</li>
             </ul>
           </div>
         </div>
@@ -155,9 +156,9 @@ export default function DateSortiePage() {
             PLATEFORMES & FONCTIONNALITÉS PS5
           </h2>
           <ul className="space-y-2 text-sm text-text-secondary">
-            <li className="flex items-start gap-2"><span className="text-lagoon-cyan mt-0.5">&#x25B8;</span><span><strong>PS5</strong> — retours haptiques DualSense, gâchettes adaptatives, haut-parleur manette, audio Tempest 3D. Mention « PS5 Pro Enhanced ».</span></li>
-            <li className="flex items-start gap-2"><span className="text-lagoon-cyan mt-0.5">&#x25B8;</span><span><strong>Xbox Series X|S</strong> — optimisations nouvelle génération.</span></li>
-            <li className="flex items-start gap-2"><span className="text-lagoon-cyan mt-0.5">&#x25B8;</span><span><strong>PC</strong> — sortie confirmée en même temps que les consoles.</span></li>
+            <li className="flex items-start gap-2"><ChevronRight className="h-4 w-4 text-lagoon-cyan mt-0.5 shrink-0" /><span><strong>PS5</strong> — retours haptiques DualSense, gâchettes adaptatives, haut-parleur manette, audio Tempest 3D. Mention « PS5 Pro Enhanced ».</span></li>
+            <li className="flex items-start gap-2"><ChevronRight className="h-4 w-4 text-lagoon-cyan mt-0.5 shrink-0" /><span><strong>Xbox Series X|S</strong> — optimisations nouvelle génération.</span></li>
+            <li className="flex items-start gap-2"><ChevronRight className="h-4 w-4 text-lagoon-cyan mt-0.5 shrink-0" /><span><strong>PC</strong> — sortie confirmée en même temps que les consoles.</span></li>
           </ul>
         </div>
 

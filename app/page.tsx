@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Code, Map, BookOpen } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Footer from "@/components/Footer";
@@ -91,9 +92,7 @@ export default function Home() {
                 <AnimatedContainer animation="scaleIn" delay={0.1}>
                   <div className="glass-card p-6 text-center group">
                     <div className="h-12 w-12 mx-auto mb-4 rounded-lg bg-neon-pink/10 flex items-center justify-center group-hover:bg-neon-pink/20 transition-colors duration-300">
-                      <svg className="h-6 w-6 text-neon-pink" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-                      </svg>
+                      <Code className="h-6 w-6 text-neon-pink" />
                     </div>
                     <h3 className="font-semibold text-text-primary mb-2">Codes de triche</h3>
                     <p className="text-sm text-text-muted">
@@ -104,9 +103,7 @@ export default function Home() {
                 <AnimatedContainer animation="scaleIn" delay={0.2}>
                   <div className="glass-card p-6 text-center group">
                     <div className="h-12 w-12 mx-auto mb-4 rounded-lg bg-sunset-orange/10 flex items-center justify-center group-hover:bg-sunset-orange/20 transition-colors duration-300">
-                      <svg className="h-6 w-6 text-sunset-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
-                      </svg>
+                      <Map className="h-6 w-6 text-sunset-orange" />
                     </div>
                     <h3 className="font-semibold text-text-primary mb-2">Carte interactive</h3>
                     <p className="text-sm text-text-muted">
@@ -117,9 +114,7 @@ export default function Home() {
                 <AnimatedContainer animation="scaleIn" delay={0.3}>
                   <div className="glass-card p-6 text-center group">
                     <div className="h-12 w-12 mx-auto mb-4 rounded-lg bg-lagoon-cyan/10 flex items-center justify-center group-hover:bg-lagoon-cyan/20 transition-colors duration-300">
-                      <svg className="h-6 w-6 text-lagoon-cyan" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                      </svg>
+                      <BookOpen className="h-6 w-6 text-lagoon-cyan" />
                     </div>
                     <h3 className="font-semibold text-text-primary mb-2">Fiches completes</h3>
                     <p className="text-sm text-text-muted">

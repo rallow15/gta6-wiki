@@ -7,7 +7,7 @@ export interface GalleryImage {
 export interface GalleryCategory {
   id: string;
   label: string;
-  emoji: string;
+  icon: string;
   color: string;
   images: GalleryImage[];
 }
@@ -19,7 +19,7 @@ export const galleryCategories: GalleryCategory[] = [
   {
     id: "jason-duval",
     label: "Jason Duval",
-    emoji: "👤",
+    icon: "User",
     color: "neon-pink",
     images: [
       { src: `${base}/OfficialScreenshots-GTAVI-PromotionalWebsite-JasonDuval-SS1.jpg`, alt: "Jason Duval - Screenshot 1", category: "jason-duval" },
@@ -33,7 +33,7 @@ export const galleryCategories: GalleryCategory[] = [
   {
     id: "lucia-caminos",
     label: "Lucia Caminos",
-    emoji: "👩",
+    icon: "UserCircle",
     color: "neon-pink",
     images: [
       { src: `${base}/OfficialScreenshots-GTAVI-PromotionalWebsite-LuciaCaminos-SS1.jpg`, alt: "Lucia Caminos - Screenshot 1", category: "lucia-caminos" },
@@ -47,7 +47,7 @@ export const galleryCategories: GalleryCategory[] = [
   {
     id: "cal-hampton",
     label: "Cal Hampton",
-    emoji: "🦅",
+    icon: "Bird",
     color: "sunset-orange",
     images: [
       { src: `${base}/OfficialScreenshots-GTAVI-PromotionalWebsite-CalHampton-SS1.jpg`, alt: "Cal Hampton - Screenshot 1", category: "cal-hampton" },
@@ -59,7 +59,7 @@ export const galleryCategories: GalleryCategory[] = [
   {
     id: "boobie-ike",
     label: "Boobie Ike",
-    emoji: "💰",
+    icon: "Gem",
     color: "sand-yellow",
     images: [
       { src: `${base}/OfficialScreenshots-GTAVI-PromotionalWebsite-BoobieIke-SS1.jpg`, alt: "Boobie Ike - Screenshot 1", category: "boobie-ike" },
@@ -71,7 +71,7 @@ export const galleryCategories: GalleryCategory[] = [
   {
     id: "drequan-priest",
     label: "Dre'Quan Priest",
-    emoji: "🎵",
+    icon: "Music",
     color: "lagoon-cyan",
     images: [
       { src: `${base}/OfficialScreenshots-GTAVI-PromotionalWebsite-DreQuanPriest-SS1.jpg`, alt: "Dre'Quan Priest - Screenshot 1", category: "drequan-priest" },
@@ -83,7 +83,7 @@ export const galleryCategories: GalleryCategory[] = [
   {
     id: "real-dimez",
     label: "Real Dimez",
-    emoji: "🎤",
+    icon: "Mic",
     color: "neon-pink",
     images: [
       { src: `${base}/OfficialScreenshots-GTAVI-PromotionalWebsite-RealDimez-SS1.jpg`, alt: "Real Dimez - Screenshot 1", category: "real-dimez" },
@@ -95,7 +95,7 @@ export const galleryCategories: GalleryCategory[] = [
   {
     id: "raul-bautista",
     label: "Raul Bautista",
-    emoji: "🔫",
+    icon: "Crosshair",
     color: "sunset-orange",
     images: [
       { src: `${base}/OfficialScreenshots-GTAVI-PromotionalWebsite-RaulBautista-SS1.jpg`, alt: "Raul Bautista - Screenshot 1", category: "raul-bautista" },
@@ -107,7 +107,7 @@ export const galleryCategories: GalleryCategory[] = [
   {
     id: "brian-heder",
     label: "Brian Heder",
-    emoji: "🤝",
+    icon: "Handshake",
     color: "sand-yellow",
     images: [
       { src: `${base}/OfficialScreenshots-GTAVI-PromotionalWebsite-BrianHeder-SS1.jpg`, alt: "Brian Heder - Screenshot 1", category: "brian-heder" },
@@ -120,7 +120,7 @@ export const galleryCategories: GalleryCategory[] = [
   {
     id: "vice-city",
     label: "Vice City",
-    emoji: "🌴",
+    icon: "TreePalm",
     color: "neon-pink",
     images: Array.from({ length: 9 }, (_, i) => ({
       src: `${base}/OfficialScreenshots-GTAVI-PromotionalWebsite-ViceCity-SS${i + 1}.jpg`,
@@ -131,7 +131,7 @@ export const galleryCategories: GalleryCategory[] = [
   {
     id: "leonida-keys",
     label: "Leonida Keys",
-    emoji: "🏝️",
+    icon: "TreePalm",
     color: "lagoon-cyan",
     images: Array.from({ length: 5 }, (_, i) => ({
       src: `${base}/OfficialScreenshots-GTAVI-PromotionalWebsite-LeonidaKeys-SS${i + 1}.jpg`,
@@ -142,7 +142,7 @@ export const galleryCategories: GalleryCategory[] = [
   {
     id: "port-gellhorn",
     label: "Port Gellhorn",
-    emoji: "⚓",
+    icon: "Anchor",
     color: "sunset-orange",
     images: Array.from({ length: 5 }, (_, i) => ({
       src: `${base}/OfficialScreenshots-GTAVI-PromotionalWebsite-PortGellhorn-SS${i + 1}.jpg`,
@@ -153,7 +153,7 @@ export const galleryCategories: GalleryCategory[] = [
   {
     id: "ambrosia",
     label: "Ambrosia",
-    emoji: "🏗️",
+    icon: "Building2",
     color: "sand-yellow",
     images: Array.from({ length: 5 }, (_, i) => ({
       src: `${base}/OfficialScreenshots-GTAVI-PromotionalWebsite-Ambrosia-SS${i + 1}.jpg`,
@@ -164,7 +164,7 @@ export const galleryCategories: GalleryCategory[] = [
   {
     id: "grassrivers",
     label: "Grassrivers",
-    emoji: "🐊",
+    icon: "Bug",
     color: "lagoon-cyan",
     images: Array.from({ length: 4 }, (_, i) => ({
       src: `${base}/OfficialScreenshots-GTAVI-PromotionalWebsite-Grassrivers-SS${i + 1}.jpg`,
@@ -175,7 +175,7 @@ export const galleryCategories: GalleryCategory[] = [
   {
     id: "mount-kalaga",
     label: "Mount Kalaga",
-    emoji: "⛰️",
+    icon: "Mountain",
     color: "sand-yellow",
     images: Array.from({ length: 6 }, (_, i) => ({
       src: `${base}/OfficialScreenshots-GTAVI-PromotionalWebsite-MountKalaga-SS${i + 1}.jpg`,
@@ -187,7 +187,7 @@ export const galleryCategories: GalleryCategory[] = [
   {
     id: "ultimate-edition",
     label: "Ultimate Edition",
-    emoji: "💎",
+    icon: "Diamond",
     color: "sunset-orange",
     images: [
       { src: `${base}/OfficialScreenshots-GTAVI-PromotionalWebsite-UltimateEdition01.jpg`, alt: "Ultimate Edition - Screenshot 1", category: "ultimate-edition" },
@@ -275,7 +275,7 @@ export const galleryCategories: GalleryCategory[] = [
   {
     id: "vintage-vice-city",
     label: "Vintage Vice City Pack",
-    emoji: "🕹️",
+    icon: "Gamepad2",
     color: "neon-pink",
     images: [
       { src: `${base}/OfficialScreenshots-GTAVI-PromotionalWebsite-VintageViceCityPack01.jpg`, alt: "Vintage Vice City Pack - Screenshot 1", category: "vintage-vice-city" },

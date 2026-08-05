@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Gamepad2 } from "lucide-react";
 import SectionPage from "@/components/SectionPage";
 import { BASE_URL } from "@/lib/site";
 import { JsonLd } from "@/components/JsonLd";
@@ -147,7 +148,7 @@ export function CodesPlatformContent({ platform }: { platform: Platform }) {
 
         {/* Coming soon */}
         <div className="glass-card p-8 text-center">
-          <div className="text-4xl mb-4">🎮</div>
+          <Gamepad2 className="h-10 w-10 text-neon-pink mx-auto mb-4" />
           <h3 className="font-display text-2xl tracking-wider text-text-primary mb-2">
             ARRIVE PROCHAINEMENT
           </h3>

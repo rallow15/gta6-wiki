@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Gamepad2 } from "lucide-react";
 import SectionPage from "@/components/SectionPage";
 import { JsonLd } from "@/components/JsonLd";
 import { sectionMeta, sectionBreadcrumb } from "@/lib/sectionMeta";
@@ -29,7 +30,7 @@ export default function CodesPage() {
         subtitle="Tous les codes GTA 6 pour PS5, Xbox Series et PC."
       >
       <div className="glass-card p-8 text-center">
-        <div className="text-4xl mb-4">🎮</div>
+        <Gamepad2 className="h-10 w-10 text-neon-pink mx-auto mb-4" />
         <h3 className="font-display text-2xl tracking-wider text-text-primary mb-2">
           ARRIVE PROCHAINEMENT
         </h3>

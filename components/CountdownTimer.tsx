@@ -2,8 +2,8 @@
 
 import { useState, useEffect } from "react";
 
-// GTA 6 release date: November 18, 2026
-const RELEASE_DATE = new Date("2026-11-18T00:00:00-05:00");
+// GTA 6 release date: November 19, 2026
+const RELEASE_DATE = new Date("2026-11-19T00:00:00-05:00");
 
 interface TimeLeft {
   days: number;

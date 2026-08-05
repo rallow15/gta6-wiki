@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { TriangleAlert, Home, Code } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { TextScramble } from "@/components/TextScramble";
@@ -66,9 +67,7 @@ export default function NotFound() {
             className="flex items-center gap-3 justify-center mb-10"
           >
             <div className="h-px flex-1 max-w-32 bg-gradient-to-r from-transparent to-neon-pink/50" />
-            <svg className="h-5 w-5 text-neon-pink" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" />
-            </svg>
+            <TriangleAlert className="h-5 w-5 text-neon-pink" />
             <div className="h-px flex-1 max-w-32 bg-gradient-to-l from-transparent to-lagoon-cyan/50" />
           </motion.div>
 
@@ -83,18 +82,14 @@ export default function NotFound() {
               href="/"
               className="neon-pulse-btn inline-flex items-center gap-2 rounded-lg bg-neon-pink px-8 py-3.5 text-sm font-bold text-white shadow-lg shadow-neon-pink/25 transition-all hover:shadow-neon-pink/40 hover:scale-105"
             >
-              <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
-              </svg>
+              <Home className="h-4 w-4" />
               Retour a l&apos;accueil
             </Link>
             <Link
               href="/codes"
               className="inline-flex items-center gap-2 rounded-lg border border-lagoon-cyan/30 px-8 py-3.5 text-sm font-semibold text-lagoon-cyan transition-all hover:border-lagoon-cyan/60 hover:bg-lagoon-cyan/5"
             >
-              <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-              </svg>
+              <Code className="h-4 w-4" />
               Voir les codes
             </Link>
           </motion.div>

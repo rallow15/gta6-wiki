@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { Code, Car, Crosshair, Users, Map, Newspaper } from "lucide-react";
 import CountdownTimer from "./CountdownTimer";
 import { MagneticButton } from "@/components/magnetic";
 import { ParallaxTiltCard } from "@/components/ParallaxTiltCard";
@@ -9,22 +10,13 @@ import { TextScramble } from "@/components/TextScramble";
 import { NeonBeams } from "@/components/NeonBeams";
 
 const sections = [
-  { href: "/codes", label: "Codes de triche", desc: "PS5, Xbox, PC", icon: "code", color: "neon-pink" },
-  { href: "/vehicules", label: "Vehicules", desc: "Voitures, motos, bateaux", icon: "car", color: "sunset-orange" },
-  { href: "/armes", label: "Armes", desc: "Arsenal complet", icon: "crosshair", color: "lagoon-cyan" },
-  { href: "/personnages", label: "Personnages", desc: "Jason, Lucia & plus", icon: "users", color: "neon-pink" },
-  { href: "/lieux", label: "Lieux", desc: "Vice City & Leonida", icon: "map", color: "sand-yellow" },
-  { href: "/actualites", label: "Actualites", desc: "Dernieres news", icon: "newspaper", color: "lagoon-cyan" },
+  { href: "/codes", label: "Codes de triche", desc: "PS5, Xbox, PC", icon: Code, color: "neon-pink" },
+  { href: "/vehicules", label: "Vehicules", desc: "Voitures, motos, bateaux", icon: Car, color: "sunset-orange" },
+  { href: "/armes", label: "Armes", desc: "Arsenal complet", icon: Crosshair, color: "lagoon-cyan" },
+  { href: "/personnages", label: "Personnages", desc: "Jason, Lucia & plus", icon: Users, color: "neon-pink" },
+  { href: "/lieux", label: "Lieux", desc: "Vice City & Leonida", icon: Map, color: "sand-yellow" },
+  { href: "/actualites", label: "Actualites", desc: "Dernieres news", icon: Newspaper, color: "lagoon-cyan" },
 ];
-
-const iconPaths: Record<string, string> = {
-  code: "M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4",
-  car: "M8 17h8M8 17a2 2 0 100-4 2 2 0 000 4zm8 0a2 2 0 100-4 2 2 0 000 4zM3 11l2-6h14l2 6m-18 0h18M5 11v6m14-6v6",
-  crosshair: "M12 8a4 4 0 100 8 4 4 0 000-8zM12 2v4m0 12v4m10-10h-4M6 12H2",
-  users: "M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z",
-  map: "M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7",
-  newspaper: "M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6",
-};
 
 const colorMap: Record<string, { border: string; hover: string; text: string; glow: string }> = {
   "neon-pink": { border: "border-neon-pink/30", hover: "hover:border-neon-pink/60", text: "text-neon-pink", glow: "neon-glow-card" },
@@ -74,7 +66,7 @@ export default function Hero() {
         >
           <p className="text-sm uppercase tracking-widest text-text-muted mb-4">
             <TextScramble duration={1.5} delay={0.5} scrambleChars="ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#">
-              Sortie GTA VI — Novembre 2026
+              Sortie GTA VI — 19 Novembre 2026
             </TextScramble>
           </p>
           <div className="flex justify-center">
@@ -97,15 +89,10 @@ export default function Hero() {
                   href={section.href}
                   className={`neon-glow-card shimmer-line p-4 sm:p-5 text-left group block ${colors.border} ${colors.hover}`}
                 >
-                  <svg
-                    className={`h-6 w-6 ${colors.text} mb-2 transition-transform group-hover:scale-125`}
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    strokeWidth={1.5}
-                  >
-                    <path strokeLinecap="round" strokeLinejoin="round" d={iconPaths[section.icon]} />
-                  </svg>
+                  {(() => {
+                    const IconComponent = section.icon;
+                    return <IconComponent className={`h-6 w-6 ${colors.text} mb-2 transition-transform group-hover:scale-125`} />;
+                  })()}
                   <h3 className={`font-semibold text-sm sm:text-base ${colors.text}`}>
                     {section.label}
                   </h3>
@@ -129,9 +116,7 @@ export default function Hero() {
             onClick={() => {}}
           >
             <Link href="/codes" className="flex items-center gap-2">
-              <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-              </svg>
+              <Code className="h-4 w-4" />
               Voir les codes
             </Link>
           </MagneticButton>

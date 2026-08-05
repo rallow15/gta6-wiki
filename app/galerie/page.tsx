@@ -6,7 +6,23 @@ import SectionPage from "@/components/SectionPage";
 import Lightbox from "@/components/Lightbox";
 import { JsonLd } from "@/components/JsonLd";
 import { galleryCategories, type GalleryImage } from "@/lib/gallery";
+import {
+  User, UserCircle, Bird, Gem, Music, Mic, Crosshair, Handshake,
+  TreePalm, Anchor, Building2, Bug, Mountain, Diamond, Gamepad2,
+  ZoomIn, type LucideProps,
+} from "lucide-react";
 import { sectionBreadcrumb } from "@/lib/sectionMeta";
+
+const iconMap: Record<string, React.ComponentType<LucideProps>> = {
+  User, UserCircle, Bird, Gem, Music, Mic, Crosshair, Handshake,
+  TreePalm, Anchor, Building2, Bug, Mountain, Diamond, Gamepad2,
+};
+
+function GalleryIcon({ name, className }: { name: string; className?: string }) {
+  const IconComponent = iconMap[name];
+  if (!IconComponent) return null;
+  return <IconComponent className={className} />;
+}
 
 export default function GaleriePage() {
   const [activeCategory, setActiveCategory] = useState<string>(galleryCategories[0].id);
@@ -38,7 +54,7 @@ export default function GaleriePage() {
       <JsonLd data={sectionBreadcrumb("Galerie", "/galerie")} />
       <SectionPage
         title="GALERIE"
-        subtitle={`${activeCat.emoji} ${activeCat.label} — ${activeCat.images.length} captures d'écran`}
+        subtitle={`${activeCat.label} — ${activeCat.images.length} captures d'écran`}
       >
       {/* Category Tabs */}
       <div className="mb-8 flex flex-wrap gap-2">
@@ -50,9 +66,10 @@ export default function GaleriePage() {
               activeCategory === cat.id
                 ? "bg-neon-pink text-white shadow-lg shadow-neon-pink/25"
                 : "bg-white/5 text-text-secondary hover:bg-white/10 hover:text-text-primary"
-            }`}
+            } flex items-center gap-1.5`}
           >
-            {cat.emoji} {cat.label}
+            <GalleryIcon name={cat.icon} className="h-4 w-4" />
+            {cat.label}
           </button>
         ))}
       </div>
@@ -86,9 +103,7 @@ export default function GaleriePage() {
               {/* Zoom icon */}
               <div className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="w-8 h-8 rounded-full bg-black/50 backdrop-blur-sm flex items-center justify-center">
-                  <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
-                  </svg>
+                  <ZoomIn className="w-4 h-4 text-white" />
                 </div>
               </div>
             </div>

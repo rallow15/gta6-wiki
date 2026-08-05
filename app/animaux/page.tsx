@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Bug } from "lucide-react";
 import SectionPage from "@/components/SectionPage";
 
 export const metadata: Metadata = {
@@ -16,7 +17,7 @@ export default function AnimauxPage() {
       subtitle="La faune de Leonida — alligators, poissons tropicaux et plus encore."
     >
       <div className="glass-card p-8 text-center">
-        <div className="text-4xl mb-4">🐊</div>
+        <Bug className="h-10 w-10 text-lagoon-cyan mx-auto mb-4" />
         <h3 className="font-display text-2xl tracking-wider text-text-primary mb-2">
           BIENTOT DISPONIBLE
         </h3>

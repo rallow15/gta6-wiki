@@ -51,7 +51,7 @@ export default function VehicleDetail({ vehicle }: { vehicle: Vehicle }) {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="relative h-72 sm:h-96 md:h-[450px] rounded-2xl overflow-hidden neon-glow-card border-0"
+            className="relative h-72 sm:h-96 md:h-[450px] rounded-xl overflow-hidden neon-glow-card border-0"
           >
             <Image
               src={selectedImage}

@@ -3,6 +3,7 @@ import SectionPage from "@/components/SectionPage";
 import GameCard from "@/components/GameCard";
 import { JsonLd } from "@/components/JsonLd";
 import { sectionMeta, sectionBreadcrumb } from "@/lib/sectionMeta";
+import { Info, CheckCircle, ChevronRight } from "lucide-react";
 
 interface OfficialWeapon {
   id: string;
@@ -89,9 +90,7 @@ export default function ArmesPage() {
       >
       <div className="mb-6 neon-glow-card-cyan p-4 border-lagoon-cyan/20">
         <div className="flex items-start gap-3">
-          <svg className="h-5 w-5 text-lagoon-cyan shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
-            <path strokeLinecap="round" strokeLinejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z" />
-          </svg>
+          <Info className="h-5 w-5 text-lagoon-cyan shrink-0 mt-0.5" />
           <p className="text-sm text-text-secondary">
             <strong className="text-lagoon-cyan">Sources officielles uniquement.</strong> Chaque arme listee ici a ete confirme par les trailers officiels, les screenshots Rockstar ou le site GTA VI. Les stats detaillees seront ajoutees apres la sortie du jeu.
           </p>
@@ -117,9 +116,7 @@ export default function ArmesPage() {
                   </div>
                   <p className="mt-2 text-sm text-text-muted">{weapon.description}</p>
                   <div className="mt-3 flex items-center gap-1.5 text-xs text-text-muted">
-                    <svg className="h-3.5 w-3.5 text-lagoon-cyan" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
+                    <CheckCircle className="h-3.5 w-3.5 text-lagoon-cyan" />
                     {weapon.source}
                   </div>
                 </div>
@@ -135,23 +132,23 @@ export default function ArmesPage() {
         </h3>
         <ul className="space-y-2 text-sm text-text-secondary">
           <li className="flex items-start gap-2">
-            <span className="text-sunset-orange mt-0.5">&#x25B8;</span>
+            <ChevronRight className="h-4 w-4 text-sunset-orange mt-0.5 shrink-0" />
             <span><strong>Inventaire limite</strong> — Systeme de sacoche, impossible de porter toutes les armes a la fois</span>
           </li>
           <li className="flex items-start gap-2">
-            <span className="text-sunset-orange mt-0.5">&#x25B8;</span>
+            <ChevronRight className="h-4 w-4 text-sunset-orange mt-0.5 shrink-0" />
             <span><strong>Coffre de vehicule</strong> — Stockez des armes dans le coffre de votre voiture et changez de loadout entre les missions</span>
           </li>
           <li className="flex items-start gap-2">
-            <span className="text-sunset-orange mt-0.5">&#x25B8;</span>
+            <ChevronRight className="h-4 w-4 text-sunset-orange mt-0.5 shrink-0" />
             <span><strong>Noms de marques</strong> — Les armes portent des noms de marques fictives (Duke, Girardi, Klose, Hawk & Little, Capo)</span>
           </li>
           <li className="flex items-start gap-2">
-            <span className="text-sunset-orange mt-0.5">&#x25B8;</span>
+            <ChevronRight className="h-4 w-4 text-sunset-orange mt-0.5 shrink-0" />
             <span><strong>Personnalisation poussee</strong> — Accessoires, optiques, finitions et gravures sur chaque arme (inspire de RDR2)</span>
           </li>
           <li className="flex items-start gap-2">
-            <span className="text-sunset-orange mt-0.5">&#x25B8;</span>
+            <ChevronRight className="h-4 w-4 text-sunset-orange mt-0.5 shrink-0" />
             <span><strong>Edition Ultime</strong> — Variantes personnalisees exclusives (Girardi ES9, Klose K17, Hawk & Little Morgan Revolver)</span>
           </li>
         </ul>
