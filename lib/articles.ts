@@ -162,6 +162,21 @@ export const articles: Article[] = [
     image: `${base}/OfficialScreenshots-GTAVI-PromotionalWebsite-MountKalaga-SS3.jpg`,
     sourceUrl: "https://www.gamesradar.com/games/grand-theft-auto/gta-6-new-gameplay-details-activities-customization-confirmed-63-screenshots/",
     sourceName: "GamesRadar+"
+  },
+  {
+    id: "extended-look-netflix-aout-2026",
+    title: "GTA VI : An Extended Look — le showcase gameplay exclusif Netflix annoncé pour le 27 août",
+    date: "6 Août 2026",
+    excerpt: "Rockstar annonce « Grand Theft Auto VI: An Extended Look », un showcase gameplay exclusif Netflix le 27 août. Première véritable présentation de gameplay de GTA VI.",
+    content: [
+      "Le 6 août 2026, Rockstar Games a officiellement annoncé « Grand Theft Auto VI: An Extended Look », un événement dédié au gameplay de GTA VI qui sera diffusé en exclusivité sur Netflix le 27 août à 21h00 (heure française). Le showcase sera disponible sur la chaîne YouTube de Rockstar et le site officiel six heures plus tard, à 3h00 du matin heure française.",
+      "Contrairement aux deux précédentes bandes-annonces qui utilisaient des séquences cinématiques in-engine, ce showcase promet la première véritable démonstration de gameplay en temps réel de GTA VI. Le titre « An Extended Look » suggère une présentation bien plus longue et détaillée que les trailers précédents.",
+      "Le partenariat Netflix s'inscrit dans la continuité de la collaboration entre Rockstar et la plateforme, qui proposait déjà GTA: The Trilogy – The Definitive Edition via Netflix Games sur mobile. Le VP de Netflix Brandon Riegg a déclaré : « Les révélations de Grand Theft Auto sont devenues des moments culturels à part entière. L'anticipation autour de GTA VI est sans précédent. » La date de sortie reste confirmée pour le 19 novembre 2026 sur PS5 et Xbox Series X|S."
+    ],
+    tag: "Bande-annonce",
+    image: `${base}/OfficialScreenshots-GTAVI-PromotionalWebsite-ViceCity-SS3.jpg`,
+    sourceUrl: "https://kotaku.com/gta-6-extended-look-will-premier-exclusively-on-netflix-as-fans-beg-for-trailer-3-2000722148",
+    sourceName: "Kotaku"
   }
 ];
 
