@@ -40,19 +40,32 @@ export async function generateMetadata({
   };
 }
 
-export default function AnimauxPage() {
+export default async function AnimauxPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  const isEn = locale === "en";
+
   return (
     <SectionPage
-      title="ANIMAUX"
-      subtitle="La faune de Leonida — alligators, poissons tropicaux et plus encore."
+      title={isEn ? "ANIMALS" : "ANIMAUX"}
+      subtitle={
+        isEn
+          ? "The wildlife of Leonida — alligators, tropical fish and more."
+          : "La faune de Leonida — alligators, poissons tropicaux et plus encore."
+      }
     >
       <div className="glass-card p-8 text-center">
         <Bug className="h-10 w-10 text-lagoon-cyan mx-auto mb-4" />
         <h3 className="font-display text-2xl tracking-wider text-text-primary mb-2">
-          BIENTOT DISPONIBLE
+          {isEn ? "COMING SOON" : "BIENTÔT DISPONIBLE"}
         </h3>
         <p className="text-text-muted max-w-md mx-auto">
-          La faune complete de Leonida sera documentee apres la sortie du jeu. Chasse, peche et observations !
+          {isEn
+            ? "The complete wildlife of Leonida will be documented after the game's release. Hunting, fishing and observations!"
+            : "La faune complète de Leonida sera documentée après la sortie du jeu. Chasse, pêche et observations !"}
         </p>
       </div>
     </SectionPage>

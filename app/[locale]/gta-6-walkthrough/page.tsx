@@ -67,86 +67,83 @@ export async function generateMetadata({
   };
 }
 
-const faqs = [
+const getFaqs = (isEn: boolean) => [
   {
-    question: "Combien de missions compte GTA 6 ?",
-    answer:
-      "Le nombre exact de missions n'est pas encore confirmé par Rockstar. GTA V comptait plus de 80 missions principales. GTA 6 devrait proposer au minimum un volume comparable, avec des missions plus longues et plus détaillées, ainsi que de nombreuses missions secondaires.",
+    question: isEn ? "How many missions does GTA 6 have?" : "Combien de missions compte GTA 6 ?",
+    answer: isEn
+      ? "The exact number of missions has not been confirmed by Rockstar yet. GTA V had over 80 main missions. GTA 6 should offer at least a comparable volume, with longer and more detailed missions, as well as numerous side missions."
+      : "Le nombre exact de missions n'est pas encore confirmé par Rockstar. GTA V comptait plus de 80 missions principales. GTA 6 devrait proposer au minimum un volume comparable, avec des missions plus longues et plus détaillées, ainsi que de nombreuses missions secondaires.",
   },
   {
-    question: "Y a-t-il des missions secondaires dans GTA 6 ?",
-    answer:
-      "Oui. GTA 6 propose des missions secondaires variées : courses de rue, chasse, pêche, livraisons, missions pour des PNJ, et des activités propres à chaque région de Leonida (Vice City, Grassrivers, Port Gellhorn, etc.).",
+    question: isEn ? "Are there side missions in GTA 6?" : "Y a-t-il des missions secondaires dans GTA 6 ?",
+    answer: isEn
+      ? "Yes. GTA 6 features varied side missions: street races, hunting, fishing, deliveries, NPC missions, and activities unique to each region of Leonida (Vice City, Grassrivers, Port Gellhorn, etc.)."
+      : "Oui. GTA 6 propose des missions secondaires variées : courses de rue, chasse, pêche, livraisons, missions pour des PNJ, et des activités propres à chaque région de Leonida (Vice City, Grassrivers, Port Gellhorn, etc.).",
   },
   {
-    question: "Peut-on choisir l'ordre des missions dans GTA 6 ?",
-    answer:
-      "GTA 6 offre plus de liberté que ses prédécesseurs. Les missions principales suivent une trame narrative, mais le joueur peut librement explorer et réaliser des activités secondaires entre les missions de l'histoire.",
+    question: isEn ? "Can you choose the order of missions in GTA 6?" : "Peut-on choisir l'ordre des missions dans GTA 6 ?",
+    answer: isEn
+      ? "GTA 6 offers more freedom than its predecessors. Main missions follow a narrative storyline, but the player can freely explore and complete side activities between story missions."
+      : "GTA 6 offre plus de liberté que ses prédécesseurs. Les missions principales suivent une trame narrative, mais le joueur peut librement explorer et réaliser des activités secondaires entre les missions de l'histoire.",
   },
   {
-    question: "Quels braquages sont confirmés dans GTA 6 ?",
-    answer:
-      "Les trailers officiels montrent des braquages de banque, des vols de bijouterie et des attaques de convois. Le système de braquages propose plusieurs approches (furtive, agressive, astucieuse) affectant le déroulement et la récompense.",
+    question: isEn ? "Which heists are confirmed in GTA 6?" : "Quels braquages sont confirmés dans GTA 6 ?",
+    answer: isEn
+      ? "Official trailers show bank heists, jewelry store robberies, and convoy attacks. The heist system offers multiple approaches (stealth, aggressive, clever) affecting the progression and reward."
+      : "Les trailers officiels montrent des braquages de banque, des vols de bijouterie et des attaques de convois. Le système de braquages propose plusieurs approches (furtive, agressive, astucieuse) affectant le déroulement et la récompense.",
   },
 ];
 
-const chapters = [
+const getChapters = (isEn: boolean) => [
   {
-    title: "PROLOGUE — VICE CITY",
+    title: isEn ? "PROLOGUE — VICE CITY" : "PROLOGUE — VICE CITY",
     accent: "teal",
-    description: "Arrivée à Vice City. Premiers pas dans l'état de Leonida, rencontres clés et prise de contact avec le monde criminel.",
-    missions: [
-      "Bienvenue à Vice City",
-      "Premiers contacts",
-      "Le travail de Raul",
-      "Impressions",
-    ],
+    description: isEn
+      ? "Arrival in Vice City. First steps in the state of Leonida, key encounters and making contact with the criminal underworld."
+      : "Arrivée à Vice City. Premiers pas dans l'état de Leonida, rencontres clés et prise de contact avec le monde criminel.",
+    missions: isEn
+      ? ["Welcome to Vice City", "First Contacts", "Raul's Job", "Impressions"]
+      : ["Bienvenue à Vice City", "Premiers contacts", "Le travail de Raul", "Impressions"],
   },
   {
-    title: "ACTE I — CONNEXIONS",
+    title: isEn ? "ACT I — CONNECTIONS" : "ACTE I — CONNEXIONS",
     accent: "primary",
-    description: "Jason et Lucia s'infiltrent dans le milieu criminel de Vice City. Premiers braquages et alliances avec les gangs locaux.",
-    missions: [
-      "Petits boulots, gros risques",
-      "La connexion Bautista",
-      "Braquage du magasin de Port Gellhorn",
-      "Livraison sous pression",
-      "Le réseau de Cal Hampton",
-    ],
+    description: isEn
+      ? "Jason and Lucia infiltrate Vice City's criminal underworld. First heists and alliances with local gangs."
+      : "Jason et Lucia s'infiltrent dans le milieu criminel de Vice City. Premiers braquages et alliances avec les gangs locaux.",
+    missions: isEn
+      ? ["Small Jobs, Big Risks", "The Bautista Connection", "Port Gellhorn Store Heist", "Delivery Under Pressure", "Cal Hampton's Network"]
+      : ["Petits boulots, gros risques", "La connexion Bautista", "Braquage du magasin de Port Gellhorn", "Livraison sous pression", "Le réseau de Cal Hampton"],
   },
   {
-    title: "ACTE II — ASCENSION",
+    title: isEn ? "ACT II — RISING" : "ACTE II — ASCENSION",
     accent: "sunset",
-    description: "Les braquages s'intensifient. Jason et Lucia montent en puissance et s'attaquent à des cibles plus ambitieuses.",
-    missions: [
-      "Le casse de la bijouterie",
-      "Course poursuite dans les Keys",
-      "Opération Grassrivers",
-      "Le convoyeur blindé",
-      "Négociations à Ambrosia",
-    ],
+    description: isEn
+      ? "The heists intensify. Jason and Lucia step up and target more ambitious objectives."
+      : "Les braquages s'intensifient. Jason et Lucia montent en puissance et s'attaquent à des cibles plus ambitieuses.",
+    missions: isEn
+      ? ["The Jewelry Store Heist", "Chase Through the Keys", "Grassrivers Operation", "The Armored Truck", "Ambrosia Negotiations"]
+      : ["Le casse de la bijouterie", "Course poursuite dans les Keys", "Opération Grassrivers", "Le convoyeur blindé", "Négociations à Ambrosia"],
   },
   {
-    title: "ACTE III — EMPIRE",
+    title: isEn ? "ACT III — EMPIRE" : "ACTE III — EMPIRE",
     accent: "gold",
-    description: "Construction de l'empire criminel. Acquisition de business, gestion d'équipes et investissements stratégiques.",
-    missions: [
-      "Propriété et pouvoir",
-      "Le grand braquage de banque",
-      "Mains sur la bourse",
-      "Guerre des gangs",
-      "L'héritage de Vice City",
-    ],
+    description: isEn
+      ? "Building the criminal empire. Acquiring businesses, managing teams and strategic investments."
+      : "Construction de l'empire criminel. Acquisition de business, gestion d'équipes et investissements stratégiques.",
+    missions: isEn
+      ? ["Property and Power", "The Great Bank Heist", "Hands on the Exchange", "Gang War", "The Vice City Legacy"]
+      : ["Propriété et pouvoir", "Le grand braquage de banque", "Mains sur la bourse", "Guerre des gangs", "L'héritage de Vice City"],
   },
 ];
 
-const sideActivities = [
-  { name: "Courses de rue", desc: "Compétitions de vitesse illégales à travers Vice City et les Leonida Keys.", icon: <Car className="h-5 w-5" /> },
-  { name: "Chasse & pêche", desc: "Expéditions dans les marais de Grassrivers et au Mont Kalaga.", icon: <Fish className="h-5 w-5" /> },
-  { name: "Missions de livraison", desc: "Transport de marchandises à travers Leonida pour des PNJ.", icon: <Package className="h-5 w-5" /> },
-  { name: "Exploration sous-marine", desc: "Plongée et exploration des épaves avec le fusil harpon.", icon: <Compass className="h-5 w-5" /> },
-  { name: "Activités nautiques", desc: "Courses de bateaux, jet ski et exploration des côtes.", icon: <Ship className="h-5 w-5" /> },
-  { name: "Customisation", desc: "Personnalisation de véhicules dans les garages spécialisés.", icon: <Wrench className="h-5 w-5" /> },
+const getSideActivities = (isEn: boolean) => [
+  { name: isEn ? "Street Races" : "Courses de rue", desc: isEn ? "Illegal speed competitions across Vice City and the Leonida Keys." : "Compétitions de vitesse illégales à travers Vice City et les Leonida Keys.", icon: <Car className="h-5 w-5" /> },
+  { name: isEn ? "Hunting & Fishing" : "Chasse & pêche", desc: isEn ? "Expeditions in the Grassrivers swamps and at Mount Kalaga." : "Expéditions dans les marais de Grassrivers et au Mont Kalaga.", icon: <Fish className="h-5 w-5" /> },
+  { name: isEn ? "Delivery Missions" : "Missions de livraison", desc: isEn ? "Transport goods across Leonida for NPCs." : "Transport de marchandises à travers Leonida pour des PNJ.", icon: <Package className="h-5 w-5" /> },
+  { name: isEn ? "Underwater Exploration" : "Exploration sous-marine", desc: isEn ? "Diving and exploring shipwrecks with the speargun." : "Plongée et exploration des épaves avec le fusil harpon.", icon: <Compass className="h-5 w-5" /> },
+  { name: isEn ? "Water Activities" : "Activités nautiques", desc: isEn ? "Boat races, jet ski and coastal exploration." : "Courses de bateaux, jet ski et exploration des côtes.", icon: <Ship className="h-5 w-5" /> },
+  { name: isEn ? "Customization" : "Customisation", desc: isEn ? "Vehicle customization in specialized garages." : "Personnalisation de véhicules dans les garages spécialisés.", icon: <Wrench className="h-5 w-5" /> },
 ];
 
 const accentColor = {
@@ -169,21 +166,30 @@ export default async function SolutionGTA6Page({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
+  const isEn = locale === "en";
+
+  const faqs = getFaqs(isEn);
+  const chapters = getChapters(isEn);
+  const sideActivities = getSideActivities(isEn);
+
   return (
     <>
       <JsonLd
         data={[
           breadcrumbJsonLd([
-            { name: "Accueil", url: BASE_URL },
-            { name: "Solution GTA 6", url: `${BASE_URL}/solution-gta-6-guide-missions` },
+            { name: isEn ? "Home" : "Accueil", url: BASE_URL },
+            { name: isEn ? "GTA 6 Walkthrough" : "Solution GTA 6", url: `${BASE_URL}${isEn ? "/en/gta-6-walkthrough" : "/solution-gta-6-guide-missions"}` },
           ]),
-          faqJsonLd(faqs, `${BASE_URL}/solution-gta-6-guide-missions`),
+          faqJsonLd(faqs, `${BASE_URL}${isEn ? "/en/gta-6-walkthrough" : "/solution-gta-6-guide-missions"}`),
         ]}
       />
       <SectionPage
         title="GTA 6"
-        titleAccent="SOLUTION & GUIDE —"
-        subtitle="Guide complet des missions de GTA 6. Solution pas à pas, braquages, missions secondaires et activités."
+        titleAccent={isEn ? "WALKTHROUGH & GUIDE —" : "SOLUTION & GUIDE —"}
+        subtitle={isEn
+          ? "Complete mission guide for GTA 6. Step-by-step walkthrough, heists, side missions and activities."
+          : "Guide complet des missions de GTA 6. Solution pas à pas, braquages, missions secondaires et activités."
+        }
       >
         <div className="mb-8 card-base p-4 border-accent-teal/20" data-plate="sunset">
           <div className="flex items-start gap-3">
@@ -191,7 +197,11 @@ export default async function SolutionGTA6Page({
               <path strokeLinecap="round" strokeLinejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z" />
             </svg>
             <p className="text-sm text-text-secondary">
-              <strong className="text-accent-teal">Guide pré-sortie basé sur les trailers et sources officielles.</strong> Les solutions détaillées pas à pas seront ajoutées après la sortie du jeu le 19 novembre 2026.
+              <strong className="text-accent-teal">{isEn ? "Pre-release guide based on trailers and official sources." : "Guide pré-sortie basé sur les trailers et sources officielles."}</strong>{" "}
+              {isEn
+                ? "Detailed step-by-step walkthroughs will be added after the game releases on November 19, 2026."
+                : "Les solutions détaillées pas à pas seront ajoutées après la sortie du jeu le 19 novembre 2026."
+              }
             </p>
           </div>
         </div>
@@ -215,7 +225,7 @@ export default async function SolutionGTA6Page({
                     <span className="text-accent-primary text-xs">&#x25B8;</span>
                     <span className="text-sm text-text-primary">{mission}</span>
                     <span className="ml-auto text-[10px] px-2 py-0.5 rounded bg-surface-muted border border-border/30 text-text-muted">
-                      Bientôt
+                      {isEn ? "Coming soon" : "Bientôt"}
                     </span>
                   </div>
                 ))}
@@ -227,7 +237,7 @@ export default async function SolutionGTA6Page({
         {/* Side activities */}
         <div className="mb-10">
           <h2 className="font-display font-bold text-2xl tracking-tight text-accent-sunset mb-5 border-b border-border/50 pb-2">
-            ACTIVITÉS SECONDAIRES
+            {isEn ? "SIDE ACTIVITIES" : "ACTIVITÉS SECONDAIRES"}
           </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {sideActivities.map((activity) => (
@@ -243,7 +253,7 @@ export default async function SolutionGTA6Page({
         {/* FAQ */}
         <div className="card-base p-6 sm:p-8" data-plate="sunset">
           <h2 className="font-display font-bold text-2xl tracking-tight text-accent-sunset mb-5">
-            QUESTIONS FRÉQUENTES
+            {isEn ? "FREQUENTLY ASKED QUESTIONS" : "QUESTIONS FRÉQUENTES"}
           </h2>
           <div className="space-y-5">
             {faqs.map((f) => (
@@ -256,8 +266,8 @@ export default async function SolutionGTA6Page({
         </div>
 
         <div className="mt-8 text-center">
-          <Link href="/codes" className="text-accent-primary hover:underline">
-            Voir tous les codes GTA 6 →
+          <Link href={isEn ? "/en/cheat-codes-gta-6" : "/codes"} className="text-accent-primary hover:underline">
+            {isEn ? "See all GTA 6 cheat codes →" : "Voir tous les codes GTA 6 →"}
           </Link>
         </div>
       </SectionPage>

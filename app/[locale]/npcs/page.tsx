@@ -40,19 +40,32 @@ export async function generateMetadata({
   };
 }
 
-export default function PnjPage() {
+export default async function PnjPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  const isEn = locale === "en";
+
   return (
     <SectionPage
       title="PNJ"
-      subtitle="Les personnages non jouables qui peuplent les rues de Leonida."
+      subtitle={
+        isEn
+          ? "The non-playable characters that populate the streets of Leonida."
+          : "Les personnages non jouables qui peuplent les rues de Leonida."
+      }
     >
       <div className="glass-card p-8 text-center">
         <Users className="h-10 w-10 text-neon-pink mx-auto mb-4" />
         <h3 className="font-display text-2xl tracking-wider text-text-primary mb-2">
-          BIENTOT DISPONIBLE
+          {isEn ? "COMING SOON" : "BIENTÔT DISPONIBLE"}
         </h3>
         <p className="text-text-muted max-w-md mx-auto">
-          La base de donnees des PNJ sera disponible apres la sortie du jeu. Restez connectes !
+          {isEn
+            ? "The NPC database will be available after the game's release. Stay tuned!"
+            : "La base de données des PNJ sera disponible après la sortie du jeu. Restez connectés !"}
         </p>
       </div>
     </SectionPage>

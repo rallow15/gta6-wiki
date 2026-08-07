@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useCallback } from "react";
+import { useParams } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import SectionPage from "@/components/SectionPage";
 import Lightbox from "@/components/Lightbox";
@@ -11,7 +12,6 @@ import {
   TreePalm, Anchor, Building2, Bug, Mountain, Diamond, Gamepad2,
   ZoomIn, type LucideProps,
 } from "lucide-react";
-import { sectionBreadcrumb } from "@/lib/sectionMeta";
 
 const iconMap: Record<string, React.ComponentType<LucideProps>> = {
   User, UserCircle, Bird, Gem, Music, Mic, Crosshair, Handshake,
@@ -25,6 +25,9 @@ function GalleryIcon({ name, className }: { name: string; className?: string }) 
 }
 
 export default function GaleriePage() {
+  const { locale } = useParams<{ locale: string }>();
+  const isEn = locale === "en";
+
   const [activeCategory, setActiveCategory] = useState<string>(galleryCategories[0].id);
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
 
@@ -51,10 +54,22 @@ export default function GaleriePage() {
 
   return (
     <>
-      <JsonLd data={sectionBreadcrumb("Galerie", "/galerie")} />
+      <JsonLd
+        data={{
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": isEn ? "Home" : "Accueil", "item": "https://gta6cheatcodes.com" },
+            { "@type": "ListItem", "position": 2, "name": isEn ? "Gallery" : "Galerie", "item": `https://gta6cheatcodes.com${isEn ? "/en/gallery" : "/galerie"}` },
+          ],
+        }}
+      />
       <SectionPage
-        title="GALERIE"
-        subtitle={`${activeCat.label} — ${activeCat.images.length} captures d'écran`}
+        title={isEn ? "GALLERY" : "GALERIE"}
+        subtitle={
+          isEn
+            ? `${activeCat.label} — ${activeCat.images.length} screenshots`
+            : `${activeCat.label} — ${activeCat.images.length} captures d'écran`
+        }
       >
       {/* Category Tabs */}
       <div className="mb-8 flex flex-wrap gap-2">

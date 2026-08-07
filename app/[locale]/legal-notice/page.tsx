@@ -39,28 +39,63 @@ export async function generateMetadata({
   };
 }
 
-export default function MentionsLegalesPage() {
+export default async function MentionsLegalesPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  const isEn = locale === "en";
+
   return (
     <SectionPage
-      title="MENTIONS LEGALES"
-      subtitle="Informations legales concernant le site Vice City Tropical."
+      title={isEn ? "LEGAL NOTICE" : "MENTIONS LÉGALES"}
+      subtitle={
+        isEn
+          ? "Legal information about the Vice City Tropical website."
+          : "Informations légales concernant le site Vice City Tropical."
+      }
     >
       <div className="glass-card p-6 sm:p-8 space-y-6 text-text-secondary text-sm leading-relaxed">
         <div>
-          <h2 className="font-display text-lg tracking-wider text-text-primary mb-2">1. EDITEUR DU SITE</h2>
-          <p>Vice City Tropical est un site independant edite par des fans, sans but lucratif direct lie a la franchise Grand Theft Auto.</p>
+          <h2 className="font-display text-lg tracking-wider text-text-primary mb-2">
+            {isEn ? "1. SITE PUBLISHER" : "1. ÉDITEUR DU SITE"}
+          </h2>
+          <p>
+            {isEn
+              ? "Vice City Tropical is an independent site published by fans, with no direct profit motive related to the Grand Theft Auto franchise."
+              : "Vice City Tropical est un site indépendant édité par des fans, sans but lucratif direct lié à la franchise Grand Theft Auto."}
+          </p>
         </div>
         <div>
-          <h2 className="font-display text-lg tracking-wider text-text-primary mb-2">2. PROPRIETE INTELLECTUELLE</h2>
-          <p>Grand Theft Auto, GTA, Rockstar Games et tous les noms de personnages, lieux et vehicules mentions sur ce site sont des marques deposees appartenant a Rockstar Games et Take-Two Interactive. Ce site n&apos;est en aucun cas affilie, autorise ou sponsorise par Rockstar Games.</p>
+          <h2 className="font-display text-lg tracking-wider text-text-primary mb-2">
+            {isEn ? "2. INTELLECTUAL PROPERTY" : "2. PROPRIÉTÉ INTELLECTUELLE"}
+          </h2>
+          <p>
+            {isEn
+              ? "Grand Theft Auto, GTA, Rockstar Games and all character, location and vehicle names mentioned on this site are trademarks belonging to Rockstar Games and Take-Two Interactive. This site is in no way affiliated, authorized or sponsored by Rockstar Games."
+              : "Grand Theft Auto, GTA, Rockstar Games et tous les noms de personnages, lieux et véhicules mentionnés sur ce site sont des marques déposées appartenant à Rockstar Games et Take-Two Interactive. Ce site n'est en aucun cas affilié, autorisé ou sponsorisé par Rockstar Games."}
+          </p>
         </div>
         <div>
-          <h2 className="font-display text-lg tracking-wider text-text-primary mb-2">3. CONTENU</h2>
-          <p>Les informations presentees sur ce site sont fournies a titre indicatif et peuvent contenir des erreurs ou omissions. Les codes de triche sont bases sur des sources publiques et peuvent ne pas etre exhaustifs ou exacts a 100%.</p>
+          <h2 className="font-display text-lg tracking-wider text-text-primary mb-2">
+            {isEn ? "3. CONTENT" : "3. CONTENU"}
+          </h2>
+          <p>
+            {isEn
+              ? "The information presented on this site is provided for informational purposes and may contain errors or omissions. Cheat codes are based on public sources and may not be exhaustive or 100% accurate."
+              : "Les informations présentées sur ce site sont fournies à titre indicatif et peuvent contenir des erreurs ou omissions. Les codes de triche sont basés sur des sources publiques et peuvent ne pas être exhaustifs ou exacts à 100%."}
+          </p>
         </div>
         <div>
-          <h2 className="font-display text-lg tracking-wider text-text-primary mb-2">4. PUBLICITE</h2>
-          <p>Ce site peut afficher des publicites fournies par des partenaires publicitaires. Ces publicites ne constituent pas une approbation des produits ou services mentionnes.</p>
+          <h2 className="font-display text-lg tracking-wider text-text-primary mb-2">
+            {isEn ? "4. ADVERTISING" : "4. PUBLICITÉ"}
+          </h2>
+          <p>
+            {isEn
+              ? "This site may display advertisements provided by advertising partners. These advertisements do not constitute an endorsement of the products or services mentioned."
+              : "Ce site peut afficher des publicités fournies par des partenaires publicitaires. Ces publicités ne constituent pas une approbation des produits ou services mentionnés."}
+          </p>
         </div>
       </div>
     </SectionPage>

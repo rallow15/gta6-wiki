@@ -76,23 +76,14 @@ const ranking = [
   ...vehicles.filter((v) => v.category === "Bateau"),
 ];
 
-const faqs = [
-  {
-    question: "Quelle est la meilleure voiture de GTA 6 ?",
-    answer:
-      "La Grotti Cheetah '95 (édition Ultime), inspirée de la Ferrari Testarossa, est l'une des sportives les plus emblématiques confirmées dans GTA 6. Les performances exactes seront connues à la sortie du jeu le 19 novembre 2026.",
-  },
-  {
-    question: "Peut-on personnaliser les voitures dans GTA 6 ?",
-    answer:
-      "Oui. GTA 6 intègre des boutiques de customisation comme Rideout Customs et One-Eyed Willie's Mod Shop (édition Ultime), ainsi que la restauration de voitures classiques.",
-  },
-  {
-    question: "Y a-t-il des bateaux dans GTA 6 ?",
-    answer:
-      "Oui. GTA 6 confirme bateaux, yachts, jet skis, sous-marins et hydravions pour explorer les eaux de Leonida, comme le Shitzu Squalo.",
-  },
-];
+const categoryMap: Record<string, string> = {
+  Sportive: "Sports",
+  Muscle: "Muscle",
+  SUV: "SUV",
+  Classique: "Classic",
+  Moto: "Motorcycle",
+  Bateau: "Boat",
+};
 
 export default async function MeilleuresVoituresPage({
   params,
@@ -100,37 +91,70 @@ export default async function MeilleuresVoituresPage({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
+  const isEn = locale === "en";
+
+  const vehicleBasePath = isEn ? "/vehicles" : "/vehicules";
+
+  const faqs = [
+    {
+      question: isEn
+        ? "What is the best car in GTA 6?"
+        : "Quelle est la meilleure voiture de GTA 6 ?",
+      answer: isEn
+        ? "The Grotti Cheetah '95 (Ultimate edition), inspired by the Ferrari Testarossa, is one of the most iconic sports cars confirmed in GTA 6. Exact performance specs will be known when the game releases on November 19, 2026."
+        : "La Grotti Cheetah '95 (édition Ultime), inspirée de la Ferrari Testarossa, est l'une des sportives les plus emblématiques confirmées dans GTA 6. Les performances exactes seront connues à la sortie du jeu le 19 novembre 2026.",
+    },
+    {
+      question: isEn
+        ? "Can you customize cars in GTA 6?"
+        : "Peut-on personnaliser les voitures dans GTA 6 ?",
+      answer: isEn
+        ? "Yes. GTA 6 features customization shops like Rideout Customs and One-Eyed Willie's Mod Shop (Ultimate edition), as well as classic car restoration."
+        : "Oui. GTA 6 intègre des boutiques de customisation comme Rideout Customs et One-Eyed Willie's Mod Shop (édition Ultime), ainsi que la restauration de voitures classiques.",
+    },
+    {
+      question: isEn
+        ? "Are there boats in GTA 6?"
+        : "Y a-t-il des bateaux dans GTA 6 ?",
+      answer: isEn
+        ? "Yes. GTA 6 confirms boats, yachts, jet skis, submarines and seaplanes for exploring the waters of Leonida, like the Shitzu Squalo."
+        : "Oui. GTA 6 confirme bateaux, yachts, jet skis, sous-marins et hydravions pour explorer les eaux de Leonida, comme le Shitzu Squalo.",
+    },
+  ];
+
   return (
     <>
       <JsonLd
         data={[
           breadcrumbJsonLd([
-            { name: "Accueil", url: BASE_URL },
-            { name: "Véhicules", url: `${BASE_URL}/vehicules` },
-            { name: "Meilleures voitures GTA 6", url: `${BASE_URL}/meilleures-voitures-gta-6` },
+            { name: isEn ? "Home" : "Accueil", url: BASE_URL },
+            { name: isEn ? "Vehicles" : "Véhicules", url: `${BASE_URL}${vehicleBasePath}` },
+            { name: isEn ? "Best Cars in GTA 6" : "Meilleures voitures GTA 6", url: `${BASE_URL}${isEn ? "/en/best-cars-gta-6" : "/meilleures-voitures-gta-6"}` },
           ]),
           itemListJsonLd(
-            "Meilleures voitures GTA 6",
-            `${BASE_URL}/meilleures-voitures-gta-6`,
+            isEn ? "Best Cars in GTA 6" : "Meilleures voitures GTA 6",
+            `${BASE_URL}${isEn ? "/en/best-cars-gta-6" : "/meilleures-voitures-gta-6"}`,
             ranking.map((v) => ({
               name: v.name,
-              url: `${BASE_URL}/vehicules/${v.id}`,
+              url: `${BASE_URL}${vehicleBasePath}/${v.id}`,
               image: `${BASE_URL}${v.image}`,
             })),
           ),
-          faqJsonLd(faqs, `${BASE_URL}/meilleures-voitures-gta-6`),
+          faqJsonLd(faqs, `${BASE_URL}${isEn ? "/en/best-cars-gta-6" : "/meilleures-voitures-gta-6"}`),
         ]}
       />
       <SectionPage
         title="GTA 6"
-        titleAccent="MEILLEURES VOITURES"
-        subtitle="Classement des meilleurs véhicules officiellement confirmés dans GTA VI. Sources officielles Rockstar."
+        titleAccent={isEn ? "BEST CARS" : "MEILLEURES VOITURES"}
+        subtitle={isEn
+          ? "Ranking of the best vehicles officially confirmed in GTA VI. Official Rockstar sources."
+          : "Classement des meilleurs véhicules officiellement confirmés dans GTA VI. Sources officielles Rockstar."}
       >
         <div className="space-y-4">
           {ranking.map((vehicle, i) => (
             <Link
               key={vehicle.id}
-              href={`/vehicules/${vehicle.id}`}
+              href={`${vehicleBasePath}/${vehicle.id}`}
               className="neon-glow-card shimmer-line overflow-hidden group block flex flex-col sm:flex-row"
             >
               <div className="relative h-40 sm:h-32 sm:w-56 w-full shrink-0 overflow-hidden bg-deep-bg-light">
@@ -156,11 +180,13 @@ export default async function MeilleuresVoituresPage({
                     {vehicle.name}
                   </h3>
                   <span className="text-xs px-2 py-0.5 rounded bg-deep-bg-light border border-night-violet/30 text-text-muted shrink-0">
-                    {vehicle.category}
+                    {isEn ? (categoryMap[vehicle.category] ?? vehicle.category) : vehicle.category}
                   </span>
                 </div>
                 <p className="mt-2 text-sm text-text-muted">{vehicle.description}</p>
-                <p className="mt-2 text-xs italic text-sunset-orange">Inspiré de : {vehicle.inspired}</p>
+                <p className="mt-2 text-xs italic text-sunset-orange">
+                  {isEn ? `Inspired by: ${vehicle.inspired}` : `Inspiré de : ${vehicle.inspired}`}
+                </p>
               </div>
             </Link>
           ))}
@@ -168,7 +194,7 @@ export default async function MeilleuresVoituresPage({
 
         <div className="mt-10 glass-card p-6 sm:p-8">
           <h2 className="font-display text-2xl tracking-wider text-sunset-orange mb-5">
-            QUESTIONS FRÉQUENTES
+            {isEn ? "FREQUENTLY ASKED QUESTIONS" : "QUESTIONS FRÉQUENTES"}
           </h2>
           <div className="space-y-5">
             {faqs.map((f) => (
@@ -181,8 +207,8 @@ export default async function MeilleuresVoituresPage({
         </div>
 
         <div className="mt-8 text-center">
-          <Link href="/vehicules" className="text-neon-pink hover:underline">
-            Voir tous les véhicules GTA 6 →
+          <Link href={vehicleBasePath} className="text-neon-pink hover:underline">
+            {isEn ? "See all GTA 6 vehicles →" : "Voir tous les véhicules GTA 6 →"}
           </Link>
         </div>
       </SectionPage>

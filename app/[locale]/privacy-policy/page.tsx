@@ -39,35 +39,76 @@ export async function generateMetadata({
   };
 }
 
-export default function PolitiqueConfidentialitePage() {
+export default async function PolitiqueConfidentialitePage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  const isEn = locale === "en";
+
   return (
     <SectionPage
-      title="CONFIDENTIALITE"
-      subtitle="Politique de confidentialite et protection des donnees."
+      title={isEn ? "PRIVACY" : "CONFIDENTIALITÉ"}
+      subtitle={
+        isEn
+          ? "Privacy policy and data protection."
+          : "Politique de confidentialité et protection des données."
+      }
     >
       <div className="glass-card p-6 sm:p-8 space-y-6 text-text-secondary text-sm leading-relaxed">
         <div>
-          <h2 className="font-display text-lg tracking-wider text-text-primary mb-2">1. COLLECTE DES DONNEES</h2>
-          <p>Nous collectons uniquement les donnees necessaires au bon fonctionnement du site : logs de navigation (adresses IP, pages visitees, navigateur) via des cookies techniques. Aucune donnee personnelle n&apos;est collectee sans votre consentement.</p>
+          <h2 className="font-display text-lg tracking-wider text-text-primary mb-2">
+            {isEn ? "1. DATA COLLECTION" : "1. COLLECTE DES DONNÉES"}
+          </h2>
+          <p>
+            {isEn
+              ? "We only collect data necessary for the proper functioning of the site: browsing logs (IP addresses, pages visited, browser) via technical cookies. No personal data is collected without your consent."
+              : "Nous collectons uniquement les données nécessaires au bon fonctionnement du site : logs de navigation (adresses IP, pages visitées, navigateur) via des cookies techniques. Aucune donnée personnelle n'est collectée sans votre consentement."}
+          </p>
         </div>
         <div>
-          <h2 className="font-display text-lg tracking-wider text-text-primary mb-2">2. COOKIES</h2>
-          <p>Ce site utilise des cookies techniques necessaires a son fonctionnement et des cookies analytiques (anonymises) pour comprendre l&apos;utilisation du site. Vous pouvez desactiver les cookies dans les parametres de votre navigateur.</p>
+          <h2 className="font-display text-lg tracking-wider text-text-primary mb-2">
+            {isEn ? "2. COOKIES" : "2. COOKIES"}
+          </h2>
+          <p>
+            {isEn
+              ? "This site uses technical cookies necessary for its operation and analytical cookies (anonymized) to understand site usage. You can disable cookies in your browser settings."
+              : "Ce site utilise des cookies techniques nécessaires à son fonctionnement et des cookies analytiques (anonymisés) pour comprendre l'utilisation du site. Vous pouvez désactiver les cookies dans les paramètres de votre navigateur."}
+          </p>
         </div>
         <div>
-          <h2 className="font-display text-lg tracking-wider text-text-primary mb-2">3. ANALYTICS</h2>
-          <p>Nous utilisons des outils d&apos;analyse respectueux de la vie privee (pas de suivi inter-site, pas de profilage publicitaire). Les donnees sont anonymisees et aggregees.</p>
+          <h2 className="font-display text-lg tracking-wider text-text-primary mb-2">
+            {isEn ? "3. ANALYTICS" : "3. ANALYTICS"}
+          </h2>
+          <p>
+            {isEn
+              ? "We use privacy-friendly analytics tools (no cross-site tracking, no advertising profiling). Data is anonymized and aggregated."
+              : "Nous utilisons des outils d'analyse respectueux de la vie privée (pas de suivi inter-site, pas de profilage publicitaire). Les données sont anonymisées et agrégées."}
+          </p>
         </div>
         <div>
-          <h2 className="font-display text-lg tracking-wider text-text-primary mb-2">4. LIENS EXTERNES</h2>
-          <p>Notre site contient des liens vers des sites tiers (YouTube). Nous ne sommes pas responsables des pratiques de confidentialite de ces sites.</p>
+          <h2 className="font-display text-lg tracking-wider text-text-primary mb-2">
+            {isEn ? "4. EXTERNAL LINKS" : "4. LIENS EXTERNES"}
+          </h2>
+          <p>
+            {isEn
+              ? "Our site contains links to third-party sites (YouTube). We are not responsible for the privacy practices of those sites."
+              : "Notre site contient des liens vers des sites tiers (YouTube). Nous ne sommes pas responsables des pratiques de confidentialité de ces sites."}
+          </p>
         </div>
         <div>
-          <h2 className="font-display text-lg tracking-wider text-text-primary mb-2">5. CONTACT</h2>
-          <p>Pour toute question concernant cette politique, contactez-nous a privacy@vicecitytropical.fr</p>
+          <h2 className="font-display text-lg tracking-wider text-text-primary mb-2">
+            {isEn ? "5. CONTACT" : "5. CONTACT"}
+          </h2>
+          <p>
+            {isEn
+              ? "For any questions regarding this policy, contact us at privacy@vicecitytropical.fr"
+              : "Pour toute question concernant cette politique, contactez-nous à privacy@vicecitytropical.fr"}
+          </p>
         </div>
         <div className="border-t border-night-violet/50 pt-4 text-text-muted text-xs">
-          Derniere mise a jour : Janvier 2025
+          {isEn ? "Last updated: January 2025" : "Dernière mise à jour : Janvier 2025"}
         </div>
       </div>
     </SectionPage>
