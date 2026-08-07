@@ -32,6 +32,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/secrets-easter-eggs-gta-6`, lastModified: now, changeFrequency: "weekly", priority: 0.7 },
     { url: `${BASE_URL}/problemes-gta-6-solutions`, lastModified: now, changeFrequency: "weekly", priority: 0.7 },
     { url: `${BASE_URL}/a-propos`, lastModified: now, changeFrequency: "yearly", priority: 0.3 },
+    { url: `${BASE_URL}/animaux`, lastModified: now, changeFrequency: "monthly", priority: 0.5 },
+    { url: `${BASE_URL}/pnj`, lastModified: now, changeFrequency: "monthly", priority: 0.5 },
+    { url: `${BASE_URL}/mentions-legales`, lastModified: now, changeFrequency: "yearly", priority: 0.2 },
+    { url: `${BASE_URL}/politique-confidentialite`, lastModified: now, changeFrequency: "yearly", priority: 0.2 },
   ];
 
   // English pages (/en/ prefix)
@@ -58,6 +62,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/en/secrets-easter-eggs-gta-6`, lastModified: now, changeFrequency: "weekly", priority: 0.7 },
     { url: `${BASE_URL}/en/gta-6-problems-solutions`, lastModified: now, changeFrequency: "weekly", priority: 0.7 },
     { url: `${BASE_URL}/en/about`, lastModified: now, changeFrequency: "yearly", priority: 0.3 },
+    { url: `${BASE_URL}/en/animals`, lastModified: now, changeFrequency: "monthly", priority: 0.5 },
+    { url: `${BASE_URL}/en/npcs`, lastModified: now, changeFrequency: "monthly", priority: 0.5 },
+    { url: `${BASE_URL}/en/legal-notice`, lastModified: now, changeFrequency: "yearly", priority: 0.2 },
+    { url: `${BASE_URL}/en/privacy-policy`, lastModified: now, changeFrequency: "yearly", priority: 0.2 },
   ];
 
   return [...frPages, ...enPages];
