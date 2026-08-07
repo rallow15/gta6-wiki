@@ -215,7 +215,7 @@ export default function AstucesGTA6Page() {
         <div className="mt-8 text-center space-x-4">
           <Link href="/codes" className="text-accent-primary hover:underline">Codes de triche →</Link>
           <Link href="/comment-gagner-argent-gta-6" className="text-accent-primary hover:underline">Gagner argent →</Link>
-          <Link href="/cheat-codes-gta-6" className="text-accent-primary hover:underline">Cheat codes →</Link>
+          <Link href="/code-triche-gta-6" className="text-accent-primary hover:underline">Code triche →</Link>
         </div>
       </SectionPage>
     </>

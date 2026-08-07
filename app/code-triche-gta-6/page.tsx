@@ -7,26 +7,29 @@ import { BASE_URL } from "@/lib/site";
 import { breadcrumbJsonLd, faqJsonLd } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Cheat Codes GTA 6 — Tous les cheats PS5, Xbox, PC",
+  title: "Code Triche GTA 6 — Tous les codes PS5, Xbox, PC",
   description:
-    "Tous les cheat codes GTA 6 (GTA VI) pour PS5, Xbox Series et PC : santé infinie, armes, véhicules, mode invincibilité, police, météo. Cheats avec copier en 1 clic.",
-  alternates: { canonical: "/cheat-codes-gta-6" },
+    "Tous les codes de triche GTA 6 (GTA VI) pour PS5, Xbox Series et PC : santé infinie, armes, véhicules, invincibilité, police, météo. Codes à copier en 1 clic.",
+  alternates: { canonical: "/code-triche-gta-6" },
   keywords: [
+    "code triche GTA 6",
+    "code triche gta 6",
+    "codes de triche GTA 6",
+    "code triche GTA VI",
+    "code triche GTA 6 PS5",
+    "code triche GTA 6 Xbox",
+    "code triche GTA 6 PC",
+    "gta 6 code triche",
     "cheat codes GTA 6",
     "cheats GTA 6",
-    "cheat GTA VI",
-    "cheat codes GTA 6 PS5",
-    "cheat codes GTA 6 Xbox",
-    "cheat codes GTA 6 PC",
-    "codes de triche GTA 6",
-    "gta 6 cheats",
-    "cheat codes Vice City",
     "triche GTA 6",
+    "astuces GTA 6",
+    "code triche Vice City",
   ],
   openGraph: {
-    title: "Cheat Codes GTA 6 — Tous les cheats PS5, Xbox, PC | CodeTricheGTA6",
-    description: "Tous les cheat codes GTA 6 : santé, armes, véhicules, invincibilité, police, météo. PS5, Xbox et PC.",
-    url: "/cheat-codes-gta-6",
+    title: "Code Triche GTA 6 — Tous les codes PS5, Xbox, PC | CodeTricheGTA6",
+    description: "Tous les codes de triche GTA 6 : santé, armes, véhicules, invincibilité, police, météo. PS5, Xbox et PC.",
+    url: "/code-triche-gta-6",
     type: "website",
   },
 };
@@ -98,29 +101,34 @@ const platformInfo = [
 
 const faqs = [
   {
-    question: "Comment utiliser les cheat codes dans GTA 6 ?",
+    question: "Comment entrer un code de triche dans GTA 6 ?",
     answer:
       "Sur PS5 et Xbox, tapez la séquence de touches pendant le jeu. Sur PC, entrez le mot-clé via le téléphone en jeu ou directement au clavier. Les codes s'activent immédiatement à l'écran.",
   },
   {
-    question: "Les cheat codes GTA 6 désactivent-ils les trophées ?",
+    question: "Les codes de triche GTA 6 désactivent-ils les trophées ?",
     answer:
-      "Oui, comme dans les précédents GTA, l'utilisation de cheat codes désactive l'obtention des trophées/succès pendant la session active. Sauvegardez avant d'utiliser des cheats si vous voulez conserver l'accès aux trophées.",
+      "Oui, comme dans les précédents GTA, l'utilisation de codes de triche désactive l'obtention des trophées/succès pendant la session active. Sauvegardez avant d'utiliser des codes si vous voulez conserver l'accès aux trophées.",
   },
   {
-    question: "Les cheat codes sont-ils les mêmes sur PS5, Xbox et PC ?",
+    question: "Les codes de triche sont-ils les mêmes sur PS5, Xbox et PC ?",
     answer:
-      "Non. Sur PS5 et Xbox, les cheats utilisent des séquences de touches différentes (boutons manette). Sur PC, les cheats utilisent des mots-clés tapés au clavier. L'effet est identique, seule la saisie diffère.",
+      "Non. Sur PS5 et Xbox, les codes utilisent des séquences de touches différentes (boutons manette). Sur PC, les codes utilisent des mots-clés tapés au clavier. L'effet est identique, seule la saisie diffère.",
   },
   {
-    question: "Y a-t-il des cheat codes pour GTA 6 Online ?",
+    question: "Y a-t-il des codes de triche pour GTA 6 Online ?",
     answer:
-      "Non. Les cheat codes ne fonctionnent que en mode histoire (single-player). L'utilisation de cheats ou de modifications en ligne est interdite et peut entraîner un bannissement permanent.",
+      "Non. Les codes de triche ne fonctionnent qu'en mode histoire (single-player). L'utilisation de cheats ou de modifications en ligne est interdite et peut entraîner un bannissement permanent.",
   },
   {
-    question: "Quand les cheat codes GTA 6 seront-ils disponibles ?",
+    question: "Quand les codes de triche GTA 6 seront-ils disponibles ?",
     answer:
-      "Les codes de triche seront confirmés et publiés dès la sortie du jeu le 19 novembre 2026. Les codes listés ci-dessus sont basés sur les habitudes des opus précédents et seront vérifiés à la sortie.",
+      "Les codes de triche seront confirmés et publiés dès la sortie du jeu le 19 novembre 2026. Les codes listés ci-dessous sont basés sur les habitudes des opus précédents et seront vérifiés à la sortie.",
+  },
+  {
+    question: "Où trouver tous les codes de triche GTA 6 ?",
+    answer:
+      "Tous les codes de triche GTA 6 pour PS5, Xbox et PC sont listés sur cette page. Ils seront mis à jour dès la sortie du jeu le 19 novembre 2026. Consultez aussi nos pages dédiées : codes PS5, codes Xbox et codes PC.",
   },
 ];
 
@@ -131,22 +139,22 @@ const accentColor = {
   gold: "text-yellow-400",
 };
 
-export default function CheatCodesGTA6Page() {
+export default function CodeTricheGTA6Page() {
   return (
     <>
       <JsonLd
         data={[
           breadcrumbJsonLd([
             { name: "Accueil", url: BASE_URL },
-            { name: "Cheat Codes GTA 6", url: `${BASE_URL}/cheat-codes-gta-6` },
+            { name: "Code Triche GTA 6", url: `${BASE_URL}/code-triche-gta-6` },
           ]),
-          faqJsonLd(faqs, `${BASE_URL}/cheat-codes-gta-6`),
+          faqJsonLd(faqs, `${BASE_URL}/code-triche-gta-6`),
         ]}
       />
       <SectionPage
-        title="CHEAT CODES"
+        title="CODES DE TRICHE"
         titleAccent="GTA 6 —"
-        subtitle="Tous les cheat codes GTA 6 pour PS5, Xbox Series et PC : santé, armes, véhicules, police et météo."
+        subtitle="Tous les codes de triche GTA 6 pour PS5, Xbox Series et PC : santé, armes, véhicules, police et météo."
       >
         <div className="mb-8 card-base p-4 border-accent-teal/20" data-plate="primary">
           <div className="flex items-start gap-3">
@@ -154,7 +162,7 @@ export default function CheatCodesGTA6Page() {
               <path strokeLinecap="round" strokeLinejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z" />
             </svg>
             <p className="text-sm text-text-secondary">
-              <strong className="text-accent-teal">Les codes seront ajoutés dès la sortie du jeu le 19 novembre 2026.</strong> Les cheats listés ci-dessous sont basés sur les habitudes des opus précédents. Les codes exacts seront vérifiés et mis à jour à la sortie.
+              <strong className="text-accent-teal">Les codes de triche seront ajoutés dès la sortie du jeu le 19 novembre 2026.</strong> Les codes listés ci-dessous sont basés sur les habitudes des opus précédents. Les codes exacts seront vérifiés et mis à jour à la sortie.
             </p>
           </div>
         </div>
@@ -162,7 +170,7 @@ export default function CheatCodesGTA6Page() {
         {/* How to enter cheats per platform */}
         <div className="mb-10">
           <h2 className="font-display font-bold text-2xl tracking-tight text-accent-primary mb-5 border-b border-border/50 pb-2">
-            COMMENT ENTRER UN CHEAT CODE
+            COMMENT ENTRER UN CODE DE TRICHE
           </h2>
           <div className="grid sm:grid-cols-3 gap-4">
             {platformInfo.map((p) => (
@@ -183,7 +191,7 @@ export default function CheatCodesGTA6Page() {
         {cheatCategories.map((cat) => (
           <div key={cat.title} className="mb-10">
             <h2 className={`font-display font-bold text-2xl tracking-tight ${accentColor[cat.accent]} mb-5 border-b border-border/50 pb-2`}>
-              CHEATS — {cat.title}
+              CODES DE TRICHE — {cat.title}
             </h2>
             <div className="space-y-3">
               {cat.cheats.map((cheat) => (
@@ -211,15 +219,15 @@ export default function CheatCodesGTA6Page() {
           <ul className="space-y-2 text-sm text-text-secondary">
             <li className="flex items-start gap-2">
               <span className="text-accent-sunset mt-0.5">&#x25B8;</span>
-              <span><strong className="text-text-primary">Trophées désactivés</strong> — L'utilisation de cheat codes désactive l'obtention des trophées/succès pendant la session en cours.</span>
+              <span><strong className="text-text-primary">Trophées désactivés</strong> — L'utilisation de codes de triche désactive l'obtention des trophées/succès pendant la session en cours.</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="text-accent-sunset mt-0.5">&#x25B8;</span>
-              <span><strong className="text-text-primary">Mode histoire uniquement</strong> — Les cheat codes ne fonctionnent pas en mode Online. Toute triche en ligne est passible de bannissement.</span>
+              <span><strong className="text-text-primary">Mode histoire uniquement</strong> — Les codes de triche ne fonctionnent pas en mode Online. Toute triche en ligne est passible de bannissement.</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="text-accent-sunset mt-0.5">&#x25B8;</span>
-              <span><strong className="text-text-primary">Sauvegardez avant</strong> — Certains cheats (invincibilité, munitions infinies) peuvent causer des bugs. Sauvegardez avant utilisation.</span>
+              <span><strong className="text-text-primary">Sauvegardez avant</strong> — Certains codes (invincibilité, munitions infinies) peuvent causer des bugs. Sauvegardez avant utilisation.</span>
             </li>
           </ul>
         </div>
