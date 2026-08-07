@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { useTranslations } from "next-intl";
 
 // GTA 6 release date: November 19, 2026
 const RELEASE_DATE = new Date("2026-11-19T00:00:00-05:00");
@@ -44,6 +45,7 @@ function TimeUnit({ value, label }: { value: number; label: string }) {
 export default function CountdownTimer() {
   const [mounted, setMounted] = useState(false);
   const [timeLeft, setTimeLeft] = useState<TimeLeft>(PLACEHOLDER);
+  const t = useTranslations("CountdownTimer");
 
   useEffect(() => {
     setMounted(true);
@@ -57,26 +59,26 @@ export default function CountdownTimer() {
   if (!mounted) {
     return (
       <div className="flex items-center gap-2 sm:gap-4 opacity-50">
-        <TimeUnit value={0} label="Jours" />
+        <TimeUnit value={0} label={t("days")} />
         <span className="font-display text-2xl text-neon-pink mt-[-1.5rem]">:</span>
-        <TimeUnit value={0} label="Heures" />
+        <TimeUnit value={0} label={t("hours")} />
         <span className="font-display text-2xl text-neon-pink mt-[-1.5rem]">:</span>
-        <TimeUnit value={0} label="Min" />
+        <TimeUnit value={0} label={t("minutes")} />
         <span className="font-display text-2xl text-neon-pink mt-[-1.5rem]">:</span>
-        <TimeUnit value={0} label="Sec" />
+        <TimeUnit value={0} label={t("seconds")} />
       </div>
     );
   }
 
   return (
     <div className="flex items-center gap-2 sm:gap-4">
-      <TimeUnit value={timeLeft.days} label="Jours" />
+      <TimeUnit value={timeLeft.days} label={t("days")} />
       <span className="font-display text-2xl text-neon-pink mt-[-1.5rem]">:</span>
-      <TimeUnit value={timeLeft.hours} label="Heures" />
+      <TimeUnit value={timeLeft.hours} label={t("hours")} />
       <span className="font-display text-2xl text-neon-pink mt-[-1.5rem]">:</span>
-      <TimeUnit value={timeLeft.minutes} label="Min" />
+      <TimeUnit value={timeLeft.minutes} label={t("minutes")} />
       <span className="font-display text-2xl text-neon-pink mt-[-1.5rem]">:</span>
-      <TimeUnit value={timeLeft.seconds} label="Sec" />
+      <TimeUnit value={timeLeft.seconds} label={t("seconds")} />
     </div>
   );
 }

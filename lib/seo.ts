@@ -1,21 +1,27 @@
 // JSON-LD structured-data builders for SEO (schema.org).
 // All functions return plain objects, ready to be serialized by <JsonLd />.
 
-import { BASE_URL, SITE_NAME, SITE_TAGLINE } from "@/lib/site";
+import { BASE_URL, SITE_NAME, SITE_TAGLINE, getSiteName, getSiteTagline, getSiteLocale } from "@/lib/site";
 import type { Article } from "@/lib/articles";
 import type { Character } from "@/lib/characters";
 import type { Location, Vehicle } from "@/lib/data";
 
-export function websiteJsonLd() {
+export function websiteJsonLd(locale: string = "fr") {
+  const siteName = getSiteName(locale);
+  const tagline = getSiteTagline(locale);
+  const lang = getSiteLocale(locale);
+  const descriptions: Record<string, string> = {
+    fr: "Tous les codes de triche GTA 6, infos personnages, véhicules, armes et lieux de Vice City. Guide complet francophone pour GTA VI.",
+    en: "All GTA 6 cheat codes, character info, vehicles, weapons and Vice City locations. Complete English guide for GTA VI.",
+  };
   return {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    name: `${SITE_NAME} — ${SITE_TAGLINE}`,
-    alternateName: SITE_NAME,
+    name: `${siteName} — ${tagline}`,
+    alternateName: siteName,
     url: BASE_URL,
-    inLanguage: "fr-FR",
-    description:
-      "Tous les codes de triche GTA 6, infos personnages, véhicules, armes et lieux de Vice City. Guide complet francophone pour GTA VI.",
+    inLanguage: lang,
+    description: descriptions[locale] ?? descriptions.fr,
     publisher: { "@id": `${BASE_URL}#organization` },
     potentialAction: {
       "@type": "SearchAction",
@@ -25,12 +31,17 @@ export function websiteJsonLd() {
   };
 }
 
-export function organizationJsonLd() {
+export function organizationJsonLd(locale: string = "fr") {
+  const siteName = getSiteName(locale);
+  const descriptions: Record<string, string> = {
+    fr: "Site fan francophone dédié à Grand Theft Auto VI : codes de triche, fiches personnages, véhicules, armes, lieux et actualités.",
+    en: "English fan site dedicated to Grand Theft Auto VI: cheat codes, character guides, vehicles, weapons, locations and news.",
+  };
   return {
     "@context": "https://schema.org",
     "@type": "Organization",
     "@id": `${BASE_URL}#organization`,
-    name: SITE_NAME,
+    name: siteName,
     url: BASE_URL,
     logo: {
       "@type": "ImageObject",
@@ -38,23 +49,30 @@ export function organizationJsonLd() {
       width: 1200,
       height: 630,
     },
-    description:
-      "Site fan francophone dédié à Grand Theft Auto VI : codes de triche, fiches personnages, véhicules, armes, lieux et actualités.",
+    description: descriptions[locale] ?? descriptions.fr,
   };
 }
 
-export function videoGameJsonLd() {
+export function videoGameJsonLd(locale: string = "fr") {
+  const isEn = locale === "en";
+  const descriptions: Record<string, string> = {
+    fr: "Grand Theft Auto VI est un jeu d'action-aventure développé par Rockstar Games, sortant le 19 novembre 2026 sur PS5, Xbox Series X|S et PC. Action à Vice City, dans l'état fictif de Leonida.",
+    en: "Grand Theft Auto VI is an action-adventure game developed by Rockstar Games, releasing November 19, 2026 on PS5, Xbox Series X|S and PC. Set in Vice City, in the fictional state of Leonida.",
+  };
+  const genres: Record<string, string[]> = {
+    fr: ["Action-aventure", "Monde ouvert"],
+    en: ["Action-adventure", "Open world"],
+  };
   return {
     "@context": "https://schema.org",
     "@type": "VideoGame",
     name: "Grand Theft Auto VI",
     alternateName: "GTA 6 / GTA VI",
-    description:
-      "Grand Theft Auto VI est un jeu d'action-aventure développé par Rockstar Games, sortant le 19 novembre 2026 sur PS5, Xbox Series X|S et PC. Action à Vice City, dans l'état fictif de Leonida.",
+    description: descriptions[locale] ?? descriptions.fr,
     url: BASE_URL,
     image: `${BASE_URL}/images/logo/logo-neon-sign.png`,
-    inLanguage: "fr-FR",
-    genre: ["Action-aventure", "Monde ouvert"],
+    inLanguage: isEn ? "en-US" : "fr-FR",
+    genre: genres[locale] ?? genres.fr,
     gamePlatform: ["PlayStation 5", "Xbox Series X|S", "PC"],
     playMode: ["SinglePlayer", "MultiPlayer"],
     datePublished: "2026-11-19",

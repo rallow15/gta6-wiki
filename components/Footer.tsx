@@ -1,6 +1,9 @@
-import Link from "next/link";
+"use client";
 
-const footerLinks = [
+import Link from "next/link";
+import { useLocale } from "next-intl";
+
+const footerLinksFr = [
   {
     title: "Guides",
     links: [
@@ -24,22 +27,73 @@ const footerLinks = [
     ],
   },
   {
-    title: "Communaute",
+    title: "Communauté",
     links: [
-      { label: "Actualites", href: "/actualites" },
+      { label: "Actualités", href: "/actualites" },
+    ],
+  },
+  {
+    title: "Légal",
+    links: [
+      { label: "À propos", href: "/a-propos" },
+      { label: "Mentions légales", href: "/mentions-legales" },
+      { label: "Confidentialité", href: "/politique-confidentialite" },
+    ],
+  },
+];
+
+const footerLinksEn = [
+  {
+    title: "Guides",
+    links: [
+      { label: "Cheat Codes", href: "/codes" },
+      { label: "GTA 6 Cheats PS5", href: "/cheat-codes-gta-6-ps5" },
+      { label: "GTA 6 Cheats Xbox", href: "/cheat-codes-gta-6-xbox" },
+      { label: "GTA 6 Cheats PC", href: "/cheat-codes-gta-6-pc" },
+      { label: "Vehicles", href: "/vehicles" },
+      { label: "Weapons", href: "/weapons" },
+      { label: "Characters", href: "/characters" },
+    ],
+  },
+  {
+    title: "Explore",
+    links: [
+      { label: "Locations", href: "/locations" },
+      { label: "GTA 6 Map", href: "/vice-city-map-gta-6" },
+      { label: "Best Cars", href: "/best-cars-gta-6" },
+      { label: "Release Date", href: "/release-date-gta-6" },
+      { label: "Gallery", href: "/gallery" },
+    ],
+  },
+  {
+    title: "Community",
+    links: [
+      { label: "News", href: "/news" },
     ],
   },
   {
     title: "Legal",
     links: [
-      { label: "A propos", href: "/a-propos" },
-      { label: "Mentions legales", href: "/mentions-legales" },
-      { label: "Confidentialite", href: "/politique-confidentialite" },
+      { label: "About", href: "/about" },
+      { label: "Legal Notice", href: "/legal-notice" },
+      { label: "Privacy Policy", href: "/privacy-policy" },
     ],
   },
 ];
 
 export default function Footer() {
+  const locale = useLocale();
+  const footerLinks = locale === "en" ? footerLinksEn : footerLinksFr;
+
+  const logoText = locale === "en" ? "CHEAT CODES" : "CODE TRICHE";
+  const disclaimer = locale === "en"
+    ? "Unofficial fan site. GTA and Grand Theft Auto are registered trademarks of Rockstar Games."
+    : "Site fan non officiel. GTA et Grand Theft Auto sont des marques déposées de Rockstar Games.";
+  const copyright = locale === "en"
+    ? "2025 GTA6CheatCodes. Fan site not affiliated with Rockstar Games."
+    : "2025 CodeTricheGTA6. Fan site non affilié à Rockstar Games.";
+  const madeWith = locale === "en" ? "Made with passion in Vice City" : "Fait avec passion à Vice City";
+
   return (
     <footer className="border-t border-neon-pink/10 bg-deep-bg">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 py-12">
@@ -48,14 +102,14 @@ export default function Footer() {
           <div className="col-span-2 md:col-span-1">
             <Link href="/" className="inline-block">
               <span className="font-display text-xl tracking-wider text-text-primary">
-                CODE TRICHE
+                {logoText}
               </span>
               <span className="font-display text-xl tracking-wider text-neon-pink neon-text">
                 {" "}GTA6
               </span>
             </Link>
             <p className="mt-3 text-sm text-text-muted leading-relaxed">
-              Site fan non officiel. GTA et Grand Theft Auto sont des marques deposees de Rockstar Games.
+              {disclaimer}
             </p>
           </div>
 
@@ -94,10 +148,10 @@ export default function Footer() {
 
         <div className="mt-10 pt-6 border-t border-night-violet/50 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-text-muted">
-            2025 CodeTricheGTA6. Fan site non affilie a Rockstar Games.
+            {copyright}
           </p>
           <p className="text-xs text-text-muted">
-            Fait avec passion a Vice City
+            {madeWith}
           </p>
         </div>
       </div>

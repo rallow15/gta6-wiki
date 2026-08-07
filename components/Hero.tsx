@@ -3,19 +3,29 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { Code, Car, Crosshair, Users, Map, Newspaper } from "lucide-react";
+import { useLocale } from "next-intl";
 import CountdownTimer from "./CountdownTimer";
 import { MagneticButton } from "@/components/magnetic";
 import { ParallaxTiltCard } from "@/components/ParallaxTiltCard";
 import { TextScramble } from "@/components/TextScramble";
 import { NeonBeams } from "@/components/NeonBeams";
 
-const sections = [
+const sectionsFr = [
   { href: "/codes", label: "Codes de triche", desc: "PS5, Xbox, PC", icon: Code, color: "neon-pink" },
-  { href: "/vehicules", label: "Vehicules", desc: "Voitures, motos, bateaux", icon: Car, color: "sunset-orange" },
+  { href: "/vehicules", label: "Véhicules", desc: "Voitures, motos, bateaux", icon: Car, color: "sunset-orange" },
   { href: "/armes", label: "Armes", desc: "Arsenal complet", icon: Crosshair, color: "lagoon-cyan" },
   { href: "/personnages", label: "Personnages", desc: "Jason, Lucia & plus", icon: Users, color: "neon-pink" },
   { href: "/lieux", label: "Lieux", desc: "Vice City & Leonida", icon: Map, color: "sand-yellow" },
-  { href: "/actualites", label: "Actualites", desc: "Dernieres news", icon: Newspaper, color: "lagoon-cyan" },
+  { href: "/actualites", label: "Actualités", desc: "Dernières news", icon: Newspaper, color: "lagoon-cyan" },
+];
+
+const sectionsEn = [
+  { href: "/codes", label: "Cheat Codes", desc: "PS5, Xbox, PC", icon: Code, color: "neon-pink" },
+  { href: "/vehicles", label: "Vehicles", desc: "Cars, bikes, boats", icon: Car, color: "sunset-orange" },
+  { href: "/weapons", label: "Weapons", desc: "Full arsenal", icon: Crosshair, color: "lagoon-cyan" },
+  { href: "/characters", label: "Characters", desc: "Jason, Lucia & more", icon: Users, color: "neon-pink" },
+  { href: "/locations", label: "Locations", desc: "Vice City & Leonida", icon: Map, color: "sand-yellow" },
+  { href: "/news", label: "News", desc: "Latest updates", icon: Newspaper, color: "lagoon-cyan" },
 ];
 
 const colorMap: Record<string, { border: string; hover: string; text: string; glow: string }> = {
@@ -26,6 +36,12 @@ const colorMap: Record<string, { border: string; hover: string; text: string; gl
 };
 
 export default function Hero() {
+  const locale = useLocale();
+  const sections = locale === "en" ? sectionsEn : sectionsFr;
+  const countdownLabel = locale === "en" ? "GTA VI Release — November 19, 2026" : "Sortie GTA VI — 19 Novembre 2026";
+  const ctaLabel = locale === "en" ? "See all codes" : "Voir les codes";
+  const logoAlt = locale === "en" ? "GTA 6 CheatCodes — Cheats, Info & Guides" : "GTA 6 CodeTriche — Codes de triche, infos et guides";
+
   return (
     <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
       {/* Background image */}
@@ -49,7 +65,7 @@ export default function Hero() {
             {/* AI-generated Logo — Neon Sign */}
             <motion.img
               src="/images/logo/logo-neon-sign.png"
-              alt="GTA 6 CodeTriche — Codes de triche, infos et guides"
+              alt={logoAlt}
               className="w-full max-w-[640px] sm:max-w-[780px] h-auto drop-shadow-[0_0_40px_rgba(255,46,154,0.3)] cursor-pointer"
               whileHover={{ scale: 1.02, filter: "drop-shadow(0 0 60px rgba(255,46,154,0.5))" }}
               transition={{ type: "spring", stiffness: 300, damping: 20 }}
@@ -66,7 +82,7 @@ export default function Hero() {
         >
           <p className="text-sm uppercase tracking-widest text-text-muted mb-4">
             <TextScramble duration={1.5} delay={0.5} scrambleChars="ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#">
-              Sortie GTA VI — 19 Novembre 2026
+              {countdownLabel}
             </TextScramble>
           </p>
           <div className="flex justify-center">
@@ -117,7 +133,7 @@ export default function Hero() {
           >
             <Link href="/codes" className="flex items-center gap-2">
               <Code className="h-4 w-4" />
-              Voir les codes
+              {ctaLabel}
             </Link>
           </MagneticButton>
         </motion.div>

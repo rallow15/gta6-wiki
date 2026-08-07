@@ -1,0 +1,526 @@
+{
+  "SiteMeta": {
+    "title": "CodeTricheGTA6 — Codes GTA 6, Infos & Guides",
+    "titleTemplate": "%s | CodeTricheGTA6",
+    "description": "Tous les codes de triche GTA 6, infos personnages, véhicules, armes et lieux de Vice City. Guide complet francophone pour GTA VI.",
+    "applicationName": "CodeTricheGTA6",
+    "locale": "fr_FR",
+    "ogTitle": "CodeTricheGTA6 — Codes GTA 6, Infos & Guides",
+    "ogDescription": "Tous les codes de triche GTA 6, infos personnages, véhicules et lieux.",
+    "ogImageAlt": "GTA 6 CodeTriche — Codes, Infos & Guides",
+    "twitterTitle": "CodeTricheGTA6 — Codes GTA 6, Infos & Guides",
+    "twitterDescription": "Tous les codes de triche GTA 6, infos personnages, véhicules et lieux.",
+    "keywords": [
+      "GTA 6 codes",
+      "GTA VI codes de triche",
+      "code gta 6",
+      "code triche GTA 6",
+      "codes GTA 6 PS5",
+      "codes GTA 6 Xbox",
+      "codes GTA 6 PC",
+      "GTA 6 date de sortie",
+      "sortie GTA 6",
+      "GTA 6 véhicules",
+      "meilleures voitures GTA 6",
+      "GTA 6 armes",
+      "carte GTA 6",
+      "Vice City",
+      "Leonida",
+      "personnages GTA 6",
+      "Jason Duval",
+      "Lucia Caminos"
+    ]
+  },
+  "Navbar": {
+    "logoText": "CODE TRICHE",
+    "logoAccent": "GTA6",
+    "logoAlt": "GTA 6 CodeTriche",
+    "menuAriaLabel": "Menu",
+    "links": {
+      "codes": "Codes",
+      "vehicules": "Véhicules",
+      "armes": "Armes",
+      "personnages": "Personnages",
+      "lieux": "Lieux",
+      "galerie": "Galerie",
+      "actus": "Actus"
+    }
+  },
+  "Footer": {
+    "logoText": "CODE TRICHE",
+    "logoAccent": "GTA6",
+    "disclaimer": "Site fan non officiel. GTA et Grand Theft Auto sont des marques déposées de Rockstar Games.",
+    "copyright": "2025 CodeTricheGTA6. Fan site non affilié à Rockstar Games.",
+    "tagline": "Fait avec passion à Vice City",
+    "columns": {
+      "guides": {
+        "title": "Guides",
+        "links": {
+          "codesDeTriche": "Codes de triche",
+          "codesPS5": "Codes GTA 6 PS5",
+          "codesXbox": "Codes GTA 6 Xbox",
+          "codesPC": "Codes GTA 6 PC",
+          "vehicules": "Véhicules",
+          "armes": "Armes",
+          "personnages": "Personnages"
+        }
+      },
+      "explorer": {
+        "title": "Explorer",
+        "links": {
+          "lieux": "Lieux",
+          "carte": "Carte GTA 6",
+          "meilleuresVoitures": "Meilleures voitures",
+          "dateDeSortie": "Date de sortie",
+          "galerie": "Galerie"
+        }
+      },
+      "communaute": {
+        "title": "Communauté",
+        "links": {
+          "actualites": "Actualités"
+        }
+      },
+      "legal": {
+        "title": "Légal",
+        "links": {
+          "aPropos": "À propos",
+          "mentionsLegales": "Mentions légales",
+          "confidentialite": "Confidentialité"
+        }
+      }
+    }
+  },
+  "Hero": {
+    "logoAlt": "GTA 6 CodeTriche — Codes de triche, infos et guides",
+    "countdownLabel": "Sortie GTA VI — 19 Novembre 2026",
+    "cta": "Voir les codes",
+    "sections": {
+      "codes": {
+        "label": "Codes de triche",
+        "desc": "PS5, Xbox, PC"
+      },
+      "vehicules": {
+        "label": "Véhicules",
+        "desc": "Voitures, motos, bateaux"
+      },
+      "armes": {
+        "label": "Armes",
+        "desc": "Arsenal complet"
+      },
+      "personnages": {
+        "label": "Personnages",
+        "desc": "Jason, Lucia & plus"
+      },
+      "lieux": {
+        "label": "Lieux",
+        "desc": "Vice City & Leonida"
+      },
+      "actus": {
+        "label": "Actualités",
+        "desc": "Dernières news"
+      }
+    }
+  },
+  "CountdownTimer": {
+    "days": "Jours",
+    "hours": "Heures",
+    "minutes": "Min",
+    "seconds": "Sec"
+  },
+  "CodeCard": {
+    "copyLabel": "Copier le code",
+    "copiedLabel": "Copié !"
+  },
+  "CheatCodes": {
+    "metaTitle": "Code Triche GTA 6 — Tous les codes PS5, Xbox, PC",
+    "metaDescription": "Tous les codes de triche GTA 6 (GTA VI) pour PS5, Xbox Series et PC : santé infinie, armes, véhicules, invincibilité, police, météo. Codes à copier en 1 clic.",
+    "metaKeywords": [
+      "code triche GTA 6",
+      "code triche gta 6",
+      "codes de triche GTA 6",
+      "code triche GTA VI",
+      "code triche GTA 6 PS5",
+      "code triche GTA 6 Xbox",
+      "code triche GTA 6 PC",
+      "gta 6 code triche",
+      "cheat codes GTA 6",
+      "cheats GTA 6",
+      "triche GTA 6",
+      "astuces GTA 6",
+      "code triche Vice City"
+    ],
+    "ogTitle": "Code Triche GTA 6 — Tous les codes PS5, Xbox, PC | CodeTricheGTA6",
+    "ogDescription": "Tous les codes de triche GTA 6 : santé, armes, véhicules, invincibilité, police, météo. PS5, Xbox et PC.",
+    "titleAccent": "GTA 6 —",
+    "title": "CODES DE TRICHE",
+    "subtitle": "Tous les codes de triche GTA 6 pour PS5, Xbox Series et PC : santé, armes, véhicules, police et météo.",
+    "notice": "Les codes de triche seront ajoutés dès la sortie du jeu le 19 novembre 2026.",
+    "noticeDetail": "Les codes listés ci-dessous sont basés sur les habitudes des opus précédents. Les codes exacts seront vérifiés et mis à jour à la sortie.",
+    "howToEnterTitle": "COMMENT ENTRER UN CODE DE TRICHE",
+    "platforms": {
+      "PS5": {
+        "name": "PS5",
+        "method": "Tapez la séquence de touches DualSense pendant le jeu. Le code s'active immédiatement.",
+        "buttons": "X, ○, △, □, L1, L2, R1, R2"
+      },
+      "Xbox": {
+        "name": "Xbox",
+        "method": "Tapez la séquence de touches manette pendant le jeu. Le code s'active immédiatement.",
+        "buttons": "A, B, X, Y, LB, LT, RB, RT"
+      },
+      "PC": {
+        "name": "PC",
+        "method": "Ouvrez le téléphone en jeu ou tapez directement le mot-clé au clavier.",
+        "buttons": "Mots-clés (ex. HEALME, GODMODE)"
+      }
+    },
+    "categories": {
+      "joueur": {
+        "title": "JOUEUR",
+        "cheats": {
+          "santeInfinie": {
+            "name": "Santé infinie",
+            "desc": "Restaure la santé de Jason ou Lucia au maximum. Combo classique de la série GTA."
+          },
+          "armureComplete": {
+            "name": "Armure complète",
+            "desc": "Ajoute une armure complète au niveau maximum. Indispensable pour les gunfights intenses."
+          },
+          "invincibilite": {
+            "name": "Invincibilité",
+            "desc": "Rend le joueur invincible pendant 5 minutes. Désactive les trophées/succès pendant la session."
+          },
+          "superSaut": {
+            "name": "Super saut",
+            "desc": "Permet de sauter beaucoup plus haut que la normale. Utile pour l'exploration urbaine."
+          },
+          "superCourse": {
+            "name": "Super course",
+            "desc": "Augmente considérablement la vitesse de sprint. Idéal pour fuir les situations délicates."
+          }
+        }
+      },
+      "armes": {
+        "title": "ARMES & MUNITIONS",
+        "cheats": {
+          "toutesLesArmes": {
+            "name": "Toutes les armes",
+            "desc": "Débloque toutes les armes disponibles avec munitions complètes."
+          },
+          "munitionsInfinies": {
+            "name": "Munitions infinies",
+            "desc": "Munitions illimitées pour toutes les armes équipées. Plus besoin de recharger."
+          },
+          "explosifs": {
+            "name": "Explosifs plein poche",
+            "desc": "Donne le maximum de grenades, C4 et lance-roquettes."
+          }
+        }
+      },
+      "vehicules": {
+        "title": "VÉHICULES",
+        "cheats": {
+          "spawnVehicule": {
+            "name": "Spawn véhicule",
+            "desc": "Fait apparaître un véhicule spécifique à côté du joueur. Les codes diffèrent par véhicule."
+          },
+          "vehiculeInvincible": {
+            "name": "Véhicule invincible",
+            "desc": "Rend le véhicule actif invincible (pas de dégâts, pas de pneus crevés)."
+          },
+          "conduiteDrunk": {
+            "name": "Conduite drunk",
+            "desc": "Simule une conduite en état d'ivresse. Effet visuel et contrôle altéré."
+          },
+          "helicoptere": {
+            "name": "Voler un hélicoptère",
+            "desc": "Fait apparaître un hélicoptère pour explorer Leonida depuis le ciel."
+          }
+        }
+      },
+      "police": {
+        "title": "POLICE & MONDE",
+        "cheats": {
+          "baisserEtoiles": {
+            "name": "Baisser les étoiles",
+            "desc": "Réduit le niveau de recherche de la police d'une étoile."
+          },
+          "monterEtoiles": {
+            "name": "Monter les étoiles",
+            "desc": "Augmente le niveau de recherche d'une étoile. Pour les amateurs de chaos."
+          },
+          "meteoSoleil": {
+            "name": "Météo ensoleillée",
+            "desc": "Change la météo en ciel dégagé. Parfait pour les courses de rue."
+          },
+          "meteoOrage": {
+            "name": "Météo orageuse",
+            "desc": "Déclenche un orage tropical digne de Vice City. Ambiance garantie."
+          },
+          "meteoBrume": {
+            "name": "Météo brumeuse",
+            "desc": "Active le brouillard dans les marais de Grassrivers. Effet atmosphérique."
+          }
+        }
+      }
+    },
+    "bientot": "Bientôt",
+    "categoryTitlePrefix": "CODES DE TRICHE — ",
+    "warning": {
+      "title": "IMPORTANT",
+      "items": {
+        "trophees": {
+          "label": "Trophées désactivés",
+          "text": "L'utilisation de codes de triche désactive l'obtention des trophées/succès pendant la session en cours."
+        },
+        "histoire": {
+          "label": "Mode histoire uniquement",
+          "text": "Les codes de triche ne fonctionnent pas en mode Online. Toute triche en ligne est passible de bannissement."
+        },
+        "sauvegarde": {
+          "label": "Sauvegardez avant",
+          "text": "Certains codes (invincibilité, munitions infinies) peuvent causer des bugs. Sauvegardez avant utilisation."
+        }
+      }
+    },
+    "faqTitle": "QUESTIONS FRÉQUENTES",
+    "faqs": {
+      "commentEntrer": {
+        "question": "Comment entrer un code de triche dans GTA 6 ?",
+        "answer": "Sur PS5 et Xbox, tapez la séquence de touches pendant le jeu. Sur PC, entrez le mot-clé via le téléphone en jeu ou directement au clavier. Les codes s'activent immédiatement à l'écran."
+      },
+      "tropheesDesactives": {
+        "question": "Les codes de triche GTA 6 désactivent-ils les trophées ?",
+        "answer": "Oui, comme dans les précédents GTA, l'utilisation de codes de triche désactive l'obtention des trophées/succès pendant la session active. Sauvegardez avant d'utiliser des codes si vous voulez conserver l'accès aux trophées."
+      },
+      "memeCodes": {
+        "question": "Les codes de triche sont-ils les mêmes sur PS5, Xbox et PC ?",
+        "answer": "Non. Sur PS5 et Xbox, les codes utilisent des séquences de touches différentes (boutons manette). Sur PC, les codes utilisent des mots-clés tapés au clavier. L'effet est identique, seule la saisie diffère."
+      },
+      "enLigne": {
+        "question": "Y a-t-il des codes de triche pour GTA 6 Online ?",
+        "answer": "Non. Les codes de triche ne fonctionnent qu'en mode histoire (single-player). L'utilisation de cheats ou de modifications en ligne est interdite et peut entraîner un bannissement permanent."
+      },
+      "quandDisponibles": {
+        "question": "Quand les codes de triche GTA 6 seront-ils disponibles ?",
+        "answer": "Les codes de triche seront confirmés et publiés dès la sortie du jeu le 19 novembre 2026. Les codes listés ci-dessous sont basés sur les habitudes des opus précédents et seront vérifiés à la sortie."
+      },
+      "ouTrouver": {
+        "question": "Où trouver tous les codes de triche GTA 6 ?",
+        "answer": "Tous les codes de triche GTA 6 pour PS5, Xbox et PC sont listés sur cette page. Ils seront mis à jour dès la sortie du jeu le 19 novembre 2026. Consultez aussi nos pages dédiées : codes PS5, codes Xbox et codes PC."
+      }
+    },
+    "allCodesLink": "Tous les codes →"
+  },
+  "Codes": {
+    "metaTitle": "Codes de triche GTA 6 — PS5, Xbox, PC",
+    "metaDescription": "Tous les codes de triche GTA 6 (GTA VI) pour PS5, Xbox Series et PC : santé infinie, armes, véhicules, invincibilité, police, météo. Consultez nos guides par plateforme.",
+    "metaKeywords": [
+      "codes GTA 6",
+      "codes de triche GTA 6",
+      "code triche GTA 6 PS5",
+      "code triche GTA 6 Xbox",
+      "code triche GTA 6 PC",
+      "codes GTA VI",
+      "astuces GTA 6",
+      "cheats GTA 6",
+      "code triche Vice City"
+    ],
+    "ogTitle": "Codes de triche GTA 6 — PS5, Xbox, PC | CodeTricheGTA6",
+    "ogDescription": "Tous les codes de triche GTA 6 pour PS5, Xbox Series et PC. Santé, armes, véhicules, invincibilité, police, météo.",
+    "titleAccent": "GTA 6",
+    "title": "CODES DE TRICHE",
+    "subtitle": "Tous les codes de triche GTA 6 pour PS5, Xbox Series et PC — santé, armes, véhicules, police et météo.",
+    "notice": "Les codes de triche seront ajoutés dès la sortie du jeu le 19 novembre 2026.",
+    "noticeDetail": "Consultez la page complète pour tous les détails et les codes par plateforme.",
+    "linkToFullPage": "Voir tous les codes de triche GTA 6 →",
+    "linkToFullPageDesc": "Liste complète des codes de triche : santé, armes, véhicules, police, météo. Avec explications détaillées et FAQ.",
+    "platformsTitle": "CODES PAR PLATEFORME",
+    "platforms": {
+      "PS5": {
+        "name": "PS5",
+        "desc": "Séquences de touches DualSense pour activer chaque code de triche sur PlayStation 5.",
+        "icon": "🎮"
+      },
+      "Xbox": {
+        "name": "Xbox",
+        "desc": "Combinaisons de boutons Xbox pour débloquer chaque code de triche sur Xbox Series X|S.",
+        "icon": "🟢"
+      },
+      "PC": {
+        "name": "PC",
+        "desc": "Mots-clés à saisir au clavier ou via le téléphone en jeu pour chaque code de triche sur PC.",
+        "icon": "⌨️"
+      }
+    },
+    "categoriesTitle": "CATÉGORIES DE CODES",
+    "categories": {
+      "santeArmure": {
+        "name": "Santé & Armure",
+        "desc": "Santé infinie, armure complète, invincibilité",
+        "icon": "❤️"
+      },
+      "armesMunitions": {
+        "name": "Armes & Munitions",
+        "desc": "Toutes les armes, munitions infinies, explosifs",
+        "icon": "🔫"
+      },
+      "vehicules": {
+        "name": "Véhicules",
+        "desc": "Spawn véhicule, véhicule invincible, hélicoptère",
+        "icon": "🚗"
+      },
+      "policeMonde": {
+        "name": "Police & Monde",
+        "desc": "Baisser/monter les étoiles, changer la météo",
+        "icon": "🌤️"
+      }
+    },
+    "faqTitle": "QUESTIONS FRÉQUENTES",
+    "faqs": {
+      "commentEntrer": {
+        "question": "Comment entrer un code de triche dans GTA 6 ?",
+        "answer": "Sur PS5 et Xbox, tapez la séquence de touches de la manette pendant le jeu. Sur PC, entrez le mot-clé via le téléphone en jeu ou directement au clavier. Les codes s'activent immédiatement."
+      },
+      "tropheesDesactives": {
+        "question": "Les codes de triche GTA 6 désactivent-ils les trophées ?",
+        "answer": "Oui, comme dans les précédents GTA, l'utilisation de codes de triche désactive l'obtention des trophées et succès pendant la session active. Sauvegardez avant d'utiliser des codes."
+      },
+      "memeCodes": {
+        "question": "Les codes de triche sont-ils les mêmes sur PS5, Xbox et PC ?",
+        "answer": "Non. Sur PS5 et Xbox, les codes utilisent des séquences de boutons différentes. Sur PC, ce sont des mots-clés tapés au clavier. L'effet est identique, seule la saisie diffère."
+      },
+      "quandDisponibles": {
+        "question": "Quand les codes de triche GTA 6 seront-ils disponibles ?",
+        "answer": "Les codes seront confirmés et publiés dès la sortie du jeu le 19 novembre 2026. Les codes listés sont basés sur les opus précédents et seront vérifiés à la sortie."
+      }
+    },
+    "allCheatCodesLink": "Tous les codes de triche →"
+  },
+  "CodesPlatform": {
+    "PS5": {
+      "heading": "Codes GTA 6 PS5",
+      "headingUpper": "CODES GTA 6 PS5",
+      "metaTitle": "Codes GTA 6 PS5 — Codes de triche GTA 6",
+      "metaDescription": "Tous les codes de triche GTA 6 PS5 : santé, armure, armes, véhicules, police, météo et gameplay. Disponibles dès la sortie du jeu le 19 novembre 2026.",
+      "metaKeywords": [
+        "codes GTA 6 PS5",
+        "code triche GTA 6 PS5",
+        "cheats GTA 6 PS5",
+        "codes GTA VI PS5",
+        "astuces GTA 6 PS5"
+      ],
+      "ogTitle": "Codes GTA 6 PS5 | CodeTricheGTA6",
+      "ogDescription": "Codes de triche GTA 6 PS5 — disponibles dès la sortie du jeu le 19 novembre 2026.",
+      "subtitle": "Tous les codes de triche GTA 6 pour PS5 — disponibles dès la sortie du jeu.",
+      "howToEnterTitle": "COMMENT ENTRER UN CODE PS5",
+      "enterMethod": "Pendant une partie, saisissez la séquence de touches DualSense indiquée pour chaque code. Le code s'active immédiatement et une notification apparaît à l'écran.",
+      "buttons": "Touches PS5",
+      "buttonsList": "X, Cercle (○), Triangle (△), Carré (□), L1, L2, R1, R2",
+      "comingSoonTitle": "ARRIVE PROCHAINEMENT",
+      "comingSoonText": "Les codes de triche GTA 6 pour PS5 seront publiés ici dès la sortie du jeu, le 19 novembre 2026. Revenez bientôt pour tous les codes avec copier en 1 clic.",
+      "faqTitle": "QUESTIONS FRÉQUENTES",
+      "faqs": {
+        "commentEntrer": {
+          "question": "Comment entrer un code de triche GTA 6 sur PS5 ?",
+          "answer": "Pendant le jeu, tapez rapidement la séquence de touches du DualSense affichée pour chaque code (par exemple X X L1 R1 Triangle Carré). Aucune touche spéciale à presser au préalable."
+        },
+        "trophees": {
+          "question": "Les codes de triche GTA 6 désactivent-ils les trophées ?",
+          "answer": "Comme dans les précédents GTA, l'utilisation de codes de triche peut désactiver l'obtention des trophées/succès pendant la session. Sauvegardez avant d'utiliser des codes."
+        },
+        "confirmes": {
+          "question": "Les codes GTA 6 PS5 sont-ils confirmés ?",
+          "answer": "Les codes listés ici sont basés sur les habitudes des opus précédents et seront vérifiés et mis à jour dès la sortie du jeu le 19 novembre 2026."
+        }
+      },
+      "allCodesLink": "Tous les codes →"
+    },
+    "Xbox": {
+      "heading": "Codes GTA 6 Xbox",
+      "headingUpper": "CODES GTA 6 XBOX",
+      "metaTitle": "Codes GTA 6 Xbox — Codes de triche GTA 6",
+      "metaDescription": "Tous les codes de triche GTA 6 Xbox : santé, armure, armes, véhicules, police, météo et gameplay. Disponibles dès la sortie du jeu le 19 novembre 2026.",
+      "metaKeywords": [
+        "codes GTA 6 Xbox",
+        "code triche GTA 6 Xbox",
+        "cheats GTA 6 Xbox",
+        "codes GTA VI Xbox",
+        "astuces GTA 6 Xbox"
+      ],
+      "ogTitle": "Codes GTA 6 Xbox | CodeTricheGTA6",
+      "ogDescription": "Codes de triche GTA 6 Xbox — disponibles dès la sortie du jeu le 19 novembre 2026.",
+      "subtitle": "Tous les codes de triche GTA 6 pour Xbox — disponibles dès la sortie du jeu.",
+      "howToEnterTitle": "COMMENT ENTRER UN CODE XBOX",
+      "enterMethod": "Pendant une partie, saisissez la séquence de touches de la manette Xbox indiquée pour chaque code. Le code s'active immédiatement.",
+      "buttons": "Touches Xbox",
+      "buttonsList": "A, B, X, Y, LB, LT, RB, RT",
+      "comingSoonTitle": "ARRIVE PROCHAINEMENT",
+      "comingSoonText": "Les codes de triche GTA 6 pour Xbox seront publiés ici dès la sortie du jeu, le 19 novembre 2026. Revenez bientôt pour tous les codes avec copier en 1 clic.",
+      "faqTitle": "QUESTIONS FRÉQUENTES",
+      "faqs": {
+        "commentEntrer": {
+          "question": "Comment entrer un code de triche GTA 6 sur Xbox Series ?",
+          "answer": "Pendant le jeu, tapez rapidement la séquence de touches de la manette Xbox affichée pour chaque code (par exemple A A LB RB Y X)."
+        },
+        "succes": {
+          "question": "Les codes désactivent-ils les succès Xbox ?",
+          "answer": "Comme dans les précédents GTA, l'utilisation de codes peut désactiver les succès pendant la session. Pensez à sauvegarder avant."
+        },
+        "confirmes": {
+          "question": "Les codes GTA 6 Xbox sont-ils confirmés ?",
+          "answer": "Les codes listés ici sont basés sur les opus précédents et seront vérifiés et mis à jour dès la sortie du jeu le 19 novembre 2026."
+        }
+      },
+      "allCodesLink": "Tous les codes →"
+    },
+    "PC": {
+      "heading": "Codes GTA 6 PC",
+      "headingUpper": "CODES GTA 6 PC",
+      "metaTitle": "Codes GTA 6 PC — Codes de triche GTA 6",
+      "metaDescription": "Tous les codes de triche GTA 6 PC : santé, armure, armes, véhicules, police, météo et gameplay. Disponibles dès la sortie du jeu le 19 novembre 2026.",
+      "metaKeywords": [
+        "codes GTA 6 PC",
+        "code triche GTA 6 PC",
+        "cheats GTA 6 PC",
+        "codes GTA VI PC",
+        "astuces GTA 6 PC"
+      ],
+      "ogTitle": "Codes GTA 6 PC | CodeTricheGTA6",
+      "ogDescription": "Codes de triche GTA 6 PC — disponibles dès la sortie du jeu le 19 novembre 2026.",
+      "subtitle": "Tous les codes de triche GTA 6 pour PC — disponibles dès la sortie du jeu.",
+      "howToEnterTitle": "COMMENT ENTRER UN CODE PC",
+      "enterMethod": "Sur PC, les codes de triche GTA 6 se saisissent via le téléphone en jeu ou directement au clavier. Entrez le mot-clé indiqué pour chaque code.",
+      "buttons": "Touches PC",
+      "buttonsList": "mots-clés (ex. HEALME, GODMODE)",
+      "comingSoonTitle": "ARRIVE PROCHAINEMENT",
+      "comingSoonText": "Les codes de triche GTA 6 pour PC seront publiés ici dès la sortie du jeu, le 19 novembre 2026. Revenez bientôt pour tous les codes avec copier en 1 clic.",
+      "faqTitle": "QUESTIONS FRÉQUENTES",
+      "faqs": {
+        "commentEntrer": {
+          "question": "Comment entrer un code de triche GTA 6 sur PC ?",
+          "answer": "Sur PC, ouvrez le téléphone en jeu ou tapez directement le mot-clé du code au clavier (par exemple HEALME pour restaurer la santé)."
+        },
+        "succes": {
+          "question": "Les codes GTA 6 PC désactivent-ils les succès ?",
+          "answer": "Comme dans les précédents GTA, l'utilisation de codes peut désactiver les succès pendant la session. Sauvegardez avant d'utiliser des codes."
+        },
+        "confirmes": {
+          "question": "Les codes GTA 6 PC sont-ils confirmés ?",
+          "answer": "Les mots-clés listés ici sont basés sur les opus précédents et seront vérifiés et mis à jour dès la sortie du jeu le 19 novembre 2026."
+        }
+      },
+      "allCodesLink": "Tous les codes →"
+    }
+  },
+  "SectionPage": {
+    "backToHome": "Retour à l'accueil"
+  },
+  "NotFound": {
+    "title": "PAGE NON TROUVÉE",
+    "description": "Tu as dû prendre un mauvais virage à Vice City. Cette page n'existe pas ou a été déplacée.",
+    "homeLink": "Retour à l'accueil",
+    "codesLink": "Voir les codes"
+  }
+}
