@@ -7,6 +7,7 @@ import { vehicles } from "@/lib/data";
 import { BASE_URL, getSiteName, getSiteLocale } from "@/lib/site";
 import { sectionBreadcrumb } from "@/lib/sectionMeta";
 import { itemListJsonLd } from "@/lib/seo";
+import { getTranslations } from "next-intl/server";
 import { Info, Star, CheckCircle, ChevronRight } from "lucide-react";
 
 export async function generateMetadata({
@@ -15,15 +16,13 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const isEn = locale === "en";
+  const t = await getTranslations("Vehicles");
   const siteName = getSiteName(locale);
   const ogLocale = getSiteLocale(locale);
-  const path = isEn ? "/en/vehicles" : "/vehicules";
+  const path = t("path");
 
-  const title = isEn ? "GTA 6 Vehicles — Cars, Bikes, Boats of GTA VI" : "Véhicules GTA 6 — Voitures, motos, bateaux de GTA VI";
-  const description = isEn
-    ? "All officially confirmed vehicles in GTA 6 (GTA VI): sports cars, supercars, muscle cars, SUVs, bikes and boats. Detailed specs with real-world inspiration."
-    : "Tous les véhicules officiellement confirmés dans GTA 6 (GTA VI) : sportives, supercars, muscle cars, SUV, motos et bateaux. Fiches détaillées avec inspiration réelle et source officielle.";
+  const title = t("metaTitle");
+  const description = t("metaDescription");
 
   return {
     title,
@@ -32,9 +31,7 @@ export async function generateMetadata({
       canonical: path,
       languages: { fr: "/vehicules", en: "/en/vehicles" },
     },
-    keywords: isEn
-      ? ["GTA 6 vehicles", "GTA 6 cars", "GTA VI cars", "best cars GTA 6", "supercars GTA 6", "GTA 6 bikes", "GTA 6 boats", "Cheetah GTA 6", "Vice City vehicles"]
-      : ["véhicules GTA 6", "voitures GTA 6", "voitures GTA VI", "meilleures voitures GTA 6", "supercars GTA 6", "motos GTA 6", "bateaux GTA 6", "Cheetah GTA 6", "véhicules Vice City"],
+    keywords: t.raw("keywords"),
     openGraph: {
       title: `${title} | ${siteName}`,
       description,
@@ -46,70 +43,35 @@ export async function generateMetadata({
   };
 }
 
-const categoryLabelsFr: Record<string, string> = {
-  "Sportive": "Sportives & Supercars",
-  "Supercar": "Supercars",
-  "Muscle": "Muscle Cars",
-  "SUV": "SUV & Tout-terrain",
-  "Sport compact": "Sport Compacts",
-  "Classique": "Classiques",
-  "Moto": "Motos",
-  "Bateau": "Bateaux",
-};
-
-const categoryLabelsEn: Record<string, string> = {
-  "Sportive": "Sports & Supercars",
-  "Supercar": "Supercars",
-  "Muscle": "Muscle Cars",
-  "SUV": "SUVs & Off-road",
-  "Sport compact": "Sport Compacts",
-  "Classique": "Classics",
-  "Moto": "Motorcycles",
-  "Bateau": "Boats",
-};
-
-const categoryOrder = ["Sportive", "Supercar", "Muscle", "SUV", "Sport compact", "Classique", "Moto", "Bateau"];
-
 export default async function VehiculesPage({
   params,
 }: {
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  const isEn = locale === "en";
-  const categoryLabels = isEn ? categoryLabelsEn : categoryLabelsFr;
-  const path = isEn ? "/en/vehicles" : "/vehicules";
-  const linkBase = isEn ? "/vehicles" : "/vehicules";
-  const inspiredLabel = isEn ? "Inspired by:" : "Inspire de :";
-  const sectionName = isEn ? "Vehicles" : "Véhicules";
+  const t = await getTranslations("Vehicles");
 
-  const pageSubtitle = isEn
-    ? "All vehicles officially confirmed in GTA VI. Sources: Trailer 1 & 2, Rockstar screenshots, official catalog."
-    : "Tous les véhicules officiellement confirmés dans GTA VI. Sources : Trailer 1 & 2, screenshots Rockstar, catalogue officiel.";
+  const path = t("path");
+  const linkBase = t("linkBase");
+  const sectionName = t("sectionName");
 
-  const noticeStrong = isEn
-    ? "Official sources only."
-    : "Sources officielles uniquement.";
-  const noticeRest = isEn
-    ? "Each listed vehicle has been confirmed by official trailers, Rockstar screenshots or the GTA VI catalog. Detailed stats will be added after the game releases."
-    : "Chaque véhicule listé a été confirmé par les trailers officiels, les screenshots Rockstar ou le catalogue GTA VI. Les stats détaillées seront ajoutées après la sortie du jeu.";
+  const categoryOrder = t.raw("categoryOrder") as string[];
+  const categoryLabels: Record<string, string> = {};
+  for (const cat of categoryOrder) {
+    categoryLabels[cat] = t(`categories.${cat}`);
+  }
 
-  const whatsNewTitle = isEn ? "VEHICLES — GTA VI FEATURES" : "VÉHICULES — NOUVEAUTÉS GTA VI";
-  const whatsNew = isEn
-    ? [
-        { title: "Limited inventory", desc: "Bag system — can't carry all weapons and vehicles at once" },
-        { title: "Vehicle trunk", desc: "Store weapons and items in your car's trunk" },
-        { title: "Deep customization", desc: "Rideout Customs and One-Eyed Willie's Mod Shop (Ultimate Edition), classic car restoration" },
-        { title: "New types", desc: "Kayaks, airboats, mobility scooters, rental bikes (LomBike), donked cars" },
-        { title: "Expansive navigation", desc: "Boats, yachts, jet skis, submarines and seaplanes confirmed" },
-      ]
-    : [
-        { title: "Inventaire limité", desc: "Système de sacoche, impossible de porter toutes les armes et véhicules à la fois" },
-        { title: "Coffre de véhicule", desc: "Stockez des armes et objets dans le coffre de votre voiture" },
-        { title: "Personnalisation poussée", desc: "Rideout Customs et One-Eyed Willie's Mod Shop (Édition Ultime), restauration de voitures classiques" },
-        { title: "Nouveaux types", desc: "Kayaks, airboats, scooters de mobilité, vélos en libre-service (LomBike), donked cars" },
-        { title: "Navigation expansive", desc: "Bateaux, yachts, jet skis, sous-marins et hydravions confirmés" },
-      ];
+  const pageSubtitle = t("pageSubtitle");
+
+  const noticeStrong = t("noticeStrong");
+  const noticeRest = t("noticeRest");
+
+  const whatsNewTitle = t("whatsNewTitle");
+  const whatsNewKeys = [0, 1, 2, 3, 4] as const;
+  const whatsNew = whatsNewKeys.map((i) => ({
+    title: t(`whatsNew.${i}.title`),
+    desc: t(`whatsNew.${i}.desc`),
+  }));
 
   return (
     <>
@@ -117,18 +79,18 @@ export default async function VehiculesPage({
         data={[
           sectionBreadcrumb(sectionName, path, locale),
           itemListJsonLd(
-            isEn ? "GTA 6 Vehicles" : "Véhicules GTA 6",
+            t("jsonLdTitle"),
             `${BASE_URL}${path}`,
             vehicles.map((v) => ({
               name: v.name,
-              url: `${BASE_URL}/${isEn ? "vehicles" : "vehicules"}/${v.id}`,
+              url: `${BASE_URL}/${linkBase}/${v.id}`,
               image: `${BASE_URL}${v.image}`,
             })),
           ),
         ]}
       />
       <SectionPage
-        title={isEn ? "VEHICLES" : "VÉHICULES"}
+        title={t("pageTitle")}
         subtitle={pageSubtitle}
       >
         <div className="mb-6 glass-card p-4 border-lagoon-cyan/20">
@@ -178,7 +140,7 @@ export default async function VehiculesPage({
                       <p className="mt-2 text-sm text-text-muted">{vehicle.description}</p>
                       <div className="mt-2 flex items-center gap-1.5 text-xs text-text-muted">
                         <Star className="h-3.5 w-3.5 text-sunset-orange" />
-                        <span className="italic">{inspiredLabel} {vehicle.inspired}</span>
+                        <span className="italic">{t("inspiredLabel")} {vehicle.inspired}</span>
                       </div>
                       <div className="mt-3 flex items-center gap-1.5 text-xs text-text-muted">
                         <CheckCircle className="h-3.5 w-3.5 text-lagoon-cyan" />

@@ -1,31 +1,23 @@
 "use client";
 
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { Code, Car, Crosshair, Users, Map, Newspaper } from "lucide-react";
-import { useLocale } from "next-intl";
+import { useTranslations } from "next-intl";
 import CountdownTimer from "./CountdownTimer";
 import { MagneticButton } from "@/components/magnetic";
 import { ParallaxTiltCard } from "@/components/ParallaxTiltCard";
 import { TextScramble } from "@/components/TextScramble";
 import { NeonBeams } from "@/components/NeonBeams";
 
-const sectionsFr = [
-  { href: "/codes", label: "Codes de triche", desc: "PS5, Xbox, PC", icon: Code, color: "neon-pink" },
-  { href: "/vehicules", label: "Véhicules", desc: "Voitures, motos, bateaux", icon: Car, color: "sunset-orange" },
-  { href: "/armes", label: "Armes", desc: "Arsenal complet", icon: Crosshair, color: "lagoon-cyan" },
-  { href: "/personnages", label: "Personnages", desc: "Jason, Lucia & plus", icon: Users, color: "neon-pink" },
-  { href: "/lieux", label: "Lieux", desc: "Vice City & Leonida", icon: Map, color: "sand-yellow" },
-  { href: "/actualites", label: "Actualités", desc: "Dernières news", icon: Newspaper, color: "lagoon-cyan" },
-];
-
-const sectionsEn = [
-  { href: "/codes", label: "Cheat Codes", desc: "PS5, Xbox, PC", icon: Code, color: "neon-pink" },
-  { href: "/vehicles", label: "Vehicles", desc: "Cars, bikes, boats", icon: Car, color: "sunset-orange" },
-  { href: "/weapons", label: "Weapons", desc: "Full arsenal", icon: Crosshair, color: "lagoon-cyan" },
-  { href: "/characters", label: "Characters", desc: "Jason, Lucia & more", icon: Users, color: "neon-pink" },
-  { href: "/locations", label: "Locations", desc: "Vice City & Leonida", icon: Map, color: "sand-yellow" },
-  { href: "/news", label: "News", desc: "Latest updates", icon: Newspaper, color: "lagoon-cyan" },
+const sections = [
+  { key: "codes", href: "/codes", icon: Code, color: "neon-pink" },
+  { key: "vehicles", href: "/vehicles", icon: Car, color: "sunset-orange" },
+  { key: "weapons", href: "/weapons", icon: Crosshair, color: "lagoon-cyan" },
+  { key: "characters", href: "/characters", icon: Users, color: "neon-pink" },
+  { key: "locations", href: "/locations", icon: Map, color: "sand-yellow" },
+  { key: "news", href: "/news", icon: Newspaper, color: "lagoon-cyan" },
 ];
 
 const colorMap: Record<string, { border: string; hover: string; text: string; glow: string }> = {
@@ -36,18 +28,22 @@ const colorMap: Record<string, { border: string; hover: string; text: string; gl
 };
 
 export default function Hero() {
-  const locale = useLocale();
-  const sections = locale === "en" ? sectionsEn : sectionsFr;
-  const countdownLabel = locale === "en" ? "GTA VI Release — November 19, 2026" : "Sortie GTA VI — 19 Novembre 2026";
-  const ctaLabel = locale === "en" ? "See all codes" : "Voir les codes";
-  const logoAlt = locale === "en" ? "GTA 6 CheatCodes — Cheats, Info & Guides" : "GTA 6 CodeTriche — Codes de triche, infos et guides";
+  const t = useTranslations("Hero");
+  const sections_data = sections;
+  const countdownLabel = t("countdownLabel");
+  const ctaLabel = t("cta");
+  const logoAlt = t("logoAlt");
 
   return (
     <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
       {/* Background image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center sm:bg-top bg-no-repeat"
-        style={{ backgroundImage: "url('/images/hero-bg.png')" }}
+      <Image
+        src="/images/hero-bg.webp"
+        alt=""
+        fill
+        priority
+        className="object-cover object-center sm:object-top"
+        sizes="100vw"
       />
       <div className="absolute inset-0 hero-gradient" />
 
@@ -63,13 +59,20 @@ export default function Hero() {
         >
           <h1 className="flex flex-col items-center gap-2">
             {/* AI-generated Logo — Neon Sign */}
-            <motion.img
-              src="/images/logo/logo-neon-sign.png"
-              alt={logoAlt}
-              className="w-full max-w-[640px] sm:max-w-[780px] h-auto drop-shadow-[0_0_40px_rgba(255,46,154,0.3)] cursor-pointer"
+            <motion.div
               whileHover={{ scale: 1.02, filter: "drop-shadow(0 0 60px rgba(255,46,154,0.5))" }}
               transition={{ type: "spring", stiffness: 300, damping: 20 }}
-            />
+              className="cursor-pointer"
+            >
+              <Image
+                src="/images/logo/logo-neon-sign.webp"
+                alt={logoAlt}
+                width={780}
+                height={400}
+                priority
+                className="w-full max-w-[640px] sm:max-w-[780px] h-auto drop-shadow-[0_0_40px_rgba(255,46,154,0.3)]"
+              />
+            </motion.div>
           </h1>
         </motion.div>
 
@@ -97,12 +100,12 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="mt-14 grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4"
         >
-          {sections.map((section) => {
+          {sections_data.map((section) => {
             const colors = colorMap[section.color];
             return (
-              <ParallaxTiltCard key={section.href} maxTilt={8} shadowIntensity={0.4}>
+              <ParallaxTiltCard key={section.key} maxTilt={8} shadowIntensity={0.4}>
                 <Link
-                  href={section.href}
+                  href={section.href as any}
                   className={`neon-glow-card shimmer-line p-4 sm:p-5 text-left group block ${colors.border} ${colors.hover}`}
                 >
                   {(() => {
@@ -110,9 +113,9 @@ export default function Hero() {
                     return <IconComponent className={`h-6 w-6 ${colors.text} mb-2 transition-transform group-hover:scale-125`} />;
                   })()}
                   <h3 className={`font-semibold text-sm sm:text-base ${colors.text}`}>
-                    {section.label}
+                    {t(`sections.${section.key}.label`)}
                   </h3>
-                  <p className="text-xs text-text-muted mt-1">{section.desc}</p>
+                  <p className="text-xs text-text-muted mt-1">{t(`sections.${section.key}.desc`)}</p>
                 </Link>
               </ParallaxTiltCard>
             );

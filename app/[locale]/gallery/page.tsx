@@ -1,12 +1,15 @@
 "use client";
 
 import { useState, useCallback } from "react";
+import { useTranslations } from "next-intl";
 import { useParams } from "next/navigation";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import SectionPage from "@/components/SectionPage";
 import Lightbox from "@/components/Lightbox";
 import { JsonLd } from "@/components/JsonLd";
 import { galleryCategories, type GalleryImage } from "@/lib/gallery";
+import { BASE_URL } from "@/lib/site";
 import {
   User, UserCircle, Bird, Gem, Music, Mic, Crosshair, Handshake,
   TreePalm, Anchor, Building2, Bug, Mountain, Diamond, Gamepad2,
@@ -26,7 +29,7 @@ function GalleryIcon({ name, className }: { name: string; className?: string }) 
 
 export default function GaleriePage() {
   const { locale } = useParams<{ locale: string }>();
-  const isEn = locale === "en";
+  const t = useTranslations("Gallery");
 
   const [activeCategory, setActiveCategory] = useState<string>(galleryCategories[0].id);
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
@@ -58,18 +61,14 @@ export default function GaleriePage() {
         data={{
           "@type": "BreadcrumbList",
           "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": isEn ? "Home" : "Accueil", "item": "https://gta6cheatcodes.com" },
-            { "@type": "ListItem", "position": 2, "name": isEn ? "Gallery" : "Galerie", "item": `https://gta6cheatcodes.com${isEn ? "/en/gallery" : "/galerie"}` },
+            { "@type": "ListItem", "position": 1, "name": t("breadcrumb.home"), "item": BASE_URL },
+            { "@type": "ListItem", "position": 2, "name": t("breadcrumb.gallery"), "item": `${BASE_URL}${locale === "en" ? "/en/gallery" : "/galerie"}` },
           ],
         }}
       />
       <SectionPage
-        title={isEn ? "GALLERY" : "GALERIE"}
-        subtitle={
-          isEn
-            ? `${activeCat.label} — ${activeCat.images.length} screenshots`
-            : `${activeCat.label} — ${activeCat.images.length} captures d'écran`
-        }
+        title={t("title")}
+        subtitle={t("subtitle", { category: activeCat.label, count: activeCat.images.length })}
       >
       {/* Category Tabs */}
       <div className="mb-8 flex flex-wrap gap-2">
@@ -105,11 +104,12 @@ export default function GaleriePage() {
               className="group relative aspect-[16/9] overflow-hidden rounded-lg cursor-pointer bg-white/5"
               onClick={() => openLightbox(index)}
             >
-              <img
+              <Image
                 src={img.src}
                 alt={img.alt}
-                loading="lazy"
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                fill
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                className="object-cover transition-transform duration-300 group-hover:scale-110"
               />
               {/* Overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3">

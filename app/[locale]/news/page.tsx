@@ -1,7 +1,9 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import SectionPage from "@/components/SectionPage";
 import AnimatedContainer from "@/components/AnimatedContainer";
@@ -19,6 +21,7 @@ const tagColors: Record<string, string> = {
 };
 
 export default function ActualitesPage() {
+  const t = useTranslations("News");
   const [filter, setFilter] = useState<string>("all");
   const tags = ["all", ...Array.from(new Set(articlesLatestFirst.map((a) => a.tag)))];
 
@@ -26,10 +29,10 @@ export default function ActualitesPage() {
 
   return (
     <>
-      <JsonLd data={sectionBreadcrumb("Actualités", "/actualites")} />
+      <JsonLd data={sectionBreadcrumb(t("title"), "/actualites")} />
       <SectionPage
-        title="ACTUALITÉS"
-        subtitle={`${articlesLatestFirst.length} articles — dernières nouvelles sur GTA VI`}
+        title={t("title")}
+        subtitle={t("subtitle", { count: articlesLatestFirst.length })}
       >
       {/* Filter tabs */}
       <div className="mb-8 flex flex-wrap gap-2">
@@ -43,7 +46,7 @@ export default function ActualitesPage() {
                 : "bg-white/5 text-text-secondary hover:bg-white/10 hover:text-text-primary"
             }`}
           >
-            {tag === "all" ? "Tout" : tag}
+            {tag === "all" ? t("filterAll") : tag}
           </button>
         ))}
       </div>
@@ -56,11 +59,12 @@ export default function ActualitesPage() {
               <div className="glass-card overflow-hidden transition-all duration-300 group-hover:border-neon-pink/40">
                 {/* Image */}
                 <div className="relative aspect-[16/9] overflow-hidden">
-                  <img
+                  <Image
                     src={article.image}
                     alt={article.title}
-                    loading="lazy"
-                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                    fill
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    className="object-cover transition-transform duration-300 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-deep-bg/80 via-transparent to-transparent" />
                   {/* Tag + Date overlay */}

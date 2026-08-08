@@ -16,11 +16,14 @@ export default function LanguageSwitcher() {
   };
 
   return (
-    <div className="flex items-center rounded-lg border border-border/50 overflow-hidden">
+    <div className="flex items-center rounded-lg border border-border/50 overflow-hidden" role="radiogroup" aria-label="Language">
       {routing.locales.map((loc) => (
         <button
           key={loc}
           onClick={() => switchLocale(loc)}
+          role="radio"
+          aria-checked={locale === loc}
+          aria-label={loc === "en" ? "Switch to English" : "Passer en français"}
           className={`px-2.5 py-1 text-xs font-bold uppercase tracking-wider transition-colors ${
             locale === loc
               ? "bg-neon-pink text-white"

@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
+import { useTranslations } from "next-intl";
 import { motion, AnimatePresence } from "framer-motion";
 
 interface LightboxProps {
@@ -16,10 +17,14 @@ interface LightboxProps {
 
 export default function Lightbox({ src, alt, isOpen, onClose, onPrev, onNext, hasPrev, hasNext }: LightboxProps) {
   const [loading, setLoading] = useState(true);
+  const dialogRef = useRef<HTMLDivElement>(null);
+  const t = useTranslations("Lightbox");
 
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = "hidden";
+      // Focus the dialog for accessibility
+      dialogRef.current?.focus();
     } else {
       document.body.style.overflow = "";
     }
@@ -38,6 +43,35 @@ export default function Lightbox({ src, alt, isOpen, onClose, onPrev, onNext, ha
     window.addEventListener("keydown", handleKey);
     return () => window.removeEventListener("keydown", handleKey);
   }, [isOpen, hasPrev, hasNext, onPrev, onNext, onClose]);
+
+  // Focus trap: keep focus within the dialog
+  useEffect(() => {
+    if (!isOpen) return;
+    const dialog = dialogRef.current;
+    if (!dialog) return;
+
+    const focusableSelector = 'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])';
+    const handleTab = (e: KeyboardEvent) => {
+      if (e.key !== "Tab") return;
+      const focusable = dialog.querySelectorAll<HTMLElement>(focusableSelector);
+      if (focusable.length === 0) return;
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+      if (e.shiftKey) {
+        if (document.activeElement === first) {
+          e.preventDefault();
+          last.focus();
+        }
+      } else {
+        if (document.activeElement === last) {
+          e.preventDefault();
+          first.focus();
+        }
+      }
+    };
+    dialog.addEventListener("keydown", handleTab);
+    return () => dialog.removeEventListener("keydown", handleTab);
+  }, [isOpen]);
 
   const handleDownload = useCallback(async () => {
     try {
@@ -61,18 +95,23 @@ export default function Lightbox({ src, alt, isOpen, onClose, onPrev, onNext, ha
   return (
     <AnimatePresence>
       <motion.div
+        ref={dialogRef}
+        role="dialog"
+        aria-modal="true"
+        aria-label={t("dialogLabel", { alt })}
+        tabIndex={-1}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
         transition={{ duration: 0.2 }}
-        className="fixed inset-0 z-[100] flex items-center justify-center bg-black/95 backdrop-blur-sm"
+        className="fixed inset-0 z-[100] flex items-center justify-center bg-black/95 backdrop-blur-sm focus:outline-none"
         onClick={onClose}
       >
         {/* Close button */}
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 z-[110] p-2 rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors"
-          aria-label="Fermer"
+          className="absolute top-4 right-4 z-[110] p-2 rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors focus-visible:ring-2 focus-visible:ring-neon-pink focus-visible:outline-none"
+          aria-label={t("close")}
         >
           <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
@@ -82,21 +121,21 @@ export default function Lightbox({ src, alt, isOpen, onClose, onPrev, onNext, ha
         {/* Download button */}
         <button
           onClick={handleDownload}
-          className="absolute top-4 left-4 z-[110] flex items-center gap-2 px-4 py-2 rounded-lg bg-neon-pink/90 hover:bg-neon-pink text-white font-semibold text-sm transition-colors"
-          aria-label="Telecharger"
+          className="absolute top-4 left-4 z-[110] flex items-center gap-2 px-4 py-2 rounded-lg bg-neon-pink/90 hover:bg-neon-pink text-white font-semibold text-sm transition-colors focus-visible:ring-2 focus-visible:ring-white focus-visible:outline-none"
+          aria-label={t("download")}
         >
           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
           </svg>
-          Telecharger
+          {t("download")}
         </button>
 
         {/* Navigation arrows */}
         {hasPrev && onPrev && (
           <button
             onClick={(e) => { e.stopPropagation(); onPrev(); }}
-            className="absolute left-4 top-1/2 -translate-y-1/2 z-[110] p-3 rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors"
-            aria-label="Precedent"
+            className="absolute left-4 top-1/2 -translate-y-1/2 z-[110] p-3 rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors focus-visible:ring-2 focus-visible:ring-neon-pink focus-visible:outline-none"
+            aria-label={t("previous")}
           >
             <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
@@ -107,8 +146,8 @@ export default function Lightbox({ src, alt, isOpen, onClose, onPrev, onNext, ha
         {hasNext && onNext && (
           <button
             onClick={(e) => { e.stopPropagation(); onNext(); }}
-            className="absolute right-4 top-1/2 -translate-y-1/2 z-[110] p-3 rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors"
-            aria-label="Suivant"
+            className="absolute right-4 top-1/2 -translate-y-1/2 z-[110] p-3 rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors focus-visible:ring-2 focus-visible:ring-neon-pink focus-visible:outline-none"
+            aria-label={t("next")}
           >
             <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />

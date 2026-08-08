@@ -1,98 +1,54 @@
 "use client";
 
-import Link from "next/link";
-import { useLocale } from "next-intl";
+import { Link } from "@/i18n/navigation";
+import { useTranslations } from "next-intl";
 
-const footerLinksFr = [
+const footerColumns = [
   {
-    title: "Guides",
+    titleKey: "guides" as const,
     links: [
-      { label: "Codes de triche", href: "/codes" },
-      { label: "Codes GTA 6 PS5", href: "/codes-gta-6-ps5" },
-      { label: "Codes GTA 6 Xbox", href: "/codes-gta-6-xbox" },
-      { label: "Codes GTA 6 PC", href: "/codes-gta-6-pc" },
-      { label: "Véhicules", href: "/vehicules" },
-      { label: "Armes", href: "/armes" },
-      { label: "Personnages", href: "/personnages" },
+      { labelKey: "cheatCodes" as const, href: "/codes" },
+      { labelKey: "codesPS5" as const, href: "/cheat-codes-gta-6-ps5" },
+      { labelKey: "codesXbox" as const, href: "/cheat-codes-gta-6-xbox" },
+      { labelKey: "codesPC" as const, href: "/cheat-codes-gta-6-pc" },
+      { labelKey: "vehicles" as const, href: "/vehicles" },
+      { labelKey: "weapons" as const, href: "/weapons" },
+      { labelKey: "characters" as const, href: "/characters" },
     ],
   },
   {
-    title: "Explorer",
+    titleKey: "explore" as const,
     links: [
-      { label: "Lieux", href: "/lieux" },
-      { label: "Carte GTA 6", href: "/carte-vice-city-gta-6" },
-      { label: "Meilleures voitures", href: "/meilleures-voitures-gta-6" },
-      { label: "Date de sortie", href: "/date-de-sortie-gta-6" },
-      { label: "Galerie", href: "/galerie" },
+      { labelKey: "locations" as const, href: "/locations" },
+      { labelKey: "map" as const, href: "/vice-city-map-gta-6" },
+      { labelKey: "bestCars" as const, href: "/best-cars-gta-6" },
+      { labelKey: "releaseDate" as const, href: "/release-date-gta-6" },
+      { labelKey: "gallery" as const, href: "/gallery" },
     ],
   },
   {
-    title: "Communauté",
+    titleKey: "community" as const,
     links: [
-      { label: "Actualités", href: "/actualites" },
+      { labelKey: "news" as const, href: "/news" },
     ],
   },
   {
-    title: "Légal",
+    titleKey: "legal" as const,
     links: [
-      { label: "À propos", href: "/a-propos" },
-      { label: "Mentions légales", href: "/mentions-legales" },
-      { label: "Confidentialité", href: "/politique-confidentialite" },
-    ],
-  },
-];
-
-const footerLinksEn = [
-  {
-    title: "Guides",
-    links: [
-      { label: "Cheat Codes", href: "/codes" },
-      { label: "GTA 6 Cheats PS5", href: "/cheat-codes-gta-6-ps5" },
-      { label: "GTA 6 Cheats Xbox", href: "/cheat-codes-gta-6-xbox" },
-      { label: "GTA 6 Cheats PC", href: "/cheat-codes-gta-6-pc" },
-      { label: "Vehicles", href: "/vehicles" },
-      { label: "Weapons", href: "/weapons" },
-      { label: "Characters", href: "/characters" },
-    ],
-  },
-  {
-    title: "Explore",
-    links: [
-      { label: "Locations", href: "/locations" },
-      { label: "GTA 6 Map", href: "/vice-city-map-gta-6" },
-      { label: "Best Cars", href: "/best-cars-gta-6" },
-      { label: "Release Date", href: "/release-date-gta-6" },
-      { label: "Gallery", href: "/gallery" },
-    ],
-  },
-  {
-    title: "Community",
-    links: [
-      { label: "News", href: "/news" },
-    ],
-  },
-  {
-    title: "Legal",
-    links: [
-      { label: "About", href: "/about" },
-      { label: "Legal Notice", href: "/legal-notice" },
-      { label: "Privacy Policy", href: "/privacy-policy" },
+      { labelKey: "about" as const, href: "/about" },
+      { labelKey: "legalNotice" as const, href: "/legal-notice" },
+      { labelKey: "privacy" as const, href: "/privacy-policy" },
     ],
   },
 ];
 
 export default function Footer() {
-  const locale = useLocale();
-  const footerLinks = locale === "en" ? footerLinksEn : footerLinksFr;
+  const t = useTranslations("Footer");
 
-  const logoText = locale === "en" ? "CHEAT CODES" : "CODE TRICHE";
-  const disclaimer = locale === "en"
-    ? "Unofficial fan site. GTA and Grand Theft Auto are registered trademarks of Rockstar Games."
-    : "Site fan non officiel. GTA et Grand Theft Auto sont des marques déposées de Rockstar Games.";
-  const copyright = locale === "en"
-    ? "2025 GTA6CheatCodes. Fan site not affiliated with Rockstar Games."
-    : "2025 CodeTricheGTA6. Fan site non affilié à Rockstar Games.";
-  const madeWith = locale === "en" ? "Made with passion in Vice City" : "Fait avec passion à Vice City";
+  const logoText = t("logo");
+  const disclaimer = t("disclaimer");
+  const copyright = t("copyright", { year: new Date().getFullYear() });
+  const madeWith = t("tagline");
 
   return (
     <footer className="border-t border-neon-pink/10 bg-deep-bg">
@@ -114,35 +70,24 @@ export default function Footer() {
           </div>
 
           {/* Link columns */}
-          {footerLinks.map((section) => (
-            <div key={section.title}>
+          {footerColumns.map((section) => (
+            <nav key={section.titleKey} aria-label={t(section.titleKey)}>
               <h3 className="text-sm font-semibold text-text-secondary uppercase tracking-wider mb-3">
-                {section.title}
+                {t(section.titleKey)}
               </h3>
               <ul className="space-y-2">
                 {section.links.map((link) => (
                   <li key={link.href}>
-                    {link.href.startsWith("http") ? (
-                      <a
-                        href={link.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-sm text-text-muted hover:text-neon-pink transition-colors"
-                      >
-                        {link.label}
-                      </a>
-                    ) : (
-                      <Link
-                        href={link.href}
-                        className="text-sm text-text-muted hover:text-neon-pink transition-colors"
-                      >
-                        {link.label}
-                      </Link>
-                    )}
+                    <Link
+                      href={link.href as any}
+                      className="text-sm text-text-muted hover:text-neon-pink transition-colors"
+                    >
+                      {t(link.labelKey)}
+                    </Link>
                   </li>
                 ))}
               </ul>
-            </div>
+            </nav>
           ))}
         </div>
 

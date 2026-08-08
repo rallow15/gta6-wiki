@@ -1,15 +1,17 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import { motion } from "framer-motion";
 import { TriangleAlert, Home, Code } from "lucide-react";
+import { useTranslations } from "next-intl";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { TextScramble } from "@/components/TextScramble";
 
 export default function NotFound() {
   const [scrambleKey, setScrambleKey] = useState(0);
+  const t = useTranslations("NotFound");
 
   return (
     <>
@@ -45,7 +47,7 @@ export default function NotFound() {
           >
             <p className="font-display text-2xl sm:text-3xl tracking-wider text-text-primary">
               <TextScramble key={scrambleKey} duration={1.2} scrambleChars="ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%">
-                PAGE NON TROUVEE
+                {t("title")}
               </TextScramble>
             </p>
           </motion.div>
@@ -56,7 +58,7 @@ export default function NotFound() {
             transition={{ duration: 0.5, delay: 0.5 }}
             className="text-text-secondary text-lg mb-10 max-w-md mx-auto"
           >
-            Tu as du prendre un mauvais virage a Vice City. Cette page n&apos;existe pas ou a ete deplacee.
+            {t("description")}
           </motion.p>
 
           {/* Glitch lines */}
@@ -83,14 +85,14 @@ export default function NotFound() {
               className="neon-pulse-btn inline-flex items-center gap-2 rounded-lg bg-neon-pink px-8 py-3.5 text-sm font-bold text-white shadow-lg shadow-neon-pink/25 transition-all hover:shadow-neon-pink/40 hover:scale-105"
             >
               <Home className="h-4 w-4" />
-              Retour a l&apos;accueil
+              {t("homeLink")}
             </Link>
             <Link
               href="/codes"
               className="inline-flex items-center gap-2 rounded-lg border border-lagoon-cyan/30 px-8 py-3.5 text-sm font-semibold text-lagoon-cyan transition-all hover:border-lagoon-cyan/60 hover:bg-lagoon-cyan/5"
             >
               <Code className="h-4 w-4" />
-              Voir les codes
+              {t("codesLink")}
             </Link>
           </motion.div>
         </div>

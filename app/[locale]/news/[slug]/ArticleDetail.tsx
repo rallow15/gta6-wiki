@@ -1,6 +1,8 @@
 "use client";
 
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
+import Image from "next/image";
+import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import type { Article } from "@/lib/articles";
 
@@ -14,17 +16,18 @@ const tagColors: Record<string, string> = {
 };
 
 export default function ArticleDetail({ article }: { article: Article }) {
+  const t = useTranslations("ArticleDetail");
   const tagClass = tagColors[article.tag] ?? tagColors["Annonce"];
 
   return (
     <>
       <nav className="fixed top-0 left-0 right-0 z-50 border-b border-neon-pink/10 bg-deep-bg/80 backdrop-blur-xl">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 flex h-16 items-center">
-          <Link href="/actualites" className="flex items-center gap-2 text-text-secondary hover:text-neon-pink transition-colors text-sm">
+          <Link href="/news" className="flex items-center gap-2 text-text-secondary hover:text-neon-pink transition-colors text-sm">
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
             </svg>
-            Actualités
+            {t("backToNews")}
           </Link>
         </div>
       </nav>
@@ -38,10 +41,13 @@ export default function ArticleDetail({ article }: { article: Article }) {
             transition={{ duration: 0.6 }}
             className="relative aspect-[2/1] rounded-xl overflow-hidden glass-card border-0"
           >
-            <img
+            <Image
               src={article.image}
               alt={article.title}
-              className="w-full h-full object-cover"
+              fill
+              priority
+              sizes="(max-width: 768px) 100vw, 896px"
+              className="object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-deep-bg via-deep-bg/30 to-transparent" />
             <div className="absolute bottom-4 left-4 right-4">
@@ -76,7 +82,7 @@ export default function ArticleDetail({ article }: { article: Article }) {
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
             </svg>
-            <span>Source : </span>
+            <span>{t("source")}</span>
             <a
               href={article.sourceUrl}
               target="_blank"
@@ -120,17 +126,17 @@ export default function ArticleDetail({ article }: { article: Article }) {
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6H10" />
               </svg>
-              Lire l'article original sur {article.sourceName}
+              {t("readOriginal", { source: article.sourceName })}
             </a>
           </motion.div>
 
           {/* Back link */}
           <div className="mt-8 pt-8 border-t border-night-violet/50">
-            <Link href="/actualites" className="inline-flex items-center gap-2 text-text-secondary hover:text-neon-pink transition-colors">
+            <Link href="/news" className="inline-flex items-center gap-2 text-text-secondary hover:text-neon-pink transition-colors">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
               </svg>
-              Retour aux actualités
+              {t("backToNews")}
             </Link>
           </div>
         </div>

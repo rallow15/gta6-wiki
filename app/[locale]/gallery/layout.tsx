@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
 import { getSiteName, getSiteLocale } from "@/lib/site";
 
 // galerie/page.tsx is a client component ("use client"); metadata lives here.
@@ -8,17 +9,13 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const isEn = locale === "en";
+  const t = await getTranslations("Gallery");
   const siteName = getSiteName(locale);
   const ogLocale = getSiteLocale(locale);
-  const path = isEn ? "/en/gallery" : "/galerie";
+  const path = locale === "en" ? "/en/gallery" : "/galerie";
 
-  const title = isEn
-    ? "GTA 6 Gallery — Official GTA VI Screenshots"
-    : "Galerie GTA 6 — Captures d'écran officielles GTA VI";
-  const description = isEn
-    ? "Gallery of official GTA 6 (GTA VI) screenshots: characters, Vice City, Leonida Keys, Grassrivers, Ultimate Edition and Vintage Vice City Pack."
-    : "Galerie de captures d'écran officielles de GTA 6 (GTA VI) : personnages, Vice City, Leonida Keys, Grassrivers, Ultimate Edition et Vintage Vice City Pack.";
+  const title = t("metaTitle");
+  const description = t("metaDescription");
 
   return {
     title,
@@ -27,9 +24,7 @@ export async function generateMetadata({
       canonical: path,
       languages: { fr: "/galerie", en: "/en/gallery" },
     },
-    keywords: isEn
-      ? ["GTA 6 gallery", "GTA 6 screenshots", "GTA VI screenshots", "GTA 6 images", "GTA 6 artworks"]
-      : ["galerie GTA 6", "screenshots GTA 6", "captures GTA VI", "images GTA 6", "artworks GTA 6"],
+    keywords: t.raw("metaKeywords") as string[],
     openGraph: {
       title: `${title} | ${siteName}`,
       description,

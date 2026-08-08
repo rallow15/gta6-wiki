@@ -4,6 +4,7 @@ import GameCard from "@/components/GameCard";
 import { JsonLd } from "@/components/JsonLd";
 import { sectionBreadcrumb } from "@/lib/sectionMeta";
 import { getSiteName, getSiteLocale } from "@/lib/site";
+import { getTranslations } from "next-intl/server";
 import { Info, CheckCircle, ChevronRight } from "lucide-react";
 
 interface OfficialWeapon {
@@ -55,44 +56,18 @@ const weapons: OfficialWeapon[] = [
   { id: "speargun", name: "Speargun", category: "Special", categoryEn: "Special", description: "Fusil harpon confirmé pour le combat sous-marin.", descriptionEn: "Speargun confirmed for underwater combat.", source: "Screenshots officiels", accent: "cyan" },
 ];
 
-const categoriesFr = [
-  { id: "Pistolet", label: "Pistolets" },
-  { id: "Revolvers", label: "Revolvers" },
-  { id: "Fusil à pompe", label: "Fusils à pompe" },
-  { id: "Mitraillette", label: "Mitraillettes" },
-  { id: "Fusil d'assaut", label: "Fusils d'assaut" },
-  { id: "Sniper", label: "Snipers" },
-  { id: "Arme lourde", label: "Armes lourdes" },
-  { id: "Melee", label: "Melee" },
-  { id: "Special", label: "Spécial" },
-];
-
-const categoriesEn = [
-  { id: "Pistol", label: "Pistols" },
-  { id: "Revolvers", label: "Revolvers" },
-  { id: "Shotgun", label: "Shotguns" },
-  { id: "SMG", label: "SMGs" },
-  { id: "Assault Rifle", label: "Assault Rifles" },
-  { id: "Sniper", label: "Snipers" },
-  { id: "Heavy Weapon", label: "Heavy Weapons" },
-  { id: "Melee", label: "Melee" },
-  { id: "Special", label: "Special" },
-];
-
 export async function generateMetadata({
   params,
 }: {
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const isEn = locale === "en";
+  const t = await getTranslations("Weapons");
   const siteName = getSiteName(locale);
-  const path = isEn ? "/en/weapons" : "/armes";
+  const path = t("path");
 
-  const title = isEn ? "GTA 6 Weapons — Full Arsenal of GTA VI" : "Armes GTA 6 — Arsenal complet de GTA VI";
-  const description = isEn
-    ? "All officially confirmed weapons in GTA 6 (GTA VI): pistols, revolvers, shotguns, SMGs, assault rifles, snipers and heavy weapons. Official Rockstar sources."
-    : "Toutes les armes officiellement confirmées dans GTA 6 (GTA VI) : pistolets, revolvers, fusils à pompe, mitraillettes, fusils d'assaut, snipers et armes lourdes. Sources officielles Rockstar.";
+  const title = t("metaTitle");
+  const description = t("metaDescription");
 
   return {
     title,
@@ -101,9 +76,7 @@ export async function generateMetadata({
       canonical: path,
       languages: { fr: "/armes", en: "/en/weapons" },
     },
-    keywords: isEn
-      ? ["GTA 6 weapons", "GTA VI weapons", "GTA 6 arsenal", "GTA 6 pistols", "GTA 6 sniper", "GTA 6 assault rifle", "Vice City weapons"]
-      : ["armes GTA 6", "armes GTA VI", "arsenal GTA 6", "pistolets GTA 6", "sniper GTA 6", "fusil d'assaut GTA 6", "armes Vice City"],
+    keywords: t.raw("keywords"),
     openGraph: {
       title: `${title} | ${siteName}`,
       description,
@@ -121,42 +94,34 @@ export default async function ArmesPage({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  const isEn = locale === "en";
-  const categories = isEn ? categoriesEn : categoriesFr;
-  const path = isEn ? "/en/weapons" : "/armes";
-  const sectionName = isEn ? "Weapons" : "Armes";
+  const t = await getTranslations("Weapons");
 
-  const pageSubtitle = isEn
-    ? "All weapons officially confirmed in GTA VI. Sources: Trailer 1 & 2, official Rockstar screenshots."
-    : "Toutes les armes officiellement confirmées dans GTA VI. Sources : Trailer 1 & 2, screenshots officiels Rockstar.";
+  const path = t("path");
+  const sectionName = t("sectionName");
 
-  const noticeStrong = isEn ? "Official sources only." : "Sources officielles uniquement.";
-  const noticeRest = isEn
-    ? "Each weapon listed here has been confirmed by official trailers, Rockstar screenshots or the GTA VI website. Detailed stats will be added after the game releases."
-    : "Chaque arme listée ici a été confirmée par les trailers officiels, les screenshots Rockstar ou le site GTA VI. Les stats détaillées seront ajoutées après la sortie du jeu.";
+  const categoryOrder = t.raw("categoryOrder") as string[];
+  const categoryLabels: Record<string, string> = {};
+  for (const cat of categoryOrder) {
+    categoryLabels[cat] = t(`categories.${cat}`);
+  }
 
-  const whatsNewTitle = isEn ? "WEAPON SYSTEM — GTA VI FEATURES" : "SYSTÈME D'ARMES — NOUVEAUTÉS GTA VI";
-  const whatsNew = isEn
-    ? [
-        { title: "Limited inventory", desc: "Bag system — can't carry all weapons at once" },
-        { title: "Vehicle trunk", desc: "Store weapons in your car's trunk and change loadout between missions" },
-        { title: "Brand names", desc: "Weapons carry fictional brand names (Duke, Girardi, Klose, Hawk & Little, Capo)" },
-        { title: "Deep customization", desc: "Accessories, optics, finishes and engravings on each weapon (inspired by RDR2)" },
-        { title: "Ultimate Edition", desc: "Exclusive custom variants (Girardi ES9, Klose K17, Hawk & Little Morgan Revolver)" },
-      ]
-    : [
-        { title: "Inventaire limité", desc: "Système de sacoche, impossible de porter toutes les armes à la fois" },
-        { title: "Coffre de véhicule", desc: "Stockez des armes dans le coffre de votre voiture et changez de loadout entre les missions" },
-        { title: "Noms de marques", desc: "Les armes portent des noms de marques fictives (Duke, Girardi, Klose, Hawk & Little, Capo)" },
-        { title: "Personnalisation poussée", desc: "Accessoires, optiques, finitions et gravures sur chaque arme (inspiré de RDR2)" },
-        { title: "Édition Ultime", desc: "Variantes personnalisées exclusives (Girardi ES9, Klose K17, Hawk & Little Morgan Revolver)" },
-      ];
+  const pageSubtitle = t("pageSubtitle");
+
+  const noticeStrong = t("noticeStrong");
+  const noticeRest = t("noticeRest");
+
+  const whatsNewTitle = t("whatsNewTitle");
+  const whatsNewKeys = [0, 1, 2, 3, 4] as const;
+  const whatsNew = whatsNewKeys.map((i) => ({
+    title: t(`whatsNew.${i}.title`),
+    desc: t(`whatsNew.${i}.desc`),
+  }));
 
   return (
     <>
       <JsonLd data={sectionBreadcrumb(sectionName, path, locale)} />
       <SectionPage
-        title={isEn ? "WEAPONS" : "ARMES"}
+        title={t("pageTitle")}
         subtitle={pageSubtitle}
       >
         <div className="mb-6 neon-glow-card-cyan p-4 border-lagoon-cyan/20">
@@ -168,13 +133,13 @@ export default async function ArmesPage({
           </div>
         </div>
 
-        {categories.map((category) => {
-          const categoryWeapons = weapons.filter(w => isEn ? w.categoryEn === category.id : w.category === category.id);
+        {categoryOrder.map((categoryId) => {
+          const categoryWeapons = weapons.filter(w => locale === "en" ? w.categoryEn === categoryId : w.category === categoryId);
           if (categoryWeapons.length === 0) return null;
           return (
-            <div key={category.id} className="mb-10">
+            <div key={categoryId} className="mb-10">
               <h2 className="font-display text-2xl tracking-wider text-text-secondary mb-4 border-b border-night-violet/50 pb-2">
-                {category.label}
+                {categoryLabels[categoryId] || categoryId}
               </h2>
               <div className="grid sm:grid-cols-2 gap-4">
                 {categoryWeapons.map((weapon) => (
@@ -182,10 +147,10 @@ export default async function ArmesPage({
                     <div className="flex items-start justify-between gap-2">
                       <h3 className="font-semibold text-text-primary">{weapon.name}</h3>
                       <span className="text-xs px-2 py-0.5 rounded bg-deep-bg-light border border-night-violet/30 text-text-muted shrink-0">
-                        {isEn ? weapon.categoryEn : weapon.category}
+                        {locale === "en" ? weapon.categoryEn : weapon.category}
                       </span>
                     </div>
-                    <p className="mt-2 text-sm text-text-muted">{isEn ? weapon.descriptionEn : weapon.description}</p>
+                    <p className="mt-2 text-sm text-text-muted">{locale === "en" ? weapon.descriptionEn : weapon.description}</p>
                     <div className="mt-3 flex items-center gap-1.5 text-xs text-text-muted">
                       <CheckCircle className="h-3.5 w-3.5 text-lagoon-cyan" />
                       {weapon.source}

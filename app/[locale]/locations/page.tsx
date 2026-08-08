@@ -6,6 +6,7 @@ import { locations } from "@/lib/data";
 import { BASE_URL, getSiteName, getSiteLocale } from "@/lib/site";
 import { sectionBreadcrumb } from "@/lib/sectionMeta";
 import { itemListJsonLd } from "@/lib/seo";
+import { getTranslations } from "next-intl/server";
 
 export async function generateMetadata({
   params,
@@ -13,16 +14,12 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const isEn = locale === "en";
+  const t = await getTranslations("Locations");
   const siteName = getSiteName(locale);
-  const path = isEn ? "/en/locations" : "/lieux";
+  const path = t("path");
 
-  const title = isEn
-    ? "GTA 6 Locations — Vice City, Leonida & GTA VI Maps"
-    : "Lieux GTA 6 — Vice City, Leonida & cartes de GTA VI";
-  const description = isEn
-    ? "All locations in GTA 6 (GTA VI): Vice City, the Leonida Keys, Grassrivers swamps, Port Gellhorn, Ambrosia and Mount Kalaga. Explore the fictional state of Leonida."
-    : "Tous les lieux de GTA 6 (GTA VI) : Vice City, les Leonida Keys, les marais de Grassrivers, Port Gellhorn, Ambrosia et le Mont Kalaga. Explorez l'état fictif de Leonida.";
+  const title = t("metaTitle");
+  const description = t("metaDescription");
 
   return {
     title,
@@ -31,9 +28,7 @@ export async function generateMetadata({
       canonical: path,
       languages: { fr: "/lieux", en: "/en/locations" },
     },
-    keywords: isEn
-      ? ["GTA 6 locations", "Vice City GTA 6", "Leonida GTA 6", "GTA 6 map", "Leonida Keys", "Grassrivers", "Port Gellhorn"]
-      : ["lieux GTA 6", "Vice City GTA 6", "Leonida GTA 6", "carte GTA 6", "map GTA 6", "Leonida Keys", "Grassrivers", "Port Gellhorn"],
+    keywords: t.raw("keywords"),
     openGraph: {
       title: `${title} | ${siteName}`,
       description,
@@ -51,13 +46,14 @@ export default async function LieuxPage({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  const isEn = locale === "en";
-  const linkBase = isEn ? "/locations" : "/lieux";
-  const path = isEn ? "/en/locations" : "/lieux";
-  const sectionName = isEn ? "Locations" : "Lieux";
+  const t = await getTranslations("Locations");
 
-  const typeLabel = isEn ? "Type" : "Type";
-  const zonesLabel = isEn ? "Zones" : "Zones";
+  const linkBase = t("linkBase");
+  const path = t("path");
+  const sectionName = t("sectionName");
+
+  const typeLabel = t("typeLabel");
+  const zonesLabel = t("zonesLabel");
 
   return (
     <>
@@ -65,7 +61,7 @@ export default async function LieuxPage({
         data={[
           sectionBreadcrumb(sectionName, path, locale),
           itemListJsonLd(
-            isEn ? "GTA 6 Locations" : "Lieux GTA 6",
+            t("jsonLdTitle"),
             `${BASE_URL}${path}`,
             locations.map((l) => ({
               name: l.name,
@@ -76,10 +72,8 @@ export default async function LieuxPage({
         ]}
       />
       <SectionPage
-        title={isEn ? "LOCATIONS" : "LIEUX"}
-        subtitle={isEn
-          ? "Explore Vice City, the Keys, the swamps and every corner of Leonida."
-          : "Explorez Vice City, les Keys, les marais et tous les recoins de Leonida."}
+        title={t("pageTitle")}
+        subtitle={t("pageSubtitle")}
       >
         <div className="grid sm:grid-cols-2 gap-4">
           {locations.map((loc) => (

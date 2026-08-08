@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Users } from "lucide-react";
 import SectionPage from "@/components/SectionPage";
 import { getSiteName, getSiteLocale } from "@/lib/site";
+import { getTranslations } from "next-intl/server";
 
 export async function generateMetadata({
   params,
@@ -9,17 +10,14 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const isEn = locale === "en";
+  const t = await getTranslations("Npcs");
   const siteName = getSiteName(locale);
   const ogLocale = getSiteLocale(locale);
+  const isEn = locale === "en";
   const path = isEn ? "/en/npcs" : "/pnj";
 
-  const title = isEn
-    ? "GTA 6 NPCs — Non-Playable Characters"
-    : "PNJ GTA 6 — Personnages non jouables";
-  const description = isEn
-    ? "Database of non-playable characters (NPCs) in GTA 6. Coming after game release."
-    : "Base de données des personnages non jouables (PNJ) de GTA 6. Bientôt disponible après la sortie du jeu.";
+  const title = t("metaTitle");
+  const description = t("metaDescription");
 
   return {
     title,
@@ -46,26 +44,17 @@ export default async function PnjPage({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  const isEn = locale === "en";
+  const t = await getTranslations("Npcs");
 
   return (
-    <SectionPage
-      title="PNJ"
-      subtitle={
-        isEn
-          ? "The non-playable characters that populate the streets of Leonida."
-          : "Les personnages non jouables qui peuplent les rues de Leonida."
-      }
-    >
+    <SectionPage title={t("title")} subtitle={t("subtitle")}>
       <div className="glass-card p-8 text-center">
         <Users className="h-10 w-10 text-neon-pink mx-auto mb-4" />
         <h3 className="font-display text-2xl tracking-wider text-text-primary mb-2">
-          {isEn ? "COMING SOON" : "BIENTÔT DISPONIBLE"}
+          {t("comingSoonTitle")}
         </h3>
         <p className="text-text-muted max-w-md mx-auto">
-          {isEn
-            ? "The NPC database will be available after the game's release. Stay tuned!"
-            : "La base de données des PNJ sera disponible après la sortie du jeu. Restez connectés !"}
+          {t("comingSoonText")}
         </p>
       </div>
     </SectionPage>

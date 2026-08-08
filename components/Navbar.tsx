@@ -1,26 +1,46 @@
 "use client";
 
-import { useState } from "react";
-import Link from "next/link";
-import { useLocale } from "next-intl";
+import { useState, useEffect, useRef } from "react";
+import Image from "next/image";
+import { Link } from "@/i18n/navigation";
+import { useTranslations } from "next-intl";
 import { motion, AnimatePresence } from "framer-motion";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 
-const navItems: { href: string; labelFr: string; labelEn: string }[] = [
-  { href: "/codes", labelFr: "Codes", labelEn: "Cheats" },
-  { href: "/vehicles", labelFr: "Véhicules", labelEn: "Vehicles" },
-  { href: "/weapons", labelFr: "Armes", labelEn: "Weapons" },
-  { href: "/characters", labelFr: "Personnages", labelEn: "Characters" },
-  { href: "/locations", labelFr: "Lieux", labelEn: "Locations" },
-  { href: "/gallery", labelFr: "Galerie", labelEn: "Gallery" },
-  { href: "/news", labelFr: "Actus", labelEn: "News" },
-];
+const navItems = [
+  { key: "codes", href: "/codes" },
+  { key: "vehicles", href: "/vehicles" },
+  { key: "weapons", href: "/weapons" },
+  { key: "characters", href: "/characters" },
+  { key: "locations", href: "/locations" },
+  { key: "gallery", href: "/gallery" },
+  { key: "news", href: "/news" },
+] as const;
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const locale = useLocale();
+  const t = useTranslations("Navbar");
+  const menuId = "mobile-nav-menu";
+  const menuRef = useRef<HTMLDivElement>(null);
 
-  const logoText = locale === "en" ? "CHEAT CODES" : "CODE TRICHE";
+  // Close menu on Escape key
+  useEffect(() => {
+    function handleKeyDown(e: KeyboardEvent) {
+      if (e.key === "Escape") setIsOpen(false);
+    }
+    if (isOpen) {
+      document.addEventListener("keydown", handleKeyDown);
+      return () => document.removeEventListener("keydown", handleKeyDown);
+    }
+  }, [isOpen]);
+
+  // Close menu on route change (link click already does this via onClick)
+  // Focus the menu when it opens
+  useEffect(() => {
+    if (isOpen && menuRef.current) {
+      menuRef.current.focus();
+    }
+  }, [isOpen]);
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 border-b border-neon-pink/10 bg-deep-bg/80 backdrop-blur-xl">
@@ -28,15 +48,16 @@ export default function Navbar() {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2.5 group shrink-0">
-            <img
-              src="/images/logo/logo-icon.png"
-              alt="GTA 6 CodeTriche"
+            <Image
+              src="/images/logo/logo-icon.webp"
+              alt={t("logo")}
               width={40}
               height={40}
+              priority
               className="h-10 w-10 shrink-0 rounded-lg transition-all duration-300 group-hover:scale-110 group-hover:drop-shadow-[0_0_12px_rgba(255,46,154,0.6)]"
             />
             <span className="font-display text-lg sm:text-xl tracking-wider text-text-primary transition-all group-hover:text-neon-pink">
-              {logoText}
+              {t("logo")}
               <span className="text-neon-pink"> GTA6</span>
             </span>
           </Link>
@@ -46,10 +67,10 @@ export default function Navbar() {
             {navItems.map((item) => (
               <Link
                 key={item.href}
-                href={item.href}
+                href={item.href as any}
                 className="px-3 py-2 text-sm font-medium text-text-secondary transition-colors hover:text-neon-pink rounded-lg hover:bg-neon-pink/5"
               >
-                {locale === "en" ? item.labelEn : item.labelFr}
+                {t(`links.${item.key}`)}
               </Link>
             ))}
             <LanguageSwitcher />
@@ -61,7 +82,9 @@ export default function Navbar() {
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="md:hidden p-2 text-text-secondary hover:text-neon-pink"
-              aria-label="Menu"
+              aria-label={t("menuAriaLabel")}
+              aria-expanded={isOpen}
+              aria-controls={menuId}
             >
               <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 {isOpen ? (
@@ -79,6 +102,10 @@ export default function Navbar() {
       <AnimatePresence>
         {isOpen && (
           <motion.div
+            ref={menuRef}
+            id={menuId}
+            role="menu"
+            tabIndex={-1}
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
@@ -88,11 +115,12 @@ export default function Navbar() {
               {navItems.map((item) => (
                 <Link
                   key={item.href}
-                  href={item.href}
+                  href={item.href as any}
                   onClick={() => setIsOpen(false)}
+                  role="menuitem"
                   className="block px-3 py-2.5 text-sm font-medium text-text-secondary hover:text-neon-pink hover:bg-neon-pink/5 rounded-lg transition-colors"
                 >
-                  {locale === "en" ? item.labelEn : item.labelFr}
+                  {t(`links.${item.key}`)}
                 </Link>
               ))}
             </div>

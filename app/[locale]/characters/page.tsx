@@ -6,6 +6,7 @@ import { characters } from "@/lib/characters";
 import { BASE_URL, getSiteName, getSiteLocale } from "@/lib/site";
 import { sectionBreadcrumb } from "@/lib/sectionMeta";
 import { itemListJsonLd } from "@/lib/seo";
+import { getTranslations } from "next-intl/server";
 
 export async function generateMetadata({
   params,
@@ -13,16 +14,12 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const isEn = locale === "en";
+  const t = await getTranslations("Characters");
   const siteName = getSiteName(locale);
-  const path = isEn ? "/en/characters" : "/personnages";
+  const path = t("path");
 
-  const title = isEn
-    ? "GTA 6 Characters — Jason, Lucia & All Characters"
-    : "Personnages GTA 6 — Jason, Lucia & tous les personnages";
-  const description = isEn
-    ? "All characters in GTA 6 (GTA VI): Jason Duval and Lucia Caminos (playable protagonists), Raul Bautista (antagonist), Cal Hampton, Boobie Ike, Dre'Quan Priest and Brian Heder. Bios, stats and relationships."
-    : "Tous les personnages de GTA 6 (GTA VI) : Jason Duval et Lucia Caminos (protagonistes jouables), Raul Bautista (antagoniste), Cal Hampton, Boobie Ike, Dre'Quan Priest et Brian Heder. Biographies, stats et relations.";
+  const title = t("metaTitle");
+  const description = t("metaDescription");
 
   return {
     title,
@@ -31,9 +28,7 @@ export async function generateMetadata({
       canonical: path,
       languages: { fr: "/personnages", en: "/en/characters" },
     },
-    keywords: isEn
-      ? ["GTA 6 characters", "GTA VI characters", "Jason Duval", "Lucia Caminos", "Raul Bautista", "GTA 6 protagonists", "GTA 6 heroes"]
-      : ["personnages GTA 6", "personnages GTA VI", "Jason Duval", "Lucia Caminos", "Raul Bautista", "protagonistes GTA 6", "héros GTA 6"],
+    keywords: t.raw("keywords"),
     openGraph: {
       title: `${title} | ${siteName}`,
       description,
@@ -51,21 +46,21 @@ export default async function PersonnagesPage({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  const isEn = locale === "en";
-  const linkBase = isEn ? "/characters" : "/personnages";
-  const path = isEn ? "/en/characters" : "/personnages";
-  const sectionName = isEn ? "Characters" : "Personnages";
+  const t = await getTranslations("Characters");
+
+  const linkBase = t("linkBase");
+  const path = t("path");
+  const sectionName = t("sectionName");
 
   const protagonists = characters.filter((c) => c.role === "Protagoniste jouable");
   const others = characters.filter((c) => c.role !== "Protagoniste jouable");
 
-  const playableLabel = isEn ? "PLAYABLE PROTAGONISTS" : "PROTAGONISTES JOUABLES";
-  const otherLabel = isEn ? "OTHER CHARACTERS" : "AUTRES PERSONNAGES";
-  const originLabel = isEn ? "Origin" : "Origine";
-  const roleLabel = isEn ? "Role" : "Rôle";
-  const roleTranslations: Record<string, string> = isEn
-    ? { "Protagoniste jouable": "Playable Protagonist", "Antagoniste": "Antagonist", "Allié": "Ally", "Contact": "Contact" }
-    : {};
+  const playableLabel = t("playableLabel");
+  const otherLabel = t("otherLabel");
+  const originLabel = t("originLabel");
+  const roleLabel = t("roleLabel");
+
+  const roleTranslations = t.raw("roleTranslations") as Record<string, string>;
 
   return (
     <>
@@ -73,21 +68,19 @@ export default async function PersonnagesPage({
         data={[
           sectionBreadcrumb(sectionName, path, locale),
           itemListJsonLd(
-            isEn ? "GTA 6 Characters" : "Personnages GTA 6",
+            t("jsonLdTitle"),
             `${BASE_URL}${path}`,
             characters.map((c) => ({
               name: c.name,
-              url: `${BASE_URL}/${isEn ? "characters" : "personnages"}/${c.id}`,
+              url: `${BASE_URL}/${linkBase}/${c.id}`,
               image: `${BASE_URL}${c.image}`,
             })),
           ),
         ]}
       />
       <SectionPage
-        title={isEn ? "CHARACTERS" : "PERSONNAGES"}
-        subtitle={isEn
-          ? "All characters in GTA VI — playable protagonists, antagonists and supporting characters."
-          : "Tous les personnages de GTA VI — protagonistes jouables, antagonistes et personnages secondaires."}
+        title={t("pageTitle")}
+        subtitle={t("pageSubtitle")}
       >
         <div className="mb-10">
           <h2 className="font-display text-2xl tracking-wider text-sunset-orange mb-4 border-b border-sunset-orange/20 pb-2">
@@ -104,7 +97,7 @@ export default async function PersonnagesPage({
                 accent="pink"
                 stats={[
                   { label: originLabel, value: char.origin },
-                  { label: roleLabel, value: isEn ? (roleTranslations[char.role] ?? char.role) : char.role },
+                  { label: roleLabel, value: roleTranslations[char.role] ?? char.role },
                 ]}
               />
             ))}
@@ -126,7 +119,7 @@ export default async function PersonnagesPage({
                 accent={char.role === "Antagoniste" ? "orange" : "cyan"}
                 stats={[
                   { label: originLabel, value: char.origin },
-                  { label: roleLabel, value: isEn ? (roleTranslations[char.role] ?? char.role) : char.role },
+                  { label: roleLabel, value: roleTranslations[char.role] ?? char.role },
                 ]}
               />
             ))}

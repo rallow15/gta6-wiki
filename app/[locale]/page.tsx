@@ -51,60 +51,21 @@ export default async function Home({
 }) {
   const { locale } = await params;
 
-  const faqs = locale === "en"
-    ? [
-        {
-          question: "When does GTA 6 come out?",
-          answer: "Grand Theft Auto VI (GTA 6) releases on November 19, 2026 for PlayStation 5, Xbox Series X|S and PC, following two official delays announced by Rockstar Games.",
-        },
-        {
-          question: "Where to find GTA 6 cheat codes?",
-          answer: "GTA 6 cheat codes will be available on GTA6CheatCodes at launch, organized by platform (PS5, Xbox Series, PC) with 1-click copy.",
-        },
-        {
-          question: "What city is GTA 6 set in?",
-          answer: "GTA 6 is set in Vice City and the entire fictional state of Leonida, including Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia and Mount Kalaga.",
-        },
-        {
-          question: "Who are the GTA 6 protagonists?",
-          answer: "Jason Duval and Lucia Caminos are the two playable protagonists of GTA 6, forming a Bonnie and Clyde duo. Lucia is the first playable female lead in the series.",
-        },
-      ]
-    : [
-        {
-          question: "Quand sort GTA 6 ?",
-          answer: "Grand Theft Auto VI (GTA 6) sort le 19 novembre 2026 sur PlayStation 5, Xbox Series X|S et PC, après deux reports officiels annoncés par Rockstar Games.",
-        },
-        {
-          question: "Où trouver les codes de triche GTA 6 ?",
-          answer: "Les codes de triche GTA 6 seront disponibles sur CodeTricheGTA6 à la sortie du jeu, classés par plateforme (PS5, Xbox Series, PC) avec copier en 1 clic.",
-        },
-        {
-          question: "Dans quelle ville se déroule GTA 6 ?",
-          answer: "GTA 6 se déroule à Vice City et dans tout l'état fictif de Leonida, incluant les Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia et le Mont Kalaga.",
-        },
-        {
-          question: "Qui sont les protagonistes de GTA 6 ?",
-          answer: "Jason Duval et Lucia Caminos sont les deux protagonistes jouables de GTA 6, formant un duo à la Bonnie et Clyde. Lucia est la première héroïne jouable de la série.",
-        },
-      ];
+  const t = await getTranslations("Home");
 
-  const features = locale === "en"
-    ? [
-        { title: "Cheat Codes", desc: "All GTA 6 cheats with 1-click copy. Filter by PS5, Xbox and PC platform." },
-        { title: "Interactive Map", desc: "Explore Vice City and all of Leonida. Neighborhoods, shops, garages, secrets." },
-        { title: "Complete Guides", desc: "Characters, vehicles, weapons, animals — all stats and game details." },
-      ]
-    : [
-        { title: "Codes de triche", desc: "Tous les codes GTA 6 avec copier en 1 clic. Filtrer par plateforme PS5, Xbox et PC." },
-        { title: "Carte interactive", desc: "Explorez Vice City et tout Leonida. Quartiers, magasins, garages, secrets." },
-        { title: "Fiches complètes", desc: "Personnages, véhicules, armes, animaux — toutes les stats et détails du jeu." },
-      ];
+  const faqKeys = [0, 1, 2, 3] as const;
+  const faqs = faqKeys.map((i) => ({
+    question: t(`faqs.${i}.question`),
+    answer: t(`faqs.${i}.answer`),
+  }));
 
-  const trailerLabel = locale === "en" ? "TRAILER" : "BANDE-ANNONCE";
-  const sectionTitle = locale === "en"
-    ? (<><span className="text-neon-pink neon-text">EVERYTHING</span> ABOUT <span className="text-sunset-orange">GTA VI</span></>)
-    : (<><span className="text-neon-pink neon-text">TOUT</span> SUR <span className="text-sunset-orange">GTA VI</span></>);
+  const featureKeys = ["cheatCodes", "interactiveMap", "completeSheets"] as const;
+  const features = featureKeys.map((key) => ({
+    title: t(`features.${key}.title`),
+    desc: t(`features.${key}.desc`),
+  }));
+
+  const trailerLabel = t("trailerTitle");
 
   const icons = [Code, Map, BookOpen];
   const iconColors = ["neon-pink", "sunset-orange", "lagoon-cyan"];
@@ -149,7 +110,7 @@ export default async function Home({
           <section className="py-16 px-4 sm:px-6 border-t border-neon-pink/10">
             <div className="mx-auto max-w-5xl">
               <h2 className="font-display text-3xl sm:text-4xl tracking-wider text-text-primary text-center mb-12">
-                {sectionTitle}
+                <span className="text-neon-pink neon-text">{t('allAboutTitle')}</span> {t('allAboutConnector')} <span className="text-sunset-orange">{t('allAboutSubtitle')}</span>
               </h2>
 
               <div className="grid sm:grid-cols-3 gap-6">

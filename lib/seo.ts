@@ -23,11 +23,6 @@ export function websiteJsonLd(locale: string = "fr") {
     inLanguage: lang,
     description: descriptions[locale] ?? descriptions.fr,
     publisher: { "@id": `${BASE_URL}#organization` },
-    potentialAction: {
-      "@type": "SearchAction",
-      target: `${BASE_URL}/?s={search_term_string}`,
-      "query-input": "required name=search_term_string",
-    },
   };
 }
 
@@ -79,13 +74,6 @@ export function videoGameJsonLd(locale: string = "fr") {
     developer: { "@type": "Organization", name: "Rockstar Games" },
     publisher: { "@type": "Organization", name: "Rockstar Games" },
     contentRating: "PEGI 18",
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "5",
-      ratingCount: "1",
-      bestRating: "5",
-      worstRating: "1",
-    },
   };
 }
 
@@ -102,8 +90,9 @@ export function breadcrumbJsonLd(items: { name: string; url: string }[]) {
   };
 }
 
-export function newsArticleJsonLd(article: Article, url: string) {
+export function newsArticleJsonLd(article: Article, url: string, locale: string = "fr") {
   // Best-effort ISO date: articles store human French dates like "5 Déc 2023".
+  const isEn = locale === "en";
   return {
     "@context": "https://schema.org",
     "@type": "NewsArticle",
@@ -112,7 +101,7 @@ export function newsArticleJsonLd(article: Article, url: string) {
     image: article.image,
     datePublished: article.date,
     dateModified: article.date,
-    inLanguage: "fr-FR",
+    inLanguage: isEn ? "en-US" : "fr-FR",
     url,
     mainEntityOfPage: { "@type": "WebPage", "@id": url },
     articleSection: article.tag,

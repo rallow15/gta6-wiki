@@ -1,19 +1,49 @@
 {
+  "Layout": {
+    "keywords": [
+      "GTA 6 cheats",
+      "GTA VI cheat codes",
+      "GTA 6 codes",
+      "GTA 6 cheat codes PS5",
+      "GTA 6 cheat codes Xbox",
+      "GTA 6 cheat codes PC",
+      "GTA 6 release date",
+      "GTA 6 release",
+      "GTA 6 vehicles",
+      "best cars GTA 6",
+      "GTA 6 weapons",
+      "GTA 6 map",
+      "Vice City",
+      "Leonida",
+      "GTA 6 characters",
+      "Jason Duval",
+      "Lucia Caminos"
+    ],
+    "twitterImageAlt": "GTA 6 CheatCodes — Cheats, Info & Guides"
+  },
   "SiteMeta": {
     "title": "GTA6CheatCodes — GTA 6 Cheats, Info & Guides",
     "siteName": "GTA6CheatCodes",
     "description": "All GTA 6 cheat codes, character info, vehicles, weapons and Vice City locations. Complete English guide for GTA VI."
   },
   "Navbar": {
-    "codes": "Cheats",
-    "vehicles": "Vehicles",
-    "weapons": "Weapons",
-    "characters": "Characters",
-    "locations": "Locations",
-    "gallery": "Gallery",
-    "news": "News"
+    "logo": "CHEAT CODES",
+    "menuAriaLabel": "Menu",
+    "links": {
+      "codes": "Cheats",
+      "vehicles": "Vehicles",
+      "weapons": "Weapons",
+      "characters": "Characters",
+      "locations": "Locations",
+      "gallery": "Gallery",
+      "news": "News"
+    }
   },
   "Footer": {
+    "logo": "CHEAT CODES",
+    "disclaimer": "Unofficial fan site. GTA and Grand Theft Auto are registered trademarks of Rockstar Games.",
+    "copyright": "{year} GTA6CheatCodes. Fan site not affiliated with Rockstar Games.",
+    "tagline": "Made with passion in Vice City",
     "guides": "Guides",
     "explore": "Explore",
     "community": "Community",
@@ -33,24 +63,77 @@
     "news": "News",
     "about": "About",
     "legalNotice": "Legal Notice",
-    "privacy": "Privacy Policy",
-    "disclaimer": "Unofficial fan site. GTA and Grand Theft Auto are registered trademarks of Rockstar Games.",
-    "copyright": "2025 GTA6CheatCodes. Fan site not affiliated with Rockstar Games.",
-    "madeWith": "Made with passion in Vice City"
+    "privacy": "Privacy Policy"
   },
   "Hero": {
+    "logoAlt": "GTA 6 CheatCodes — Cheats, Info & Guides",
+    "countdownLabel": "GTA VI Release — November 19, 2026",
+    "cta": "See all codes",
+    "sections": {
+      "codes": {
+        "label": "Cheat Codes",
+        "desc": "PS5, Xbox, PC"
+      },
+      "vehicles": {
+        "label": "Vehicles",
+        "desc": "Cars, bikes, boats"
+      },
+      "weapons": {
+        "label": "Weapons",
+        "desc": "Full arsenal"
+      },
+      "characters": {
+        "label": "Characters",
+        "desc": "Jason, Lucia & more"
+      },
+      "locations": {
+        "label": "Locations",
+        "desc": "Vice City & Leonida"
+      },
+      "news": {
+        "label": "News",
+        "desc": "Latest updates"
+      }
+    }
+  },
+  "Home": {
     "trailerTitle": "TRAILER",
     "allAboutTitle": "EVERYTHING",
-    "allAboutTitleAccent": "ABOUT",
+    "allAboutConnector": "ABOUT",
     "allAboutSubtitle": "GTA VI",
-    "cheatCodes": "Cheat Codes",
-    "cheatCodesDesc": "All GTA 6 cheat codes with 1-click copy. Filter by PS5, Xbox and PC platform.",
-    "interactiveMap": "Interactive Map",
-    "interactiveMapDesc": "Explore Vice City and all of Leonida. Neighborhoods, shops, garages, secrets.",
-    "completeSheets": "Complete Guides",
-    "completeSheetsDesc": "Characters, vehicles, weapons, animals — all stats and game details.",
-    "countdownLabel": "GTA VI Release — November 19, 2026",
-    "seeCodes": "See all codes"
+    "cta": "See all codes",
+    "features": {
+      "cheatCodes": {
+        "title": "Cheat Codes",
+        "desc": "All GTA 6 cheat codes with 1-click copy. Filter by PS5, Xbox and PC platform."
+      },
+      "interactiveMap": {
+        "title": "Interactive Map",
+        "desc": "Explore Vice City and all of Leonida. Neighborhoods, shops, garages, secrets."
+      },
+      "completeSheets": {
+        "title": "Complete Guides",
+        "desc": "Characters, vehicles, weapons, animals — all stats and game details."
+      }
+    },
+    "faqs": [
+      {
+        "question": "When does GTA 6 come out?",
+        "answer": "Grand Theft Auto VI (GTA 6) releases on November 19, 2026 for PlayStation 5, Xbox Series X|S and PC, following two official delays announced by Rockstar Games."
+      },
+      {
+        "question": "Where to find GTA 6 cheat codes?",
+        "answer": "GTA 6 cheat codes will be available on GTA6CheatCodes at launch, organized by platform (PS5, Xbox Series, PC) with 1-click copy."
+      },
+      {
+        "question": "What city is GTA 6 set in?",
+        "answer": "GTA 6 is set in Vice City and the entire fictional state of Leonida, including Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia and Mount Kalaga."
+      },
+      {
+        "question": "Who are the GTA 6 protagonists?",
+        "answer": "Jason Duval and Lucia Caminos are the two playable protagonists of GTA 6, forming a Bonnie and Clyde duo. Lucia is the first playable female lead in the series."
+      }
+    ]
   },
   "CountdownTimer": {
     "days": "Days",
@@ -118,41 +201,138 @@
     "pc": "PC"
   },
   "CodesPlatform": {
-    "ps5Title": "GTA 6 Cheats PS5",
-    "xboxTitle": "GTA 6 Cheats Xbox",
-    "pcTitle": "GTA 6 Cheats PC",
-    "ps5MetaTitle": "GTA 6 Cheats PS5 — Cheat Codes",
-    "xboxMetaTitle": "GTA 6 Cheats Xbox — Cheat Codes",
-    "pcMetaTitle": "GTA 6 Cheats PC — Cheat Codes",
-    "ps5MetaDesc": "All GTA 6 cheat codes for PS5: health, armor, weapons, vehicles, police, weather and gameplay. Available at game launch on November 19, 2026.",
-    "xboxMetaDesc": "All GTA 6 cheat codes for Xbox Series: health, armor, weapons, vehicles, police, weather and gameplay. Available at game launch on November 19, 2026.",
-    "pcMetaDesc": "All GTA 6 cheat codes for PC: health, armor, weapons, vehicles, police, weather and gameplay. Available at game launch on November 19, 2026.",
-    "ps5Heading": "GTA 6 CHEATS PS5",
-    "xboxHeading": "GTA 6 CHEATS XBOX",
-    "pcHeading": "GTA 6 CHEATS PC",
-    "ps5Subtitle": "All GTA 6 cheat codes for PS5 — available at game launch.",
-    "xboxSubtitle": "All GTA 6 cheat codes for Xbox — available at game launch.",
-    "pcSubtitle": "All GTA 6 cheat codes for PC — available at game launch.",
-    "howToEnter": "HOW TO ENTER A CODE {platform}",
-    "ps5Buttons": "X, Circle, Triangle, Square, L1, L2, R1, R2",
-    "xboxButtons": "A, B, X, Y, LB, LT, RB, RT",
-    "pcButtons": "Keywords (e.g. HEALME, GODMODE)",
-    "ps5Enter": "During gameplay, press the indicated DualSense button sequence for each code. The code activates immediately and a notification appears on screen.",
-    "xboxEnter": "During gameplay, press the indicated Xbox controller button sequence for each code. The code activates immediately.",
-    "pcEnter": "On PC, enter cheat codes via the in-game phone or type the keyword directly on the keyboard.",
-    "comingSoon": "COMING SOON",
-    "comingSoonPs5Desc": "GTA 6 cheat codes for PS5 will be published here when the game releases on November 19, 2026. Come back soon for all codes with 1-click copy.",
-    "comingSoonXboxDesc": "GTA 6 cheat codes for Xbox will be published here when the game releases on November 19, 2026. Come back soon for all codes with 1-click copy.",
-    "comingSoonPcDesc": "GTA 6 cheat codes for PC will be published here when the game releases on November 19, 2026. Come back soon for all codes with 1-click copy.",
-    "faqTitle": "FREQUENTLY ASKED QUESTIONS",
-    "allCodes": "All cheat codes",
-    "keysLabel": "Keys: {platform}"
+    "breadcrumbHome": "Home",
+    "breadcrumbCodes": "Cheat Codes",
+    "allCodesLink": "All cheat codes →",
+    "PS5": {
+      "heading": "GTA 6 PS5 Cheat Codes",
+      "headingUpper": "GTA 6 PS5 CHEAT CODES",
+      "metaTitle": "GTA 6 PS5 Cheat Codes — All Cheats for GTA 6",
+      "metaDescription": "All GTA 6 cheat codes for PS5: health, armor, weapons, vehicles, police, weather and gameplay. Available at launch on November 19, 2026.",
+      "metaKeywords": [
+        "GTA 6 cheat codes PS5",
+        "GTA 6 cheats PS5",
+        "GTA VI PS5 cheats",
+        "GTA 6 PS5 codes"
+      ],
+      "ogTitle": "GTA 6 PS5 Cheat Codes | GTA6CheatCodes",
+      "ogDescription": "GTA 6 cheat codes for PS5 — available at launch on November 19, 2026.",
+      "subtitle": "All GTA 6 cheat codes for PS5 — available at launch.",
+      "howToEnterTitle": "HOW TO ENTER CHEATS ON PS5",
+      "enterMethod": "During gameplay, enter the DualSense button sequence shown for each cheat. The cheat activates immediately and a notification appears on screen.",
+      "buttons": "PS5 Keys",
+      "buttonsList": "X, Circle (○), Triangle (△), Square (□), L1, L2, R1, R2",
+      "comingSoonTitle": "COMING SOON",
+      "comingSoonText": "GTA 6 cheat codes for PS5 will be published here when the game releases on <bold>November 19, 2026</bold>. Come back soon for all cheat codes with 1-click copy.",
+      "faqTitle": "FREQUENTLY ASKED QUESTIONS",
+      "faqs": {
+        "commentEntrer": {
+          "question": "How do I enter cheat codes in GTA 6 on PS5?",
+          "answer": "During gameplay, quickly press the DualSense button sequence shown for each cheat (for example X X L1 R1 Triangle Square). No special key needs to be pressed first."
+        },
+        "trophees": {
+          "question": "Do GTA 6 cheat codes disable trophies?",
+          "answer": "Like in previous GTA games, using cheat codes may disable trophy/achievement progress during the session. Save before using cheats."
+        },
+        "confirmes": {
+          "question": "Are GTA 6 PS5 cheat codes confirmed?",
+          "answer": "The codes listed here are based on previous games and will be verified and updated when the game releases on November 19, 2026."
+        }
+      },
+      "allCodesLink": "All cheat codes →"
+    },
+    "Xbox": {
+      "heading": "GTA 6 Xbox Cheat Codes",
+      "headingUpper": "GTA 6 XBOX CHEAT CODES",
+      "metaTitle": "GTA 6 Xbox Cheat Codes — All Cheats for GTA 6",
+      "metaDescription": "All GTA 6 cheat codes for Xbox: health, armor, weapons, vehicles, police, weather and gameplay. Available at launch on November 19, 2026.",
+      "metaKeywords": [
+        "GTA 6 cheat codes Xbox",
+        "GTA 6 cheats Xbox",
+        "GTA VI Xbox cheats",
+        "GTA 6 Xbox codes"
+      ],
+      "ogTitle": "GTA 6 Xbox Cheat Codes | GTA6CheatCodes",
+      "ogDescription": "GTA 6 cheat codes for Xbox — available at launch on November 19, 2026.",
+      "subtitle": "All GTA 6 cheat codes for Xbox — available at launch.",
+      "howToEnterTitle": "HOW TO ENTER CHEATS ON XBOX",
+      "enterMethod": "During gameplay, enter the Xbox controller button sequence shown for each cheat. The cheat activates immediately.",
+      "buttons": "Xbox Keys",
+      "buttonsList": "A, B, X, Y, LB, LT, RB, RT",
+      "comingSoonTitle": "COMING SOON",
+      "comingSoonText": "GTA 6 cheat codes for Xbox will be published here when the game releases on <bold>November 19, 2026</bold>. Come back soon for all cheat codes with 1-click copy.",
+      "faqTitle": "FREQUENTLY ASKED QUESTIONS",
+      "faqs": {
+        "commentEntrer": {
+          "question": "How do I enter cheat codes in GTA 6 on Xbox Series?",
+          "answer": "During gameplay, quickly press the Xbox controller button sequence shown for each cheat (for example A A LB RB Y X)."
+        },
+        "succes": {
+          "question": "Do cheat codes disable Xbox achievements?",
+          "answer": "Like in previous GTA games, using cheat codes may disable achievements during the session. Save before using cheats."
+        },
+        "confirmes": {
+          "question": "Are GTA 6 Xbox cheat codes confirmed?",
+          "answer": "The codes listed here are based on previous games and will be verified and updated when the game releases on November 19, 2026."
+        }
+      },
+      "allCodesLink": "All cheat codes →"
+    },
+    "PC": {
+      "heading": "GTA 6 PC Cheat Codes",
+      "headingUpper": "GTA 6 PC CHEAT CODES",
+      "metaTitle": "GTA 6 PC Cheat Codes — All Cheats for GTA 6",
+      "metaDescription": "All GTA 6 cheat codes for PC: health, armor, weapons, vehicles, police, weather and gameplay. Available at launch on November 19, 2026.",
+      "metaKeywords": [
+        "GTA 6 cheat codes PC",
+        "GTA 6 cheats PC",
+        "GTA VI PC cheats",
+        "GTA 6 PC codes"
+      ],
+      "ogTitle": "GTA 6 PC Cheat Codes | GTA6CheatCodes",
+      "ogDescription": "GTA 6 cheat codes for PC — available at launch on November 19, 2026.",
+      "subtitle": "All GTA 6 cheat codes for PC — available at launch.",
+      "howToEnterTitle": "HOW TO ENTER CHEATS ON PC",
+      "enterMethod": "On PC, enter cheat codes via the in-game phone or type the keyword directly on the keyboard.",
+      "buttons": "PC Keys",
+      "buttonsList": "Keywords (e.g. HEALME, GODMODE)",
+      "comingSoonTitle": "COMING SOON",
+      "comingSoonText": "GTA 6 cheat codes for PC will be published here when the game releases on <bold>November 19, 2026</bold>. Come back soon for all cheat codes with 1-click copy.",
+      "faqTitle": "FREQUENTLY ASKED QUESTIONS",
+      "faqs": {
+        "commentEntrer": {
+          "question": "How do I enter cheat codes in GTA 6 on PC?",
+          "answer": "On PC, open the in-game phone or type the cheat keyword directly on the keyboard (for example HEALME to restore health)."
+        },
+        "succes": {
+          "question": "Do GTA 6 PC cheat codes disable achievements?",
+          "answer": "Like in previous GTA games, using cheats may disable achievements during the session. Save before using cheats."
+        },
+        "confirmes": {
+          "question": "Are GTA 6 PC cheat codes confirmed?",
+          "answer": "The keywords listed here are based on previous games and will be verified and updated when the game releases on November 19, 2026."
+        }
+      },
+      "allCodesLink": "All cheat codes →"
+    }
   },
   "NotFound": {
     "title": "PAGE NOT FOUND",
     "description": "You must have taken a wrong turn in Vice City. This page doesn't exist or has been moved.",
-    "goHome": "Back to homepage",
-    "seeCodes": "See cheat codes"
+    "homeLink": "Back to homepage",
+    "codesLink": "See cheat codes"
+  },
+  "ArticleDetail": {
+    "backToNews": "News",
+    "source": "Source:",
+    "readOriginal": "Read the original article on {source}"
+  },
+  "Lightbox": {
+    "dialogLabel": "Image viewer: {alt}",
+    "close": "Close",
+    "download": "Download",
+    "previous": "Previous",
+    "next": "Next"
   },
   "SEO": {
     "breadcrumbHome": "Home",
@@ -161,5 +341,734 @@
     "breadcrumbCharacters": "Characters",
     "breadcrumbLocations": "Locations",
     "breadcrumbNews": "News"
+  },
+  "About": {
+    "metaTitle": "About — GTA6CheatCodes, GTA VI fan site",
+    "metaDescription": "GTA6CheatCodes (Vice City Tropical) is an unofficial fan site dedicated to Grand Theft Auto VI: cheat codes, vehicles, weapons, characters, locations and news.",
+    "metaKeywords": [
+      "GTA6CheatCodes",
+      "Vice City Tropical",
+      "GTA 6 fan site",
+      "about GTA VI"
+    ],
+    "breadcrumbName": "About",
+    "title": "ABOUT",
+    "subtitle": "Vice City Tropical — the ultimate GTA VI fan site.",
+    "logoAlt": "GTA6CheatCodes Badge",
+    "whatIsTitle": "WHAT IS VICE CITY TROPICAL?",
+    "whatIsText": "Vice City Tropical is an unofficial fan site dedicated to Grand Theft Auto VI. Our mission is to provide the most complete and up-to-date information about the game: cheat codes, vehicle sheets, weapons, characters, locations and all the latest news.",
+    "commitmentTitle": "OUR COMMITMENT",
+    "commitmentItems": [
+      "Verified and up-to-date information",
+      "A unique design inspired by the tropical universe of Vice City",
+      "An active community of fans",
+      "A fast and mobile-friendly site"
+    ],
+    "disclaimerTitle": "DISCLAIMER",
+    "disclaimerText": "Vice City Tropical is a fan site not affiliated with Rockstar Games, Take-Two Interactive or any other company related to the Grand Theft Auto franchise. GTA, Grand Theft Auto and all character, location and vehicle names are trademarks of Rockstar Games. This site is created by fans, for fans, and does not generate any direct profit from Rockstar Games' intellectual property.",
+    "contactTitle": "CONTACT",
+    "contactText": "For any questions or suggestions, send us an email at contact@vicecitytropical.fr"
+  },
+  "Animals": {
+    "metaTitle": "GTA 6 Animals — Wildlife of Leonida",
+    "metaDescription": "The wildlife of GTA 6: alligators, tropical fish and all the wild animals of Leonida. Coming after game release.",
+    "title": "ANIMALS",
+    "subtitle": "The wildlife of Leonida — alligators, tropical fish and more.",
+    "comingSoonTitle": "COMING SOON",
+    "comingSoonText": "The complete wildlife of Leonida will be documented after the game's release. Hunting, fishing and observations!"
+  },
+  "Npcs": {
+    "metaTitle": "GTA 6 NPCs — Non-Playable Characters",
+    "metaDescription": "Database of non-playable characters (NPCs) in GTA 6. Coming after game release.",
+    "title": "PNJ",
+    "subtitle": "The non-playable characters that populate the streets of Leonida.",
+    "comingSoonTitle": "COMING SOON",
+    "comingSoonText": "The NPC database will be available after the game's release. Stay tuned!"
+  },
+  "LegalNotice": {
+    "metaTitle": "Legal Notice — GTA6CheatCodes",
+    "metaDescription": "Legal notice for the GTA6CheatCodes (Vice City Tropical) website, an unofficial fan site dedicated to Grand Theft Auto VI.",
+    "title": "LEGAL NOTICE",
+    "subtitle": "Legal information about the Vice City Tropical website.",
+    "publisher": {
+      "heading": "1. SITE PUBLISHER",
+      "text": "Vice City Tropical is an independent site published by fans, with no direct profit motive related to the Grand Theft Auto franchise."
+    },
+    "intellectualProperty": {
+      "heading": "2. INTELLECTUAL PROPERTY",
+      "text": "Grand Theft Auto, GTA, Rockstar Games and all character, location and vehicle names mentioned on this site are trademarks belonging to Rockstar Games and Take-Two Interactive. This site is in no way affiliated, authorized or sponsored by Rockstar Games."
+    },
+    "content": {
+      "heading": "3. CONTENT",
+      "text": "The information presented on this site is provided for informational purposes and may contain errors or omissions. Cheat codes are based on public sources and may not be exhaustive or 100% accurate."
+    },
+    "advertising": {
+      "heading": "4. ADVERTISING",
+      "text": "This site may display advertisements provided by advertising partners. These advertisements do not constitute an endorsement of the products or services mentioned."
+    }
+  },
+  "PrivacyPolicy": {
+    "metaTitle": "Privacy Policy — GTA6CheatCodes",
+    "metaDescription": "Privacy policy and data protection for the GTA6CheatCodes (Vice City Tropical) website.",
+    "title": "PRIVACY",
+    "subtitle": "Privacy policy and data protection.",
+    "dataCollection": {
+      "heading": "1. DATA COLLECTION",
+      "text": "We only collect data necessary for the proper functioning of the site: browsing logs (IP addresses, pages visited, browser) via technical cookies. No personal data is collected without your consent."
+    },
+    "cookies": {
+      "heading": "2. COOKIES",
+      "text": "This site uses technical cookies necessary for its operation and analytical cookies (anonymized) to understand site usage. You can disable cookies in your browser settings."
+    },
+    "analytics": {
+      "heading": "3. ANALYTICS",
+      "text": "We use privacy-friendly analytics tools (no cross-site tracking, no advertising profiling). Data is anonymized and aggregated."
+    },
+    "externalLinks": {
+      "heading": "4. EXTERNAL LINKS",
+      "text": "Our site contains links to third-party sites (YouTube). We are not responsible for the privacy practices of those sites."
+    },
+    "contact": {
+      "heading": "5. CONTACT",
+      "text": "For any questions regarding this policy, contact us at privacy@vicecitytropical.fr"
+    },
+    "lastUpdated": "Last updated: January 2025"
+  },
+  "Gallery": {
+    "metaTitle": "GTA 6 Gallery — Official GTA VI Screenshots",
+    "metaDescription": "Gallery of official GTA 6 (GTA VI) screenshots: characters, Vice City, Leonida Keys, Grassrivers, Ultimate Edition and Vintage Vice City Pack.",
+    "metaKeywords": ["GTA 6 gallery", "GTA 6 screenshots", "GTA VI screenshots", "GTA 6 images", "GTA 6 artworks"],
+    "title": "GALLERY",
+    "subtitle": "{category} — {count} screenshots",
+    "breadcrumb": {
+      "home": "Home",
+      "gallery": "Gallery"
+    }
+  },
+  "Vehicles": {
+    "metaTitle": "GTA 6 Vehicles — Cars, Bikes, Boats of GTA VI",
+    "metaDescription": "All officially confirmed vehicles in GTA 6 (GTA VI): sports cars, supercars, muscle cars, SUVs, bikes and boats. Detailed specs with real-world inspiration.",
+    "path": "/en/vehicles",
+    "linkBase": "vehicles",
+    "sectionName": "Vehicles",
+    "pageTitle": "VEHICLES",
+    "pageSubtitle": "All vehicles officially confirmed in GTA VI. Sources: Trailer 1 & 2, Rockstar screenshots, official catalog.",
+    "noticeStrong": "Official sources only.",
+    "noticeRest": "Each listed vehicle has been confirmed by official trailers, Rockstar screenshots or the GTA VI catalog. Detailed stats will be added after the game releases.",
+    "inspiredLabel": "Inspired by:",
+    "jsonLdTitle": "GTA 6 Vehicles",
+    "whatsNewTitle": "VEHICLES — GTA VI FEATURES",
+    "categoryOrder": ["Sportive", "Supercar", "Muscle", "SUV", "Sport compact", "Classique", "Moto", "Bateau"],
+    "categories": {
+      "Sportive": "Sports & Supercars",
+      "Supercar": "Supercars",
+      "Muscle": "Muscle Cars",
+      "SUV": "SUVs & Off-road",
+      "Sport compact": "Sport Compacts",
+      "Classique": "Classics",
+      "Moto": "Motorcycles",
+      "Bateau": "Boats"
+    },
+    "whatsNew": [
+      { "title": "Limited inventory", "desc": "Bag system — can't carry all weapons and vehicles at once" },
+      { "title": "Vehicle trunk", "desc": "Store weapons and items in your car's trunk" },
+      { "title": "Deep customization", "desc": "Rideout Customs and One-Eyed Willie's Mod Shop (Ultimate Edition), classic car restoration" },
+      { "title": "New types", "desc": "Kayaks, airboats, mobility scooters, rental bikes (LomBike), donked cars" },
+      { "title": "Expansive navigation", "desc": "Boats, yachts, jet skis, submarines and seaplanes confirmed" }
+    ],
+    "keywords": ["GTA 6 vehicles", "GTA 6 cars", "GTA VI cars", "best cars GTA 6", "supercars GTA 6", "GTA 6 bikes", "GTA 6 boats", "Cheetah GTA 6", "Vice City vehicles"]
+  },
+  "Weapons": {
+    "metaTitle": "GTA 6 Weapons — Full Arsenal of GTA VI",
+    "metaDescription": "All officially confirmed weapons in GTA 6 (GTA VI): pistols, revolvers, shotguns, SMGs, assault rifles, snipers and heavy weapons. Official Rockstar sources.",
+    "path": "/en/weapons",
+    "sectionName": "Weapons",
+    "pageTitle": "WEAPONS",
+    "pageSubtitle": "All weapons officially confirmed in GTA VI. Sources: Trailer 1 & 2, official Rockstar screenshots.",
+    "noticeStrong": "Official sources only.",
+    "noticeRest": "Each weapon listed here has been confirmed by official trailers, Rockstar screenshots or the GTA VI website. Detailed stats will be added after the game releases.",
+    "jsonLdTitle": "GTA 6 Weapons",
+    "whatsNewTitle": "WEAPON SYSTEM — GTA VI FEATURES",
+    "categoryOrder": ["Pistol", "Revolvers", "Shotgun", "SMG", "Assault Rifle", "Sniper", "Heavy Weapon", "Melee", "Special"],
+    "categories": {
+      "Pistol": "Pistols",
+      "Revolvers": "Revolvers",
+      "Shotgun": "Shotguns",
+      "SMG": "SMGs",
+      "Assault Rifle": "Assault Rifles",
+      "Sniper": "Snipers",
+      "Heavy Weapon": "Heavy Weapons",
+      "Melee": "Melee",
+      "Special": "Special"
+    },
+    "whatsNew": [
+      { "title": "Limited inventory", "desc": "Bag system — can't carry all weapons at once" },
+      { "title": "Vehicle trunk", "desc": "Store weapons in your car's trunk and change loadout between missions" },
+      { "title": "Brand names", "desc": "Weapons carry fictional brand names (Duke, Girardi, Klose, Hawk & Little, Capo)" },
+      { "title": "Deep customization", "desc": "Accessories, optics, finishes and engravings on each weapon (inspired by RDR2)" },
+      { "title": "Ultimate Edition", "desc": "Exclusive custom variants (Girardi ES9, Klose K17, Hawk & Little Morgan Revolver)" }
+    ],
+    "keywords": ["GTA 6 weapons", "GTA VI weapons", "GTA 6 arsenal", "GTA 6 pistols", "GTA 6 sniper", "GTA 6 assault rifle", "Vice City weapons"]
+  },
+  "Locations": {
+    "metaTitle": "GTA 6 Locations — Vice City, Leonida & GTA VI Maps",
+    "metaDescription": "All locations in GTA 6 (GTA VI): Vice City, the Leonida Keys, Grassrivers swamps, Port Gellhorn, Ambrosia and Mount Kalaga. Explore the fictional state of Leonida.",
+    "path": "/en/locations",
+    "linkBase": "locations",
+    "sectionName": "Locations",
+    "pageTitle": "LOCATIONS",
+    "pageSubtitle": "Explore Vice City, the Keys, the swamps and every corner of Leonida.",
+    "jsonLdTitle": "GTA 6 Locations",
+    "typeLabel": "Type",
+    "zonesLabel": "Zones",
+    "keywords": ["GTA 6 locations", "Vice City GTA 6", "Leonida GTA 6", "GTA 6 map", "Leonida Keys", "Grassrivers", "Port Gellhorn"]
+  },
+  "Characters": {
+    "metaTitle": "GTA 6 Characters — Jason, Lucia & All Characters",
+    "metaDescription": "All characters in GTA 6 (GTA VI): Jason Duval and Lucia Caminos (playable protagonists), Raul Bautista (antagonist), Cal Hampton, Boobie Ike, Dre'Quan Priest and Brian Heder. Bios, stats and relationships.",
+    "path": "/en/characters",
+    "linkBase": "characters",
+    "sectionName": "Characters",
+    "pageTitle": "CHARACTERS",
+    "pageSubtitle": "All characters in GTA VI — playable protagonists, antagonists and supporting characters.",
+    "jsonLdTitle": "GTA 6 Characters",
+    "playableLabel": "PLAYABLE PROTAGONISTS",
+    "otherLabel": "OTHER CHARACTERS",
+    "originLabel": "Origin",
+    "roleLabel": "Role",
+    "roleTranslations": {
+      "Protagoniste jouable": "Playable Protagonist",
+      "Antagoniste": "Antagonist",
+      "Allié": "Ally",
+      "Contact": "Contact"
+    },
+    "keywords": ["GTA 6 characters", "GTA VI characters", "Jason Duval", "Lucia Caminos", "Raul Bautista", "GTA 6 protagonists", "GTA 6 heroes"]
+  },
+  "ReleaseDate": {
+    "metaTitle": "GTA 6 Release Date: November 19, 2026",
+    "metaDescription": "GTA 6 (Grand Theft Auto VI) release date: November 19, 2026 on PS5, Xbox Series X|S and PC. Delay history, editions, pricing and platforms.",
+    "metaKeywords": ["GTA 6 release date", "when does GTA 6 come out", "GTA 6 launch date", "GTA VI release date", "GTA 6 November 2026", "GTA 6 delay", "GTA 6 platforms"],
+    "ogTitle": "GTA 6 Release Date: November 19, 2026 | GTA6CheatCodes",
+    "ogDescription": "GTA 6 (Grand Theft Auto VI) release date: November 19, 2026 on PS5, Xbox Series X|S and PC. Delay history, editions, pricing and platforms.",
+    "breadcrumbHome": "Home",
+    "breadcrumbName": "GTA 6 Release Date",
+    "title": "RELEASE DATE",
+    "titleAccent": "GTA 6 —",
+    "subtitle": "Grand Theft Auto VI releases on November 19, 2026 on PS5, Xbox Series X|S and PC.",
+    "releaseDateLabel": "Official Release Date",
+    "releaseDateValue": "NOVEMBER 19, 2026",
+    "timelineTitle": "DELAY HISTORY",
+    "timeline": {
+      "0": { "date": "Dec. 2023", "title": "Initial announcement", "desc": "Rockstar announces GTA VI for fall 2025, with the first trailer and a return to Vice City." },
+      "1": { "date": "May 2, 2025", "title": "1st delay → May 26, 2026", "desc": "Rockstar pushes the release to May 2026. Take-Two stock drops roughly 10%." },
+      "2": { "date": "Nov. 6, 2025", "title": "2nd delay → Nov. 19, 2026", "desc": "Final date confirmed for an optimal level of polish. Take-Two stock drops another ~10%." }
+    },
+    "standardEdition": {
+      "title": "STANDARD EDITION",
+      "price": "$79.99",
+      "features": {
+        "0": "Base game GTA VI",
+        "1": "Vintage Vice City Pack (pre-order)",
+        "2": "1 month GTA+ (digital pre-order)"
+      }
+    },
+    "ultimateEdition": {
+      "title": "ULTIMATE EDITION",
+      "price": "$99.99",
+      "features": {
+        "0": "Exclusive vehicles (Cheetah '95, Dominator Buggy '67)",
+        "1": "Customization shops (Rideout Customs, One-Eyed Willie's)",
+        "2": "Classic car collection & FAILE weapons"
+      }
+    },
+    "platformsTitle": "PLATFORMS & PS5 FEATURES",
+    "platforms": {
+      "0": "<strong>PS5</strong> — DualSense haptic feedback, adaptive triggers, controller speaker, Tempest 3D audio. Rated \"PS5 Pro Enhanced\".",
+      "1": "<strong>Xbox Series X|S</strong> — next-gen optimizations.",
+      "2": "<strong>PC</strong> — confirmed to launch alongside consoles."
+    },
+    "faqTitle": "FREQUENTLY ASKED QUESTIONS",
+    "faqs": {
+      "0": { "question": "When does GTA 6 come out?", "answer": "Grand Theft Auto VI (GTA 6) releases on November 19, 2026 on PlayStation 5, Xbox Series X|S and PC, as announced by Rockstar Games on November 6, 2025." },
+      "1": { "question": "What platforms is GTA 6 coming to?", "answer": "GTA 6 is coming to PlayStation 5, Xbox Series X|S and PC. The PS5 version features exclusive DualSense capabilities (haptic feedback, adaptive triggers, Tempest 3D audio)." },
+      "2": { "question": "Why was GTA 6 delayed?", "answer": "GTA 6 had two official delays: first from fall 2025 to May 26, 2026, then from May 26 to November 19, 2026. Rockstar justified these delays by their commitment to reaching the level of polish fans expect." },
+      "3": { "question": "How much does GTA 6 cost?", "answer": "GTA 6 is available in two editions: the Standard Edition at $79.99 and the Ultimate Edition at $99.99. Pre-orders include the Vintage Vice City Pack (Vapid Stanier '55 and Shore Court garage)." }
+    },
+    "newsLink": "See all GTA 6 news →"
+  },
+  "BestCars": {
+    "metaTitle": "Best Cars in GTA 6 — Top Vehicles Ranked",
+    "metaDescription": "Ranking of the best cars in GTA 6 (GTA VI): sports cars, supercars, muscle cars and confirmed SUVs. Detailed specs, real-world inspiration and official sources.",
+    "metaKeywords": ["best cars GTA 6", "fastest cars GTA 6", "GTA 6 vehicles", "GTA 6 supercars", "GTA 6 car ranking", "Cheetah GTA 6", "Vice City cars"],
+    "ogTitle": "Best Cars in GTA 6 — Top Vehicles Ranked | GTA6CheatCodes",
+    "ogDescription": "Ranking of the best cars in GTA 6: sports cars, supercars, muscle cars and confirmed SUVs.",
+    "breadcrumbHome": "Home",
+    "breadcrumbVehicles": "Vehicles",
+    "breadcrumbName": "Best Cars in GTA 6",
+    "titleAccent": "BEST CARS",
+    "subtitle": "Ranking of the best vehicles officially confirmed in GTA VI. Official Rockstar sources.",
+    "inspiredBy": "Inspired by:",
+    "categoryMap": {
+      "Sportive": "Sports & Supercars",
+      "Supercar": "Supercars",
+      "Muscle": "Muscle Cars",
+      "SUV": "SUVs & Off-road",
+      "Sport compact": "Sport Compacts",
+      "Classique": "Classics",
+      "Moto": "Motorcycles",
+      "Bateau": "Boats"
+    },
+    "faqTitle": "FREQUENTLY ASKED QUESTIONS",
+    "faqs": {
+      "0": { "question": "What is the best car in GTA 6?", "answer": "The Grotti Cheetah '95 (Ultimate edition), inspired by the Ferrari Testarossa, is one of the most iconic sports cars confirmed in GTA 6. Exact performance specs will be known when the game releases on November 19, 2026." },
+      "1": { "question": "Can you customize cars in GTA 6?", "answer": "Yes. GTA 6 features customization shops like Rideout Customs and One-Eyed Willie's Mod Shop (Ultimate edition), as well as classic car restoration." },
+      "2": { "question": "Are there boats in GTA 6?", "answer": "Yes. GTA 6 confirms boats, yachts, jet skis, submarines and seaplanes for exploring the waters of Leonida, like the Shitzu Squalo." }
+    },
+    "allVehiclesLink": "See all GTA 6 vehicles →"
+  },
+  "ViceCityMap": {
+    "metaTitle": "GTA 6 Map — Vice City & Leonida Map",
+    "metaDescription": "GTA 6 (GTA VI) map: Vice City, the Leonida Keys, Grassrivers swamps, Port Gellhorn, Ambrosia and Mount Kalaga. Explore every region of the fictional state of Leonida.",
+    "metaKeywords": ["GTA 6 map", "GTA 6 map locations", "Vice City GTA 6 map", "Leonida GTA 6 map", "GTA 6 regions", "GTA VI map", "Vice City GTA 6"],
+    "ogTitle": "GTA 6 Map — Vice City & Leonida | GTA6CheatCodes",
+    "ogDescription": "GTA 6 map: Vice City, the Leonida Keys, Grassrivers swamps, Port Gellhorn, Ambrosia and Mount Kalaga.",
+    "breadcrumbHome": "Home",
+    "breadcrumbLocations": "Locations",
+    "breadcrumbName": "GTA 6 Map",
+    "title": "GTA 6 MAP",
+    "titleAccent": "VICE CITY &",
+    "subtitle": "Explore Vice City and all the regions of the fictional state of Leonida.",
+    "stateTitle": "THE STATE OF LEONIDA",
+    "stateText": "GTA 6 takes place in the fictional state of <strong className=\"text-lagoon-cyan\">Leonida</strong>, inspired by Florida. At its heart lies <strong className=\"text-neon-pink\">Vice City</strong>, a neon-lit metropolis inspired by Miami. Surrounding it, a tropical archipelago, swamps, an industrial port, upscale residential neighborhoods and wild mountains make up a vast and varied map.",
+    "typeMap": {
+      "Metropole": "Metropolis",
+      "Archipel": "Archipelago",
+      "Marais": "Swamps",
+      "Port": "Port",
+      "Quartier residentiel": "Residential District",
+      "Nature": "Nature"
+    },
+    "featureMap": {
+      "Marais salins": "Salt marshes",
+      "Mangroves": "Mangroves",
+      "Campements caches": "Hidden camps",
+      "Entrepots": "Warehouses",
+      "Conteneurs": "Containers",
+      "Zone industrielle": "Industrial zone",
+      "Manoirs": "Mansions",
+      "Country club": "Country club",
+      "Residences de luxe": "Luxury residences",
+      "Sentiers de randonnee": "Hiking trails",
+      "Lacs": "Lakes",
+      "Cabanes isolees": "Isolated cabins"
+    },
+    "faqTitle": "FREQUENTLY ASKED QUESTIONS",
+    "faqs": {
+      "0": { "question": "What city is GTA 6 set in?", "answer": "GTA 6 is set primarily in Vice City, inspired by Miami, within the fictional state of Leonida inspired by Florida." },
+      "1": { "question": "What regions make up the GTA 6 map?", "answer": "The GTA 6 map (Leonida) includes Vice City, the Leonida Keys, the Grassrivers swamps (Everglades), the industrial port of Port Gellhorn, the upscale residential area of Ambrosia, and the Mount Kalaga national park." },
+      "2": { "question": "Is the GTA 6 map bigger than GTA V?", "answer": "Rockstar describes Leonida as the biggest and most immersive evolution in the series. The map includes city, beaches, swamps, mountains and a tropical archipelago." }
+    },
+    "allLocationsLink": "See all GTA 6 locations →"
+  },
+  "Tips": {
+    "metaTitle": "GTA 6 Tips — Best tips, guides and strategies for GTA VI",
+    "metaDescription": "All GTA 6 tips: starting advice, best strategies, farming, secrets and gameplay tips to master GTA VI from day one.",
+    "metaKeywords": ["GTA 6 tips", "GTA 6 guide", "GTA 6 beginner tips", "best tips GTA 6", "GTA 6 strategies", "GTA 6 starting guide", "GTA VI tips", "GTA 6 gameplay tips"],
+    "ogTitle": "GTA 6 Tips — Best tips, guides and strategies for GTA VI | GTA6CheatCodes",
+    "ogDescription": "All GTA 6 tips: starting advice, best strategies, farming, secrets and gameplay tips to master GTA VI from day one.",
+    "breadcrumbHome": "Home",
+    "breadcrumbName": "GTA 6 Tips",
+    "title": "TIPS &",
+    "titleAccent": "GTA 6",
+    "subtitle": "The best tips, advice and strategies to master GTA 6 from day one.",
+    "notice": "<strong className=\"text-accent-teal\">Tips based on trailers and confirmed mechanics.</strong> Details will be refined after the game launches on November 19, 2026.",
+    "sections": {
+      "0": {
+        "title": "GETTING STARTED — THE ESSENTIALS",
+        "tips": {
+          "0": { "title": "Follow the story first", "desc": "Main missions unlock key mechanics: driving, combat, heists, customization. Don't spread yourself thin early on." },
+          "1": { "title": "Buy a garage quickly", "desc": "A garage lets you store vehicles and change your weapon loadout via the trunk. It's a priority investment." },
+          "2": { "title": "Learn the duffel bag system", "desc": "You can't carry all weapons at once. Prepare loadouts in your vehicle's trunk before each mission." },
+          "3": { "title": "Explore Vice City on foot", "desc": "Alleys, rooftops and hidden areas are full of collectibles and secrets. Driving past means missing them." },
+          "4": { "title": "Save often", "desc": "GTA 6 has auto-saves, but make manual saves before heists and important decisions." }
+        }
+      },
+      "1": {
+        "title": "COMBAT & STRATEGY",
+        "tips": {
+          "0": { "title": "Use cover", "desc": "The cover system is essential. Stay behind an obstacle, aim while peeking out, then duck back down. Never stay exposed." },
+          "1": { "title": "Prepare your loadout", "desc": "Before a mission, choose your weapons from the vehicle trunk. An assault rifle + shotgun covers 90% of situations." },
+          "2": { "title": "Switch characters wisely", "desc": "Jason and Lucia have different abilities. Use the best character for each situation." },
+          "3": { "title": "Run away when needed", "desc": "If the police are at 4+ stars, flee rather than fight. Reinforcements are infinite — running is the best strategy." }
+        }
+      },
+      "2": {
+        "title": "MONEY & BUSINESS",
+        "tips": {
+          "0": { "title": "Heists = maximum income", "desc": "Main heists pay out the biggest sums. Choose your approach wisely (stealth, aggressive, smart) to maximize profit." },
+          "1": { "title": "Invest in the stock market BEFORE missions", "desc": "Some missions cause stock prices to fluctuate. Buy the affected stocks before starting the mission, then sell after." },
+          "2": { "title": "Buy businesses early", "desc": "Revenue-generating properties (nightclubs, garages, etc.) are profitable long-term. Buy them as early as possible." },
+          "3": { "title": "Street races = quick cash", "desc": "Illegal street races in Vice City are a quick way to earn money between missions." }
+        }
+      },
+      "3": {
+        "title": "EXPLORATION & SECRETS",
+        "tips": {
+          "0": { "title": "Each region has its activities", "desc": "Vice City (races), Keys (boats), Grassrivers (hunting/fishing), Port Gellhorn (deliveries), Ambrosia (real estate), Mount Kalaga (climbing)." },
+          "1": { "title": "Dive underwater", "desc": "The speargun unlocks underwater exploration. Shipwrecks and treasures are hidden beneath the surface." },
+          "2": { "title": "Listen to NPC conversations", "desc": "Pedestrians, vendors and radio broadcasts give clues about secret activities and random events." },
+          "3": { "title": "Come back with new abilities", "desc": "Some areas are more accessible with equipment unlocked later in the story. Revisit previously explored locations." }
+        }
+      }
+    },
+    "guidesTitle": "COMPLEMENTARY GUIDES",
+    "guides": {
+      "cheatCodes": { "title": "Cheat Codes", "desc": "All PS5, Xbox, PC cheat codes" },
+      "makeMoney": { "title": "Make Money", "desc": "Heists, businesses, investments" },
+      "walkthrough": { "title": "Walkthrough & Guide", "desc": "Step-by-step mission guide" },
+      "secrets": { "title": "Secrets & Easter Eggs", "desc": "Mysteries and hidden references" }
+    },
+    "faqTitle": "FREQUENTLY ASKED QUESTIONS",
+    "faqs": {
+      "0": { "question": "Where to start in GTA 6?", "answer": "Start with the main story missions to unlock core mechanics (driving, combat, heists). Then invest in revenue-generating properties and explore side activities to maximize your earnings." },
+      "1": { "question": "Tips for making money fast?", "answer": "Prioritize heists for big payouts, invest in the stock market before missions that impact stock prices, and buy businesses as early as possible for passive income. Check our complete money guide for more details." },
+      "2": { "question": "Combat tips for GTA 6?", "answer": "Use the cover system, switch between weapons depending on the situation (shotgun for close range, sniper for distance), and leverage the duffel bag system to prepare loadouts tailored to each mission via your vehicle trunk." },
+      "3": { "question": "How to explore the GTA 6 map effectively?", "answer": "Take the time to explore each region (Vice City, Keys, Grassrivers, Port Gellhorn, Ambrosia, Mount Kalaga). Use fast vehicles for roads, boats for coastlines and helicopters for mountainous areas. Come back with new abilities to access previously blocked zones." }
+    },
+    "links": {
+      "cheatCodes": "Cheat Codes →",
+      "makeMoney": "Make Money →",
+      "cheats": "Cheats →"
+    }
+  },
+  "Secrets": {
+    "metaTitle": "GTA 6 Secrets & Easter Eggs — All mysteries in GTA VI",
+    "metaDescription": "All confirmed secrets and easter eggs in GTA 6 (GTA VI): Vice City references, Leonida mysteries, hidden items, connections to GTA V and Red Dead Redemption.",
+    "metaKeywords": ["GTA 6 secrets", "GTA 6 easter eggs", "GTA 6 mysteries", "Vice City secrets GTA 6", "GTA VI easter eggs", "hidden items GTA 6", "GTA 6 references", "Leonida mysteries"],
+    "ogTitle": "GTA 6 Secrets & Easter Eggs — All mysteries in GTA VI | GTA6CheatCodes",
+    "ogDescription": "All confirmed secrets and easter eggs in GTA 6: Vice City references, RDR links and Leonida mysteries.",
+    "breadcrumbHome": "Home",
+    "breadcrumbName": "GTA 6 Secrets & Easter Eggs",
+    "titleAccent": "GTA 6 —",
+    "subtitle": "All confirmed secrets, easter eggs and mysteries in GTA 6. Vice City references, RDR links and Leonida mysteries.",
+    "notice": "<strong className=\"text-accent-teal\">Official sources + community analysis.</strong> Items marked \"Confirmed\" are visible in official trailers/screenshots. \"Rumor\" items are community theories based on visual clues.",
+    "categories": {
+      "viceCity": {
+        "title": "VICE CITY REFERENCES",
+        "items": {
+          "0": { "name": "Retro neon logos", "desc": "Vice City's neon signs recreate the visual style of GTA: Vice City (2002), with identical fonts and colors.", "status": "Confirmed" },
+          "1": { "name": "Voodoo Lounge", "desc": "A bar named Voodoo Lounge visible in screenshots, a direct reference to the voodoo atmosphere of Vice City.", "status": "Confirmed" },
+          "2": { "name": "Malibu Club", "desc": "The potential return of the legendary Malibu Club from GTA: Vice City, visible in the background of trailers.", "status": "Rumor" },
+          "3": { "name": "Emotion 98.3 radio station", "desc": "A nostalgic-sounding radio station echoing the iconic soundtracks of Vice City.", "status": "Rumor" }
+        }
+      },
+      "rdr": {
+        "title": "RED DEAD REDEMPTION LINKS",
+        "items": {
+          "0": { "name": "Duke Arms Company", "desc": "The Duke weapon brand in GTA 6 is a direct nod to the Dutch van der Linde family in Red Dead Redemption.", "status": "Confirmed" },
+          "1": { "name": "Rideout Customs", "desc": "The Rideout customization garage echoes the customization mechanics from RDR2.", "status": "Confirmed" },
+          "2": { "name": "Wild animals", "desc": "The hunting and animal system in the swamps directly evokes RDR2's mechanics.", "status": "Confirmed" }
+        }
+      },
+      "leonida": {
+        "title": "LEONIDA MYSTERIES",
+        "items": {
+          "0": { "name": "Giant alligators", "desc": "Unusually large alligators in the Grassrivers swamps — the start of an animal mystery?", "status": "Confirmed" },
+          "1": { "name": "Underwater shipwrecks", "desc": "Visible shipwrecks underwater, suggesting hidden treasures to explore while diving.", "status": "Confirmed" },
+          "2": { "name": "Mount Kalaga", "desc": "Mount Kalaga's national park potentially hides high-altitude secrets, similar to Mount Chiliad.", "status": "Rumor" },
+          "3": { "name": "Mysterious radio signal", "desc": "Radio frequencies picked up in remote areas could hide ARGs or mysteries.", "status": "Rumor" }
+        }
+      },
+      "hidden": {
+        "title": "HIDDEN DETAILS",
+        "items": {
+          "0": { "name": "Personal diaries", "desc": "Letters and documents scattered across the map telling parallel stories.", "status": "Rumor" },
+          "1": { "name": "Graffiti and messages", "desc": "Graffiti on Vice City walls containing clues and references to other Rockstar games.", "status": "Confirmed" },
+          "2": { "name": "Hidden outfits", "desc": "Special outfits inspired by historical characters from the GTA series, scattered throughout Leonida.", "status": "Rumor" },
+          "3": { "name": "Speargun", "desc": "Special weapon confirmed for underwater exploration, allowing access to secret areas.", "status": "Confirmed" }
+        }
+      }
+    },
+    "theoriesTitle": "COMMUNITY THEORIES",
+    "theories": {
+      "0": { "title": "The Ghost of Vice City", "desc": "Players think they've spotted a ghostly silhouette in Vice City's neon lights, reminiscent of the Mount Gordo ghost in GTA V." },
+      "1": { "title": "The Swamp Monster", "desc": "The Grassrivers area could hide a mythical creature, like the bigfoot in GTA San Andreas and RDR2." },
+      "2": { "title": "The Secret Island of the Keys", "desc": "A small uninhabited island visible on the Leonida Keys map could hold a major secret." },
+      "3": { "title": "The Mural Code", "desc": "Graffiti in Vice City's alleys could form a code to decipher, similar to the Mount Chiliad mystery." }
+    },
+    "faqTitle": "FREQUENTLY ASKED QUESTIONS",
+    "faqs": {
+      "0": { "question": "Are there easter eggs in GTA 6?", "answer": "Yes. Official trailers and screenshots have already revealed several easter eggs: references to Vice City Stories, hidden Rockstar logos, nods to Red Dead Redemption and unexplained mysteries in the Grassrivers swamps." },
+      "1": { "question": "Does GTA 6 have connections to GTA V?", "answer": "GTA 6 is a parallel universe. Fictional brands (Ammu-Nation, Burger Shot, Ponsonbys) return, but GTA V characters don't appear in the story. Visual references to GTA V's Los Santos can be seen in in-game media." },
+      "2": { "question": "What is the mystery of the Grassrivers swamps?", "answer": "The Grassrivers swamps (inspired by the Everglades) are the most mysterious area on the map. Trailers show alligators, shipwrecks and a mysterious atmosphere. Players expect secrets similar to Mount Chiliad in GTA V." },
+      "3": { "question": "Can you find secret weapons in GTA 6?", "answer": "Trailers confirm at least one special weapon: the Speargun for underwater exploration. Other secret weapons and hidden items will be discovered after the game's release." }
+    },
+    "allLocationsLink": "Explore all GTA 6 locations →",
+    "statusBadge": {
+      "Confirmed": "bg-accent-teal/10 text-accent-teal border-accent-teal/30",
+      "Rumor": "bg-accent-sunset/10 text-accent-sunset border-accent-sunset/30"
+    }
+  },
+  "ProblemsSolutions": {
+    "metaTitle": "GTA 6 Problems & Solutions — Bugs, crashes and fixes for GTA VI",
+    "metaDescription": "Known issues and solutions for GTA 6 (GTA VI): bugs, launch problems, performance, crashes and fixes. Complete troubleshooting guide.",
+    "metaKeywords": ["GTA 6 problems", "GTA 6 bugs", "GTA 6 crash", "GTA 6 won't launch", "GTA 6 lag", "GTA 6 fixes", "GTA 6 troubleshooting", "GTA VI problems", "GTA 6 FPS drop", "GTA 6 error"],
+    "ogTitle": "GTA 6 Problems & Solutions — Bugs, crashes and fixes for GTA VI | GTA6CheatCodes",
+    "ogDescription": "Known issues and solutions for GTA 6: bugs, crashes, performance and launch errors.",
+    "breadcrumbHome": "Home",
+    "breadcrumbName": "GTA 6 Problems",
+    "titleAccent": "PROBLEMS & SOLUTIONS",
+    "subtitle": "Solutions to common GTA 6 problems: bugs, crashes, performance and launch errors.",
+    "notice": "<strong className=\"text-accent-teal\">This page will be updated on release day.</strong> The solutions listed are based on common AAA game problems and feedback from previous GTA versions. Specific solutions will be added after launch on November 19, 2026.",
+    "specsTitle": "REQUIRED SPECIFICATIONS",
+    "specs": {
+      "minimum": {
+        "title": "Minimum (PC)",
+        "items": { "0": "OS: Windows 10/11 64-bit", "1": "CPU: Intel i5-11600K / AMD Ryzen 5 5600X", "2": "GPU: NVIDIA RTX 3070 / AMD RX 6800 XT", "3": "RAM: 16 GB", "4": "Storage: 150 GB SSD" }
+      },
+      "recommended": {
+        "title": "Recommended (PC)",
+        "items": { "0": "OS: Windows 11 64-bit", "1": "CPU: Intel i7-12700K / AMD Ryzen 7 7800X3D", "2": "GPU: NVIDIA RTX 4070 Ti / AMD RX 7800 XT", "3": "RAM: 32 GB", "4": "Storage: 150 GB NVMe SSD" }
+      },
+      "consoles": "<strong className=\"text-accent-teal\">Consoles:</strong> PS5, PS5 Pro and Xbox Series X|S. Internal SSD is required. No PS4 or Xbox One support."
+    },
+    "categories": {
+      "0": {
+        "title": "LAUNCH PROBLEMS",
+        "problems": {
+          "0": { "name": "Black screen on startup", "cause": "Outdated GPU drivers or resolution conflict.", "fix": "Update your graphics drivers. On PC, launch the game in windowed mode then switch to fullscreen. On console, restart in safe mode and rebuild the database." },
+          "1": { "name": "Rockstar server connection error", "cause": "Overloaded servers on launch day or connection issue.", "fix": "Check Rockstar server status (support.rockstargames.com). Wait a few minutes and retry. Disable VPN if you're using one." },
+          "2": { "name": "Insufficient storage space", "cause": "GTA 6 requires significant storage space (estimated 150+ GB).", "fix": "Free up space by deleting unused games or apps. On PS5, move games to compatible external SSD storage." }
+        }
+      },
+      "1": {
+        "title": "PERFORMANCE PROBLEMS",
+        "problems": {
+          "0": { "name": "FPS drops in the city", "cause": "Vice City is very detail-heavy — neon lights, NPCs and vehicles tax the GPU.", "fix": "Reduce population density and shadow quality settings. Enable Performance mode (stable 30 FPS) instead of Fidelity if you prefer smoothness." },
+          "1": { "name": "Textures not loading", "cause": "Storage too slow or insufficient VRAM.", "fix": "Install the game on an SSD (essential on PC). Increase texture budget in settings if your VRAM allows. On PS5 Standard, consider an external M.2 SSD." },
+          "2": { "name": "Stuttering during vehicle races", "cause": "Open world streaming too slow during fast travel.", "fix": "Reduce draw distance. Close background applications. On PC, make sure the game is installed on an NVMe SSD." }
+        }
+      },
+      "2": {
+        "title": "CRASHES & FREEZES",
+        "problems": {
+          "0": { "name": "Random crash during gameplay", "cause": "Game bug or hardware overheating.", "fix": "Update the game to the latest version. On console, make sure ventilation isn't obstructed. On PC, monitor GPU temperature with MSI Afterburner." },
+          "1": { "name": "Freeze during cutscenes", "cause": "Audio/video sync bug or memory overload.", "fix": "Restart the game. If the problem persists, disable cinematic mode and switch to windowed mode. Check that your audio drivers are up to date." },
+          "2": { "name": "Save file corruption", "cause": "Crash during save or storage issue.", "fix": "Enable cloud saving (PS Plus / Xbox Cloud). Make regular manual saves. Do not turn off the console during an auto-save." }
+        }
+      },
+      "3": {
+        "title": "AUDIO & DISPLAY PROBLEMS",
+        "problems": {
+          "0": { "name": "Crackling or cutting sound", "cause": "Audio device conflict or outdated driver.", "fix": "On PS5, check audio settings (PCM vs Bitstream). On PC, update audio drivers and disable third-party spatial audio. Set to Stereo if 5.1 causes issues." },
+          "1": { "name": "Screen tearing", "cause": "Desynchronization between GPU and display.", "fix": "Enable VSync or adaptive sync (G-Sync / FreeSync). On PS5/Xbox, enable VRR if your display supports it." },
+          "2": { "name": "HDR problems", "cause": "Bad HDR calibration or incompatible monitor.", "fix": "Disable HDR if colors look incorrect. Calibrate HDR in the game and console settings. Make sure your display supports HDR10." }
+        }
+      }
+    },
+    "causeLabel": "Cause",
+    "fixLabel": "Solution",
+    "faqTitle": "FREQUENTLY ASKED QUESTIONS",
+    "faqs": {
+      "0": { "question": "GTA 6 won't launch, what should I do?", "answer": "Check that your console or PC meets the minimum requirements. On PS5/Xbox, try reinstalling the game or clearing the cache. On PC, update your GPU drivers and verify file integrity via the Rockstar launcher or Steam." },
+      "1": { "question": "GTA 6 has FPS drops, how to optimize?", "answer": "Lower graphics settings (shadows, rays, resolution). Close background applications. On PC, update your GPU drivers. On PS5, enable Performance mode in game settings." },
+      "2": { "question": "GTA 6 crashes during a mission, what should I do?", "answer": "Save regularly. If a crash persists at a specific point, try loading an earlier save. On console, reinstall the game if the problem continues. On PC, check RAM and GPU temperature." },
+      "3": { "question": "Are there updates to fix bugs?", "answer": "Rockstar regularly releases patch updates after a GTA launch. Enable automatic updates on your platform to receive fixes as soon as they are available." }
+    },
+    "newsLink": "See GTA 6 news →"
+  },
+  "Walkthrough": {
+    "metaTitle": "GTA 6 Walkthrough — Complete mission guide for GTA VI",
+    "metaDescription": "Complete GTA 6 (GTA VI) walkthrough: step-by-step guide for all missions, heists, side missions and activities.",
+    "metaKeywords": ["GTA 6 walkthrough", "GTA 6 guide", "GTA 6 missions guide", "GTA 6 missions", "GTA VI side missions", "complete GTA 6 guide", "GTA 6 heists guide", "GTA 6 walkthrough missions"],
+    "ogTitle": "GTA 6 Walkthrough — Complete mission guide for GTA VI | GTA6CheatCodes",
+    "ogDescription": "Complete GTA 6 walkthrough: step-by-step guide for all missions, heists, side missions and activities.",
+    "breadcrumbHome": "Home",
+    "breadcrumbName": "GTA 6 Walkthrough",
+    "titleAccent": "WALKTHROUGH & GUIDE —",
+    "subtitle": "Complete mission guide for GTA 6. Step-by-step walkthrough, heists, side missions and activities.",
+    "notice": "<strong className=\"text-accent-teal\">Pre-release guide based on trailers and official sources.</strong> Detailed step-by-step walkthroughs will be added after the game releases on November 19, 2026.",
+    "chapters": {
+      "0": {
+        "title": "PROLOGUE — VICE CITY",
+        "description": "Arrival in Vice City. First steps in the state of Leonida, key encounters and making contact with the criminal underworld.",
+        "missions": { "0": "Welcome to Vice City", "1": "First Contacts", "2": "Raul's Job", "3": "Impressions" }
+      },
+      "1": {
+        "title": "ACT I — CONNECTIONS",
+        "description": "Jason and Lucia infiltrate Vice City's criminal underworld. First heists and alliances with local gangs.",
+        "missions": { "0": "Small Jobs, Big Risks", "1": "The Bautista Connection", "2": "Port Gellhorn Store Heist", "3": "Delivery Under Pressure", "4": "Cal Hampton's Network" }
+      },
+      "2": {
+        "title": "ACT II — RISING",
+        "description": "The heists intensify. Jason and Lucia step up and target more ambitious objectives.",
+        "missions": { "0": "The Jewelry Store Heist", "1": "Chase Through the Keys", "2": "Grassrivers Operation", "3": "The Armored Truck", "4": "Ambrosia Negotiations" }
+      },
+      "3": {
+        "title": "ACT III — EMPIRE",
+        "description": "Building the criminal empire. Acquiring businesses, managing teams and strategic investments.",
+        "missions": { "0": "Property and Power", "1": "The Great Bank Heist", "2": "Hands on the Exchange", "3": "Gang War", "4": "The Vice City Legacy" }
+      }
+    },
+    "sideActivitiesTitle": "SIDE ACTIVITIES",
+    "sideActivities": {
+      "0": { "name": "Street Races", "desc": "Illegal speed competitions across Vice City and the Leonida Keys." },
+      "1": { "name": "Hunting & Fishing", "desc": "Expeditions in the Grassrivers swamps and at Mount Kalaga." },
+      "2": { "name": "Delivery Missions", "desc": "Transport goods across Leonida for NPCs." },
+      "3": { "name": "Underwater Exploration", "desc": "Diving and exploring shipwrecks with the speargun." },
+      "4": { "name": "Water Activities", "desc": "Boat races, jet ski and coastal exploration." },
+      "5": { "name": "Customization", "desc": "Vehicle customization in specialized garages." }
+    },
+    "comingSoon": "Coming soon",
+    "faqTitle": "FREQUENTLY ASKED QUESTIONS",
+    "faqs": {
+      "0": { "question": "How many missions does GTA 6 have?", "answer": "The exact number of missions has not been confirmed by Rockstar yet. GTA V had over 80 main missions. GTA 6 should offer at least a comparable volume, with longer and more detailed missions, as well as numerous side missions." },
+      "1": { "question": "Are there side missions in GTA 6?", "answer": "Yes. GTA 6 features varied side missions: street races, hunting, fishing, deliveries, NPC missions, and activities unique to each region of Leonida (Vice City, Grassrivers, Port Gellhorn, etc.)." },
+      "2": { "question": "Can you choose the order of missions in GTA 6?", "answer": "GTA 6 offers more freedom than its predecessors. Main missions follow a narrative storyline, but the player can freely explore and complete side activities between story missions." },
+      "3": { "question": "Which heists are confirmed in GTA 6?", "answer": "Official trailers show bank heists, jewelry store robberies, and convoy attacks. The heist system offers multiple approaches (stealth, aggressive, clever) affecting the progression and reward." }
+    },
+    "cheatsLink": "See all GTA 6 cheat codes →"
+  },
+  "MakeMoney": {
+    "metaTitle": "How to Make Money in GTA 6 — Farming guide & tips for GTA VI",
+    "metaDescription": "All methods to make money in GTA 6 (GTA VI): missions, heists, businesses, investments, farming tips. Complete guide.",
+    "metaKeywords": ["how to make money GTA 6", "GTA 6 money guide", "GTA 6 money farming", "GTA 6 money tips", "GTA 6 heists money", "GTA 6 business", "make money Vice City", "GTA 6 wealth guide"],
+    "ogTitle": "How to Make Money in GTA 6 — Farming guide & tips for GTA VI | GTA6CheatCodes",
+    "ogDescription": "All methods to make money in GTA 6 — heists, businesses, investments and side activities.",
+    "breadcrumbHome": "Home",
+    "breadcrumbName": "How to Make Money GTA 6",
+    "title": "MONEY",
+    "titleAccent": "HOW TO MAKE —",
+    "subtitle": "All confirmed methods to make money in GTA 6 — heists, businesses, investments and side activities.",
+    "notice": "<strong className=\"text-accent-teal\">Information based on trailers and official sources.</strong> Detailed figures (exact amounts, profitability) will be added after the game releases on November 19, 2026.",
+    "methods": {
+      "0": {
+        "title": "HEISTS",
+        "items": {
+          "0": { "name": "Main Heists", "desc": "Multi-stage scripted missions, the most lucrative source of income confirmed in trailers." },
+          "1": { "name": "Side Heists", "desc": "Store robberies, burglaries and convoy attacks yielding smaller sums." },
+          "2": { "name": "Multiple Approaches", "desc": "Each heist offers multiple strategies (stealth, brute force, clever) affecting the final payout." }
+        }
+      },
+      "1": {
+        "title": "BUSINESSES & PROPERTIES",
+        "items": {
+          "0": { "name": "Purchasable Businesses", "desc": "Buy and manage businesses in Vice City generating regular passive income." },
+          "1": { "name": "Real Estate", "desc": "Multiple properties available for purchase, from studios to mansions, with rental income." },
+          "2": { "name": "Business Customization", "desc": "Customize your establishments to increase revenue (decor, staff, stock)." }
+        }
+      },
+      "2": {
+        "title": "INVESTMENTS",
+        "items": {
+          "0": { "name": "BAWSAQ Stock Market", "desc": "Market influenced by online player actions. Buy low, sell high." },
+          "1": { "name": "LCN Stock Market", "desc": "Vice City local market, more predictable but less volatile than BAWSAQ." },
+          "2": { "name": "Manipulation Missions", "desc": "Certain missions influence stock prices — plan your investments ahead of time." }
+        }
+      },
+      "3": {
+        "title": "SIDE ACTIVITIES",
+        "items": {
+          "0": { "name": "Hunting & Fishing", "desc": "Sell your catches at the Port Gellhorn market and in the Grassrivers swamps." },
+          "1": { "name": "Street Races", "desc": "Compete in illegal races across Vice City to win prizes and vehicles." },
+          "2": { "name": "Delivery Missions", "desc": "Work for NPCs delivering goods across Leonida." }
+        }
+      }
+    },
+    "farmingTipsTitle": "FARMING TIPS",
+    "farmingTips": {
+      "0": { "title": "Prioritize heists", "desc": "Main heists offer the biggest rewards. Prepare your team and equipment before diving in." },
+      "1": { "title": "Invest early", "desc": "Buy properties and businesses as soon as possible to maximize passive income throughout the story." },
+      "2": { "title": "Watch the stock market", "desc": "Story missions influence stock prices. Invest before missions that will shake up the market." },
+      "3": { "title": "Vehicle trunk", "desc": "Store your weapons and valuables in your car trunk to recover them for free after a mission." },
+      "4": { "title": "Side activities", "desc": "Street races, hunting and delivery missions are regular income sources between heists." }
+    },
+    "faqTitle": "FREQUENTLY ASKED QUESTIONS",
+    "faqs": {
+      "0": { "question": "How to make money fast in GTA 6?", "answer": "The main confirmed methods in GTA 6 include heists, story missions, business management (purchasable establishments), in-game stock market investments, and side activities like hunting and fishing. Heists are expected to be the most lucrative source of income." },
+      "1": { "question": "Is there a stock market in GTA 6?", "answer": "Based on official trailers and screenshots, GTA 6 includes an investment system on Vice City's financial markets (BAWSAQ and LCN), similar to GTA V but with more depth. Prices would fluctuate based on player actions." },
+      "2": { "question": "Can you buy properties in GTA 6?", "answer": "Yes. GTA 6 allows purchasing and managing properties, including businesses that generate passive income. The system is inspired by GTA V Online but with more depth and customization." },
+      "3": { "question": "Do heists pay well in GTA 6?", "answer": "Heists are at the core of GTA 6's gameplay and are expected to be the most important source of income, as in all GTA games. Rockstar has confirmed a more elaborate heist system with multiple possible approaches." }
+    },
+    "cheatsLink": "See all GTA 6 cheat codes →"
+  },
+  "WeaponsGTA6": {
+    "metaTitle": "GTA 6 Weapons — All Confirmed Weapons in GTA VI",
+    "metaDescription": "Complete guide to GTA 6 (GTA VI) weapons: pistols, assault rifles, snipers, heavy weapons, melee and special weapons. Official list with Rockstar sources.",
+    "metaKeywords": ["GTA 6 weapons", "GTA VI weapons", "all GTA 6 weapons", "GTA 6 weapons list", "best GTA 6 weapons", "GTA 6 pistols", "GTA 6 assault rifle", "GTA 6 sniper", "GTA 6 heavy weapons"],
+    "ogTitle": "GTA 6 Weapons — All Confirmed Weapons in GTA VI | GTA6CheatCodes",
+    "ogDescription": "Complete guide to all officially confirmed weapons in GTA 6: pistols, rifles, snipers, heavy and special weapons.",
+    "breadcrumbHome": "Home",
+    "breadcrumbName": "GTA 6 Weapons",
+    "title": "GTA 6 WEAPONS",
+    "titleAccent": "ALL THE —",
+    "subtitle": "Complete guide to all officially confirmed weapons in GTA 6: pistols, rifles, snipers, heavy and special weapons. Rockstar sources.",
+    "notice": "<strong className=\"text-accent-teal\">Official sources only.</strong> Each listed weapon has been identified in official trailers, Rockstar screenshots or the GTA VI website. Detailed stats will be added after the game releases.",
+    "categories": {
+      "0": {
+        "title": "PISTOLS & REVOLVERS",
+        "weapons": {
+          "0": { "name": "Girardi ES9", "desc": "Semi-automatic pistol inspired by the Beretta 92FS. Jason's weapon.", "edition": false },
+          "1": { "name": "Klose K17", "desc": "Pistol inspired by the Glock 17. Lucia's main weapon. Full automatic mode.", "edition": false },
+          "2": { "name": "Capo Pistol", "desc": "Pistol inspired by the Colt M1911. Seen in the hands of Jason and Raul Bautista.", "edition": false },
+          "3": { "name": "Nipper .38", "desc": "Compact pistol visible on official artwork, held by Lucia.", "edition": false },
+          "4": { "name": "Hawk & Little Morgan Revolver", "desc": "Revolver inspired by the Smith & Wesson 629. Ultimate Edition custom variant.", "edition": true },
+          "5": { "name": "Mustang .357 Revolver", "desc": "Revolver inspired by the Colt Python. Seen in the hands of a biker gang.", "edition": false }
+        }
+      },
+      "1": {
+        "title": "SHOTGUNS & SMGS",
+        "weapons": {
+          "0": { "name": "Double-Barreled Shotgun", "desc": "Double-barreled shotgun. Seen used by a hunter aiming at an alligator.", "edition": false },
+          "1": { "name": "Pump Action Shotgun", "desc": "Shotgun inspired by the Mossberg 590/Remington 870. Multiple variants at Ammu-Nation.", "edition": false },
+          "2": { "name": "MP5-inspired SMG", "desc": "SMG inspired by the MP5. Used by Jason and Lucia during the heist.", "edition": false },
+          "3": { "name": "MAC-10/11 SMG", "desc": "Compact SMG with Vice City skin in pre-order.", "edition": false }
+        }
+      },
+      "2": {
+        "title": "ASSAULT RIFLES & SNIPERS",
+        "weapons": {
+          "0": { "name": "Duke Carbine Rifle", "desc": "Assault rifle inspired by the M4 with Duke Arms insignia. The most visible in official media.", "edition": false },
+          "1": { "name": "AK-47-inspired Assault Rifle", "desc": "Assault rifle inspired by the AK-47 with wooden variants. Visible at Ammu-Nation.", "edition": false },
+          "2": { "name": "Duke Assault Sniper Rifle", "desc": "Duke brand assault sniper rifle. Seen in the hands of a hunter/poacher.", "edition": false },
+          "3": { "name": "Remington 700-inspired Sniper", "desc": "Bolt-action sniper inspired by the Remington 700. Used at Mount Kalaga.", "edition": false }
+        }
+      },
+      "3": {
+        "title": "HEAVY, MELEE & SPECIAL WEAPONS",
+        "weapons": {
+          "0": { "name": "Grenade Launcher", "desc": "Grenade launcher used by Lucia in Trailer 2.", "edition": false },
+          "1": { "name": "M249-inspired LMG", "desc": "Light machine gun inspired by the M249. Picked up at Ammu-Nation.", "edition": false },
+          "2": { "name": "Baseball Bat", "desc": "Baseball bat visible in Port Gellhorn screenshots.", "edition": false },
+          "3": { "name": "Hammer", "desc": "Hammer seen in dual-wield in Trailer 1.", "edition": false },
+          "4": { "name": "Golf Club", "desc": "Golf club held by Cal Hampton in official screenshots.", "edition": false },
+          "5": { "name": "Knife", "desc": "Knife visible near the custom revolvers.", "edition": false },
+          "6": { "name": "Speargun", "desc": "Speargun confirmed for underwater combat.", "edition": false }
+        }
+      }
+    },
+    "editionLabel": "Ultimate Edition",
+    "weaponSystemTitle": "WEAPON SYSTEM — GTA VI NEW FEATURES",
+    "weaponSystem": {
+      "0": { "title": "Limited inventory", "desc": "Satchel system: you can't carry all weapons at once" },
+      "1": { "title": "Vehicle trunk", "desc": "Store weapons in the trunk and swap loadouts between missions" },
+      "2": { "title": "Deep customization", "desc": "Accessories, optics, finishes and engravings inspired by RDR2" },
+      "3": { "title": "Fictional brands", "desc": "Duke, Girardi, Klose, Hawk & Little, Capo" }
+    },
+    "faqTitle": "FREQUENTLY ASKED QUESTIONS",
+    "faqs": {
+      "0": { "question": "How many weapons are in GTA 6?", "answer": "Based on official trailers and screenshots, over 20 weapons have been identified: pistols, revolvers, shotguns, SMGs, assault rifles, snipers, heavy weapons and melee weapons. The complete list will be known after the game releases on November 19, 2026." },
+      "1": { "question": "Can you customize weapons in GTA 6?", "answer": "Yes. GTA 6 features a deep customization system inspired by Red Dead Redemption 2: accessories, optics, finishes and engravings on each weapon. The Ultimate Edition includes exclusive custom variants." },
+      "2": { "question": "What is the weapon inventory system in GTA 6?", "answer": "GTA 6 uses a limited satchel system — you can't carry all weapons at once. Excess weapons can be stored in your vehicle trunk and swapped between missions." },
+      "3": { "question": "Are there exclusive weapons in the Ultimate Edition?", "answer": "Yes. The GTA 6 Ultimate Edition includes exclusive custom variants: the customized Girardi ES9, the customized Klose K17, and the customized Hawk & Little Morgan Revolver." }
+    },
+    "allWeaponsLink": "See all GTA 6 weapons →"
+  },
+  "News": {
+    "metaTitle": "GTA 6 News — Latest GTA VI Updates",
+    "metaDescription": "All the latest news on GTA 6 (GTA VI): announcements, trailers, release date, characters and gameplay.",
+    "title": "NEWS",
+    "subtitle": "{count} articles — latest GTA VI news",
+    "filterAll": "All"
   }
 }
