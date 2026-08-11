@@ -130,9 +130,9 @@ export default async function MeilleuresVoituresPage({
                     {categoryMap[vehicle.category] ?? vehicle.category}
                   </span>
                 </div>
-                <p className="mt-2 text-sm text-text-muted">{vehicle.description}</p>
+                <p className="mt-2 text-sm text-text-muted">{isEn ? vehicle.descriptionEn : vehicle.description}</p>
                 <p className="mt-2 text-xs italic text-sunset-orange">
-                  {t("inspiredBy")} {vehicle.inspired}
+                  {t("inspiredBy")} {isEn ? vehicle.inspiredEn : vehicle.inspired}
                 </p>
               </div>
             </Link>

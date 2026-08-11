@@ -47,6 +47,7 @@ export default async function LieuxPage({
 }) {
   const { locale } = await params;
   const t = await getTranslations("Locations");
+  const isEn = locale === "en";
 
   const linkBase = t("linkBase");
   const path = t("path");
@@ -80,13 +81,13 @@ export default async function LieuxPage({
             <GameCard
               key={loc.id}
               title={loc.name}
-              description={loc.description}
+              description={isEn ? loc.descriptionEn : loc.description}
               href={`/${linkBase}/${loc.id}`}
               image={loc.image}
               accent={loc.id === "vice-city" ? "pink" : loc.id === "leonida-keys" ? "cyan" : "orange"}
               stats={[
                 { label: typeLabel, value: loc.type },
-                { label: zonesLabel, value: `${loc.features.length}` },
+                { label: zonesLabel, value: `${(isEn && loc.featuresEn ? loc.featuresEn : loc.features).length}` },
               ]}
             />
           ))}

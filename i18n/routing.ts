@@ -13,9 +13,6 @@ export const routing = defineRouting({
     // Cheat codes
     "/codes": { en: "/en/codes" },
     "/cheat-codes-gta-6": { fr: "/code-triche-gta-6", en: "/en/cheat-codes-gta-6" },
-    "/cheat-codes-gta-6-ps5": { fr: "/codes-gta-6-ps5", en: "/en/cheat-codes-gta-6-ps5" },
-    "/cheat-codes-gta-6-xbox": { fr: "/codes-gta-6-xbox", en: "/en/cheat-codes-gta-6-xbox" },
-    "/cheat-codes-gta-6-pc": { fr: "/codes-gta-6-pc", en: "/en/cheat-codes-gta-6-pc" },
     // Sections
     "/vehicles": { fr: "/vehicules", en: "/en/vehicles" },
     "/vehicles/[slug]": { fr: "/vehicules/[slug]", en: "/en/vehicles/[slug]" },
@@ -37,9 +34,9 @@ export const routing = defineRouting({
     "/gta-6-problems-solutions": { fr: "/problemes-gta-6-solutions", en: "/en/gta-6-problems-solutions" },
     "/gta-6-walkthrough": { fr: "/solution-gta-6-guide-missions", en: "/en/gta-6-walkthrough" },
     "/how-to-make-money-gta-6": { fr: "/comment-gagner-argent-gta-6", en: "/en/how-to-make-money-gta-6" },
-    // Placeholder / info pages
-    "/animals": { fr: "/animaux", en: "/en/animals" },
-    "/npcs": { fr: "/pnj", en: "/en/npcs" },
+    "/gta-5-vs-gta-6-comparison": { fr: "/comparaison-gta-5-gta-6", en: "/en/gta-5-vs-gta-6-comparison" },
+    "/gta-6-preparation-guide": { fr: "/guide-preparation-gta-6", en: "/en/gta-6-preparation-guide" },
+    // Info pages
     "/about": { fr: "/a-propos", en: "/en/about" },
     "/legal-notice": { fr: "/mentions-legales", en: "/en/legal-notice" },
     "/privacy-policy": { fr: "/politique-confidentialite", en: "/en/privacy-policy" },

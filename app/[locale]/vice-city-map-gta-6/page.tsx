@@ -125,9 +125,9 @@ export default async function CarteViceCityPage({
                 </h3>
               </div>
               <div className="p-4">
-                <p className="text-sm text-text-muted">{loc.description}</p>
+                <p className="text-sm text-text-muted">{isEn ? loc.descriptionEn : loc.description}</p>
                 <div className="mt-3 flex flex-wrap gap-1.5">
-                  {loc.features.map((f) => (
+                  {(isEn && loc.featuresEn ? loc.featuresEn : loc.features).map((f) => (
                     <span key={f} className="text-[10px] px-2 py-0.5 rounded-full bg-neon-pink/10 text-neon-pink border border-neon-pink/20">
                       {featureMap[f] ?? f}
                     </span>

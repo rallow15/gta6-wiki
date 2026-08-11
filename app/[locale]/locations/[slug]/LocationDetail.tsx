@@ -7,7 +7,25 @@ import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
 import type { Location } from "@/lib/data";
 
-export default function LocationDetail({ location }: { location: Location }) {
+const labels = {
+  fr: {
+    zonesTitle: "ZONES & POINTS D'INTÉRÊT",
+    backToLocations: "Retour aux lieux",
+    backHref: "/lieux",
+  },
+  en: {
+    zonesTitle: "ZONES & POINTS OF INTEREST",
+    backToLocations: "Back to locations",
+    backHref: "/en/locations",
+  },
+};
+
+export default function LocationDetail({ location, locale = "fr" }: { location: Location; locale?: string }) {
+  const isEn = locale === "en";
+  const t = isEn ? labels.en : labels.fr;
+  const description = isEn ? location.descriptionEn : location.description;
+  const features = isEn && location.featuresEn ? location.featuresEn : location.features;
+
   const accentColor = location.id === "vice-city"
     ? { text: "text-neon-pink", bg: "bg-neon-pink/10", border: "border-neon-pink/30" }
     : location.id === "leonida-keys"
@@ -53,7 +71,7 @@ export default function LocationDetail({ location }: { location: Location }) {
             className="mt-6 glass-card p-6"
           >
             <p className="text-text-secondary leading-relaxed text-lg">
-              {location.description}
+              {description}
             </p>
           </motion.div>
 
@@ -65,10 +83,10 @@ export default function LocationDetail({ location }: { location: Location }) {
             className="mt-6"
           >
             <h2 className="font-display text-xl tracking-wider text-text-primary mb-4 border-b border-night-violet/50 pb-2">
-              ZONES & POINTS D&apos;INTERET
+              {t.zonesTitle}
             </h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-              {location.features.map((feature) => (
+              {features.map((feature) => (
                 <div key={feature} className="glass-card p-4 text-center">
                   <span className="text-sm font-medium text-text-primary">{feature}</span>
                 </div>
@@ -79,13 +97,13 @@ export default function LocationDetail({ location }: { location: Location }) {
           {/* Back */}
           <div className="mt-8">
             <Link
-              href="/lieux"
+              href={t.backHref}
               className="inline-flex items-center gap-2 text-sm text-text-muted hover:text-neon-pink transition-colors"
             >
               <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
               </svg>
-              Retour aux lieux
+              {t.backToLocations}
             </Link>
           </div>
         </div>

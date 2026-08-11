@@ -19,11 +19,44 @@ const categoryColors: Record<string, { text: string; bg: string; border: string 
   "Bateau": { text: "text-lagoon-cyan", bg: "bg-lagoon-cyan/10", border: "border-lagoon-cyan/30" },
 };
 
-export default function VehicleDetail({ vehicle }: { vehicle: Vehicle }) {
+const labels = {
+  fr: {
+    downloadImage: "Télécharger l'image",
+    linkCopied: "Lien copié !",
+    share: "Partager",
+    details: "DÉTAILS",
+    category: "Catégorie",
+    inspiredBy: "Inspiré de",
+    availability: "Disponibilité",
+    baseGame: "Jeu de base",
+    officialSource: "Source officielle :",
+    backToVehicles: "Retour aux véhicules",
+    backHref: "/vehicules",
+  },
+  en: {
+    downloadImage: "Download image",
+    linkCopied: "Link copied!",
+    share: "Share",
+    details: "DETAILS",
+    category: "Category",
+    inspiredBy: "Inspired by",
+    availability: "Availability",
+    baseGame: "Base game",
+    officialSource: "Official source:",
+    backToVehicles: "Back to vehicles",
+    backHref: "/en/vehicles",
+  },
+};
+
+export default function VehicleDetail({ vehicle, locale = "fr" }: { vehicle: Vehicle; locale?: string }) {
+  const isEn = locale === "en";
+  const t = isEn ? labels.en : labels.fr;
   const colors = categoryColors[vehicle.category] || categoryColors["Sportive"];
   const [copied, setCopied] = useState(false);
   const [selectedImage, setSelectedImage] = useState(vehicle.image);
   const allImages = vehicle.images || [vehicle.image];
+  const description = isEn ? vehicle.descriptionEn : vehicle.description;
+  const inspired = isEn ? vehicle.inspiredEn : vehicle.inspired;
 
   const handleDownload = () => {
     const link = document.createElement("a");
@@ -97,7 +130,7 @@ export default function VehicleDetail({ vehicle }: { vehicle: Vehicle }) {
                 >
                   <Image
                     src={img}
-                    alt={`${vehicle.name} - vue ${i + 1}`}
+                    alt={`${vehicle.name} - view ${i + 1}`}
                     fill
                     className="object-cover"
                     sizes="160px"
@@ -121,7 +154,7 @@ export default function VehicleDetail({ vehicle }: { vehicle: Vehicle }) {
               <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
               </svg>
-              Telecharger l&apos;image
+              {t.downloadImage}
             </button>
             <button
               onClick={handleShare}
@@ -132,14 +165,14 @@ export default function VehicleDetail({ vehicle }: { vehicle: Vehicle }) {
                   <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                   </svg>
-                  Lien copie !
+                  {t.linkCopied}
                 </>
               ) : (
                 <>
                   <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m9.86-2.54a4.5 4.5 0 00-6.364-6.364L4.32 8.688" />
                   </svg>
-                  Partager
+                  {t.share}
                 </>
               )}
             </button>
@@ -153,7 +186,7 @@ export default function VehicleDetail({ vehicle }: { vehicle: Vehicle }) {
             className="mt-6 glass-card p-6"
           >
             <p className="text-text-secondary leading-relaxed text-lg">
-              {vehicle.description}
+              {description}
             </p>
           </motion.div>
 
@@ -165,7 +198,7 @@ export default function VehicleDetail({ vehicle }: { vehicle: Vehicle }) {
             className="mt-6"
           >
             <h2 className="font-display text-xl tracking-wider text-text-primary mb-4 border-b border-night-violet/50 pb-2">
-              DETAILS
+              {t.details}
             </h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
               <div className="neon-glow-card p-4 text-center">
@@ -173,23 +206,23 @@ export default function VehicleDetail({ vehicle }: { vehicle: Vehicle }) {
                   {vehicle.category}
                 </div>
                 <div className="text-xs text-text-muted mt-1 uppercase tracking-wider">
-                  Categorie
+                  {t.category}
                 </div>
               </div>
               <div className="neon-glow-card p-4 text-center">
                 <div className="font-display text-lg sm:text-xl text-sunset-orange">
-                  {vehicle.inspired}
+                  {inspired}
                 </div>
                 <div className="text-xs text-text-muted mt-1 uppercase tracking-wider">
-                  Inspire de
+                  {t.inspiredBy}
                 </div>
               </div>
               <div className="neon-glow-card p-4 text-center">
                 <div className={`font-display text-sm sm:text-base ${vehicle.edition ? "text-sunset-orange" : colors.text}`}>
-                  {vehicle.edition || "Jeu de base"}
+                  {vehicle.edition || t.baseGame}
                 </div>
                 <div className="text-xs text-text-muted mt-1 uppercase tracking-wider">
-                  Disponibilite
+                  {t.availability}
                 </div>
               </div>
             </div>
@@ -207,7 +240,7 @@ export default function VehicleDetail({ vehicle }: { vehicle: Vehicle }) {
                 <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
               <p className="text-sm text-text-secondary">
-                <strong className="text-lagoon-cyan">Source officielle :</strong> {vehicle.source}
+                <strong className="text-lagoon-cyan">{t.officialSource}</strong> {vehicle.source}
               </p>
             </div>
           </motion.div>
@@ -215,13 +248,13 @@ export default function VehicleDetail({ vehicle }: { vehicle: Vehicle }) {
           {/* Back */}
           <div className="mt-8">
             <Link
-              href="/vehicules"
+              href={t.backHref}
               className="inline-flex items-center gap-2 text-sm text-text-muted hover:text-neon-pink transition-colors"
             >
               <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
               </svg>
-              Retour aux vehicules
+              {t.backToVehicles}
             </Link>
           </div>
         </div>

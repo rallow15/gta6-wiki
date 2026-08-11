@@ -8,12 +8,11 @@ const footerColumns = [
     titleKey: "guides" as const,
     links: [
       { labelKey: "cheatCodes" as const, href: "/codes" },
-      { labelKey: "codesPS5" as const, href: "/cheat-codes-gta-6-ps5" },
-      { labelKey: "codesXbox" as const, href: "/cheat-codes-gta-6-xbox" },
-      { labelKey: "codesPC" as const, href: "/cheat-codes-gta-6-pc" },
       { labelKey: "vehicles" as const, href: "/vehicles" },
       { labelKey: "weapons" as const, href: "/weapons" },
       { labelKey: "characters" as const, href: "/characters" },
+      { labelKey: "comparison" as const, href: "/gta-5-vs-gta-6-comparison" },
+      { labelKey: "preparationGuide" as const, href: "/gta-6-preparation-guide" },
     ],
   },
   {

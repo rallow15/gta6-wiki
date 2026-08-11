@@ -13,64 +13,69 @@ export function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ locale: string; slug: string }>;
 }): Promise<Metadata> {
-  const { slug } = await params;
+  const { locale, slug } = await params;
   const vehicle = vehicles.find((v) => v.id === slug);
-  if (!vehicle) return { title: "Véhicule introuvable" };
+  if (!vehicle) return { title: "Vehicle not found" };
 
-  const url = `/vehicules/${vehicle.id}`;
-  const title = `${vehicle.name} — Véhicule GTA 6`;
-  const description = `${vehicle.description} Catégorie : ${vehicle.category}. Inspiration : ${vehicle.inspired}. Source : ${vehicle.source}.`;
+  const isEn = locale === "en";
+  const description = isEn ? vehicle.descriptionEn : vehicle.description;
+  const inspired = isEn ? vehicle.inspiredEn : vehicle.inspired;
+  const url = isEn ? `/en/vehicles/${vehicle.id}` : `/vehicules/${vehicle.id}`;
+  const title = isEn ? `${vehicle.name} — GTA 6 Vehicle` : `${vehicle.name} — Véhicule GTA 6`;
+  const metaDesc = `${description} Category: ${isEn ? vehicle.category : vehicle.category}. Inspired by: ${inspired}. Source: ${vehicle.source}.`;
+
   return {
     title,
-    description,
-    alternates: { canonical: url },
+    description: metaDesc,
+    alternates: {
+      canonical: url,
+      languages: {
+        fr: `/vehicules/${vehicle.id}`,
+        en: `/en/vehicles/${vehicle.id}`,
+      },
+    },
     keywords: [
       vehicle.name,
       `${vehicle.name} GTA 6`,
       `${vehicle.category} GTA 6`,
-      `voiture GTA 6 ${vehicle.inspired}`,
-      "véhicule GTA VI",
+      `${inspired} GTA 6`,
     ],
     openGraph: {
-      title: `${title} | CodeTricheGTA6`,
-      description,
+      title: `${title} | ${isEn ? "GTA6CheatCodes" : "CodeTricheGTA6"}`,
+      description: metaDesc,
       url,
       type: "article",
+      locale: isEn ? "en_US" : "fr_FR",
       images: [{ url: vehicle.image, width: 1200, height: 630, alt: vehicle.name }],
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: `${title} | CodeTricheGTA6`,
-      description,
-      images: [vehicle.image],
     },
   };
 }
 
-export default async function VehiclePage({ params }: { params: Promise<{ slug: string }> }) {
-  const { slug } = await params;
+export default async function VehiclePage({ params }: { params: Promise<{ locale: string; slug: string }> }) {
+  const { locale, slug } = await params;
   const vehicle = vehicles.find((v) => v.id === slug);
 
   if (!vehicle) {
     notFound();
   }
 
-  const url = `${BASE_URL}/vehicules/${vehicle.id}`;
+  const isEn = locale === "en";
+  const url = `${BASE_URL}${isEn ? `/en/vehicles/${vehicle.id}` : `/vehicules/${vehicle.id}`}`;
   return (
     <>
       <JsonLd
         data={[
           vehicleJsonLd(vehicle, url),
           breadcrumbJsonLd([
-            { name: "Accueil", url: BASE_URL },
-            { name: "Véhicules", url: `${BASE_URL}/vehicules` },
+            { name: isEn ? "Home" : "Accueil", url: BASE_URL },
+            { name: isEn ? "Vehicles" : "Véhicules", url: `${BASE_URL}${isEn ? "/en/vehicles" : "/vehicules"}` },
             { name: vehicle.name, url },
           ]),
         ]}
       />
-      <VehicleDetail vehicle={vehicle} />
+      <VehicleDetail vehicle={vehicle} locale={locale} />
     </>
   );
 }

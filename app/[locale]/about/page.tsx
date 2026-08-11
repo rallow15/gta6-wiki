@@ -47,16 +47,15 @@ export default async function AProposPage({
 }) {
   const { locale } = await params;
   const t = await getTranslations("About");
-  const isEn = locale === "en";
 
-  const commitmentItems = [0, 1, 2, 3].map((i) => t(`commitmentItems.${i}`));
+  const commitmentItems = [0, 1, 2, 3, 4].map((i) => t(`commitmentItems.${i}`));
 
   return (
     <>
       <JsonLd
         data={sectionBreadcrumb(
           t("breadcrumbName"),
-          isEn ? "/en/about" : "/a-propos",
+          locale === "en" ? "/en/about" : "/a-propos",
           locale
         )}
       />
@@ -93,6 +92,24 @@ export default async function AProposPage({
                 </li>
               ))}
             </ul>
+          </div>
+
+          <div className="border-t border-night-violet/50 pt-6">
+            <h2 className="font-display text-xl tracking-wider text-sunset-orange mb-3">
+              {t("methodologyTitle")}
+            </h2>
+            <p className="text-text-secondary leading-relaxed">
+              {t("methodologyText")}
+            </p>
+          </div>
+
+          <div className="border-t border-night-violet/50 pt-6">
+            <h2 className="font-display text-xl tracking-wider text-lagoon-cyan mb-3">
+              {t("sourcesTitle")}
+            </h2>
+            <p className="text-text-secondary leading-relaxed">
+              {t("sourcesText")}
+            </p>
           </div>
 
           <div className="border-t border-night-violet/50 pt-6">

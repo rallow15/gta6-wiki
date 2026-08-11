@@ -49,9 +49,8 @@
     "community": "Community",
     "legal": "Legal",
     "cheatCodes": "Cheat Codes",
-    "codesPS5": "GTA 6 Cheats PS5",
-    "codesXbox": "GTA 6 Cheats Xbox",
-    "codesPC": "GTA 6 Cheats PC",
+    "comparison": "GTA 5 vs 6",
+    "preparationGuide": "Preparation Guide",
     "vehicles": "Vehicles",
     "weapons": "Weapons",
     "characters": "Characters",
@@ -146,175 +145,209 @@
     "copied": "Copied!"
   },
   "CheatCodes": {
+    "metaTitle": "GTA 6 Cheat Codes — History, Predictions & Complete Guide",
+    "metaDescription": "Complete guide to GTA 6 cheat codes: history of cheats in the GTA series, what to expect in GTA VI, how codes work on PS5, Xbox and PC. Updated regularly.",
+    "metaKeywords": [
+      "GTA 6 cheat codes",
+      "GTA 6 cheats",
+      "GTA VI cheats",
+      "GTA 6 codes PS5 Xbox PC",
+      "how to enter cheats GTA 6",
+      "GTA 6 cheat history"
+    ],
+    "breadcrumbHome": "Home",
+    "breadcrumbName": "GTA 6 Cheat Codes",
     "title": "CHEAT CODES",
     "titleAccent": "GTA 6 —",
-    "subtitle": "All GTA 6 cheat codes for PS5, Xbox Series and PC: health, weapons, vehicles, police and weather.",
-    "comingSoonNotice": "Cheat codes will be added when the game releases on November 19, 2026.",
-    "comingSoonNote": "The codes listed below are based on patterns from previous games. Exact codes will be verified at launch.",
-    "howToEnter": "HOW TO ENTER A CHEAT CODE",
-    "playerSection": "PLAYER",
-    "weaponsSection": "WEAPONS & AMMO",
-    "vehiclesSection": "VEHICLES",
-    "policeSection": "POLICE & WORLD",
-    "trophiesDisabled": "Trophies disabled",
-    "trophiesDisabledDesc": "Using cheat codes disables trophy/achievement progress for the current session.",
-    "storyModeOnly": "Story mode only",
-    "storyModeOnlyDesc": "Cheat codes don't work in Online mode. Any online cheating results in a permanent ban.",
-    "saveBefore": "Save before using",
-    "saveBeforeDesc": "Some cheats (invincibility, infinite ammo) may cause glitches. Save your game first.",
-    "comingSoonBadge": "Soon",
-    "faqQuestion1": "How do I enter cheat codes in GTA 6?",
-    "faqAnswer1": "On PS5 and Xbox, press the button sequence during gameplay. On PC, enter the keyword via the in-game phone or directly on the keyboard. Codes activate immediately on screen.",
-    "faqQuestion2": "Do GTA 6 cheat codes disable trophies?",
-    "faqAnswer2": "Yes, as in previous GTA games, using cheat codes disables trophy/achievement progress during the active session. Save before using cheats if you want to keep access to trophies.",
-    "faqQuestion3": "Are cheat codes the same on PS5, Xbox and PC?",
-    "faqAnswer3": "No. On PS5 and Xbox, cheats use different button sequences. On PC, cheats use keywords typed on the keyboard. The effect is the same, only the input method differs.",
-    "faqQuestion4": "Are there cheat codes for GTA 6 Online?",
-    "faqAnswer4": "No. Cheat codes only work in story mode (single-player). Using cheats or modifications online is prohibited and can result in a permanent ban.",
-    "faqQuestion5": "When will GTA 6 cheat codes be available?",
-    "faqAnswer5": "Cheat codes will be confirmed and published when the game releases on November 19, 2026. The codes listed are based on previous games and will be verified at launch.",
-    "faqQuestion6": "Where can I find all GTA 6 cheat codes?",
-    "faqAnswer6": "All GTA 6 cheat codes for PS5, Xbox and PC are listed on this page. They'll be updated when the game releases on November 19, 2026. Also check our dedicated pages: PS5 cheats, Xbox cheats and PC cheats."
+    "subtitle": "The history of cheat codes in the GTA series, our predictions for GTA VI, and everything you need to know before launch.",
+    "noticeStrong": "GTA 6 cheat codes will be confirmed when the game releases on November 19, 2026.",
+    "noticeRest": "In the meantime, discover the history of cheats in the series and our predictions based on previous titles.",
+    "historyTitle": "THE HISTORY OF CHEAT CODES IN GTA",
+    "historyIntro": "Since the first Grand Theft Auto in 1997, cheat codes have been a pillar of the series. Simple button combinations that transform the gameplay experience — every installment has brought its own iconic collection of codes. Here's the evolution of cheats through the ages of GTA.",
+    "historyGames": {
+      "0": {
+        "year": "1997",
+        "title": "GTA — The Origins",
+        "desc": "The first GTA introduced cheat codes via special player names (GIVECASHY, BIGHEAD, etc.). Even then, codes offered health, weapons and vehicles — a tradition that would endure."
+      },
+      "1": {
+        "year": "2001–2004",
+        "title": "GTA III, Vice City & San Andreas",
+        "desc": "The classic era. GTA III popularized controller button combos. Vice City added weather codes and skins. San Andreas exploded with over 70 codes: jetpack, flying cars, super jump — the most iconic in the series."
+      },
+      "2": {
+        "year": "2008–2013",
+        "title": "GTA IV & GTA V",
+        "desc": "GTA IV simplified codes via the in-game phone. GTA V returned to controller combos on console and keywords on PC, with classic categories: health, weapons, vehicles, world. Codes disable achievements during the session."
+      },
+      "3": {
+        "year": "2026",
+        "title": "GTA VI — The Next Generation",
+        "desc": "GTA 6 is expected to continue this tradition. Based on confirmed mechanics (Leonida's open world, two protagonists, dynamic weather systems), codes will very likely cover health, weapons, vehicles, police and weather."
+      }
+    },
+    "expectTitle": "WHAT TO EXPECT IN GTA 6",
+    "expectIntro": "Based on the series' evolution and mechanics confirmed through trailers, here are the most likely cheat code categories in GTA 6.",
+    "expectCategories": {
+      "0": {
+        "name": "Health & Armor",
+        "desc": "Max health, full armor and invincibility — classics present since the first GTA, virtually guaranteed in GTA 6."
+      },
+      "1": {
+        "name": "Weapons & Ammo",
+        "desc": "All weapons unlocked, infinite ammo and explosives — a series staple that should return alongside the 18+ confirmed weapons."
+      },
+      "2": {
+        "name": "Vehicles & Movement",
+        "desc": "Vehicle spawns, super jump, moon gravity — vehicle cheats have always been the most popular and fun."
+      },
+      "3": {
+        "name": "Police & World",
+        "desc": "Wanted level management and weather control — essential in GTA's open worlds, especially with Leonida's dynamic weather system."
+      }
+    },
+    "howItWorksTitle": "HOW CHEAT CODES WORK IN GTA",
+    "howItWorksIntro": "Each platform uses a different method to enter cheat codes. Here's how it works in previous GTA titles and what to expect for GTA 6.",
+    "howItWorksPlatforms": {
+      "0": {
+        "name": "PS5 (DualSense)",
+        "desc": "Quick button combinations during gameplay (e.g., X, ○, △, □, L1, L2, R1, R2). No menu needed — the code activates instantly."
+      },
+      "1": {
+        "name": "Xbox Series (Controller)",
+        "desc": "Similar button sequences to PS5 but with Xbox buttons (A, B, X, Y, LB, LT, RB, RT). Instant activation in-game."
+      },
+      "2": {
+        "name": "PC (Keyboard)",
+        "desc": "Keywords typed on keyboard or via the in-game phone (e.g., PAINKILLER, TURTLE, HIGHERPOWER). Easier to remember and type."
+      }
+    },
+    "onlineWarningTitle": "CHEAT CODES & GTA ONLINE",
+    "onlineWarningItems": {
+      "0": "Cheat codes ONLY work in story mode (single-player). They are disabled in GTA Online.",
+      "1": "Using any mods or cheats online is strictly prohibited and can result in a permanent Rockstar account ban.",
+      "2": "Story mode cheat codes don't affect GTA Online access — they are completely separate."
+    },
+    "importantTitle": "IMPORTANT INFORMATION",
+    "importantItems": {
+      "0": "Cheat codes temporarily disable trophy and achievement progress. Save before using cheats if you're going for platinum.",
+      "1": "Some cheats (invincibility, infinite ammo) may cause glitches or unexpected behavior. Use with caution.",
+      "2": "The codes listed on this page are predictions based on previous installments. Exact codes will be confirmed and verified when the game launches.",
+      "3": "Rockstar Games has not yet officially confirmed cheat codes for GTA 6. All information will be updated upon official announcement."
+    },
+    "faqTitle": "FREQUENTLY ASKED QUESTIONS",
+    "faqs": {
+      "0": {
+        "question": "Will there be cheat codes in GTA 6?",
+        "answer": "Almost certainly. Every mainline GTA game since 1997 has included cheat codes. It's an iconic tradition of the franchise. Rockstar hasn't officially confirmed codes for GTA 6 yet, but their presence is highly likely."
+      },
+      "1": {
+        "question": "How do I enter cheat codes in GTA 6?",
+        "answer": "On PS5 and Xbox, codes will likely be entered via controller button combinations during gameplay. On PC, via keyboard keywords or the in-game phone, as in GTA V. Codes activate immediately without a special menu."
+      },
+      "2": {
+        "question": "Do cheat codes disable trophies?",
+        "answer": "Yes, as in all previous GTA games, using cheat codes temporarily disables trophy and achievement progress during the active session. Restarting the game without cheats restores trophy access."
+      },
+      "3": {
+        "question": "Will codes be the same on PS5, Xbox and PC?",
+        "answer": "The effect of codes will be identical across platforms, but the input method differs: button combinations on controllers (PS5/Xbox) and keywords on keyboard (PC). Each platform will have its own input codes."
+      },
+      "4": {
+        "question": "When will GTA 6 cheat codes be available?",
+        "answer": "Cheat codes will be confirmed and published when the game releases on November 19, 2026. We'll update this page immediately with all verified codes for each platform."
+      },
+      "5": {
+        "question": "Can I use cheat codes in GTA 6 Online?",
+        "answer": "No. Cheat codes only work in story mode (single-player). Using any cheats or modifications online is prohibited and can result in a permanent Rockstar Social Club account ban."
+      }
+    },
+    "codesHubLink": "Cheat codes hub →"
   },
   "Codes": {
-    "title": "CHEAT CODES",
-    "titleAccent": "GTA 6",
-    "subtitle": "All GTA 6 cheat codes for PS5, Xbox Series and PC — health, weapons, vehicles, police and weather.",
-    "comingSoon": "Cheat codes will be added when the game releases on November 19, 2026.",
-    "comingSoonNote": "Consult the complete page for all details and per-platform codes.",
-    "seeAllCodes": "See all GTA 6 cheat codes",
-    "seeAllCodesDesc": "Complete list of cheat codes: health, weapons, vehicles, police, weather. With detailed explanations and FAQ.",
-    "codesByPlatform": "CODES BY PLATFORM",
-    "codeCategories": "CODE CATEGORIES",
-    "healthArmor": "Health & Armor",
-    "healthArmorDesc": "Infinite health, full armor, invincibility",
-    "weaponsAmmo": "Weapons & Ammo",
-    "weaponsAmmoDesc": "All weapons, infinite ammo, explosives",
-    "vehiclesCat": "Vehicles",
-    "vehiclesCatDesc": "Spawn vehicle, invincible vehicle, helicopter",
-    "policeWorld": "Police & World",
-    "policeWorldDesc": "Lower/raise wanted level, change weather",
-    "faqTitle": "FREQUENTLY ASKED QUESTIONS",
-    "allCodes": "All cheat codes",
-    "ps5": "PS5",
-    "xbox": "Xbox",
-    "pc": "PC"
-  },
-  "CodesPlatform": {
+    "metaTitle": "GTA 6 Cheat Codes — Complete Guide",
+    "metaDescription": "Complete guide to GTA 6 cheat codes: cheat history, categories, how they work by platform and FAQ. Everything to know before the November 19, 2026 launch.",
+    "metaKeywords": [
+      "GTA 6 cheat codes",
+      "GTA 6 codes",
+      "GTA 6 cheats PS5",
+      "GTA 6 cheats Xbox",
+      "GTA 6 cheats PC",
+      "GTA VI cheats",
+      "GTA 6 guide"
+    ],
+    "ogTitle": "GTA 6 Cheat Codes — Complete Guide | GTA6CheatCodes",
+    "ogDescription": "Complete guide to GTA 6 cheat codes: history, categories, how they work by platform.",
     "breadcrumbHome": "Home",
-    "breadcrumbCodes": "Cheat Codes",
-    "allCodesLink": "All cheat codes →",
-    "PS5": {
-      "heading": "GTA 6 PS5 Cheat Codes",
-      "headingUpper": "GTA 6 PS5 CHEAT CODES",
-      "metaTitle": "GTA 6 PS5 Cheat Codes — All Cheats for GTA 6",
-      "metaDescription": "All GTA 6 cheat codes for PS5: health, armor, weapons, vehicles, police, weather and gameplay. Available at launch on November 19, 2026.",
-      "metaKeywords": [
-        "GTA 6 cheat codes PS5",
-        "GTA 6 cheats PS5",
-        "GTA VI PS5 cheats",
-        "GTA 6 PS5 codes"
-      ],
-      "ogTitle": "GTA 6 PS5 Cheat Codes | GTA6CheatCodes",
-      "ogDescription": "GTA 6 cheat codes for PS5 — available at launch on November 19, 2026.",
-      "subtitle": "All GTA 6 cheat codes for PS5 — available at launch.",
-      "howToEnterTitle": "HOW TO ENTER CHEATS ON PS5",
-      "enterMethod": "During gameplay, enter the DualSense button sequence shown for each cheat. The cheat activates immediately and a notification appears on screen.",
-      "buttons": "PS5 Keys",
-      "buttonsList": "X, Circle (○), Triangle (△), Square (□), L1, L2, R1, R2",
-      "comingSoonTitle": "COMING SOON",
-      "comingSoonText": "GTA 6 cheat codes for PS5 will be published here when the game releases on <bold>November 19, 2026</bold>. Come back soon for all cheat codes with 1-click copy.",
-      "faqTitle": "FREQUENTLY ASKED QUESTIONS",
-      "faqs": {
-        "commentEntrer": {
-          "question": "How do I enter cheat codes in GTA 6 on PS5?",
-          "answer": "During gameplay, quickly press the DualSense button sequence shown for each cheat (for example X X L1 R1 Triangle Square). No special key needs to be pressed first."
-        },
-        "trophees": {
-          "question": "Do GTA 6 cheat codes disable trophies?",
-          "answer": "Like in previous GTA games, using cheat codes may disable trophy/achievement progress during the session. Save before using cheats."
-        },
-        "confirmes": {
-          "question": "Are GTA 6 PS5 cheat codes confirmed?",
-          "answer": "The codes listed here are based on previous games and will be verified and updated when the game releases on November 19, 2026."
-        }
+    "breadcrumbName": "Cheat Codes",
+    "titleAccent": "GTA 6",
+    "title": "CHEAT CODES",
+    "subtitle": "Complete guide to GTA 6 cheat codes — history, categories, how they work by platform.",
+    "noticeStrong": "Cheat codes will be added when the game releases on November 19, 2026.",
+    "noticeRest": "In the meantime, discover the history of cheats in the series and what to expect.",
+    "linkToFullPage": "Complete GTA 6 cheat codes guide →",
+    "linkToFullPageDesc": "History of cheat codes in GTA, our predictions for GTA 6, how codes work by platform and detailed FAQ.",
+    "howItWorksTitle": "HOW CHEATS WORK BY PLATFORM",
+    "platforms": {
+      "0": {
+        "name": "PS5",
+        "desc": "DualSense button combinations during gameplay. Instant activation, no menu needed.",
+        "icon": "🎮"
       },
-      "allCodesLink": "All cheat codes →"
+      "1": {
+        "name": "Xbox",
+        "desc": "Xbox controller button sequences during gameplay. Instant activation, no menu needed.",
+        "icon": "🟢"
+      },
+      "2": {
+        "name": "PC",
+        "desc": "Keywords typed on keyboard or via in-game phone. Easier to remember and type.",
+        "icon": "⌨️"
+      }
     },
-    "Xbox": {
-      "heading": "GTA 6 Xbox Cheat Codes",
-      "headingUpper": "GTA 6 XBOX CHEAT CODES",
-      "metaTitle": "GTA 6 Xbox Cheat Codes — All Cheats for GTA 6",
-      "metaDescription": "All GTA 6 cheat codes for Xbox: health, armor, weapons, vehicles, police, weather and gameplay. Available at launch on November 19, 2026.",
-      "metaKeywords": [
-        "GTA 6 cheat codes Xbox",
-        "GTA 6 cheats Xbox",
-        "GTA VI Xbox cheats",
-        "GTA 6 Xbox codes"
-      ],
-      "ogTitle": "GTA 6 Xbox Cheat Codes | GTA6CheatCodes",
-      "ogDescription": "GTA 6 cheat codes for Xbox — available at launch on November 19, 2026.",
-      "subtitle": "All GTA 6 cheat codes for Xbox — available at launch.",
-      "howToEnterTitle": "HOW TO ENTER CHEATS ON XBOX",
-      "enterMethod": "During gameplay, enter the Xbox controller button sequence shown for each cheat. The cheat activates immediately.",
-      "buttons": "Xbox Keys",
-      "buttonsList": "A, B, X, Y, LB, LT, RB, RT",
-      "comingSoonTitle": "COMING SOON",
-      "comingSoonText": "GTA 6 cheat codes for Xbox will be published here when the game releases on <bold>November 19, 2026</bold>. Come back soon for all cheat codes with 1-click copy.",
-      "faqTitle": "FREQUENTLY ASKED QUESTIONS",
-      "faqs": {
-        "commentEntrer": {
-          "question": "How do I enter cheat codes in GTA 6 on Xbox Series?",
-          "answer": "During gameplay, quickly press the Xbox controller button sequence shown for each cheat (for example A A LB RB Y X)."
-        },
-        "succes": {
-          "question": "Do cheat codes disable Xbox achievements?",
-          "answer": "Like in previous GTA games, using cheat codes may disable achievements during the session. Save before using cheats."
-        },
-        "confirmes": {
-          "question": "Are GTA 6 Xbox cheat codes confirmed?",
-          "answer": "The codes listed here are based on previous games and will be verified and updated when the game releases on November 19, 2026."
-        }
+    "categoriesTitle": "CHEAT CATEGORIES",
+    "categories": {
+      "0": {
+        "name": "Health & Armor",
+        "desc": "Max health, full armor, invincibility",
+        "icon": "❤️"
       },
-      "allCodesLink": "All cheat codes →"
+      "1": {
+        "name": "Weapons & Ammo",
+        "desc": "All weapons, infinite ammo, explosives",
+        "icon": "🔫"
+      },
+      "2": {
+        "name": "Vehicles",
+        "desc": "Spawn vehicle, invincible vehicle, helicopter",
+        "icon": "🚗"
+      },
+      "3": {
+        "name": "Police & World",
+        "desc": "Lower/raise wanted level, change weather",
+        "icon": "🌤️"
+      }
     },
-    "PC": {
-      "heading": "GTA 6 PC Cheat Codes",
-      "headingUpper": "GTA 6 PC CHEAT CODES",
-      "metaTitle": "GTA 6 PC Cheat Codes — All Cheats for GTA 6",
-      "metaDescription": "All GTA 6 cheat codes for PC: health, armor, weapons, vehicles, police, weather and gameplay. Available at launch on November 19, 2026.",
-      "metaKeywords": [
-        "GTA 6 cheat codes PC",
-        "GTA 6 cheats PC",
-        "GTA VI PC cheats",
-        "GTA 6 PC codes"
-      ],
-      "ogTitle": "GTA 6 PC Cheat Codes | GTA6CheatCodes",
-      "ogDescription": "GTA 6 cheat codes for PC — available at launch on November 19, 2026.",
-      "subtitle": "All GTA 6 cheat codes for PC — available at launch.",
-      "howToEnterTitle": "HOW TO ENTER CHEATS ON PC",
-      "enterMethod": "On PC, enter cheat codes via the in-game phone or type the keyword directly on the keyboard.",
-      "buttons": "PC Keys",
-      "buttonsList": "Keywords (e.g. HEALME, GODMODE)",
-      "comingSoonTitle": "COMING SOON",
-      "comingSoonText": "GTA 6 cheat codes for PC will be published here when the game releases on <bold>November 19, 2026</bold>. Come back soon for all cheat codes with 1-click copy.",
-      "faqTitle": "FREQUENTLY ASKED QUESTIONS",
-      "faqs": {
-        "commentEntrer": {
-          "question": "How do I enter cheat codes in GTA 6 on PC?",
-          "answer": "On PC, open the in-game phone or type the cheat keyword directly on the keyboard (for example HEALME to restore health)."
-        },
-        "succes": {
-          "question": "Do GTA 6 PC cheat codes disable achievements?",
-          "answer": "Like in previous GTA games, using cheats may disable achievements during the session. Save before using cheats."
-        },
-        "confirmes": {
-          "question": "Are GTA 6 PC cheat codes confirmed?",
-          "answer": "The keywords listed here are based on previous games and will be verified and updated when the game releases on November 19, 2026."
-        }
+    "faqTitle": "FREQUENTLY ASKED QUESTIONS",
+    "faqs": {
+      "0": {
+        "question": "How do I enter cheat codes in GTA 6?",
+        "answer": "On PS5 and Xbox, codes will be entered via controller button combinations. On PC, via keyboard keywords or the in-game phone. Codes activate immediately."
       },
-      "allCodesLink": "All cheat codes →"
-    }
+      "1": {
+        "question": "Do cheat codes disable trophies?",
+        "answer": "Yes, as in previous GTA games, using cheat codes temporarily disables trophy and achievement progress during the active session."
+      },
+      "2": {
+        "question": "Will codes be the same on all platforms?",
+        "answer": "The effect will be identical, but input differs: button combinations on controllers (PS5/Xbox) and keywords on keyboard (PC)."
+      },
+      "3": {
+        "question": "When will cheat codes be available?",
+        "answer": "Cheat codes will be confirmed and published when the game releases on November 19, 2026. We'll update immediately."
+      }
+    },
+    "allCheatCodesLink": "Complete cheat codes guide →"
   },
   "NotFound": {
     "title": "PAGE NOT FOUND",
@@ -356,34 +389,23 @@
     "subtitle": "Vice City Tropical — the ultimate GTA VI fan site.",
     "logoAlt": "GTA6CheatCodes Badge",
     "whatIsTitle": "WHAT IS VICE CITY TROPICAL?",
-    "whatIsText": "Vice City Tropical is an unofficial fan site dedicated to Grand Theft Auto VI. Our mission is to provide the most complete and up-to-date information about the game: cheat codes, vehicle sheets, weapons, characters, locations and all the latest news.",
-    "commitmentTitle": "OUR COMMITMENT",
+    "whatIsText": "Vice City Tropical is an unofficial fan site dedicated to Grand Theft Auto VI. Our mission is to provide the most complete and up-to-date information about the game: in-depth analyses, editorial guides, vehicle sheets, weapons, characters, locations and all the latest verified news.",
+    "commitmentTitle": "OUR EDITORIAL COMMITMENT",
     "commitmentItems": [
-      "Verified and up-to-date information",
-      "A unique design inspired by the tropical universe of Vice City",
-      "An active community of fans",
-      "A fast and mobile-friendly site"
+      "Information verified from official sources (Rockstar Games, Take-Two Interactive)",
+      "No fabricated content: we clearly label what's confirmed vs. speculative",
+      "Original and in-depth content, not simple information copying",
+      "Regular updates as soon as new information is confirmed",
+      "A fast, accessible and mobile-optimized site"
     ],
+    "methodologyTitle": "OUR METHODOLOGY",
+    "methodologyText": "Every piece of information published on this site is verified and sourced. We clearly distinguish facts confirmed by Rockstar Games from speculation and predictions. Our comparative analyses (like GTA 5 vs GTA 6) are based on verifiable elements from trailers and official announcements. Preparation guides are based on real hardware configurations and confirmed edition information.",
+    "sourcesTitle": "OUR SOURCES",
+    "sourcesText": "Our information comes exclusively from reliable sources: official Rockstar Games trailers, Take-Two Interactive press releases, developer interviews, announcements on the Rockstar Newswire, and events like The Game Awards. We do not relay unverified leaks or unconfirmed rumors.",
     "disclaimerTitle": "DISCLAIMER",
     "disclaimerText": "Vice City Tropical is a fan site not affiliated with Rockstar Games, Take-Two Interactive or any other company related to the Grand Theft Auto franchise. GTA, Grand Theft Auto and all character, location and vehicle names are trademarks of Rockstar Games. This site is created by fans, for fans, and does not generate any direct profit from Rockstar Games' intellectual property.",
     "contactTitle": "CONTACT",
     "contactText": "For any questions or suggestions, send us an email at contact@vicecitytropical.fr"
-  },
-  "Animals": {
-    "metaTitle": "GTA 6 Animals — Wildlife of Leonida",
-    "metaDescription": "The wildlife of GTA 6: alligators, tropical fish and all the wild animals of Leonida. Coming after game release.",
-    "title": "ANIMALS",
-    "subtitle": "The wildlife of Leonida — alligators, tropical fish and more.",
-    "comingSoonTitle": "COMING SOON",
-    "comingSoonText": "The complete wildlife of Leonida will be documented after the game's release. Hunting, fishing and observations!"
-  },
-  "Npcs": {
-    "metaTitle": "GTA 6 NPCs — Non-Playable Characters",
-    "metaDescription": "Database of non-playable characters (NPCs) in GTA 6. Coming after game release.",
-    "title": "PNJ",
-    "subtitle": "The non-playable characters that populate the streets of Leonida.",
-    "comingSoonTitle": "COMING SOON",
-    "comingSoonText": "The NPC database will be available after the game's release. Stay tuned!"
   },
   "LegalNotice": {
     "metaTitle": "Legal Notice — GTA6CheatCodes",
@@ -1070,5 +1092,144 @@
     "title": "NEWS",
     "subtitle": "{count} articles — latest GTA VI news",
     "filterAll": "All"
+  },
+  "Gta5Vs6Comparison": {
+    "metaTitle": "GTA 5 vs GTA 6 Comparison — What's Different?",
+    "metaDescription": "Detailed comparison between GTA 5 and GTA 6: graphics engine, open world, mechanics, characters and multiplayer. Everything that changes between the two installments.",
+    "metaKeywords": ["GTA 5 vs GTA 6", "GTA 6 comparison", "GTA 6 differences", "GTA VI new features", "GTA 6 improvements"],
+    "breadcrumbHome": "Home",
+    "breadcrumbName": "GTA 5 vs GTA 6",
+    "title": "GTA 5 vs",
+    "titleAccent": "GTA 6",
+    "subtitle": "Complete comparison between the two biggest installments in the series. Engine, open world, mechanics, characters — everything that changes.",
+    "intro": "GTA 6 represents a generational leap from GTA 5, released in 2013. Over 12 years separate the two games, and the technological advances are substantial. Here's a point-by-point comparison of what's changed, with verified information from Rockstar's trailers and official announcements.",
+    "sections": {
+      "0": {
+        "title": "GRAPHICS ENGINE & RENDERING",
+        "gta5Label": "GTA V (2013)",
+        "gta5Text": "RAGE engine in its 2013 version. 720p textures on PS3/360, 1080p on PS4/Xbox One. Pre-baked lighting, traditional motion capture animations. Long loading times, especially online.",
+        "gta6Text": "9th generation RAGE with ray tracing, real-time global illumination, native 4K textures. AI-assisted animation and motion matching. Near-instant loading times thanks to PS5's SSD architecture."
+      },
+      "1": {
+        "title": "OPEN WORLD & MAP",
+        "gta5Label": "GTA V — Los Santos",
+        "gta5Text": "75 km² map covering Los Santos and Blaine County. Desert, mountains and city. Few accessible interiors. No seasonal cycle. No dynamic weather evolution.",
+        "gta6Text": "State of Leonida (inspired by Florida) with Vice City, the Keys, the Everglades. Larger and denser map with numerous accessible interiors. Dynamic weather system with hurricanes, flooding and tropical cyclones."
+      },
+      "2": {
+        "title": "GAMEPLAY MECHANICS",
+        "gta5Label": "GTA V",
+        "gta5Text": "Three protagonists (Michael, Franklin, Trevor) switchable. Basic cover system. Arcade-style driving. Predictable police AI. No survival or needs system.",
+        "gta6Text": "Two protagonists (Jason and Lucia) with intertwined story. Improved cover system, revamped melee combat. Realistic driving physics. Adaptive police AI. Survival systems and environmental interaction."
+      },
+      "3": {
+        "title": "CHARACTERS & STORYTELLING",
+        "gta5Label": "GTA V",
+        "gta5Text": "Three-act storyline with three distinct protagonists. Satirical tone and dark comedy. Hollywood heist story. Memorable dialogue but sometimes stereotyped characters.",
+        "gta6Text": "Romantic and criminal narrative inspired by Bonnie & Clyde with Jason and Lucia. More grounded and realistic tone. Deeper emotional arcs. First playable female protagonist in the series (Lucia Caminos)."
+      },
+      "4": {
+        "title": "MULTIPLAYER & POST-LAUNCH CONTENT",
+        "gta5Label": "GTA Online",
+        "gta5Text": "Launched 2 weeks after GTA V. Content added for 10+ years. Business mode, races, survivals. Microtransactions (Shark Cards). Very long loading times. Persistent bug exploitation.",
+        "gta6Text": "GTA Online 2.0 expected after story mode. Modernized server architecture. Redesigned economy. Tighter integration between single-player and multiplayer. Improved anti-cheat. Planned evolving content."
+      }
+    },
+    "verdictTitle": "OUR VERDICT",
+    "verdictText": "GTA 6 represents a monumental generational leap. Where GTA V defined the PS3/360 then PS4 generation, GTA 6 sets the foundation for the PS5/Xbox Series generation with a more living world, deeper mechanics and a more ambitious narrative. Fans of the series will find the GTA spirit they love, but in a considerably improved version on every level.",
+    "faqTitle": "FREQUENTLY ASKED QUESTIONS",
+    "faqs": {
+      "0": {
+        "question": "Will GTA 6 be bigger than GTA 5?",
+        "answer": "Yes. GTA 6's map (State of Leonida) will be larger and especially denser than GTA 5's. Vice City, the Keys, the Everglades and other areas offer far more landscape diversity than Los Santos and Blaine County."
+      },
+      "1": {
+        "question": "Do I need to have played GTA 5 to enjoy GTA 6?",
+        "answer": "No. GTA 6 is a completely new story with new characters. No knowledge of GTA 5 is needed, though series fans will notice references and Easter eggs from previous installments."
+      },
+      "2": {
+        "question": "Will GTA 6 have GTA Online like GTA 5?",
+        "answer": "Yes, a multiplayer mode is planned after the story mode launch. Rockstar has confirmed that GTA Online will evolve for GTA 6 with modernized server architecture and new mechanics."
+      },
+      "3": {
+        "question": "What are the biggest improvements in GTA 6 over GTA 5?",
+        "answer": "The major improvements are: next-gen RAGE engine with ray tracing, a more living and interactive world, dynamic weather system, deepened gameplay mechanics (cover, driving, AI), and a more mature narrative with two intertwined protagonists."
+      }
+    }
+  },
+  "Gta6PreparationGuide": {
+    "metaTitle": "GTA 6 Preparation Guide — Everything to Know Before Launch",
+    "metaDescription": "Complete preparation guide for GTA 6: PC requirements, editions, preorder info, checklist and everything you need to know before November 19, 2026.",
+    "metaKeywords": ["GTA 6 preparation guide", "GTA 6 PC requirements", "GTA 6 editions", "GTA 6 preorder", "GTA 6 launch"],
+    "breadcrumbHome": "Home",
+    "breadcrumbName": "Preparation Guide",
+    "title": "PREPARATION",
+    "titleAccent": "GUIDE",
+    "subtitle": "Everything you need to know before GTA 6 launches on November 19, 2026. PC specs, editions, preorder info and checklist.",
+    "notice": "Information on this page is based on Rockstar's official announcements and trailers. <strong>Some specs may be adjusted closer to launch.</strong>",
+    "sections": {
+      "0": {
+        "title": "RECOMMENDED PC SPECS",
+        "items": {
+          "0": { "label": "Operating System", "desc": "Windows 10/11 64-bit. Linux via Proton likely supported through Steam." },
+          "1": { "label": "Processor", "desc": "Intel Core i5-11600K or AMD Ryzen 5 5600X minimum. i7-12700K or Ryzen 7 7800X3D recommended for 60 FPS." },
+          "2": { "label": "Graphics Card", "desc": "NVIDIA RTX 3070 or AMD RX 6800 XT minimum for 1080p/60 FPS. RTX 4070 Ti or RX 7800 XT for 1440p/60 FPS with ray tracing." },
+          "3": { "label": "Memory (RAM)", "desc": "16 GB DDR4 minimum. 32 GB DDR5 recommended for optimal performance without slowdowns." },
+          "4": { "label": "Storage", "desc": "NVMe SSD required (150 GB minimum). An HDD will be insufficient for loading times and texture streaming." }
+        }
+      },
+      "1": {
+        "title": "EDITIONS & PREORDER",
+        "items": {
+          "0": { "label": "Standard Edition", "desc": "The base game at $69.99 / €69.99. Includes the complete story mode and access to GTA Online 2.0." },
+          "1": { "label": "Ultimate Edition", "desc": "At $89.99 / €89.99. Includes exclusive content Pass, bonus vehicles, starter properties and GTA$ bonus online." },
+          "2": { "label": "Pre-order content", "desc": "All pre-orders receive the Vice City Vintage Pack with exclusive vehicles and skins, regardless of edition." },
+          "3": { "label": "Platforms", "desc": "PS5 and Xbox Series X|S at launch. PC version expected 6-12 months after console release, following GTA V's pattern." }
+        }
+      },
+      "2": {
+        "title": "PRE-LAUNCH CHECKLIST",
+        "items": {
+          "0": { "label": "Update console firmware", "desc": "Make sure your PS5 or Xbox Series is up to date with the latest firmware to avoid compatibility issues." },
+          "1": { "label": "Free up storage space", "desc": "The game will require at least 150 GB. Delete unused games and apps to make room." },
+          "2": { "label": "Set up Rockstar account", "desc": "Create or update your Rockstar Social Club account for GTA Online access and connected features." },
+          "3": { "label": "Join the community", "desc": "Follow Rockstar's official channels and community for latest announcements and cheat codes at launch." },
+          "4": { "label": "Prepare your PC", "desc": "If playing on PC, update your GPU drivers and ensure you have an NVMe SSD with enough free space." }
+        }
+      },
+      "3": {
+        "title": "WHAT YOU NEED TO KNOW",
+        "items": {
+          "0": { "label": "Release date", "desc": "November 19, 2026 on PS5 and Xbox Series X|S. PC version expected in 2027." },
+          "1": { "label": "Two protagonists", "desc": "Jason Duval and Lucia Caminos, inspired by Bonnie & Clyde. First playable female protagonist in the series." },
+          "2": { "label": "Massive open world", "desc": "The State of Leonida, inspired by Florida, includes Vice City, the Keys, the Everglades and more." },
+          "3": { "label": "Dynamic weather", "desc": "Real-time weather system with hurricanes, flooding and tropical cyclones that affect gameplay." }
+        }
+      }
+    },
+    "linksTitle": "RELATED GUIDES",
+    "links": {
+      "cheatCodes": { "title": "GTA 6 Cheat Codes", "desc": "History of cheats, predictions and how they work" },
+      "releaseDate": { "title": "GTA 6 Release Date", "desc": "Launching November 19, 2026 — everything you need to know" }
+    },
+    "faqTitle": "FREQUENTLY ASKED QUESTIONS",
+    "faqs": {
+      "0": {
+        "question": "What PC specs do I need for GTA 6?",
+        "answer": "The expected minimum is i5-11600K, RTX 3070, 16 GB RAM and NVMe SSD. For 60 FPS at 1440p with ray tracing, target an i7-12700K, RTX 4070 Ti and 32 GB RAM. Official specs will be announced closer to launch."
+      },
+      "1": {
+        "question": "Should I preorder GTA 6?",
+        "answer": "Preordering guarantees the Vice City Vintage Pack (exclusive vehicles and skins). The Ultimate Edition adds a content Pass and online bonuses. If you're certain you'll play at launch, preordering offers bonus content at no extra cost."
+      },
+      "2": {
+        "question": "Will GTA 6 launch on PC at the same time as consoles?",
+        "answer": "No. Rockstar has confirmed launch on PS5 and Xbox Series X|S on November 19, 2026. The PC version is expected 6-12 months later, following GTA V's pattern which arrived on PC 18 months after consoles."
+      },
+      "3": {
+        "question": "Can I play GTA 6 on PS4 or Xbox One?",
+        "answer": "No. GTA 6 is being developed exclusively for the current generation (PS5 and Xbox Series X|S). The PC version will be available later. Previous generation consoles will not be supported."
+      }
+    }
   }
 }

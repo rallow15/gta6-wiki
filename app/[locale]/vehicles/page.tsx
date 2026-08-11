@@ -50,6 +50,7 @@ export default async function VehiculesPage({
 }) {
   const { locale } = await params;
   const t = await getTranslations("Vehicles");
+  const isEn = locale === "en";
 
   const path = t("path");
   const linkBase = t("linkBase");
@@ -137,10 +138,10 @@ export default async function VehiculesPage({
                           {vehicle.category}
                         </span>
                       </div>
-                      <p className="mt-2 text-sm text-text-muted">{vehicle.description}</p>
+                      <p className="mt-2 text-sm text-text-muted">{isEn ? vehicle.descriptionEn : vehicle.description}</p>
                       <div className="mt-2 flex items-center gap-1.5 text-xs text-text-muted">
                         <Star className="h-3.5 w-3.5 text-sunset-orange" />
-                        <span className="italic">{t("inspiredLabel")} {vehicle.inspired}</span>
+                        <span className="italic">{t("inspiredLabel")} {isEn ? vehicle.inspiredEn : vehicle.inspired}</span>
                       </div>
                       <div className="mt-3 flex items-center gap-1.5 text-xs text-text-muted">
                         <CheckCircle className="h-3.5 w-3.5 text-lagoon-cyan" />

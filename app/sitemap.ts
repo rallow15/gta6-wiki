@@ -5,19 +5,17 @@ import { BASE_URL } from "@/lib/site";
 // French URLs have no prefix; English URLs use /en/ prefix.
 // Dynamic [slug] detail pages live in their own per-section sitemaps.
 // Pages marked noindex are intentionally excluded.
+// Removed: platform-specific cheat pages (ps5/xbox/pc), animals, npcs (low-value/placeholder).
 export default function sitemap(): MetadataRoute.Sitemap {
   // Use a static date for lastModified — update when content actually changes.
   // This avoids signalling to Google that every page changed on every deploy.
-  const lastUpdated = "2026-08-08";
+  const lastUpdated = "2026-08-11";
 
   // French pages (root, no locale prefix — localized paths from routing.ts)
   const frPages: MetadataRoute.Sitemap = [
     { url: `${BASE_URL}/`, lastModified: lastUpdated, changeFrequency: "daily", priority: 1 },
     { url: `${BASE_URL}/codes`, lastModified: lastUpdated, changeFrequency: "monthly", priority: 0.5 },
     { url: `${BASE_URL}/code-triche-gta-6`, lastModified: lastUpdated, changeFrequency: "weekly", priority: 1 },
-    { url: `${BASE_URL}/codes-gta-6-ps5`, lastModified: lastUpdated, changeFrequency: "weekly", priority: 0.9 },
-    { url: `${BASE_URL}/codes-gta-6-xbox`, lastModified: lastUpdated, changeFrequency: "weekly", priority: 0.9 },
-    { url: `${BASE_URL}/codes-gta-6-pc`, lastModified: lastUpdated, changeFrequency: "weekly", priority: 0.9 },
     { url: `${BASE_URL}/vehicules`, lastModified: lastUpdated, changeFrequency: "weekly", priority: 0.8 },
     { url: `${BASE_URL}/armes`, lastModified: lastUpdated, changeFrequency: "weekly", priority: 0.8 },
     { url: `${BASE_URL}/armes-gta-6`, lastModified: lastUpdated, changeFrequency: "weekly", priority: 0.8 },
@@ -33,9 +31,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/solution-gta-6-guide-missions`, lastModified: lastUpdated, changeFrequency: "weekly", priority: 0.8 },
     { url: `${BASE_URL}/secrets-easter-eggs-gta-6`, lastModified: lastUpdated, changeFrequency: "weekly", priority: 0.7 },
     { url: `${BASE_URL}/problemes-gta-6-solutions`, lastModified: lastUpdated, changeFrequency: "weekly", priority: 0.7 },
+    { url: `${BASE_URL}/comparaison-gta-5-gta-6`, lastModified: lastUpdated, changeFrequency: "weekly", priority: 0.8 },
+    { url: `${BASE_URL}/guide-preparation-gta-6`, lastModified: lastUpdated, changeFrequency: "weekly", priority: 0.8 },
     { url: `${BASE_URL}/a-propos`, lastModified: lastUpdated, changeFrequency: "yearly", priority: 0.3 },
-    { url: `${BASE_URL}/animaux`, lastModified: lastUpdated, changeFrequency: "monthly", priority: 0.5 },
-    { url: `${BASE_URL}/pnj`, lastModified: lastUpdated, changeFrequency: "monthly", priority: 0.5 },
     { url: `${BASE_URL}/mentions-legales`, lastModified: lastUpdated, changeFrequency: "yearly", priority: 0.2 },
     { url: `${BASE_URL}/politique-confidentialite`, lastModified: lastUpdated, changeFrequency: "yearly", priority: 0.2 },
   ];
@@ -45,9 +43,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/en`, lastModified: lastUpdated, changeFrequency: "daily", priority: 1 },
     { url: `${BASE_URL}/en/codes`, lastModified: lastUpdated, changeFrequency: "monthly", priority: 0.5 },
     { url: `${BASE_URL}/en/cheat-codes-gta-6`, lastModified: lastUpdated, changeFrequency: "weekly", priority: 1 },
-    { url: `${BASE_URL}/en/cheat-codes-gta-6-ps5`, lastModified: lastUpdated, changeFrequency: "weekly", priority: 0.9 },
-    { url: `${BASE_URL}/en/cheat-codes-gta-6-xbox`, lastModified: lastUpdated, changeFrequency: "weekly", priority: 0.9 },
-    { url: `${BASE_URL}/en/cheat-codes-gta-6-pc`, lastModified: lastUpdated, changeFrequency: "weekly", priority: 0.9 },
     { url: `${BASE_URL}/en/vehicles`, lastModified: lastUpdated, changeFrequency: "weekly", priority: 0.8 },
     { url: `${BASE_URL}/en/weapons`, lastModified: lastUpdated, changeFrequency: "weekly", priority: 0.8 },
     { url: `${BASE_URL}/en/weapons-gta-6`, lastModified: lastUpdated, changeFrequency: "weekly", priority: 0.8 },
@@ -63,9 +58,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/en/gta-6-walkthrough`, lastModified: lastUpdated, changeFrequency: "weekly", priority: 0.8 },
     { url: `${BASE_URL}/en/secrets-easter-eggs-gta-6`, lastModified: lastUpdated, changeFrequency: "weekly", priority: 0.7 },
     { url: `${BASE_URL}/en/gta-6-problems-solutions`, lastModified: lastUpdated, changeFrequency: "weekly", priority: 0.7 },
+    { url: `${BASE_URL}/en/gta-5-vs-gta-6-comparison`, lastModified: lastUpdated, changeFrequency: "weekly", priority: 0.8 },
+    { url: `${BASE_URL}/en/gta-6-preparation-guide`, lastModified: lastUpdated, changeFrequency: "weekly", priority: 0.8 },
     { url: `${BASE_URL}/en/about`, lastModified: lastUpdated, changeFrequency: "yearly", priority: 0.3 },
-    { url: `${BASE_URL}/en/animals`, lastModified: lastUpdated, changeFrequency: "monthly", priority: 0.5 },
-    { url: `${BASE_URL}/en/npcs`, lastModified: lastUpdated, changeFrequency: "monthly", priority: 0.5 },
     { url: `${BASE_URL}/en/legal-notice`, lastModified: lastUpdated, changeFrequency: "yearly", priority: 0.2 },
     { url: `${BASE_URL}/en/privacy-policy`, lastModified: lastUpdated, changeFrequency: "yearly", priority: 0.2 },
   ];
