@@ -83,7 +83,7 @@ export default async function PersonnagesPage({
         subtitle={t("pageSubtitle")}
       >
         <div className="mb-10">
-          <h2 className="font-display text-2xl tracking-wider text-sunset-orange mb-4 border-b border-sunset-orange/20 pb-2">
+          <h2 className="font-display text-2xl tracking-wider text-sunset-orange mb-4 border-b-2 border-sunset-orange/40 pb-2">
             {playableLabel}
           </h2>
           <div className="grid sm:grid-cols-2 gap-4">
@@ -105,7 +105,7 @@ export default async function PersonnagesPage({
         </div>
 
         <div className="mb-10">
-          <h2 className="font-display text-2xl tracking-wider text-text-secondary mb-4 border-b border-night-violet/50 pb-2">
+          <h2 className="font-display text-2xl tracking-wider text-text-secondary mb-4 border-b-2 border-night-violet/50 pb-2">
             {otherLabel}
           </h2>
           <div className="grid sm:grid-cols-2 gap-4">

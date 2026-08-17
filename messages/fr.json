@@ -101,23 +101,23 @@
         "label": "Codes de triche",
         "desc": "PS5, Xbox, PC"
       },
-      "vehicules": {
+      "vehicles": {
         "label": "Véhicules",
         "desc": "Voitures, motos, bateaux"
       },
-      "armes": {
+      "weapons": {
         "label": "Armes",
         "desc": "Arsenal complet"
       },
-      "personnages": {
+      "characters": {
         "label": "Personnages",
         "desc": "Jason, Lucia & plus"
       },
-      "lieux": {
+      "locations": {
         "label": "Lieux",
         "desc": "Vice City & Leonida"
       },
-      "actus": {
+      "news": {
         "label": "Actualités",
         "desc": "Dernières news"
       }

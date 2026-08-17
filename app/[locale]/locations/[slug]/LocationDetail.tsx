@@ -42,7 +42,7 @@ export default function LocationDetail({ location, locale = "fr" }: { location: 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="relative h-64 sm:h-80 md:h-96 rounded-xl overflow-hidden glass-card border-0"
+            className="relative h-64 sm:h-80 md:h-96 overflow-hidden nb-card"
           >
             <Image
               src={location.image}
@@ -54,7 +54,7 @@ export default function LocationDetail({ location, locale = "fr" }: { location: 
             />
             <div className="absolute inset-0 bg-gradient-to-t from-deep-bg via-deep-bg/40 to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8">
-              <span className={`text-xs px-2.5 py-1 rounded-full font-medium uppercase tracking-wider ${accentColor.bg} ${accentColor.text} ${accentColor.border} border`}>
+              <span className={`text-xs px-2.5 py-1 rounded-none font-bold uppercase tracking-wider ${accentColor.bg} ${accentColor.text} ${accentColor.border} border-2`}>
                 {location.type}
               </span>
               <h1 className="mt-2 font-display text-4xl sm:text-5xl tracking-wider text-text-primary">
@@ -68,7 +68,7 @@ export default function LocationDetail({ location, locale = "fr" }: { location: 
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="mt-6 glass-card p-6"
+            className="mt-6 nb-card p-6"
           >
             <p className="text-text-secondary leading-relaxed text-lg">
               {description}
@@ -82,12 +82,12 @@ export default function LocationDetail({ location, locale = "fr" }: { location: 
             transition={{ duration: 0.5, delay: 0.3 }}
             className="mt-6"
           >
-            <h2 className="font-display text-xl tracking-wider text-text-primary mb-4 border-b border-night-violet/50 pb-2">
+            <h2 className="font-display text-xl tracking-wider text-text-primary mb-4 border-b-2 border-night-violet/50 pb-2">
               {t.zonesTitle}
             </h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
               {features.map((feature) => (
-                <div key={feature} className="glass-card p-4 text-center">
+                <div key={feature} className="nb-card-cyan nb-press p-4 text-center">
                   <span className="text-sm font-medium text-text-primary">{feature}</span>
                 </div>
               ))}
@@ -98,7 +98,7 @@ export default function LocationDetail({ location, locale = "fr" }: { location: 
           <div className="mt-8">
             <Link
               href={t.backHref}
-              className="inline-flex items-center gap-2 text-sm text-text-muted hover:text-neon-pink transition-colors"
+              className="inline-flex items-center gap-2 text-sm font-display tracking-wider text-text-muted hover:text-neon-pink transition-colors"
             >
               <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18" />

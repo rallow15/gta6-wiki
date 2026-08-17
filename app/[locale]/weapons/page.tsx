@@ -124,7 +124,7 @@ export default async function ArmesPage({
         title={t("pageTitle")}
         subtitle={pageSubtitle}
       >
-        <div className="mb-6 neon-glow-card-cyan p-4 border-lagoon-cyan/20">
+        <div className="mb-6 nb-card-cyan nb-press p-4">
           <div className="flex items-start gap-3">
             <Info className="h-5 w-5 text-lagoon-cyan shrink-0 mt-0.5" />
             <p className="text-sm text-text-secondary">
@@ -138,15 +138,15 @@ export default async function ArmesPage({
           if (categoryWeapons.length === 0) return null;
           return (
             <div key={categoryId} className="mb-10">
-              <h2 className="font-display text-2xl tracking-wider text-text-secondary mb-4 border-b border-night-violet/50 pb-2">
+              <h2 className="font-display text-2xl tracking-wider text-text-secondary mb-4 border-b-2 border-night-violet/50 pb-2">
                 {categoryLabels[categoryId] || categoryId}
               </h2>
               <div className="grid sm:grid-cols-2 gap-4">
                 {categoryWeapons.map((weapon) => (
-                  <div key={weapon.id} className="neon-glow-card shimmer-line p-5 group">
+                  <div key={weapon.id} className="nb-card nb-press p-5 group">
                     <div className="flex items-start justify-between gap-2">
-                      <h3 className="font-semibold text-text-primary">{weapon.name}</h3>
-                      <span className="text-xs px-2 py-0.5 rounded bg-deep-bg-light border border-night-violet/30 text-text-muted shrink-0">
+                      <h3 className="font-display tracking-wide text-text-primary">{weapon.name}</h3>
+                      <span className="text-xs px-2 py-0.5 rounded-none bg-deep-bg-light border-2 border-night-violet/40 text-text-muted shrink-0">
                         {locale === "en" ? weapon.categoryEn : weapon.category}
                       </span>
                     </div>
@@ -162,7 +162,7 @@ export default async function ArmesPage({
           );
         })}
 
-        <div className="mt-10 neon-glow-card-orange p-6 border-sunset-orange/20">
+        <div className="mt-10 nb-card-orange nb-press p-6">
           <h3 className="font-display text-lg tracking-wider text-sunset-orange mb-2">
             {whatsNewTitle}
           </h3>

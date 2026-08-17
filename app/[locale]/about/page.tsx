@@ -60,7 +60,7 @@ export default async function AProposPage({
         )}
       />
       <SectionPage title={t("title")} subtitle={t("subtitle")}>
-        <div className="glass-card p-6 sm:p-8 space-y-6">
+        <div className="nb-card nb-press p-6 sm:p-8 space-y-6">
           {/* Logo badge */}
           <div className="flex justify-center">
             <Image
@@ -68,7 +68,7 @@ export default async function AProposPage({
               alt={t("logoAlt")}
               width={200}
               height={200}
-              className="w-48 h-auto rounded-xl"
+              className="w-48 h-auto rounded-none border-2 border-neon-pink/40"
             />
           </div>
           <div>
@@ -80,7 +80,7 @@ export default async function AProposPage({
             </p>
           </div>
 
-          <div className="border-t border-night-violet/50 pt-6">
+          <div className="border-t-2 border-night-violet/50 pt-6">
             <h2 className="font-display text-xl tracking-wider text-lagoon-cyan mb-3">
               {t("commitmentTitle")}
             </h2>
@@ -94,7 +94,7 @@ export default async function AProposPage({
             </ul>
           </div>
 
-          <div className="border-t border-night-violet/50 pt-6">
+          <div className="border-t-2 border-night-violet/50 pt-6">
             <h2 className="font-display text-xl tracking-wider text-sunset-orange mb-3">
               {t("methodologyTitle")}
             </h2>
@@ -103,7 +103,7 @@ export default async function AProposPage({
             </p>
           </div>
 
-          <div className="border-t border-night-violet/50 pt-6">
+          <div className="border-t-2 border-night-violet/50 pt-6">
             <h2 className="font-display text-xl tracking-wider text-lagoon-cyan mb-3">
               {t("sourcesTitle")}
             </h2>
@@ -112,7 +112,7 @@ export default async function AProposPage({
             </p>
           </div>
 
-          <div className="border-t border-night-violet/50 pt-6">
+          <div className="border-t-2 border-night-violet/50 pt-6">
             <h2 className="font-display text-xl tracking-wider text-sunset-orange mb-3">
               {t("disclaimerTitle")}
             </h2>
@@ -121,7 +121,7 @@ export default async function AProposPage({
             </p>
           </div>
 
-          <div className="border-t border-night-violet/50 pt-6">
+          <div className="border-t-2 border-night-violet/50 pt-6">
             <h2 className="font-display text-xl tracking-wider text-sand-yellow mb-3">
               {t("contactTitle")}
             </h2>

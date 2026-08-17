@@ -50,7 +50,7 @@ export default function Footer() {
   const madeWith = t("tagline");
 
   return (
-    <footer className="border-t border-neon-pink/10 bg-deep-bg">
+    <footer className="border-t-2 border-neon-pink/40 bg-deep-bg">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 py-12">
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
           {/* Brand */}
@@ -71,7 +71,7 @@ export default function Footer() {
           {/* Link columns */}
           {footerColumns.map((section) => (
             <nav key={section.titleKey} aria-label={t(section.titleKey)}>
-              <h3 className="text-sm font-semibold text-text-secondary uppercase tracking-wider mb-3">
+              <h3 className="text-sm font-display text-text-secondary uppercase tracking-wider mb-3 pb-2 border-b-2 border-neon-pink/30">
                 {t(section.titleKey)}
               </h3>
               <ul className="space-y-2">
@@ -79,7 +79,7 @@ export default function Footer() {
                   <li key={link.href}>
                     <Link
                       href={link.href as any}
-                      className="text-sm text-text-muted hover:text-neon-pink transition-colors"
+                      className="text-sm text-text-muted hover:text-neon-pink underline-offset-4 decoration-2 hover:underline hover:decoration-neon-pink transition-colors"
                     >
                       {t(link.labelKey)}
                     </Link>
@@ -90,7 +90,7 @@ export default function Footer() {
           ))}
         </div>
 
-        <div className="mt-10 pt-6 border-t border-night-violet/50 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="mt-10 pt-6 border-t-2 border-night-violet/50 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-text-muted">
             {copyright}
           </p>

@@ -43,7 +43,7 @@ export default function Navbar() {
   }, [isOpen]);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 border-b border-neon-pink/10 bg-deep-bg/80 backdrop-blur-xl">
+    <nav className="fixed top-0 left-0 right-0 z-50 border-b-2 border-neon-pink/40 bg-deep-bg/90 backdrop-blur-xl">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
@@ -54,7 +54,7 @@ export default function Navbar() {
               width={40}
               height={40}
               priority
-              className="h-10 w-10 shrink-0 rounded-lg transition-all duration-300 group-hover:scale-110 group-hover:drop-shadow-[0_0_12px_rgba(255,46,154,0.6)]"
+              className="h-10 w-10 shrink-0 rounded-none border-2 border-neon-pink/50 transition-all duration-300 group-hover:scale-110 group-hover:border-neon-pink group-hover:shadow-[3px_3px_0_0_var(--color-lagoon-cyan)]"
             />
             <span className="font-display text-lg sm:text-xl tracking-wider text-text-primary transition-all group-hover:text-neon-pink">
               {t("logo")}
@@ -68,7 +68,7 @@ export default function Navbar() {
               <Link
                 key={item.href}
                 href={item.href as any}
-                className="px-3 py-2 text-sm font-medium text-text-secondary transition-colors hover:text-neon-pink rounded-lg hover:bg-neon-pink/5"
+                className="px-3 py-2 text-sm font-medium text-text-secondary transition-colors hover:text-neon-pink border-b-2 border-transparent hover:border-neon-pink"
               >
                 {t(`links.${item.key}`)}
               </Link>
@@ -81,7 +81,7 @@ export default function Navbar() {
             <LanguageSwitcher />
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="md:hidden p-2 text-text-secondary hover:text-neon-pink"
+              className="md:hidden p-2 text-text-secondary hover:text-neon-pink border-2 border-text-secondary/40 hover:border-neon-pink"
               aria-label={t("menuAriaLabel")}
               aria-expanded={isOpen}
               aria-controls={menuId}
@@ -109,7 +109,7 @@ export default function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden border-t border-neon-pink/10 bg-deep-bg/95 backdrop-blur-xl"
+            className="md:hidden border-t-2 border-neon-pink/40 bg-deep-bg/95 backdrop-blur-xl"
           >
             <div className="px-4 py-3 space-y-1">
               {navItems.map((item) => (
@@ -118,7 +118,7 @@ export default function Navbar() {
                   href={item.href as any}
                   onClick={() => setIsOpen(false)}
                   role="menuitem"
-                  className="block px-3 py-2.5 text-sm font-medium text-text-secondary hover:text-neon-pink hover:bg-neon-pink/5 rounded-lg transition-colors"
+                  className="block px-3 py-2.5 text-sm font-medium text-text-secondary hover:text-neon-pink hover:bg-neon-pink/5 border-l-2 border-transparent hover:border-neon-pink transition-colors"
                 >
                   {t(`links.${item.key}`)}
                 </Link>

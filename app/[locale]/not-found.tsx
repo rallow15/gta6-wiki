@@ -82,14 +82,14 @@ export default function NotFound() {
           >
             <Link
               href="/"
-              className="neon-pulse-btn inline-flex items-center gap-2 rounded-lg bg-neon-pink px-8 py-3.5 text-sm font-bold text-white shadow-lg shadow-neon-pink/25 transition-all hover:shadow-neon-pink/40 hover:scale-105"
+              className="nb-btn px-8 py-3.5 text-sm font-bold"
             >
               <Home className="h-4 w-4" />
               {t("homeLink")}
             </Link>
             <Link
               href="/codes"
-              className="inline-flex items-center gap-2 rounded-lg border border-lagoon-cyan/30 px-8 py-3.5 text-sm font-semibold text-lagoon-cyan transition-all hover:border-lagoon-cyan/60 hover:bg-lagoon-cyan/5"
+              className="nb-btn-ghost px-8 py-3.5 text-sm font-semibold"
             >
               <Code className="h-4 w-4" />
               {t("codesLink")}

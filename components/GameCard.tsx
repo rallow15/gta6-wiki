@@ -16,31 +16,27 @@ interface GameCardProps {
 
 const accentMap = {
   pink: {
-    border: "border-neon-pink/20 hover:border-neon-pink/50",
+    nb: "nb-card",
     icon: "text-neon-pink bg-neon-pink/10",
     text: "text-neon-pink",
-    glow: "shadow-neon-pink/20",
     gradient: "from-neon-pink/20 via-transparent to-transparent",
   },
   orange: {
-    border: "border-sunset-orange/20 hover:border-sunset-orange/50",
+    nb: "nb-card-orange",
     icon: "text-sunset-orange bg-sunset-orange/10",
     text: "text-sunset-orange",
-    glow: "shadow-sunset-orange/20",
     gradient: "from-sunset-orange/20 via-transparent to-transparent",
   },
   cyan: {
-    border: "border-lagoon-cyan/20 hover:border-lagoon-cyan/50",
+    nb: "nb-card-cyan",
     icon: "text-lagoon-cyan bg-lagoon-cyan/10",
     text: "text-lagoon-cyan",
-    glow: "shadow-lagoon-cyan/20",
     gradient: "from-lagoon-cyan/20 via-transparent to-transparent",
   },
   yellow: {
-    border: "border-sand-yellow/20 hover:border-sand-yellow/50",
+    nb: "nb-card-yellow",
     icon: "text-sand-yellow bg-sand-yellow/10",
     text: "text-sand-yellow",
-    glow: "shadow-sand-yellow/20",
     gradient: "from-sand-yellow/20 via-transparent to-transparent",
   },
 };
@@ -56,7 +52,7 @@ export default function GameCard({ title, description, href, icon, image, accent
     >
       <Link
         href={href}
-        className={`neon-glow-card overflow-hidden group block ${colors.border}`}
+        className={`${colors.nb} nb-press overflow-hidden group block`}
       >
         {/* Image area */}
         {image && (
@@ -79,14 +75,14 @@ export default function GameCard({ title, description, href, icon, image, accent
           </div>
         )}
         <div className="p-4 sm:p-5">
-          <h3 className={`font-semibold text-text-primary group-hover:${colors.text} transition-colors duration-300`}>
+          <h3 className={`font-display tracking-wide text-text-primary group-hover:${colors.text} transition-colors duration-300`}>
             {title}
           </h3>
           <p className="mt-1 text-sm text-text-muted line-clamp-2">{description}</p>
           {stats && (
             <div className="mt-3 flex flex-wrap gap-2">
               {stats.map((stat) => (
-                <span key={stat.label} className="text-xs px-2 py-0.5 rounded bg-deep-bg-light border border-night-violet/30 text-text-secondary">
+                <span key={stat.label} className="text-xs px-2 py-0.5 rounded-none bg-deep-bg-light border-2 border-night-violet/40 text-text-secondary">
                   {stat.label}: <span className={colors.text}>{stat.value}</span>
                 </span>
               ))}

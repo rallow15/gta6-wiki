@@ -20,11 +20,11 @@ const sections = [
   { key: "news", href: "/news", icon: Newspaper, color: "lagoon-cyan" },
 ];
 
-const colorMap: Record<string, { border: string; hover: string; text: string; glow: string }> = {
-  "neon-pink": { border: "border-neon-pink/30", hover: "hover:border-neon-pink/60", text: "text-neon-pink", glow: "neon-glow-card" },
-  "sunset-orange": { border: "border-sunset-orange/30", hover: "hover:border-sunset-orange/60", text: "text-sunset-orange", glow: "neon-glow-card-orange" },
-  "lagoon-cyan": { border: "border-lagoon-cyan/30", hover: "hover:border-lagoon-cyan/60", text: "text-lagoon-cyan", glow: "neon-glow-card-cyan" },
-  "sand-yellow": { border: "border-sand-yellow/30", hover: "hover:border-sand-yellow/60", text: "text-sand-yellow", glow: "neon-glow-card" },
+const colorMap: Record<string, { card: string; text: string }> = {
+  "neon-pink": { card: "nb-card", text: "text-neon-pink" },
+  "sunset-orange": { card: "nb-card-orange", text: "text-sunset-orange" },
+  "lagoon-cyan": { card: "nb-card-cyan", text: "text-lagoon-cyan" },
+  "sand-yellow": { card: "nb-card-yellow", text: "text-sand-yellow" },
 };
 
 export default function Hero() {
@@ -67,10 +67,11 @@ export default function Hero() {
               <Image
                 src="/images/logo/logo-neon-sign.webp"
                 alt={logoAlt}
-                width={780}
-                height={400}
+                width={800}
+                height={533}
                 priority
-                className="w-full max-w-[640px] sm:max-w-[780px] h-auto drop-shadow-[0_0_40px_rgba(255,46,154,0.3)]"
+                style={{ height: "auto" }}
+                className="w-full max-w-[640px] sm:max-w-[780px] drop-shadow-[0_0_40px_rgba(255,46,154,0.3)]"
               />
             </motion.div>
           </h1>
@@ -103,16 +104,16 @@ export default function Hero() {
           {sections_data.map((section) => {
             const colors = colorMap[section.color];
             return (
-              <ParallaxTiltCard key={section.key} maxTilt={8} shadowIntensity={0.4}>
+              <ParallaxTiltCard key={section.key} maxTilt={6} shadowIntensity={0}>
                 <Link
                   href={section.href as any}
-                  className={`neon-glow-card shimmer-line p-4 sm:p-5 text-left group block ${colors.border} ${colors.hover}`}
+                  className={`${colors.card} nb-press p-4 sm:p-5 text-left group block`}
                 >
                   {(() => {
                     const IconComponent = section.icon;
                     return <IconComponent className={`h-6 w-6 ${colors.text} mb-2 transition-transform group-hover:scale-125`} />;
                   })()}
-                  <h3 className={`font-semibold text-sm sm:text-base ${colors.text}`}>
+                  <h3 className={`font-display tracking-wider text-sm sm:text-base ${colors.text}`}>
                     {t(`sections.${section.key}.label`)}
                   </h3>
                   <p className="text-xs text-text-muted mt-1">{t(`sections.${section.key}.desc`)}</p>
@@ -131,7 +132,7 @@ export default function Hero() {
         >
           <MagneticButton
             strength={25}
-            className="neon-pulse-btn inline-flex items-center gap-2 rounded-lg bg-neon-pink px-6 py-3 text-sm font-bold text-white shadow-lg shadow-neon-pink/25 transition-all hover:shadow-neon-pink/40 hover:scale-105"
+            className="nb-btn"
             onClick={() => {}}
           >
             <Link href="/codes" className="flex items-center gap-2">

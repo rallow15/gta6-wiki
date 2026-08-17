@@ -30,7 +30,7 @@ function calculateTimeLeft(): TimeLeft {
 function TimeUnit({ value, label }: { value: number; label: string }) {
   return (
     <div className="flex flex-col items-center">
-      <div className="pulse-glow rounded-lg bg-deep-bg-light border border-neon-pink/20 px-3 py-2 sm:px-5 sm:py-3 min-w-[4rem] sm:min-w-[5.5rem]">
+      <div className="bg-deep-bg-light border-2 border-neon-pink px-3 py-2 sm:px-5 sm:py-3 min-w-[4rem] sm:min-w-[5.5rem] shadow-[4px_4px_0_0_var(--color-lagoon-cyan)]">
         <span className="font-display text-3xl sm:text-5xl text-text-primary">
           {String(value).padStart(2, "0")}
         </span>

@@ -102,7 +102,7 @@ export default async function MeilleuresVoituresPage({
             <Link
               key={vehicle.id}
               href={`${vehicleBasePath}/${vehicle.id}`}
-              className="neon-glow-card shimmer-line overflow-hidden group block flex flex-col sm:flex-row"
+              className="nb-card nb-press overflow-hidden group block flex flex-col sm:flex-row"
             >
               <div className="relative h-40 sm:h-32 sm:w-56 w-full shrink-0 overflow-hidden bg-deep-bg-light">
                 <Image
@@ -112,21 +112,21 @@ export default async function MeilleuresVoituresPage({
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                   sizes="(max-width: 640px) 100vw, 224px"
                 />
-                <span className="absolute top-3 left-3 font-display text-2xl font-bold text-white drop-shadow-lg">
+                <span className="absolute top-3 left-3 font-display text-3xl font-bold text-white drop-shadow-[2px_2px_0_0_var(--color-neon-pink)]">
                   #{i + 1}
                 </span>
                 {vehicle.edition && (
-                  <span className="absolute top-3 right-3 text-[10px] px-2 py-0.5 rounded font-bold uppercase tracking-wider bg-sunset-orange/90 text-white">
+                  <span className="absolute top-3 right-3 text-[10px] px-2 py-0.5 rounded-none font-bold uppercase tracking-wider bg-sunset-orange text-white border-2 border-deep-bg shadow-[2px_2px_0_0_var(--color-deep-bg)]">
                     {vehicle.edition}
                   </span>
                 )}
               </div>
               <div className="p-4 sm:p-5 flex-1">
                 <div className="flex items-start justify-between gap-2">
-                  <h3 className="font-semibold text-text-primary group-hover:text-neon-pink transition-colors">
+                  <h3 className="font-display tracking-wide text-text-primary group-hover:text-neon-pink transition-colors">
                     {vehicle.name}
                   </h3>
-                  <span className="text-xs px-2 py-0.5 rounded bg-deep-bg-light border border-night-violet/30 text-text-muted shrink-0">
+                  <span className="text-xs px-2 py-0.5 rounded-none bg-deep-bg-light border-2 border-night-violet/40 text-text-muted shrink-0">
                     {categoryMap[vehicle.category] ?? vehicle.category}
                   </span>
                 </div>
@@ -139,14 +139,14 @@ export default async function MeilleuresVoituresPage({
           ))}
         </div>
 
-        <div className="mt-10 glass-card p-6 sm:p-8">
+        <div className="mt-10 nb-card nb-press p-6 sm:p-8">
           <h2 className="font-display text-2xl tracking-wider text-sunset-orange mb-5">
             {t("faqTitle")}
           </h2>
           <div className="space-y-5">
             {faqs.map((f) => (
               <div key={f.question}>
-                <h3 className="font-semibold text-text-primary mb-1">{f.question}</h3>
+                <h3 className="font-display tracking-wide text-text-primary mb-1">{f.question}</h3>
                 <p className="text-sm text-text-muted leading-relaxed">{f.answer}</p>
               </div>
             ))}
@@ -154,7 +154,7 @@ export default async function MeilleuresVoituresPage({
         </div>
 
         <div className="mt-8 text-center">
-          <Link href={vehicleBasePath} className="text-neon-pink hover:underline">
+          <Link href={vehicleBasePath} className="text-neon-pink font-display tracking-wider hover:underline underline-offset-4 decoration-2">
             {t("allVehiclesLink")}
           </Link>
         </div>

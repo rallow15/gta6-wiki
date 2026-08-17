@@ -94,7 +94,7 @@ export default async function VehiculesPage({
         title={t("pageTitle")}
         subtitle={pageSubtitle}
       >
-        <div className="mb-6 glass-card p-4 border-lagoon-cyan/20">
+        <div className="mb-6 nb-card-cyan nb-press p-4">
           <div className="flex items-start gap-3">
             <Info className="h-5 w-5 text-lagoon-cyan shrink-0 mt-0.5" />
             <p className="text-sm text-text-secondary">
@@ -108,12 +108,12 @@ export default async function VehiculesPage({
           if (categoryVehicles.length === 0) return null;
           return (
             <div key={category} className="mb-10">
-              <h2 className="font-display text-2xl tracking-wider text-text-secondary mb-4 border-b border-night-violet/50 pb-2">
+              <h2 className="font-display text-2xl tracking-wider text-text-secondary mb-4 border-b-2 border-night-violet/50 pb-2">
                 {categoryLabels[category] || category}
               </h2>
               <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 {categoryVehicles.map((vehicle) => (
-                  <Link key={vehicle.id} href={`/${linkBase}/${vehicle.id}`} className="neon-glow-card shimmer-line overflow-hidden group block">
+                  <Link key={vehicle.id} href={`/${linkBase}/${vehicle.id}`} className="nb-card nb-press overflow-hidden group block">
                     <div className="relative h-44 sm:h-48 w-full overflow-hidden bg-deep-bg-light">
                       <Image
                         src={vehicle.image}
@@ -124,17 +124,17 @@ export default async function VehiculesPage({
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-deep-bg via-transparent to-transparent" />
                       {vehicle.edition && (
-                        <span className="absolute top-3 right-3 text-[10px] px-2 py-0.5 rounded font-bold uppercase tracking-wider bg-sunset-orange/90 text-white">
+                        <span className="absolute top-3 right-3 text-[10px] px-2 py-0.5 rounded-none font-bold uppercase tracking-wider bg-sunset-orange text-white border-2 border-deep-bg shadow-[2px_2px_0_0_var(--color-deep-bg)]">
                           {vehicle.edition}
                         </span>
                       )}
                     </div>
                     <div className="p-4 sm:p-5">
                       <div className="flex items-start justify-between gap-2">
-                        <h3 className="font-semibold text-text-primary group-hover:text-neon-pink transition-colors">
+                        <h3 className="font-display tracking-wide text-text-primary group-hover:text-neon-pink transition-colors">
                           {vehicle.name}
                         </h3>
-                        <span className="text-xs px-2 py-0.5 rounded bg-deep-bg-light border border-night-violet/30 text-text-muted shrink-0">
+                        <span className="text-xs px-2 py-0.5 rounded-none bg-deep-bg-light border-2 border-night-violet/40 text-text-muted shrink-0">
                           {vehicle.category}
                         </span>
                       </div>
@@ -155,7 +155,7 @@ export default async function VehiculesPage({
           );
         })}
 
-        <div className="mt-10 neon-glow-card-orange p-6">
+        <div className="mt-10 nb-card-orange nb-press p-6">
           <h3 className="font-display text-lg tracking-wider text-sunset-orange mb-2">
             {whatsNewTitle}
           </h3>

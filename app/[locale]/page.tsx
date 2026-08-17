@@ -70,6 +70,8 @@ export default async function Home({
   const icons = [Code, Map, BookOpen];
   const iconColors = ["neon-pink", "sunset-orange", "lagoon-cyan"];
   const iconBgs = ["bg-neon-pink/10 group-hover:bg-neon-pink/20", "bg-sunset-orange/10 group-hover:bg-sunset-orange/20", "bg-lagoon-cyan/10 group-hover:bg-lagoon-cyan/20"];
+  const nbVariants = ["nb-card", "nb-card-cyan", "nb-card-orange"];
+  const nbIconBg = ["bg-neon-pink", "bg-sunset-orange", "bg-lagoon-cyan"];
 
   return (
     <>
@@ -90,7 +92,7 @@ export default async function Home({
               <h2 className="font-display text-3xl sm:text-4xl tracking-wider text-text-primary text-center mb-8">
                 <span className="neon-text-cyan text-lagoon-cyan">{trailerLabel}</span>
               </h2>
-              <div className="glass-card p-2 sm:p-3">
+              <div className="nb-frame">
                 <div className="relative w-full aspect-video rounded-lg overflow-hidden">
                   <iframe
                     className="absolute inset-0 w-full h-full"
@@ -107,22 +109,25 @@ export default async function Home({
 
         {/* Features section */}
         <AnimatedContainer animation="fadeInUp" delay={0.15}>
-          <section className="py-16 px-4 sm:px-6 border-t border-neon-pink/10">
+          <section className="py-16 px-4 sm:px-6 border-t-2 border-neon-pink/30">
             <div className="mx-auto max-w-5xl">
-              <h2 className="font-display text-3xl sm:text-4xl tracking-wider text-text-primary text-center mb-12">
-                <span className="text-neon-pink neon-text">{t('allAboutTitle')}</span> {t('allAboutConnector')} <span className="text-sunset-orange">{t('allAboutSubtitle')}</span>
-              </h2>
+              <div className="text-center mb-12">
+                <span className="nb-badge nb-badge-pink inline-block mb-4">{t('allAboutConnector')}</span>
+                <h2 className="font-display text-3xl sm:text-4xl tracking-wider text-text-primary">
+                  <span className="text-neon-pink neon-text">{t('allAboutTitle')}</span> <span className="text-sunset-orange">{t('allAboutSubtitle')}</span>
+                </h2>
+              </div>
 
-              <div className="grid sm:grid-cols-3 gap-6">
+              <div className="grid sm:grid-cols-3 gap-8">
                 {features.map((feature, i) => {
                   const IconComponent = icons[i];
                   return (
                     <AnimatedContainer key={i} animation="scaleIn" delay={0.1 + i * 0.1}>
-                      <div className="glass-card p-6 text-center group">
-                        <div className={`h-12 w-12 mx-auto mb-4 rounded-lg ${iconBgs[i]} flex items-center justify-center transition-colors duration-300`}>
-                          <IconComponent className={`h-6 w-6 text-${iconColors[i]}`} />
+                      <div className={`${nbVariants[i]} nb-press p-6 text-center group`}>
+                        <div className={`h-12 w-12 mx-auto mb-4 flex items-center justify-center border-2 border-[var(--color-deep-bg)] ${nbIconBg[i]} text-white`}>
+                          <IconComponent className="h-6 w-6" />
                         </div>
-                        <h3 className="font-semibold text-text-primary mb-2">{feature.title}</h3>
+                        <h3 className="font-display text-xl tracking-wider text-text-primary mb-2">{feature.title}</h3>
                         <p className="text-sm text-text-muted">{feature.desc}</p>
                       </div>
                     </AnimatedContainer>

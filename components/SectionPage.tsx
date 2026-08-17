@@ -15,7 +15,7 @@ export default function SectionPage({ title, titleAccent, subtitle, children }: 
       <Navbar />
       <main className="pt-20 pb-16 px-4 sm:px-6">
         <div className="mx-auto max-w-5xl">
-          <div className="mb-10">
+          <div className="mb-10 border-b-2 border-neon-pink/30 pb-6">
             <h1 className="font-display text-4xl sm:text-5xl tracking-wider">
               {titleAccent ? (
                 <>

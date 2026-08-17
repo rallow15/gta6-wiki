@@ -48,7 +48,7 @@ export default async function MentionsLegalesPage({
       title={t("title")}
       subtitle={t("subtitle")}
     >
-      <div className="glass-card p-6 sm:p-8 space-y-6 text-text-secondary text-sm leading-relaxed">
+      <div className="nb-card p-6 sm:p-8 space-y-6 text-text-secondary text-sm leading-relaxed">
         <div>
           <h2 className="font-display text-lg tracking-wider text-text-primary mb-2">
             {t("publisher.heading")}

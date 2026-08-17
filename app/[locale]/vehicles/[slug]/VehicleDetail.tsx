@@ -84,7 +84,7 @@ export default function VehicleDetail({ vehicle, locale = "fr" }: { vehicle: Veh
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="relative h-72 sm:h-96 md:h-[450px] rounded-xl overflow-hidden neon-glow-card border-0"
+            className="relative h-72 sm:h-96 md:h-[450px] overflow-hidden nb-card"
           >
             <Image
               src={selectedImage}
@@ -97,11 +97,11 @@ export default function VehicleDetail({ vehicle, locale = "fr" }: { vehicle: Veh
             <div className="absolute inset-0 bg-gradient-to-t from-deep-bg via-deep-bg/30 to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8">
               <div className="flex flex-wrap items-center gap-2">
-                <span className={`text-xs px-2.5 py-1 rounded-full font-medium uppercase tracking-wider ${colors.bg} ${colors.text} ${colors.border} border`}>
+                <span className={`text-xs px-2.5 py-1 rounded-none font-bold uppercase tracking-wider ${colors.bg} ${colors.text} ${colors.border} border-2`}>
                   {vehicle.category}
                 </span>
                 {vehicle.edition && (
-                  <span className="text-xs px-2.5 py-1 rounded-full font-bold uppercase tracking-wider bg-sunset-orange/90 text-white">
+                  <span className="text-xs px-2.5 py-1 rounded-none font-bold uppercase tracking-wider bg-sunset-orange text-white border-2 border-deep-bg">
                     {vehicle.edition}
                   </span>
                 )}
@@ -124,8 +124,8 @@ export default function VehicleDetail({ vehicle, locale = "fr" }: { vehicle: Veh
                 <button
                   key={img}
                   onClick={() => setSelectedImage(img)}
-                  className={`relative h-20 w-32 sm:h-24 sm:w-40 shrink-0 rounded-lg overflow-hidden border-2 transition-all ${
-                    selectedImage === img ? "border-neon-pink shadow-lg shadow-neon-pink/30" : "border-transparent opacity-60 hover:opacity-100"
+                  className={`relative h-20 w-32 sm:h-24 sm:w-40 shrink-0 rounded-none overflow-hidden border-2 transition-all ${
+                    selectedImage === img ? "border-neon-pink shadow-[3px_3px_0_0_var(--color-neon-pink)]" : "border-transparent opacity-60 hover:opacity-100"
                   }`}
                 >
                   <Image
@@ -149,7 +149,7 @@ export default function VehicleDetail({ vehicle, locale = "fr" }: { vehicle: Veh
           >
             <button
               onClick={handleDownload}
-              className="inline-flex items-center gap-2 rounded-lg bg-neon-pink px-5 py-2.5 text-sm font-bold text-white shadow-lg shadow-neon-pink/25 transition-all hover:shadow-neon-pink/40 hover:scale-105"
+              className="nb-btn px-5 py-2.5 text-sm font-bold"
             >
               <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
@@ -158,7 +158,7 @@ export default function VehicleDetail({ vehicle, locale = "fr" }: { vehicle: Veh
             </button>
             <button
               onClick={handleShare}
-              className="inline-flex items-center gap-2 rounded-lg border border-lagoon-cyan/30 px-5 py-2.5 text-sm font-semibold text-lagoon-cyan transition-all hover:border-lagoon-cyan/60 hover:bg-lagoon-cyan/5"
+              className="nb-btn-ghost px-5 py-2.5 text-sm font-semibold"
             >
               {copied ? (
                 <>
@@ -183,7 +183,7 @@ export default function VehicleDetail({ vehicle, locale = "fr" }: { vehicle: Veh
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="mt-6 glass-card p-6"
+            className="mt-6 nb-card p-6"
           >
             <p className="text-text-secondary leading-relaxed text-lg">
               {description}
@@ -197,11 +197,11 @@ export default function VehicleDetail({ vehicle, locale = "fr" }: { vehicle: Veh
             transition={{ duration: 0.5, delay: 0.4 }}
             className="mt-6"
           >
-            <h2 className="font-display text-xl tracking-wider text-text-primary mb-4 border-b border-night-violet/50 pb-2">
+            <h2 className="font-display text-xl tracking-wider text-text-primary mb-4 border-b-2 border-night-violet/50 pb-2">
               {t.details}
             </h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-              <div className="neon-glow-card p-4 text-center">
+              <div className="nb-card-cyan nb-press p-4 text-center">
                 <div className={`font-display text-lg sm:text-xl ${colors.text}`}>
                   {vehicle.category}
                 </div>
@@ -209,7 +209,7 @@ export default function VehicleDetail({ vehicle, locale = "fr" }: { vehicle: Veh
                   {t.category}
                 </div>
               </div>
-              <div className="neon-glow-card p-4 text-center">
+              <div className="nb-card-cyan nb-press p-4 text-center">
                 <div className="font-display text-lg sm:text-xl text-sunset-orange">
                   {inspired}
                 </div>
@@ -217,7 +217,7 @@ export default function VehicleDetail({ vehicle, locale = "fr" }: { vehicle: Veh
                   {t.inspiredBy}
                 </div>
               </div>
-              <div className="neon-glow-card p-4 text-center">
+              <div className="nb-card-cyan nb-press p-4 text-center">
                 <div className={`font-display text-sm sm:text-base ${vehicle.edition ? "text-sunset-orange" : colors.text}`}>
                   {vehicle.edition || t.baseGame}
                 </div>
@@ -233,7 +233,7 @@ export default function VehicleDetail({ vehicle, locale = "fr" }: { vehicle: Veh
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.5 }}
-            className="mt-6 glass-card p-4 border-lagoon-cyan/20"
+            className="mt-6 nb-card-cyan p-4"
           >
             <div className="flex items-start gap-3">
               <svg className="h-5 w-5 text-lagoon-cyan shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
@@ -249,7 +249,7 @@ export default function VehicleDetail({ vehicle, locale = "fr" }: { vehicle: Veh
           <div className="mt-8">
             <Link
               href={t.backHref}
-              className="inline-flex items-center gap-2 text-sm text-text-muted hover:text-neon-pink transition-colors"
+              className="inline-flex items-center gap-2 text-sm font-display tracking-wider text-text-muted hover:text-neon-pink transition-colors"
             >
               <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18" />

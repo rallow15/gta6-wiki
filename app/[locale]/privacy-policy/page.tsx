@@ -48,7 +48,7 @@ export default async function PolitiqueConfidentialitePage({
       title={t("title")}
       subtitle={t("subtitle")}
     >
-      <div className="glass-card p-6 sm:p-8 space-y-6 text-text-secondary text-sm leading-relaxed">
+      <div className="nb-card p-6 sm:p-8 space-y-6 text-text-secondary text-sm leading-relaxed">
         <div>
           <h2 className="font-display text-lg tracking-wider text-text-primary mb-2">
             {t("dataCollection.heading")}
@@ -89,7 +89,7 @@ export default async function PolitiqueConfidentialitePage({
             {t("contact.text")}
           </p>
         </div>
-        <div className="border-t border-night-violet/50 pt-4 text-text-muted text-xs">
+        <div className="border-t-2 border-night-violet/50 pt-4 text-text-muted text-xs">
           {t("lastUpdated")}
         </div>
       </div>

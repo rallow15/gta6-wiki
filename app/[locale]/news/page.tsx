@@ -40,10 +40,10 @@ export default function ActualitesPage() {
           <button
             key={tag}
             onClick={() => setFilter(tag)}
-            className={`px-4 py-2 rounded-lg text-sm font-medium transition-all whitespace-nowrap ${
+            className={`px-4 py-2 rounded-none text-sm font-bold transition-all whitespace-nowrap border-2 ${
               filter === tag
-                ? "bg-neon-pink text-white shadow-lg shadow-neon-pink/25"
-                : "bg-white/5 text-text-secondary hover:bg-white/10 hover:text-text-primary"
+                ? "bg-neon-pink text-white border-lagoon-cyan shadow-[3px_3px_0_0_var(--color-lagoon-cyan)]"
+                : "bg-white/5 text-text-secondary border-night-violet/40 hover:bg-white/10 hover:text-text-primary hover:border-neon-pink"
             }`}
           >
             {tag === "all" ? t("filterAll") : tag}
@@ -56,7 +56,7 @@ export default function ActualitesPage() {
         {filtered.map((article, i) => (
           <AnimatedContainer key={article.id} animation="fadeInUp" delay={i * 0.05}>
             <Link href={`/actualites/${article.id}`} className="group block">
-              <div className="glass-card overflow-hidden transition-all duration-300 group-hover:border-neon-pink/40">
+              <div className="nb-card nb-press overflow-hidden transition-all duration-300">
                 {/* Image */}
                 <div className="relative aspect-[16/9] overflow-hidden">
                   <Image
@@ -69,7 +69,7 @@ export default function ActualitesPage() {
                   <div className="absolute inset-0 bg-gradient-to-t from-deep-bg/80 via-transparent to-transparent" />
                   {/* Tag + Date overlay */}
                   <div className="absolute bottom-3 left-3 right-3 flex items-center gap-2">
-                    <span className={`text-[10px] px-2 py-0.5 rounded-full border font-medium uppercase tracking-wider ${tagColors[article.tag] ?? tagColors["Annonce"]}`}>
+                    <span className={`text-[10px] px-2 py-0.5 rounded-none border-2 font-bold uppercase tracking-wider ${tagColors[article.tag] ?? tagColors["Annonce"]}`}>
                       {article.tag}
                     </span>
                     <span className="text-xs text-white/70">{article.date}</span>
@@ -77,7 +77,7 @@ export default function ActualitesPage() {
                 </div>
                 {/* Content */}
                 <div className="p-4">
-                  <h3 className="font-semibold text-text-primary group-hover:text-neon-pink transition-colors line-clamp-2 leading-snug">
+                  <h3 className="font-display tracking-wide text-text-primary group-hover:text-neon-pink transition-colors line-clamp-2 leading-snug">
                     {article.title}
                   </h3>
                   <p className="mt-2 text-sm text-text-muted line-clamp-2">{article.excerpt}</p>

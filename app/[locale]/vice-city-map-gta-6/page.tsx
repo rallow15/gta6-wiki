@@ -88,7 +88,7 @@ export default async function CarteViceCityPage({
         titleAccent={t("titleAccent")}
         subtitle={t("subtitle")}
       >
-        <div className="mb-8 neon-glow-card-cyan p-6 sm:p-8 border-lagoon-cyan/20">
+        <div className="mb-8 nb-card-cyan nb-press p-6 sm:p-8">
           <h2 className="font-display text-2xl tracking-wider text-lagoon-cyan mb-3">
             {t("stateTitle")}
           </h2>
@@ -106,7 +106,7 @@ export default async function CarteViceCityPage({
             <Link
               key={loc.id}
               href={`${lieuxPath}/${loc.id}`}
-              className="neon-glow-card shimmer-line overflow-hidden group block"
+              className="nb-card nb-press overflow-hidden group block"
             >
               <div className="relative h-44 w-full overflow-hidden bg-deep-bg-light">
                 <Image
@@ -117,7 +117,7 @@ export default async function CarteViceCityPage({
                   sizes="(max-width: 640px) 100vw, 50vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-deep-bg via-transparent to-transparent" />
-                <span className="absolute top-3 right-3 text-[10px] px-2 py-0.5 rounded font-bold uppercase tracking-wider bg-deep-bg/80 text-lagoon-cyan border border-lagoon-cyan/30">
+                <span className="absolute top-3 right-3 text-[10px] px-2 py-0.5 rounded-none font-bold uppercase tracking-wider bg-deep-bg/80 text-lagoon-cyan border-2 border-lagoon-cyan">
                   {typeMap[loc.type] ?? loc.type}
                 </span>
                 <h3 className="absolute bottom-3 left-3 font-display text-xl tracking-wider text-white drop-shadow-lg">
@@ -128,7 +128,7 @@ export default async function CarteViceCityPage({
                 <p className="text-sm text-text-muted">{isEn ? loc.descriptionEn : loc.description}</p>
                 <div className="mt-3 flex flex-wrap gap-1.5">
                   {(isEn && loc.featuresEn ? loc.featuresEn : loc.features).map((f) => (
-                    <span key={f} className="text-[10px] px-2 py-0.5 rounded-full bg-neon-pink/10 text-neon-pink border border-neon-pink/20">
+                    <span key={f} className="text-[10px] px-2 py-0.5 rounded-none bg-neon-pink/10 text-neon-pink border-2 border-neon-pink/40">
                       {featureMap[f] ?? f}
                     </span>
                   ))}
@@ -138,14 +138,14 @@ export default async function CarteViceCityPage({
           ))}
         </div>
 
-        <div className="mt-10 glass-card p-6 sm:p-8">
+        <div className="mt-10 nb-card nb-press p-6 sm:p-8">
           <h2 className="font-display text-2xl tracking-wider text-sunset-orange mb-5">
             {t("faqTitle")}
           </h2>
           <div className="space-y-5">
             {faqs.map((f) => (
               <div key={f.question}>
-                <h3 className="font-semibold text-text-primary mb-1">{f.question}</h3>
+                <h3 className="font-display tracking-wide text-text-primary mb-1">{f.question}</h3>
                 <p className="text-sm text-text-muted leading-relaxed">{f.answer}</p>
               </div>
             ))}
@@ -153,7 +153,7 @@ export default async function CarteViceCityPage({
         </div>
 
         <div className="mt-8 text-center">
-          <Link href={lieuxPath} className="text-neon-pink hover:underline">
+          <Link href={lieuxPath} className="text-neon-pink font-display tracking-wider hover:underline underline-offset-4 decoration-2">
             {t("allLocationsLink")}
           </Link>
         </div>

@@ -295,6 +295,87 @@ body::before {
   }
 }
 
+/* ============================================
+   NÉO-BRUTALISTE — fusion RAFA × palette néon gta6-wiki
+   Bordures épaisses (3px) + ombres décalées dures
+   + effet "press" au clic. Conserve la palette néon
+   existante (--color-neon-pink / sunset-orange /
+   sand-yellow / lagoon-cyan / deep-bg / night-violet).
+   ============================================ */
+
+/* Base néo-brutaliste : bordure épaisse + ombre offset dure.
+   Sur fond sombre, l'offset est un néon contrasté (pas du noir). */
+.nb-card {
+  background: var(--color-card-bg);
+  border: 3px solid var(--color-neon-pink);
+  box-shadow: 6px 6px 0 0 var(--color-lagoon-cyan);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 0;
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+.nb-card-cyan { border-color: var(--color-lagoon-cyan); box-shadow: 6px 6px 0 0 var(--color-neon-pink); }
+.nb-card-orange { border-color: var(--color-sunset-orange); box-shadow: 6px 6px 0 0 var(--color-sand-yellow); }
+.nb-card-yellow { border-color: var(--color-sand-yellow); box-shadow: 6px 6px 0 0 var(--color-sunset-orange); }
+.nb-card-violet { border-color: var(--color-night-violet-light); box-shadow: 6px 6px 0 0 var(--color-neon-pink); }
+
+/* Petit décalage au survol + enfoncement au clic (effet bouton RAFA) */
+.nb-card:hover { transform: translate(-2px, -2px); box-shadow: 8px 8px 0 0 var(--color-lagoon-cyan); }
+.nb-card-cyan:hover { box-shadow: 8px 8px 0 0 var(--color-neon-pink); }
+.nb-card-orange:hover { box-shadow: 8px 8px 0 0 var(--color-sand-yellow); }
+.nb-card-yellow:hover { box-shadow: 8px 8px 0 0 var(--color-sunset-orange); }
+.nb-card-violet:hover { box-shadow: 8px 8px 0 0 var(--color-neon-pink); }
+
+.nb-press { transition: transform 0.08s ease, box-shadow 0.08s ease; }
+.nb-press:active { transform: translate(3px, 3px) !important; box-shadow: 0 0 0 0 transparent !important; }
+
+/* Badges néo-brutalistes */
+.nb-badge {
+  display: inline-block;
+  border: 3px solid var(--color-deep-bg);
+  padding: 0.15rem 0.5rem;
+  font-family: "Bebas Neue", ui-sans-serif, system-ui, sans-serif;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  line-height: 1.2;
+}
+.nb-badge-pink { background: var(--color-neon-pink); color: #fff; box-shadow: 3px 3px 0 0 var(--color-deep-bg); }
+.nb-badge-cyan { background: var(--color-lagoon-cyan); color: var(--color-deep-bg); box-shadow: 3px 3px 0 0 var(--color-deep-bg); }
+.nb-badge-orange { background: var(--color-sunset-orange); color: var(--color-deep-bg); box-shadow: 3px 3px 0 0 var(--color-deep-bg); }
+.nb-badge-yellow { background: var(--color-sand-yellow); color: var(--color-deep-bg); box-shadow: 3px 3px 0 0 var(--color-deep-bg); }
+
+/* Bouton néo-brutaliste plein */
+.nb-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 3px solid var(--color-lagoon-cyan);
+  background: var(--color-neon-pink);
+  color: #fff;
+  padding: 0.7rem 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.8rem;
+  box-shadow: 5px 5px 0 0 var(--color-lagoon-cyan);
+  transition: transform 0.08s ease, box-shadow 0.08s ease;
+}
+.nb-btn:hover { transform: translate(-1px, -1px); box-shadow: 6px 6px 0 0 var(--color-lagoon-cyan); }
+.nb-btn:active { transform: translate(3px, 3px) !important; box-shadow: 0 0 0 0 transparent !important; }
+.nb-btn-cyan { border-color: var(--color-neon-pink); background: var(--color-lagoon-cyan); color: var(--color-deep-bg); box-shadow: 5px 5px 0 0 var(--color-neon-pink); }
+.nb-btn-cyan:hover { box-shadow: 6px 6px 0 0 var(--color-neon-pink); }
+.nb-btn-ghost { background: transparent; border-color: var(--color-lagoon-cyan); color: var(--color-lagoon-cyan); box-shadow: 4px 4px 0 0 var(--color-lagoon-cyan); }
+.nb-btn-ghost:hover { background: rgba(34, 211, 238, 0.12); box-shadow: 6px 6px 0 0 var(--color-lagoon-cyan); }
+
+/* Encadré néo-brutaliste (ex. vidéo trailer, iframe) */
+.nb-frame {
+  border: 3px solid var(--color-neon-pink);
+  box-shadow: 8px 8px 0 0 var(--color-lagoon-cyan);
+  background: var(--color-card-bg);
+  padding: 0.5rem;
+}
+
 :root {
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);

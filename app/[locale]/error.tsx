@@ -15,7 +15,7 @@ export default function Error({
 
   return (
     <div className="min-h-screen flex items-center justify-center px-4 bg-deep-bg">
-      <div className="text-center max-w-md">
+      <div className="text-center max-w-md nb-card p-8">
         <h1 className="font-display text-6xl mb-4">
           <span className="neon-text text-neon-pink">Error</span>
         </h1>
@@ -25,13 +25,13 @@ export default function Error({
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button
             onClick={reset}
-            className="neon-pulse-btn inline-flex items-center justify-center gap-2 rounded-lg bg-neon-pink px-6 py-3 text-sm font-bold text-white shadow-lg shadow-neon-pink/25 transition-all hover:shadow-neon-pink/40 hover:scale-105"
+            className="nb-btn justify-center px-6 py-3 text-sm font-bold"
           >
             Try again
           </button>
           <Link
             href="/"
-            className="inline-flex items-center justify-center gap-2 rounded-lg border border-lagoon-cyan/30 px-6 py-3 text-sm font-semibold text-lagoon-cyan transition-all hover:border-lagoon-cyan/60 hover:bg-lagoon-cyan/5"
+            className="nb-btn-ghost justify-center px-6 py-3 text-sm font-semibold"
           >
             {t("homeLink")}
           </Link>

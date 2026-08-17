@@ -74,7 +74,7 @@ export default async function DateSortiePage({
         subtitle={t("subtitle")}
       >
         {/* Release date highlight */}
-        <div className="mb-8 neon-glow-card-cyan p-6 sm:p-8 text-center">
+        <div className="mb-8 nb-card-cyan nb-press p-6 sm:p-8 text-center">
           <p className="text-sm uppercase tracking-widest text-text-muted mb-2">
             {t("releaseDateLabel")}
           </p>
@@ -87,7 +87,7 @@ export default async function DateSortiePage({
         </div>
 
         {/* Timeline of delays */}
-        <div className="mb-10 glass-card p-6 sm:p-8">
+        <div className="mb-10 nb-card nb-press p-6 sm:p-8">
           <h2 className="font-display text-2xl tracking-wider text-neon-pink mb-5">
             {t("timelineTitle")}
           </h2>
@@ -136,7 +136,7 @@ export default async function DateSortiePage({
 
         {/* Editions */}
         <div className="mb-10 grid sm:grid-cols-2 gap-4">
-          <div className="neon-glow-card p-6">
+          <div className="nb-card nb-press p-6">
             <h3 className="font-display text-xl tracking-wider text-neon-pink mb-2">
               {t("standardEdition.title")}
             </h3>
@@ -147,7 +147,7 @@ export default async function DateSortiePage({
               <li className="flex gap-2"><ChevronRight className="h-4 w-4 text-neon-pink shrink-0" /> {t("standardEdition.features.2")}</li>
             </ul>
           </div>
-          <div className="neon-glow-card-orange p-6">
+          <div className="nb-card-orange nb-press p-6">
             <h3 className="font-display text-xl tracking-wider text-sunset-orange mb-2">
               {t("ultimateEdition.title")}
             </h3>
@@ -161,7 +161,7 @@ export default async function DateSortiePage({
         </div>
 
         {/* Platforms */}
-        <div className="mb-10 neon-glow-card-cyan p-6 sm:p-8 border-lagoon-cyan/20">
+        <div className="mb-10 nb-card-cyan nb-press p-6 sm:p-8">
           <h2 className="font-display text-2xl tracking-wider text-lagoon-cyan mb-4">
             {t("platformsTitle")}
           </h2>
@@ -173,14 +173,14 @@ export default async function DateSortiePage({
         </div>
 
         {/* FAQ */}
-        <div className="glass-card p-6 sm:p-8">
+        <div className="nb-card nb-press p-6 sm:p-8">
           <h2 className="font-display text-2xl tracking-wider text-sunset-orange mb-5">
             {t("faqTitle")}
           </h2>
           <div className="space-y-5">
             {faqs.map((f) => (
               <div key={f.question}>
-                <h3 className="font-semibold text-text-primary mb-1">{f.question}</h3>
+                <h3 className="font-display tracking-wide text-text-primary mb-1">{f.question}</h3>
                 <p className="text-sm text-text-muted leading-relaxed">{f.answer}</p>
               </div>
             ))}
@@ -188,7 +188,7 @@ export default async function DateSortiePage({
         </div>
 
         <div className="mt-8 text-center">
-          <Link href={isEn ? "/en/news" : "/actualites"} className="text-neon-pink hover:underline">
+          <Link href={isEn ? "/en/news" : "/actualites"} className="text-neon-pink font-display tracking-wider hover:underline underline-offset-4 decoration-2">
             {t("newsLink")}
           </Link>
         </div>
