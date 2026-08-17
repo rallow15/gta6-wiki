@@ -585,9 +585,13 @@
     "roleTranslations": {
       "Protagoniste jouable": "Protagoniste jouable",
       "Antagoniste": "Antagoniste",
-      "Allié": "Allié",
-      "Contact": "Contact"
+      "Ami de Jason": "Ami de Jason",
+      "Entrepreneur a Vice City": "Entrepreneur à Vice City",
+      "Musicien a Port Gellhorn": "Musicien à Port Gellhorn",
+      "Homme d'affaires (Ambrosia)": "Homme d'affaires (Ambrosia)"
     },
+    "noticeStrong": "Sources officielles + contenu éditorial.",
+    "noticeRest": "Les noms, le statut de protagonistes jouables et les origines proviennent des bios officielles Rockstar. Les biographies, relations et autres détails narratifs sont en partie interprétés et ne sont pas confirmés par Rockstar.",
     "keywords": ["personnages GTA 6", "personnages GTA VI", "Jason Duval", "Lucia Caminos", "Raul Bautista", "protagonistes GTA 6", "héros GTA 6"]
   },
   "ReleaseDate": {

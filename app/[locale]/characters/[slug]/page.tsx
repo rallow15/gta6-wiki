@@ -4,6 +4,7 @@ import CharacterDetail from "./CharacterDetail";
 import { JsonLd } from "@/components/JsonLd";
 import { BASE_URL } from "@/lib/site";
 import { breadcrumbJsonLd, personJsonLd } from "@/lib/seo";
+import { getTranslations } from "next-intl/server";
 
 export function generateStaticParams() {
   return characters.map((c) => ({ slug: c.id }));
@@ -52,6 +53,7 @@ export async function generateMetadata({
 export default async function CharacterPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const character = getCharacterById(slug);
+  const t = await getTranslations("Characters");
 
   if (!character) {
     return (
@@ -63,6 +65,10 @@ export default async function CharacterPage({ params }: { params: Promise<{ slug
   }
 
   const url = `${BASE_URL}/personnages/${character.id}`;
+  const notice = {
+    strong: t("noticeStrong"),
+    rest: t("noticeRest"),
+  };
   return (
     <>
       <JsonLd
@@ -75,7 +81,7 @@ export default async function CharacterPage({ params }: { params: Promise<{ slug
           ]),
         ]}
       />
-      <CharacterDetail character={character} />
+      <CharacterDetail character={character} notice={notice} />
     </>
   );
 }

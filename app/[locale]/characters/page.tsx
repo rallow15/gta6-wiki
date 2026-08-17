@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Info } from "lucide-react";
 import SectionPage from "@/components/SectionPage";
 import GameCard from "@/components/GameCard";
 import { JsonLd } from "@/components/JsonLd";
@@ -82,6 +83,17 @@ export default async function PersonnagesPage({
         title={t("pageTitle")}
         subtitle={t("pageSubtitle")}
       >
+        {/* Editorial notice */}
+        <div className="mb-8 nb-card-cyan nb-press p-4">
+          <div className="flex items-start gap-3">
+            <Info className="h-5 w-5 text-lagoon-cyan shrink-0 mt-0.5" />
+            <p className="text-sm text-text-secondary">
+              <strong className="text-lagoon-cyan">{t("noticeStrong")}</strong>{" "}
+              {t("noticeRest")}
+            </p>
+          </div>
+        </div>
+
         <div className="mb-10">
           <h2 className="font-display text-2xl tracking-wider text-sunset-orange mb-4 border-b-2 border-sunset-orange/40 pb-2">
             {playableLabel}

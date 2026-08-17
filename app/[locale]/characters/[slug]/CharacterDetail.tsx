@@ -7,7 +7,13 @@ import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
 import type { Character } from "@/lib/characters";
 
-export default function CharacterDetail({ character }: { character: Character }) {
+export default function CharacterDetail({
+  character,
+  notice,
+}: {
+  character: Character;
+  notice?: { strong: string; rest: string };
+}) {
   const accentColor = character.role === "Protagoniste jouable"
     ? { text: "text-neon-pink", bg: "bg-neon-pink/10", border: "border-neon-pink/30" }
     : character.role === "Antagoniste"
@@ -46,6 +52,31 @@ export default function CharacterDetail({ character }: { character: Character })
             </div>
           </motion.div>
 
+          {/* Editorial notice */}
+          {notice && (
+            <div className="mt-6 nb-card-cyan nb-press p-4">
+              <div className="flex items-start gap-3">
+                <svg
+                  className="h-5 w-5 text-lagoon-cyan shrink-0 mt-0.5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"
+                  />
+                </svg>
+                <p className="text-sm text-text-secondary">
+                  <strong className="text-lagoon-cyan">{notice.strong}</strong>{" "}
+                  {notice.rest}
+                </p>
+              </div>
+            </div>
+          )}
+
           {/* Quote */}
           {character.quote && (
             <motion.div
@@ -60,30 +91,6 @@ export default function CharacterDetail({ character }: { character: Character })
               <cite className="mt-2 block text-sm text-text-muted">— {character.name}</cite>
             </motion.div>
           )}
-
-          {/* Stats */}
-          <motion.div
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.3 }}
-            className="mt-6"
-          >
-            <h2 className="font-display text-xl tracking-wider text-text-primary mb-4 border-b-2 border-night-violet/50 pb-2">
-              COMPETENCES
-            </h2>
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-              {character.stats.map((stat) => (
-                <div key={stat.label} className="nb-card-cyan nb-press p-3 text-center">
-                  <div className={`font-display text-2xl ${accentColor.text}`}>
-                    {stat.value}
-                  </div>
-                  <div className="text-xs text-text-muted mt-1 uppercase tracking-wider">
-                    {stat.label}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </motion.div>
 
           {/* Bio */}
           <motion.div
