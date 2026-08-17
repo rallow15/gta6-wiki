@@ -10,7 +10,7 @@ export interface Article {
   sourceName: string;
 }
 
-const base = "https://gta.wiki/images";
+const base = "/images/gta6-screens";
 
 export const articles: Article[] = [
   {

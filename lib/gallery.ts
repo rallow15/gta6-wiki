@@ -12,7 +12,7 @@ export interface GalleryCategory {
   images: GalleryImage[];
 }
 
-const base = "https://gta.wiki/images";
+const base = "/images/gta6-screens";
 
 export const galleryCategories: GalleryCategory[] = [
   // ── Personnages ──
