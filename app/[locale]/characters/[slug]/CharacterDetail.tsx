@@ -30,7 +30,7 @@ export default function CharacterDetail({ character }: { character: Character })
               src={character.image}
               alt={character.name}
               fill
-              className="object-cover object-top"
+              className="object-contain"
               priority
               sizes="(max-width: 768px) 100vw, 640px"
             />

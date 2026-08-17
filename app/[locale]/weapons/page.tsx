@@ -155,7 +155,7 @@ export default async function ArmesPage({
                           src={weapon.image}
                           alt={weapon.name}
                           fill
-                          className="object-cover transition-transform duration-700 group-hover:scale-110"
+                          className="object-contain transition-transform duration-700 group-hover:scale-110"
                           sizes="(max-width: 640px) 100vw, 50vw"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-deep-bg via-transparent to-transparent" />

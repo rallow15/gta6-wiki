@@ -95,6 +95,7 @@ export default async function PersonnagesPage({
                 href={`/${linkBase}/${char.id}`}
                 image={char.image}
                 accent="pink"
+                fit="contain"
                 stats={[
                   { label: originLabel, value: char.origin },
                   { label: roleLabel, value: roleTranslations[char.role] ?? char.role },
@@ -117,6 +118,7 @@ export default async function PersonnagesPage({
                 href={`/${linkBase}/${char.id}`}
                 image={char.image}
                 accent={char.role === "Antagoniste" ? "orange" : "cyan"}
+                fit="contain"
                 stats={[
                   { label: originLabel, value: char.origin },
                   { label: roleLabel, value: roleTranslations[char.role] ?? char.role },

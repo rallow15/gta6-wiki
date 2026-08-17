@@ -12,6 +12,9 @@ interface GameCardProps {
   image?: string;
   accent?: "pink" | "orange" | "cyan" | "yellow";
   stats?: { label: string; value: string }[];
+  // Comment l'image remplit son conteneur. "contain" pour voir toute l'image
+  // (pas de rognage), "cover" pour remplir en rognant. Défaut : "cover".
+  fit?: "cover" | "contain";
 }
 
 const accentMap = {
@@ -41,8 +44,10 @@ const accentMap = {
   },
 };
 
-export default function GameCard({ title, description, href, icon, image, accent = "pink", stats }: GameCardProps) {
+export default function GameCard({ title, description, href, icon, image, accent = "pink", stats, fit = "cover" }: GameCardProps) {
   const colors = accentMap[accent];
+  // Classes entières pour que Tailwind les génère (pas de template literal).
+  const objectFitClass = fit === "contain" ? "object-contain" : "object-cover";
 
   return (
     <motion.div
@@ -61,7 +66,7 @@ export default function GameCard({ title, description, href, icon, image, accent
               src={image}
               alt={title}
               fill
-              className="object-cover transition-transform duration-700 group-hover:scale-110"
+              className={`${objectFitClass} transition-transform duration-700 group-hover:scale-110`}
               sizes="(max-width: 640px) 100vw, 50vw"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-deep-bg via-transparent to-transparent" />
