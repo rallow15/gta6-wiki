@@ -73,7 +73,6 @@ export default function Navbar() {
                 {t(`links.${item.key}`)}
               </Link>
             ))}
-            <LanguageSwitcher />
           </div>
 
           {/* Mobile Toggle */}
