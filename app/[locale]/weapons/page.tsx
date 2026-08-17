@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import SectionPage from "@/components/SectionPage";
 import GameCard from "@/components/GameCard";
 import { JsonLd } from "@/components/JsonLd";
@@ -17,13 +18,18 @@ interface OfficialWeapon {
   descriptionEn: string;
   source: string;
   accent: "pink" | "orange" | "cyan" | "yellow";
+  // Screenshot officiel Rockstar (100% officiel, jamais fan/AI). Optionnel :
+  // seules les armes avec un screenshot officiel certain l'ont.
+  image?: string;
 }
+
+const imgBase = "/images/gta6-screens";
 
 const weapons: OfficialWeapon[] = [
   // Pistols
   { id: "girardi-es9", name: "Girardi ES9", category: "Pistolet", categoryEn: "Pistol", description: "Pistolet semi-automatique inspiré du Beretta 92FS. Arme de préférence de Jason. Variante personnalisée dans l'Édition Ultime.", descriptionEn: "Semi-automatic pistol inspired by the Beretta 92FS. Jason's preferred weapon. Custom variant in the Ultimate Edition.", source: "Trailer 2 + Screenshots officiels", accent: "cyan" },
   { id: "klose-k17", name: "Klose K17", category: "Pistolet", categoryEn: "Pistol", description: "Pistolet inspiré du Glock 17. Arme principale de Lucia. Peut tirer en mode automatique complet.", descriptionEn: "Pistol inspired by the Glock 17. Lucia's primary weapon. Can fire in full automatic mode.", source: "Trailer 2 + Screenshots officiels", accent: "cyan" },
-  { id: "hawk-little-morgan", name: "Hawk & Little Morgan Revolver", category: "Revolvers", categoryEn: "Revolvers", description: "Revolver inspiré du Smith & Wesson 629. Version personnalisée pour Jason et Lucia dans l'Édition Ultime.", descriptionEn: "Revolver inspired by the Smith & Wesson 629. Custom version for Jason and Lucia in the Ultimate Edition.", source: "Screenshots officiels + Site Rockstar", accent: "yellow" },
+  { id: "hawk-little-morgan", name: "Hawk & Little Morgan Revolver", category: "Revolvers", categoryEn: "Revolvers", description: "Revolver inspiré du Smith & Wesson 629. Version personnalisée pour Jason et Lucia dans l'Édition Ultime.", descriptionEn: "Revolver inspired by the Smith & Wesson 629. Custom version for Jason and Lucia in the Ultimate Edition.", source: "Screenshots officiels + Site Rockstar", accent: "yellow", image: `${imgBase}/OfficialScreenshots-GTAVI-PromotionalWebsite-UltimateEdition-HawkandLittleMorganRevolvers01.jpg` },
   { id: "mustang-357", name: "Mustang .357 Revolver", category: "Revolvers", categoryEn: "Revolvers", description: "Revolver inspiré du Colt Python. Vu en possession d'un gang de motards.", descriptionEn: "Revolver inspired by the Colt Python. Seen in possession of a biker gang.", source: "Screenshots officiels", accent: "yellow" },
   { id: "nipper-38", name: "Nipper .38", category: "Pistolet", categoryEn: "Pistol", description: "Petit pistolet compact visible sur l'artwork officiel, tenu par Lucia.", descriptionEn: "Small compact pistol visible on the official artwork, held by Lucia.", source: "Artwork officiel de couverture", accent: "cyan" },
   { id: "capo-pistol", name: "Capo Pistol", category: "Pistolet", categoryEn: "Pistol", description: "Pistolet inspiré du Colt M1911. Vu entre les mains de Jason et Raul Bautista.", descriptionEn: "Pistol inspired by the Colt M1911. Seen in the hands of Jason and Raul Bautista.", source: "Screenshots officiels", accent: "cyan" },
@@ -34,7 +40,7 @@ const weapons: OfficialWeapon[] = [
 
   // SMGs
   { id: "mp5-smg", name: "MP5-inspired SMG", category: "Mitraillette", categoryEn: "SMG", description: "Mitraillette inspirée du MP5. Utilisée par Jason et Lucia lors du braquage dans le Trailer 2.", descriptionEn: "SMG inspired by the MP5. Used by Jason and Lucia during the heist in Trailer 2.", source: "Trailer 2", accent: "pink" },
-  { id: "mac-10", name: "MAC-10/11 SMG", category: "Mitraillette", categoryEn: "SMG", description: "Mitraillette compacte inspirée du MAC-10/11. Version avec skin Vice City en précommande.", descriptionEn: "Compact SMG inspired by the MAC-10/11. Vice City skin version available as pre-order bonus.", source: "Screenshots officiels + Précommande", accent: "pink" },
+  { id: "mac-10", name: "MAC-10/11 SMG", category: "Mitraillette", categoryEn: "SMG", description: "Mitraillette compacte inspirée du MAC-10/11. Version avec skin Vice City en précommande.", descriptionEn: "Compact SMG inspired by the MAC-10/11. Vice City skin version available as pre-order bonus.", source: "Screenshots officiels + Précommande", accent: "pink", image: `${imgBase}/OfficialScreenshots-GTAVI-PromotionalWebsite-VintageViceCityPack-WeaponPattern01.jpg` },
 
   // Assault Rifles
   { id: "duke-carbine", name: "Duke Carbine Rifle", category: "Fusil d'assaut", categoryEn: "Assault Rifle", description: "Fusil d'assaut inspiré du M4, avec l'insigne Duke Arms Company (référence Red Dead Redemption). Le fusil le plus visible dans les médias officiels.", descriptionEn: "Assault rifle inspired by the M4, with the Duke Arms Company insignia (Red Dead Redemption reference). The most visible rifle in official media.", source: "Trailer 2 + Screenshots officiels", accent: "orange" },
@@ -52,7 +58,7 @@ const weapons: OfficialWeapon[] = [
   { id: "baseball-bat", name: "Baseball Bat", category: "Melee", categoryEn: "Melee", description: "Batte de baseball vue dans les captures d'écran de Port Gellhorn.", descriptionEn: "Baseball bat seen in Port Gellhorn screenshots.", source: "Screenshots officiels", accent: "orange" },
   { id: "hammer", name: "Hammer", category: "Melee", categoryEn: "Melee", description: "Marteau vu en dual-wield dans le Trailer 1.", descriptionEn: "Hammer seen dual-wielded in Trailer 1.", source: "Trailer 1", accent: "orange" },
   { id: "golf-club", name: "Golf Club", category: "Melee", categoryEn: "Melee", description: "Club de golf tenu par Cal Hampton dans les captures d'écran officielles.", descriptionEn: "Golf club held by Cal Hampton in official screenshots.", source: "Screenshots officiels", accent: "orange" },
-  { id: "knife", name: "Knife", category: "Melee", categoryEn: "Melee", description: "Couteau visible sur une table à côté des revolvers personnalisés.", descriptionEn: "Knife visible on a table next to the custom revolvers.", source: "Screenshots officiels", accent: "orange" },
+  { id: "knife", name: "Knife", category: "Melee", categoryEn: "Melee", description: "Couteau visible sur une table à côté des revolvers personnalisés.", descriptionEn: "Knife visible on a table next to the custom revolvers.", source: "Screenshots officiels", accent: "orange", image: `${imgBase}/OfficialScreenshots-GTAVI-PromotionalWebsite-UltimateEdition-HawkandLittleMorganRevolvers02.jpg` },
   { id: "speargun", name: "Speargun", category: "Special", categoryEn: "Special", description: "Fusil harpon confirmé pour le combat sous-marin.", descriptionEn: "Speargun confirmed for underwater combat.", source: "Screenshots officiels", accent: "cyan" },
 ];
 
@@ -143,17 +149,31 @@ export default async function ArmesPage({
               </h2>
               <div className="grid sm:grid-cols-2 gap-4">
                 {categoryWeapons.map((weapon) => (
-                  <div key={weapon.id} className="nb-card nb-press p-5 group">
-                    <div className="flex items-start justify-between gap-2">
-                      <h3 className="font-display tracking-wide text-text-primary">{weapon.name}</h3>
-                      <span className="text-xs px-2 py-0.5 rounded-none bg-deep-bg-light border-2 border-night-violet/40 text-text-muted shrink-0">
-                        {locale === "en" ? weapon.categoryEn : weapon.category}
-                      </span>
-                    </div>
-                    <p className="mt-2 text-sm text-text-muted">{locale === "en" ? weapon.descriptionEn : weapon.description}</p>
-                    <div className="mt-3 flex items-center gap-1.5 text-xs text-text-muted">
-                      <CheckCircle className="h-3.5 w-3.5 text-lagoon-cyan" />
-                      {weapon.source}
+                  <div key={weapon.id} className="nb-card nb-press overflow-hidden group">
+                    {weapon.image && (
+                      <div className="relative h-44 w-full bg-deep-bg-light">
+                        <Image
+                          src={weapon.image}
+                          alt={weapon.name}
+                          fill
+                          className="object-cover transition-transform duration-700 group-hover:scale-110"
+                          sizes="(max-width: 640px) 100vw, 50vw"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-deep-bg via-transparent to-transparent" />
+                      </div>
+                    )}
+                    <div className="p-5">
+                      <div className="flex items-start justify-between gap-2">
+                        <h3 className="font-display tracking-wide text-text-primary">{weapon.name}</h3>
+                        <span className="text-xs px-2 py-0.5 rounded-none bg-deep-bg-light border-2 border-night-violet/40 text-text-muted shrink-0">
+                          {locale === "en" ? weapon.categoryEn : weapon.category}
+                        </span>
+                      </div>
+                      <p className="mt-2 text-sm text-text-muted">{locale === "en" ? weapon.descriptionEn : weapon.description}</p>
+                      <div className="mt-3 flex items-center gap-1.5 text-xs text-text-muted">
+                        <CheckCircle className="h-3.5 w-3.5 text-lagoon-cyan" />
+                        {weapon.source}
+                      </div>
                     </div>
                   </div>
                 ))}

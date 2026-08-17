@@ -1,10 +1,28 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import SectionPage from "@/components/SectionPage";
 import { JsonLd } from "@/components/JsonLd";
 import { BASE_URL, getSiteName, getSiteLocale } from "@/lib/site";
 import { breadcrumbJsonLd, faqJsonLd } from "@/lib/seo";
 import { getTranslations } from "next-intl/server";
+
+// Icônes des catégories de codes (Santé, Armes, Véhicules, Police & Monde).
+// Indépendantes de la langue — on mappe l'index de catégorie au fichier image.
+const categoryIcons: Record<string, string> = {
+  "0": "/images/codes/sante.png",
+  "1": "/images/codes/arme.webp",
+  "2": "/images/codes/voiture.png",
+  "3": "/images/codes/police.png",
+};
+
+// Logos des plateformes (PS5, Xbox, PC/Steam). SVG monochromes blancs,
+// servis en <img> (pas next/image — pas besoin d'optimisation pour du SVG).
+const platformIcons: Record<string, string> = {
+  "0": "/images/codes/platforms/playstation.svg",
+  "1": "/images/codes/platforms/xbox.svg",
+  "2": "/images/codes/platforms/steam.svg",
+};
 
 export async function generateMetadata({
   params,
@@ -114,7 +132,14 @@ export default async function CodesPage({
         <div className="grid sm:grid-cols-3 gap-4 mb-10">
           {(["0", "1", "2"] as const).map((i) => (
             <div key={i} className="card-base p-5" data-plate="primary">
-              <span className="text-2xl mb-2 block">{t(`platforms.${i}.icon`)}</span>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={platformIcons[i]}
+                alt=""
+                width={32}
+                height={32}
+                className="h-8 w-8 mb-2"
+              />
               <h3 className="font-display font-bold text-lg tracking-tight text-accent-primary mb-2">
                 {t(`platforms.${i}.name`)}
               </h3>
@@ -130,7 +155,13 @@ export default async function CodesPage({
         <div className="grid sm:grid-cols-2 gap-4 mb-10">
           {(["0", "1", "2", "3"] as const).map((i) => (
             <div key={i} className="card-base p-5" data-plate="primary">
-              <span className="text-xl mb-1 block">{t(`categories.${i}.icon`)}</span>
+              <Image
+                src={categoryIcons[i]}
+                alt=""
+                width={56}
+                height={56}
+                className="h-14 w-14 object-contain mb-2"
+              />
               <h3 className="font-semibold text-text-primary">{t(`categories.${i}.name`)}</h3>
               <p className="text-sm text-text-muted">{t(`categories.${i}.desc`)}</p>
             </div>
