@@ -177,6 +177,22 @@ export const articles: Article[] = [
     image: `${base}/OfficialScreenshots-GTAVI-PromotionalWebsite-ViceCity-SS3.jpg`,
     sourceUrl: "https://kotaku.com/gta-6-extended-look-will-premier-exclusively-on-netflix-as-fans-beg-for-trailer-3-2000722148",
     sourceName: "Kotaku"
+  },
+  {
+    id: "fuites-massives-cyberleek-aout-2026",
+    title: "Fuites massives de GTA VI : un hacker déverse des heures de gameplay",
+    date: "20 Août 2026",
+    excerpt: "Un groupe baptisé « Cyberleek » publie des clips de gameplay quasi-final et la carte complète de Leonida. Take-Two subpoena Microsoft et Discord pour identifier la source.",
+    content: [
+      "À partir du 20 août 2026, un hacker (ou groupe) se faisant appeler « Cyberleek » a commencé à publier quotidiennement des extraits de gameplay de GTA VI, ainsi que ce qui semble être la carte complète de Leonida, l'État fictif inspiré de la Floride. Les vidéos montrent des courses-poursuites, des braquages de commerces et des séquences en quasi-final build.",
+      "La présence du titre « Sports Car » de Tate McRae (sorti début 2025) dans certaines bandes suggère que le build leaké est relativement récent. Take-Two Interactive, maison-mère de Rockstar, a déposé des subpoenas devant le tribunal du district sud de New York exigeant que Microsoft et Discord transmettent les identifiants d'appareils Windows et les données des membres de trois serveurs Discord pour identifier la source.",
+      "Cyberleek affirme protester contre le virage tout-numérique du jeu (GTA VI sortira pour la première fois sans disque physique, uniquement avec un code de téléchargement). Mais le hacker sollicite des dons en cryptomonnaie et aurait facturé 165 000 $ pour des espaces publicitaires sur d'autres fuites. Le mouvement Stop Killing Games a dénoncé ces fuites comme « destructrices » et appelé à ne pas financer le hacker.",
+      "Selon Bloomberg, Rockstar ne prévoit pas de modifier sa stratégie marketing : le showcase Netflix « An Extended Look » du 27 août et la date de sortie du 19 novembre 2026 sont maintenus. D'anciens développeurs et analystes estiment que ces fuites n'affecteront guère le succès du jeu, les fans réservant leur jugement au visionnage officiel ou à la sortie."
+    ],
+    tag: "Fuite",
+    image: `${base}/OfficialScreenshots-GTAVI-PromotionalWebsite-ViceCity-SS8.jpg`,
+    sourceUrl: "https://www.bbc.com/news/articles/c07r3183gn3o",
+    sourceName: "BBC News"
   }
 ];
 

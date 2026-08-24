@@ -13,6 +13,7 @@ const tagColors: Record<string, string> = {
   "Personnages": "bg-sunset-orange/10 text-sunset-orange border-sunset-orange/20",
   "Gameplay": "bg-lagoon-cyan/10 text-lagoon-cyan border-lagoon-cyan/20",
   "Pré-commande": "bg-sand-yellow/10 text-sand-yellow border-sand-yellow/20",
+  "Fuite": "bg-night-violet/10 text-night-violet border-night-violet/20",
 };
 
 export default function ArticleDetail({ article }: { article: Article }) {
