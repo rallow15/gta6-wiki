@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import "../globals.css";
 import { Geist } from "next/font/google";
 import { cn } from "@/lib/utils";
@@ -114,10 +115,12 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} data-scroll-behavior="smooth" className={cn("h-full antialiased", "font-sans", geist.variable)}>
-      <head>
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2965679591230669" crossOrigin="anonymous" />
-      </head>
       <body className="min-h-full flex flex-col bg-deep-bg text-text-primary">
+        <Script
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2965679591230669"
+          strategy="afterInteractive"
+          crossOrigin="anonymous"
+        />
         <NextIntlClientProvider messages={messages}>
           <JsonLd data={[websiteJsonLd(locale), organizationJsonLd(locale)]} />
           <ScrollProgress />
