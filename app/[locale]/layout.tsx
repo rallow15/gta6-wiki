@@ -12,6 +12,7 @@ import ScrollProgress from "@/components/ScrollProgress";
 import { JsonLd } from "@/components/JsonLd";
 import { websiteJsonLd, organizationJsonLd } from "@/lib/seo";
 import { BASE_URL, getSiteName, getSiteLocale } from "@/lib/site";
+import { Analytics } from "@vercel/analytics/next";
 
 const geist = Geist({ subsets: ["latin"], variable: "--font-sans" });
 
@@ -126,6 +127,7 @@ export default async function LocaleLayout({
           <ScrollProgress />
           {children}
         </NextIntlClientProvider>
+        <Analytics />
       </body>
     </html>
   );
