@@ -7,7 +7,8 @@ const footerColumns = [
   {
     titleKey: "guides" as const,
     links: [
-      { labelKey: "cheatCodes" as const, href: "/codes" },
+      { labelKey: "cheatCodes" as const, href: "/cheat-codes-gta-6" },
+      { labelKey: "preReleaseHub" as const, href: "/gta-6-avant-sortie" },
       { labelKey: "vehicles" as const, href: "/vehicles" },
       { labelKey: "weapons" as const, href: "/weapons" },
       { labelKey: "characters" as const, href: "/characters" },

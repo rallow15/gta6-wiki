@@ -11,13 +11,11 @@ export const routing = defineRouting({
   pathnames: {
     "/": "/",
     // Cheat codes
-    "/codes": { en: "/en/codes" },
     "/cheat-codes-gta-6": { fr: "/code-triche-gta-6", en: "/en/cheat-codes-gta-6" },
     // Sections
     "/vehicles": { fr: "/vehicules", en: "/en/vehicles" },
     "/vehicles/[slug]": { fr: "/vehicules/[slug]", en: "/en/vehicles/[slug]" },
     "/weapons": { fr: "/armes", en: "/en/weapons" },
-    "/weapons-gta-6": { fr: "/armes-gta-6", en: "/en/weapons-gta-6" },
     "/characters": { fr: "/personnages", en: "/en/characters" },
     "/characters/[slug]": { fr: "/personnages/[slug]", en: "/en/characters/[slug]" },
     "/locations": { fr: "/lieux", en: "/en/locations" },
@@ -29,13 +27,9 @@ export const routing = defineRouting({
     "/release-date-gta-6": { fr: "/date-de-sortie-gta-6", en: "/en/release-date-gta-6" },
     "/best-cars-gta-6": { fr: "/meilleures-voitures-gta-6", en: "/en/best-cars-gta-6" },
     "/vice-city-map-gta-6": { fr: "/carte-vice-city-gta-6", en: "/en/vice-city-map-gta-6" },
-    "/tips-gta-6": { fr: "/astuces-gta-6", en: "/en/tips-gta-6" },
-    "/secrets-easter-eggs-gta-6": { fr: "/secrets-easter-eggs-gta-6", en: "/en/secrets-easter-eggs-gta-6" },
-    "/gta-6-problems-solutions": { fr: "/problemes-gta-6-solutions", en: "/en/gta-6-problems-solutions" },
-    "/gta-6-walkthrough": { fr: "/solution-gta-6-guide-missions", en: "/en/gta-6-walkthrough" },
-    "/how-to-make-money-gta-6": { fr: "/comment-gagner-argent-gta-6", en: "/en/how-to-make-money-gta-6" },
     "/gta-5-vs-gta-6-comparison": { fr: "/comparaison-gta-5-gta-6", en: "/en/gta-5-vs-gta-6-comparison" },
     "/gta-6-preparation-guide": { fr: "/guide-preparation-gta-6", en: "/en/gta-6-preparation-guide" },
+    "/gta-6-avant-sortie": { fr: "/gta-6-avant-sortie", en: "/en/gta-6-before-release" },
     // Info pages
     "/about": { fr: "/a-propos", en: "/en/about" },
     "/legal-notice": { fr: "/mentions-legales", en: "/en/legal-notice" },

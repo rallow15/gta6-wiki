@@ -12,7 +12,7 @@ import { TextScramble } from "@/components/TextScramble";
 import { NeonBeams } from "@/components/NeonBeams";
 
 const sections = [
-  { key: "codes", href: "/codes", icon: Code, color: "neon-pink" },
+  { key: "codes", href: "/cheat-codes-gta-6", icon: Code, color: "neon-pink" },
   { key: "vehicles", href: "/vehicles", icon: Car, color: "sunset-orange" },
   { key: "weapons", href: "/weapons", icon: Crosshair, color: "lagoon-cyan" },
   { key: "characters", href: "/characters", icon: Users, color: "neon-pink" },
@@ -135,7 +135,7 @@ export default function Hero() {
             className="nb-btn"
             onClick={() => {}}
           >
-            <Link href="/codes" className="flex items-center gap-2">
+            <Link href="/cheat-codes-gta-6" className="flex items-center gap-2">
               <Code className="h-4 w-4" />
               {ctaLabel}
             </Link>

@@ -77,6 +77,7 @@
     "community": "Communauté",
     "legal": "Légal",
     "cheatCodes": "Codes de triche",
+    "preReleaseHub": "Avant la sortie",
     "comparison": "GTA 5 vs 6",
     "preparationGuide": "Guide de préparation",
     "vehicles": "Véhicules",
@@ -161,6 +162,217 @@
         "answer": "Jason Duval et Lucia Caminos sont les deux protagonistes jouables de GTA 6, formant un duo à la Bonnie et Clyde. Lucia est la première héroïne jouable de la série."
       }
     ]
+  },
+  "PreReleaseHub": {
+    "metaTitle": "GTA 6 avant sortie — Ce qu'on sait et ce qu'on attend",
+    "metaDescription": "Tout ce qu'on sait sur GTA 6 avant sa sortie le 19 novembre 2026 : codes de triche attendus, gameplay, argent, secrets, structure des missions et configuration. Site fan avec sources officielles.",
+    "metaKeywords": [
+      "GTA 6 avant sortie",
+      "ce qu'on sait GTA 6",
+      "attentes GTA 6",
+      "GTA 6 gameplay",
+      "GTA 6 codes attendus",
+      "GTA 6 argent",
+      "GTA 6 secrets",
+      "GTA 6 configuration",
+      "GTA 6 pré-sortie"
+    ],
+    "breadcrumbHome": "Accueil",
+    "breadcrumbName": "GTA 6 — avant sortie",
+    "title": "AVANT LA SORTIE",
+    "titleAccent": "GTA 6 —",
+    "subtitle": "Tout ce qu'on sait et ce qu'on attend de Grand Theft Auto VI avant le 19 novembre 2026. Sources officielles, analyses vérifiées et avertissements clairs.",
+    "notice": "<strong className=\"text-lagoon-cyan\">Jeu non sorti.</strong> Cette page regroupe les informations confirmées par Rockstar (trailers, screenshots, communiqués) et des analyses éditoriales clairement identifiées. Aucun guide définitif n'est possible avant la sortie.",
+    "intro": "Grand Theft Auto VI sort le 19 novembre 2026. D'ici là, les joueurs cherchent déjà des guides, codes, astuces et solutions. Cette page a pour but de regrouper, en un seul endroit, tout ce que Rockstar a officiellement confirmé et ce qu'on peut raisonnablement attendre, sans inventer de fausses informations. Chaque section cite ses sources et distingue les faits des prévisions.",
+    "sections": {
+      "cheats": {
+        "title": "CODES DE TRICHE — ATTENDUS",
+        "intro": "Aucun code de triche GTA 6 n'est confirmé aujourd'hui. Cependant, la série inclut des codes dans chaque opus principal depuis 1997. Sur la base des mécaniques visibles dans les trailers, on peut attendre les catégories classiques : santé, armes, véhicules, police et météo.",
+        "items": {
+          "0": {
+            "title": "Santé & armure",
+            "desc": "Les codes de santé max et d'invincibilité sont un pilier de la série. Ils devraient revenir, probablement via combinaisons manette sur PS5/Xbox et mots-clés sur PC."
+          },
+          "1": {
+            "title": "Armes & munitions",
+            "desc": "Un code donnant toutes les armes et munitions infinies est quasi certain, compte tenu des 18+ armes déjà confirmées dans les screenshots officiels."
+          },
+          "2": {
+            "title": "Véhicules & déplacement",
+            "desc": "Spawn de véhicules spécifiques, super saut et gravité lunaire sont attendus. Les véhicules volants ou amphibies pourraient aussi revenir avec la carte marine de Leonida."
+          },
+          "3": {
+            "title": "Police & monde",
+            "desc": "Gestion des étoiles de recherche et contrôle météo seront utiles dans le monde ouvert de Leonida, notamment avec ses orages et inondations dynamiques."
+          }
+        }
+      },
+      "gameplay": {
+        "title": "GAMEPLAY & ASTUCES",
+        "intro": "Les trailers et captures officielles ont révélé plusieurs mécaniques de gameplay : système de sacoche limité, customisation poussée, exploration sous-marine et duo de protagonistes jouables.",
+        "items": {
+          "0": {
+            "title": "Sacoche d'armes limitée",
+            "desc": "Contrairement à GTA V, GTA 6 semble limiter le nombre d'armes transportées. Préparez vos loadouts dans le coffre de votre véhicule avant chaque mission."
+          },
+          "1": {
+            "title": "Jason & Lucia, deux styles",
+            "desc": "Jason et Lucia Caminos sont les deux protagonistes jouables. Leur duo narratif et leurs compétences complémentaires seront au cœur du gameplay."
+          },
+          "2": {
+            "title": "Exploration terre, mer & air",
+            "desc": "Leonida inclut ville, marais, montagnes et côtes. Bateaux, jet skis, hydravions et sous-marins permettront d'explorer chaque recoin."
+          },
+          "3": {
+            "title": "Customisation profonde",
+            "desc": "Armes, véhicules et personnages seront fortement personnalisables, avec des boutiques comme Rideout Customs et One-Eyed Willie's Mod Shop (Édition Ultime)."
+          }
+        }
+      },
+      "money": {
+        "title": "ARGENT & ÉCONOMIE",
+        "intro": "GTA 6 devrait reprendre les revenus classiques de la série — braquages, business et activités secondaires — avec une économie plus poussée inspirée des mécaniques de RDR2.",
+        "items": {
+          "0": {
+            "title": "Braquages scénarisés",
+            "desc": "Les missions de braquage resteront la source de revenus la plus lucrative, avec plusieurs approches possibles (furtive, agressive, astucieuse)."
+          },
+          "1": {
+            "title": "Business & revenus passifs",
+            "desc": "Propriétés, nightclubs, garages et autres business devraient générer des revenus réguliers une fois acquis et gérés."
+          },
+          "2": {
+            "title": "Recel d'objets volés",
+            "desc": "Le système de butin volé (bijoux, équipement) et de recels semble plus développé, avec des lieux spécifiques pour revendre les marchandises."
+          },
+          "3": {
+            "title": "Activités secondaires",
+            "desc": "Courses de rue, chasse, pêche, livraisons et missions PNJ compléteront les revenus tout en faisant découvrir la carte."
+          }
+        }
+      },
+      "secrets": {
+        "title": "SECRETS & EASTER EGGS",
+        "intro": "Les trailers et screenshots officiels contiennent déjà des références et des mystères. On distingue ici ce qui est confirmé (visible à l'écran) et ce qui reste de l'ordre de la théorie communautaire.",
+        "items": {
+          "0": {
+            "title": "Références à Vice City",
+            "desc": "Le style néon, les enseignes et l'ambiance musicale rappellent GTA: Vice City (2002). Le Voodoo Lounge et des graffitis sont déjà visibles dans les captures."
+          },
+          "1": {
+            "title": "Liens Red Dead Redemption",
+            "desc": "La marque d'armes Duke Arms fait écho à Dutch van der Linde. Le système d'animaux sauvages et de chasse rappelle également RDR2."
+          },
+          "2": {
+            "title": "Mystères de Leonida",
+            "desc": "Alligators, épaves sous-marines, Mont Kalaga : plusieurs éléments visuels suggèrent des secrets à découvrir après la sortie."
+          },
+          "3": {
+            "title": "Fusil harpon & exploration",
+            "desc": "L'arme spéciale Speargun est confirmée pour l'exploration sous-marine, ouvrant la voie à des zones et objets cachés."
+          }
+        }
+      },
+      "story": {
+        "title": "HISTOIRE & MISSIONS",
+        "intro": "L'histoire de GTA 6 tourne autour de Jason Duval et Lucia Caminos, un duo de criminels à la Bonnie et Clyde. Rockstar a décrit le jeu comme sa plus grande évolution narrative, mais le nombre exact de missions reste inconnu.",
+        "items": {
+          "0": {
+            "title": "Un duo de protagonistes",
+            "desc": "Jason et Lucia seront tous les deux jouables. Leur relation amoureuse/criminelle est le moteur de l'intrigue."
+          },
+          "1": {
+            "title": "Structure en chapitres",
+            "desc": "Des fuites et analyses suggèrent une structure en chapitres, comparable à RDR2, avec des missions principales et des activités secondaires intégrées au monde ouvert."
+          },
+          "2": {
+            "title": "Braquages et choix",
+            "desc": "Les missions de casse offriront plusieurs approches. Le choix des membres d'équipe et de la méthode impactera le déroulement et les gains."
+          },
+          "3": {
+            "title": "Guide complet à la sortie",
+            "desc": "Dès le 19 novembre 2026, nous publierons un guide de solution pas à pas des missions, mis à jour au fur et à mesure de la découverte du jeu."
+          }
+        }
+      },
+      "tech": {
+        "title": "CONFIGURATION & PROBLÈMES ATTENDUS",
+        "intro": "GTA 6 sort sur PS5, Xbox Series X|S et PC. Les configurations exactes PC ne sont pas encore officielles. Les conseils ci-dessous sont basés sur les standards actuels des jeux AAA et l'historique de Rockstar.",
+        "items": {
+          "0": {
+            "title": "Plateformes confirmées",
+            "desc": "PS5, PS5 Pro (avec fonctionnalités DualSense exclusives), Xbox Series X|S et PC sortiront simultanément. Pas de version PS4 ou Xbox One."
+          },
+          "1": {
+            "title": "Stockage SSD obligatoire",
+            "desc": "Le streaming du monde ouvert de Leonida nécessitera un SSD. Comptez au moins 150 Go d'espace libre, voire plus avec les mises à jour."
+          },
+          "2": {
+            "title": "Jour de lancement",
+            "desc": "Attendez-vous à des files d'attente serveur et des patchs correctifs le jour J. Sauvegardez souvent et activez les mises à jour automatiques."
+          },
+          "3": {
+            "title": "Optimisation PC",
+            "desc": "Sur PC, les pilotes GPU à jour, le VSync/FreeSync et une installation sur SSD NVMe seront essentiels pour éviter les saccades et les chutes de FPS."
+          }
+        }
+      }
+    },
+    "methodologyTitle": "MÉTHODOLOGIE & SOURCES",
+    "methodologyText": "Chaque information de cette page est soit un fait confirmé par Rockstar Games, Take-Two Interactive ou leurs partenaires officiels (trailers, communiqués, site rockstargames.com), soit une prévision fondée explicitement sur les mécaniques des opus précédents. Nous ne publions pas de fuites non vérifiées comme des certitudes.",
+    "sources": [
+      "Trailers officiels Rockstar Games (décembre 2023 et mai 2025)",
+      "Screenshots et site promotionnel officiel de GTA VI",
+      "Communiqués de presse de Take-Two Interactive",
+      "Interviews et annonces du Rockstar Newswire"
+    ],
+    "linksTitle": "PAGES COMPLÈTES & ACTUALISÉES",
+    "links": {
+      "0": {
+        "href": "/date-de-sortie-gta-6",
+        "title": "Date de sortie",
+        "desc": "19 novembre 2026 — historique et éditions"
+      },
+      "1": {
+        "href": "/code-triche-gta-6",
+        "title": "Codes de triche",
+        "desc": "Historique et attentes par plateforme"
+      },
+      "2": {
+        "href": "/armes",
+        "title": "Armes GTA 6",
+        "desc": "Arsenal confirmé avec sources"
+      },
+      "3": {
+        "href": "/vehicules",
+        "title": "Véhicules GTA 6",
+        "desc": "Voitures, motos et bateaux confirmés"
+      },
+      "4": {
+        "href": "/actualites",
+        "title": "Actualités",
+        "desc": "Dernières news officielles"
+      }
+    },
+    "faqTitle": "QUESTIONS FRÉQUENTES",
+    "faqs": {
+      "0": {
+        "question": "Pourquoi ne pas publier de vrais guides maintenant ?",
+        "answer": "GTA 6 n'est pas encore sorti. Publier des solutions, codes exacts ou astuces chiffrées aujourd'hui serait inventer des informations. Nous préférons regrouper ce qui est vérifié et indiquer clairement ce qui ne l'est pas."
+      },
+      "1": {
+        "question": "Quelles informations sont vraiment confirmées ?",
+        "answer": "La date de sortie (19 novembre 2026), les plateformes (PS5, Xbox Series, PC), les protagonistes (Jason et Lucia), l'emplacement (Vice City / Leonida), et plusieurs armes, véhicules et lieux confirmés par les trailers et screenshots officiels."
+      },
+      "2": {
+        "question": "Comment suivre les vraies annonces de Rockstar ?",
+        "answer": "Le meilleur moyen est le site officiel rockstargames.com, le Rockstar Newswire, les communiqués Take-Two et les annonces PlayStation Blog pour les fonctionnalités PS5. Nous relayons ces sources sur notre page Actualités."
+      },
+      "3": {
+        "question": "Quand les vrais guides seront-ils disponibles ?",
+        "answer": "Dès la sortie du jeu le 19 novembre 2026, nous publierons des guides de solution, des codes de triche vérifiés, des astuces de farming et des guides de dépannage basés sur une expérience réelle du jeu."
+      }
+    }
   },
   "CountdownTimer": {
     "days": "Jours",
@@ -292,94 +504,16 @@
         "answer": "Non. Les codes de triche ne fonctionnent qu'en mode histoire (single-player). L'utilisation de tout cheat ou mod en ligne est interdite et peut résulter en un bannissement permanent du compte Rockstar Social Club."
       }
     },
-    "codesHubLink": "Hub des codes de triche →"
-  },
-  "Codes": {
-    "metaTitle": "Codes de triche GTA 6 — Guide complet",
-    "metaDescription": "Guide complet des codes de triche GTA 6 : histoire des cheats, catégories, fonctionnement par plateforme et FAQ. Tout savoir avant la sortie le 19 novembre 2026.",
-    "metaKeywords": [
-      "codes GTA 6",
-      "codes de triche GTA 6",
-      "code triche GTA 6",
-      "astuces GTA 6",
-      "cheats GTA 6",
-      "guide codes GTA 6"
-    ],
-    "ogTitle": "Codes de triche GTA 6 — Guide complet | CodeTricheGTA6",
-    "ogDescription": "Guide complet des codes de triche GTA 6 : histoire, catégories, fonctionnement par plateforme.",
-    "breadcrumbHome": "Accueil",
-    "breadcrumbName": "Codes de triche",
-    "titleAccent": "GTA 6",
-    "title": "CODES DE TRICHE",
-    "subtitle": "Guide complet des codes de triche GTA 6 — histoire, catégories, fonctionnement par plateforme.",
-    "noticeStrong": "Les codes de triche seront ajoutés dès la sortie du jeu le 19 novembre 2026.",
-    "noticeRest": "En attendant, découvrez l'histoire des cheats dans la série et ce qu'on peut attendre.",
-    "linkToFullPage": "Guide complet des codes de triche GTA 6 →",
-    "linkToFullPageDesc": "Histoire des codes de triche dans GTA, nos prévisions pour GTA 6, fonctionnement par plateforme et FAQ détaillée.",
-    "howItWorksTitle": "FONCTIONNEMENT PAR PLATEFORME",
-    "platforms": {
-      "0": {
-        "name": "PS5",
-        "desc": "Combinaisons de touches DualSense pendant le jeu. Activation instantanée sans menu.",
-        "icon": "🎮"
-      },
-      "1": {
-        "name": "Xbox",
-        "desc": "Séquences de boutons manette pendant le jeu. Activation instantanée sans menu.",
-        "icon": "🟢"
-      },
-      "2": {
-        "name": "PC",
-        "desc": "Mots-clés tapés au clavier ou via le téléphone en jeu. Plus facile à mémoriser.",
-        "icon": "⌨️"
-      }
-    },
-    "categoriesTitle": "CATÉGORIES DE CODES",
-    "categories": {
-      "0": {
-        "name": "Santé & Armure",
-        "desc": "Santé max, armure complète, invincibilité",
-        "icon": "❤️"
-      },
-      "1": {
-        "name": "Armes & Munitions",
-        "desc": "Toutes les armes, munitions infinies, explosifs",
-        "icon": "🔫"
-      },
-      "2": {
-        "name": "Véhicules",
-        "desc": "Spawn véhicule, véhicule invincible, hélicoptère",
-        "icon": "🚗"
-      },
-      "3": {
-        "name": "Police & Monde",
-        "desc": "Baisser/monter les étoiles, changer la météo",
-        "icon": "🌤️"
-      }
-    },
-    "faqTitle": "QUESTIONS FRÉQUENTES",
-    "faqs": {
-      "0": {
-        "question": "Comment entrer un code de triche dans GTA 6 ?",
-        "answer": "Sur PS5 et Xbox, les codes s'entreront via des combinaisons de touches manette. Sur PC, via des mots-clés au clavier ou le téléphone en jeu. Les codes s'activent immédiatement."
-      },
-      "1": {
-        "question": "Les codes de triche désactivent-ils les trophées ?",
-        "answer": "Oui, comme dans les précédents GTA, l'utilisation de codes de triche désactive temporairement l'obtention des trophées et succès pendant la session active."
-      },
-      "2": {
-        "question": "Les codes seront-ils les mêmes sur toutes les plateformes ?",
-        "answer": "L'effet sera identique, mais la saisie diffère : combinaisons de touches sur manette (PS5/Xbox) et mots-clés au clavier (PC)."
-      },
-      "3": {
-        "question": "Quand les codes seront-ils disponibles ?",
-        "answer": "Les codes seront confirmés et publiés dès la sortie du jeu le 19 novembre 2026. Nous mettrons à jour immédiatement."
-      }
-    },
-    "allCheatCodesLink": "Guide complet des codes →"
+    "preReleaseHubLink": "GTA 6 avant sortie →"
   },
   "SectionPage": {
     "backToHome": "Retour à l'accueil"
+  },
+  "PageMeta": {
+    "fanSite": "Site fan non officiel",
+    "lastUpdated": "Mis à jour le",
+    "methodology": "Les faits sont vérifiés à partir de sources officielles ; les prévisions sont clairement identifiées comme telles.",
+    "aboutLink": "En savoir plus sur notre méthodologie"
   },
   "NotFound": {
     "title": "PAGE NON TROUVÉE",
@@ -390,7 +524,8 @@
   "ArticleDetail": {
     "backToNews": "Actualités",
     "source": "Source :",
-    "readOriginal": "Lire l'article original sur {source}"
+    "readOriginal": "Lire l'article original sur {source}",
+    "lastUpdated": "Mis à jour le"
   },
   "Lightbox": {
     "dialogLabel": "Visionneuse d'image : {alt}",
@@ -483,7 +618,13 @@
   "Gallery": {
     "metaTitle": "Galerie GTA 6 — Captures d'écran officielles GTA VI",
     "metaDescription": "Galerie de captures d'écran officielles de GTA 6 (GTA VI) : personnages, Vice City, Leonida Keys, Grassrivers, Ultimate Edition et Vintage Vice City Pack.",
-    "metaKeywords": ["galerie GTA 6", "screenshots GTA 6", "captures GTA VI", "images GTA 6", "artworks GTA 6"],
+    "metaKeywords": [
+      "galerie GTA 6",
+      "screenshots GTA 6",
+      "captures GTA VI",
+      "images GTA 6",
+      "artworks GTA 6"
+    ],
     "title": "GALERIE",
     "subtitle": "{category} — {count} captures d'écran",
     "breadcrumb": {
@@ -504,7 +645,16 @@
     "inspiredLabel": "Inspire de :",
     "jsonLdTitle": "Véhicules GTA 6",
     "whatsNewTitle": "VÉHICULES — NOUVEAUTÉS GTA VI",
-    "categoryOrder": ["Sportive", "Supercar", "Muscle", "SUV", "Sport compact", "Classique", "Moto", "Bateau"],
+    "categoryOrder": [
+      "Sportive",
+      "Supercar",
+      "Muscle",
+      "SUV",
+      "Sport compact",
+      "Classique",
+      "Moto",
+      "Bateau"
+    ],
     "categories": {
       "Sportive": "Sportives & Supercars",
       "Supercar": "Supercars",
@@ -516,13 +666,38 @@
       "Bateau": "Bateaux"
     },
     "whatsNew": [
-      { "title": "Inventaire limité", "desc": "Système de sacoche, impossible de porter toutes les armes et véhicules à la fois" },
-      { "title": "Coffre de véhicule", "desc": "Stockez des armes et objets dans le coffre de votre voiture" },
-      { "title": "Personnalisation poussée", "desc": "Rideout Customs et One-Eyed Willie's Mod Shop (Édition Ultime), restauration de voitures classiques" },
-      { "title": "Nouveaux types", "desc": "Kayaks, airboats, scooters de mobilité, vélos en libre-service (LomBike), donked cars" },
-      { "title": "Navigation expansive", "desc": "Bateaux, yachts, jet skis, sous-marins et hydravions confirmés" }
+      {
+        "title": "Inventaire limité",
+        "desc": "Système de sacoche, impossible de porter toutes les armes et véhicules à la fois"
+      },
+      {
+        "title": "Coffre de véhicule",
+        "desc": "Stockez des armes et objets dans le coffre de votre voiture"
+      },
+      {
+        "title": "Personnalisation poussée",
+        "desc": "Rideout Customs et One-Eyed Willie's Mod Shop (Édition Ultime), restauration de voitures classiques"
+      },
+      {
+        "title": "Nouveaux types",
+        "desc": "Kayaks, airboats, scooters de mobilité, vélos en libre-service (LomBike), donked cars"
+      },
+      {
+        "title": "Navigation expansive",
+        "desc": "Bateaux, yachts, jet skis, sous-marins et hydravions confirmés"
+      }
     ],
-    "keywords": ["véhicules GTA 6", "voitures GTA 6", "voitures GTA VI", "meilleures voitures GTA 6", "supercars GTA 6", "motos GTA 6", "bateaux GTA 6", "Cheetah GTA 6", "véhicules Vice City"]
+    "keywords": [
+      "véhicules GTA 6",
+      "voitures GTA 6",
+      "voitures GTA VI",
+      "meilleures voitures GTA 6",
+      "supercars GTA 6",
+      "motos GTA 6",
+      "bateaux GTA 6",
+      "Cheetah GTA 6",
+      "véhicules Vice City"
+    ]
   },
   "Weapons": {
     "metaTitle": "Armes GTA 6 — Arsenal complet de GTA VI",
@@ -535,7 +710,17 @@
     "noticeRest": "Chaque arme listée ici a été confirmée par les trailers officiels, les screenshots Rockstar ou le site GTA VI. Les stats détaillées seront ajoutées après la sortie du jeu.",
     "jsonLdTitle": "Armes GTA 6",
     "whatsNewTitle": "SYSTÈME D'ARMES — NOUVEAUTÉS GTA VI",
-    "categoryOrder": ["Pistolet", "Revolvers", "Fusil à pompe", "Mitraillette", "Fusil d'assaut", "Sniper", "Arme lourde", "Melee", "Special"],
+    "categoryOrder": [
+      "Pistolet",
+      "Revolvers",
+      "Fusil à pompe",
+      "Mitraillette",
+      "Fusil d'assaut",
+      "Sniper",
+      "Arme lourde",
+      "Melee",
+      "Special"
+    ],
     "categories": {
       "Pistolet": "Pistolets",
       "Revolvers": "Revolvers",
@@ -548,13 +733,36 @@
       "Special": "Spécial"
     },
     "whatsNew": [
-      { "title": "Inventaire limité", "desc": "Système de sacoche, impossible de porter toutes les armes à la fois" },
-      { "title": "Coffre de véhicule", "desc": "Stockez des armes dans le coffre de votre voiture et changez de loadout entre les missions" },
-      { "title": "Noms de marques", "desc": "Les armes portent des noms de marques fictives (Duke, Girardi, Klose, Hawk & Little, Capo)" },
-      { "title": "Personnalisation poussée", "desc": "Accessoires, optiques, finitions et gravures sur chaque arme (inspiré de RDR2)" },
-      { "title": "Édition Ultime", "desc": "Variantes personnalisées exclusives (Girardi ES9, Klose K17, Hawk & Little Morgan Revolver)" }
+      {
+        "title": "Inventaire limité",
+        "desc": "Système de sacoche, impossible de porter toutes les armes à la fois"
+      },
+      {
+        "title": "Coffre de véhicule",
+        "desc": "Stockez des armes dans le coffre de votre voiture et changez de loadout entre les missions"
+      },
+      {
+        "title": "Noms de marques",
+        "desc": "Les armes portent des noms de marques fictives (Duke, Girardi, Klose, Hawk & Little, Capo)"
+      },
+      {
+        "title": "Personnalisation poussée",
+        "desc": "Accessoires, optiques, finitions et gravures sur chaque arme (inspiré de RDR2)"
+      },
+      {
+        "title": "Édition Ultime",
+        "desc": "Variantes personnalisées exclusives (Girardi ES9, Klose K17, Hawk & Little Morgan Revolver)"
+      }
     ],
-    "keywords": ["armes GTA 6", "armes GTA VI", "arsenal GTA 6", "pistolets GTA 6", "sniper GTA 6", "fusil d'assaut GTA 6", "armes Vice City"]
+    "keywords": [
+      "armes GTA 6",
+      "armes GTA VI",
+      "arsenal GTA 6",
+      "pistolets GTA 6",
+      "sniper GTA 6",
+      "fusil d'assaut GTA 6",
+      "armes Vice City"
+    ]
   },
   "Locations": {
     "metaTitle": "Lieux GTA 6 — Vice City, Leonida & cartes de GTA VI",
@@ -567,7 +775,16 @@
     "jsonLdTitle": "Lieux GTA 6",
     "typeLabel": "Type",
     "zonesLabel": "Zones",
-    "keywords": ["lieux GTA 6", "Vice City GTA 6", "Leonida GTA 6", "carte GTA 6", "map GTA 6", "Leonida Keys", "Grassrivers", "Port Gellhorn"]
+    "keywords": [
+      "lieux GTA 6",
+      "Vice City GTA 6",
+      "Leonida GTA 6",
+      "carte GTA 6",
+      "map GTA 6",
+      "Leonida Keys",
+      "Grassrivers",
+      "Port Gellhorn"
+    ]
   },
   "Characters": {
     "metaTitle": "Personnages GTA 6 — Jason, Lucia & tous les personnages",
@@ -592,12 +809,28 @@
     },
     "noticeStrong": "Sources officielles + contenu éditorial.",
     "noticeRest": "Les noms, le statut de protagonistes jouables et les origines proviennent des bios officielles Rockstar. Les biographies, relations et autres détails narratifs sont en partie interprétés et ne sont pas confirmés par Rockstar.",
-    "keywords": ["personnages GTA 6", "personnages GTA VI", "Jason Duval", "Lucia Caminos", "Raul Bautista", "protagonistes GTA 6", "héros GTA 6"]
+    "keywords": [
+      "personnages GTA 6",
+      "personnages GTA VI",
+      "Jason Duval",
+      "Lucia Caminos",
+      "Raul Bautista",
+      "protagonistes GTA 6",
+      "héros GTA 6"
+    ]
   },
   "ReleaseDate": {
     "metaTitle": "Date de sortie GTA 6 : le 19 novembre 2026",
     "metaDescription": "Date de sortie de GTA 6 (Grand Theft Auto VI) : 19 novembre 2026 sur PS5, Xbox Series X|S et PC. Historique des reports, éditions, prix et plateformes.",
-    "metaKeywords": ["date de sortie GTA 6", "quand sort GTA 6", "sortie GTA 6", "GTA 6 release date", "GTA VI date de sortie", "GTA 6 novembre 2026", "report GTA 6"],
+    "metaKeywords": [
+      "date de sortie GTA 6",
+      "quand sort GTA 6",
+      "sortie GTA 6",
+      "GTA 6 release date",
+      "GTA VI date de sortie",
+      "GTA 6 novembre 2026",
+      "report GTA 6"
+    ],
     "ogTitle": "Date de sortie GTA 6 : le 19 novembre 2026 | CodeTricheGTA6",
     "ogDescription": "Date de sortie de GTA 6 (Grand Theft Auto VI) : 19 novembre 2026 sur PS5, Xbox Series X|S et PC. Historique des reports, éditions, prix et plateformes.",
     "breadcrumbHome": "Accueil",
@@ -609,9 +842,21 @@
     "releaseDateValue": "19 NOVEMBRE 2026",
     "timelineTitle": "HISTORIQUE DES REPORTS",
     "timeline": {
-      "0": { "date": "Déc. 2023", "title": "Annonce initiale", "desc": "Rockstar annonce GTA VI pour l'automne 2025, avec la première bande-annonce et le retour à Vice City." },
-      "1": { "date": "2 mai 2025", "title": "1er report → 26 mai 2026", "desc": "Rockstar repousse la sortie à mai 2026. L'action Take-Two chute d'environ 10%." },
-      "2": { "date": "6 nov. 2025", "title": "2e report → 19 nov. 2026", "desc": "Date finale confirmée pour un niveau de polish optimal. Nouvelle baisse de ~10% du cours Take-Two." }
+      "0": {
+        "date": "Déc. 2023",
+        "title": "Annonce initiale",
+        "desc": "Rockstar annonce GTA VI pour l'automne 2025, avec la première bande-annonce et le retour à Vice City."
+      },
+      "1": {
+        "date": "2 mai 2025",
+        "title": "1er report → 26 mai 2026",
+        "desc": "Rockstar repousse la sortie à mai 2026. L'action Take-Two chute d'environ 10%."
+      },
+      "2": {
+        "date": "6 nov. 2025",
+        "title": "2e report → 19 nov. 2026",
+        "desc": "Date finale confirmée pour un niveau de polish optimal. Nouvelle baisse de ~10% du cours Take-Two."
+      }
     },
     "standardEdition": {
       "title": "ÉDITION STANDARD",
@@ -639,17 +884,37 @@
     },
     "faqTitle": "QUESTIONS FRÉQUENTES",
     "faqs": {
-      "0": { "question": "Quand sort GTA 6 ?", "answer": "Grand Theft Auto VI (GTA 6) sort le 19 novembre 2026 sur PlayStation 5, Xbox Series X|S et PC, comme annoncé par Rockstar Games le 6 novembre 2025." },
-      "1": { "question": "Sur quelles plateformes sort GTA 6 ?", "answer": "GTA 6 sort sur PlayStation 5, Xbox Series X|S et PC. La PS5 bénéficie de fonctionnalités exclusives DualSense (haptique, gâchettes adaptatives, audio Tempest 3D)." },
-      "2": { "question": "Pourquoi GTA 6 a-t-il été reporté ?", "answer": "GTA 6 a connu deux reports officiels : d'abord de l'automne 2025 au 26 mai 2026, puis du 26 mai au 19 novembre 2026. Rockstar justifie ces reports par la volonté d'atteindre le niveau de polish attendu par les fans." },
-      "3": { "question": "Quel est le prix de GTA 6 ?", "answer": "GTA 6 est proposé en deux éditions : l'édition Standard à 79,99$ et l'édition Ultime à 99,99$. Les pré-commandes incluent le Vintage Vice City Pack (Vapid Stanier '55 et garage Shore Court)." }
+      "0": {
+        "question": "Quand sort GTA 6 ?",
+        "answer": "Grand Theft Auto VI (GTA 6) sort le 19 novembre 2026 sur PlayStation 5, Xbox Series X|S et PC, comme annoncé par Rockstar Games le 6 novembre 2025."
+      },
+      "1": {
+        "question": "Sur quelles plateformes sort GTA 6 ?",
+        "answer": "GTA 6 sort sur PlayStation 5, Xbox Series X|S et PC. La PS5 bénéficie de fonctionnalités exclusives DualSense (haptique, gâchettes adaptatives, audio Tempest 3D)."
+      },
+      "2": {
+        "question": "Pourquoi GTA 6 a-t-il été reporté ?",
+        "answer": "GTA 6 a connu deux reports officiels : d'abord de l'automne 2025 au 26 mai 2026, puis du 26 mai au 19 novembre 2026. Rockstar justifie ces reports par la volonté d'atteindre le niveau de polish attendu par les fans."
+      },
+      "3": {
+        "question": "Quel est le prix de GTA 6 ?",
+        "answer": "GTA 6 est proposé en deux éditions : l'édition Standard à 79,99$ et l'édition Ultime à 99,99$. Les pré-commandes incluent le Vintage Vice City Pack (Vapid Stanier '55 et garage Shore Court)."
+      }
     },
     "newsLink": "Voir toutes les actualités GTA 6 →"
   },
   "BestCars": {
     "metaTitle": "Meilleures voitures GTA 6 — Classement des véhicules GTA VI",
     "metaDescription": "Classement des meilleures voitures de GTA 6 (GTA VI) : sportives, supercars, muscle cars et SUV confirmés. Fiches détaillées, inspiration réelle et source officielle.",
-    "metaKeywords": ["meilleures voitures GTA 6", "voitures rapides GTA 6", "voitures GTA VI", "supercars GTA 6", "classement voitures GTA 6", "Cheetah GTA 6", "voitures Vice City"],
+    "metaKeywords": [
+      "meilleures voitures GTA 6",
+      "voitures rapides GTA 6",
+      "voitures GTA VI",
+      "supercars GTA 6",
+      "classement voitures GTA 6",
+      "Cheetah GTA 6",
+      "voitures Vice City"
+    ],
     "ogTitle": "Meilleures voitures GTA 6 — Classement des véhicules GTA VI | CodeTricheGTA6",
     "ogDescription": "Classement des meilleures voitures de GTA 6 (GTA VI) : sportives, supercars, muscle cars et SUV confirmés.",
     "breadcrumbHome": "Accueil",
@@ -670,16 +935,33 @@
     },
     "faqTitle": "QUESTIONS FRÉQUENTES",
     "faqs": {
-      "0": { "question": "Quelle est la meilleure voiture de GTA 6 ?", "answer": "La Grotti Cheetah '95 (édition Ultime), inspirée de la Ferrari Testarossa, est l'une des sportives les plus emblématiques confirmées dans GTA 6. Les performances exactes seront connues à la sortie du jeu le 19 novembre 2026." },
-      "1": { "question": "Peut-on personnaliser les voitures dans GTA 6 ?", "answer": "Oui. GTA 6 intègre des boutiques de customisation comme Rideout Customs et One-Eyed Willie's Mod Shop (édition Ultime), ainsi que la restauration de voitures classiques." },
-      "2": { "question": "Y a-t-il des bateaux dans GTA 6 ?", "answer": "Oui. GTA 6 confirme bateaux, yachts, jet skis, sous-marins et hydravions pour explorer les eaux de Leonida, comme le Shitzu Squalo." }
+      "0": {
+        "question": "Quelle est la meilleure voiture de GTA 6 ?",
+        "answer": "La Grotti Cheetah '95 (édition Ultime), inspirée de la Ferrari Testarossa, est l'une des sportives les plus emblématiques confirmées dans GTA 6. Les performances exactes seront connues à la sortie du jeu le 19 novembre 2026."
+      },
+      "1": {
+        "question": "Peut-on personnaliser les voitures dans GTA 6 ?",
+        "answer": "Oui. GTA 6 intègre des boutiques de customisation comme Rideout Customs et One-Eyed Willie's Mod Shop (édition Ultime), ainsi que la restauration de voitures classiques."
+      },
+      "2": {
+        "question": "Y a-t-il des bateaux dans GTA 6 ?",
+        "answer": "Oui. GTA 6 confirme bateaux, yachts, jet skis, sous-marins et hydravions pour explorer les eaux de Leonida, comme le Shitzu Squalo."
+      }
     },
     "allVehiclesLink": "Voir tous les véhicules GTA 6 →"
   },
   "ViceCityMap": {
     "metaTitle": "Carte GTA 6 — Vice City & Leonida, carte de GTA VI",
     "metaDescription": "Carte de GTA 6 (GTA VI) : Vice City, les Leonida Keys, les marais de Grassrivers, Port Gellhorn, Ambrosia et le Mont Kalaga. Explorez toutes les régions de l'état fictif de Leonida.",
-    "metaKeywords": ["carte GTA 6", "map GTA 6", "carte Vice City GTA 6", "carte Leonida GTA 6", "régions GTA 6", "map GTA VI", "Vice City GTA 6"],
+    "metaKeywords": [
+      "carte GTA 6",
+      "map GTA 6",
+      "carte Vice City GTA 6",
+      "carte Leonida GTA 6",
+      "régions GTA 6",
+      "map GTA VI",
+      "Vice City GTA 6"
+    ],
     "ogTitle": "Carte GTA 6 — Vice City & Leonida | CodeTricheGTA6",
     "ogDescription": "Carte de GTA 6 : Vice City, les Leonida Keys, les marais de Grassrivers, Port Gellhorn, Ambrosia et le Mont Kalaga.",
     "breadcrumbHome": "Accueil",
@@ -714,405 +996,20 @@
     },
     "faqTitle": "QUESTIONS FRÉQUENTES",
     "faqs": {
-      "0": { "question": "Dans quelle ville se déroule GTA 6 ?", "answer": "GTA 6 se déroule principalement à Vice City, inspirée de Miami, au sein de l'état fictif de Leonida inspiré de la Floride." },
-      "1": { "question": "Quelles régions composent la carte de GTA 6 ?", "answer": "La carte de GTA 6 (Leonida) comprend Vice City, les Leonida Keys, les marais de Grassrivers (Everglades), le port industriel de Port Gellhorn, le quartier résidentiel d'Ambrosia et le parc national du Mont Kalaga." },
-      "2": { "question": "La carte de GTA 6 est-elle plus grande que GTA V ?", "answer": "Rockstar décrit Leonida comme la plus grande et la plus immersive évolution de la série. La carte inclut ville, plages, marais, montagnes et archipel tropical." }
+      "0": {
+        "question": "Dans quelle ville se déroule GTA 6 ?",
+        "answer": "GTA 6 se déroule principalement à Vice City, inspirée de Miami, au sein de l'état fictif de Leonida inspiré de la Floride."
+      },
+      "1": {
+        "question": "Quelles régions composent la carte de GTA 6 ?",
+        "answer": "La carte de GTA 6 (Leonida) comprend Vice City, les Leonida Keys, les marais de Grassrivers (Everglades), le port industriel de Port Gellhorn, le quartier résidentiel d'Ambrosia et le parc national du Mont Kalaga."
+      },
+      "2": {
+        "question": "La carte de GTA 6 est-elle plus grande que GTA V ?",
+        "answer": "Rockstar décrit Leonida comme la plus grande et la plus immersive évolution de la série. La carte inclut ville, plages, marais, montagnes et archipel tropical."
+      }
     },
     "allLocationsLink": "Voir tous les lieux GTA 6 →"
-  },
-  "Tips": {
-    "metaTitle": "Astuces GTA 6 — Tips, guides et conseils pour GTA VI",
-    "metaDescription": "Toutes les astuces GTA 6 (tips) : conseils de démarrage, meilleures stratégies, farming, secrets et astuces de gameplay pour maîtriser GTA VI dès le premier jour.",
-    "metaKeywords": ["astuces GTA 6", "tips GTA 6", "conseils GTA 6", "guide GTA 6", "astuce GTA VI", "tips debutant GTA 6", "meilleurs conseils GTA 6", "stratégies GTA 6", "guide démarrage GTA 6"],
-    "ogTitle": "Astuces GTA 6 — Tips, guides et conseils pour GTA VI | CodeTricheGTA6",
-    "ogDescription": "Toutes les astuces GTA 6 : conseils de démarrage, meilleures stratégies, farming, secrets et astuces de gameplay.",
-    "breadcrumbHome": "Accueil",
-    "breadcrumbName": "Astuces GTA 6",
-    "title": "ASTUCES & TIPS",
-    "titleAccent": "GTA 6 —",
-    "subtitle": "Les meilleures astuces, conseils et stratégies pour maîtriser GTA 6 dès le premier jour.",
-    "notice": "<strong className=\"text-accent-teal\">Astuces basées sur les trailers et les mécaniques confirmées.</strong> Les tips seront affinés avec des détails précis après la sortie du jeu le 19 novembre 2026.",
-    "sections": {
-      "0": {
-        "title": "DÉMARRAGE — LES ESSENTIELS",
-        "tips": {
-          "0": { "title": "Suivez l'histoire d'abord", "desc": "Les missions principales débloquent les mécaniques clés : conduite, combat, braquages, customisation. Ne vous éparpillez pas au début." },
-          "1": { "title": "Achetez un garage rapidement", "desc": "Un garage vous permet de stocker des véhicules et de changer de loadout d'armes via le coffre. C'est un investissement prioritaire." },
-          "2": { "title": "Apprenez le système de sacoche", "desc": "Vous ne pouvez pas porter toutes les armes. Préparez des loadouts dans le coffre de votre véhicule avant chaque mission." },
-          "3": { "title": "Explorez Vice City à pied", "desc": "Les ruelles, les toits et les zones cachées regorgent de collectibles et de secrets. La voiture fait tout rater." },
-          "4": { "title": "Sauvegardez souvent", "desc": "GTA 6 a des sauvegardes automatiques, mais faites aussi des sauvegardes manuelles avant les braquages et les décisions importantes." }
-        }
-      },
-      "1": {
-        "title": "COMBAT & STRATÉGIE",
-        "tips": {
-          "0": { "title": "Utilisez les couvertures", "desc": "Le système de couverture est essentiel. Restez derrière un obstacle, visez en sortant et replongez-vous. Ne restez jamais à découvert." },
-          "1": { "title": "Préparez votre loadout", "desc": "Avant une mission, choisissez vos armes dans le coffre du véhicule. Un fusil d'assaut + un fusil à pompe couvrent 90% des situations." },
-          "2": { "title": "Changez de personnage à bon escient", "desc": "Jason et Lucia ont des capacités différentes. Utilisez le meilleur personnage pour chaque situation." },
-          "3": { "title": "Fuyez quand c'est nécessaire", "desc": "Si la police est à 4+ étoiles, fuyez plutôt que de combattre. Les renforts sont infinis — la fuite est la meilleure stratégie." }
-        }
-      },
-      "2": {
-        "title": "ARGENT & BUSINESS",
-        "tips": {
-          "0": { "title": "Braquages = revenus maximum", "desc": "Les braquages principaux rapportent les plus grosses sommes. Choisissez bien votre approche (furtive, agressive, astucieuse) pour maximiser le gain." },
-          "1": { "title": "Investissez en bourse AVANT les missions", "desc": "Certaines missions font fluctuer les cours. Achetez les actions concernées avant de lancer la mission, puis vendez après." },
-          "2": { "title": "Achetez des business tôt", "desc": "Les propriétés génératrices de revenus passifs (nightclubs, garages, etc.) sont rentables sur le long terme. Achetez-en dès que possible." },
-          "3": { "title": "Courses de rue = argent rapide", "desc": "Les courses illégales de Vice City sont un moyen rapide de gagner de l'argent entre les missions." }
-        }
-      },
-      "3": {
-        "title": "EXPLORATION & SECRETS",
-        "tips": {
-          "0": { "title": "Chaque région a ses activités", "desc": "Vice City (courses), Keys (bateaux), Grassrivers (chasse/pêche), Port Gellhorn (livraisons), Ambrosia (immobilier), Mont Kalaga (escalade)." },
-          "1": { "title": "Plongez sous l'eau", "desc": "Le fusil harpon ouvre l'exploration sous-marine. Des épaves et des trésors sont cachés sous la surface." },
-          "2": { "title": "Écoutez les conversations PNJ", "desc": "Les passants, les vendeurs et les radiodiffuseurs donnent des indices sur des activités secrètes et des événements aléatoires." },
-          "3": { "title": "Revenez avec de nouvelles capacités", "desc": "Certaines zones sont plus accessibles avec des équipements débloqués plus tard dans l'histoire. Revisitez les lieux précédents." }
-        }
-      }
-    },
-    "guidesTitle": "GUIDES COMPLÉMENTS",
-    "guides": {
-      "cheatCodes": { "title": "Codes de triche", "desc": "Tous les cheat codes PS5, Xbox, PC" },
-      "makeMoney": { "title": "Gagner de l'argent", "desc": "Braquages, business, investissements" },
-      "walkthrough": { "title": "Solution & Guide", "desc": "Guide pas à pas des missions" },
-      "secrets": { "title": "Secrets & Easter Eggs", "desc": "Mystères et références cachées" }
-    },
-    "faqTitle": "QUESTIONS FRÉQUENTES",
-    "faqs": {
-      "0": { "question": "Par où commencer dans GTA 6 ?", "answer": "Commencez par les missions principales de l'histoire pour débloquer les mécaniques de base (conduite, combat, braquages). Ensuite, investissez dans des propriétés génératrices de revenus et explorez les activités secondaires pour maximiser vos gains." },
-      "1": { "question": "Quelles astuces pour gagner de l'argent vite ?", "answer": "Priorisez les braquages pour les grosses sommes, investissez en bourse avant les missions qui impactent les cours, et achetez des business le plus tôt possible pour les revenus passifs. Consultez notre guide complet argent pour plus de détails." },
-      "2": { "question": "Y a-t-il des astuces pour les combats dans GTA 6 ?", "answer": "Utilisez le système de couverture, alternez entre les armes selon la situation (fusil à pompe au corps-à-corps, sniper à distance), et exploitez le système de sacoche pour préparer des loadouts adaptés à chaque mission via le coffre de véhicule." },
-      "3": { "question": "Comment bien explorer la carte de GTA 6 ?", "answer": "Prenez le temps d'explorer chaque région (Vice City, Keys, Grassrivers, Port Gellhorn, Ambrosia, Mont Kalaga). Utilisez les véhicules rapides pour les routes, les bateaux pour les côtes et les hélicoptères pour les zones montagneuses. Revenez avec de nouvelles capacités pour accéder aux zones bloquées." }
-    },
-    "links": {
-      "cheatCodes": "Codes de triche →",
-      "makeMoney": "Gagner argent →",
-      "cheats": "Code triche →"
-    }
-  },
-  "Secrets": {
-    "metaTitle": "Secrets & Easter Eggs GTA 6 — Tous les mystères de GTA VI",
-    "metaDescription": "Tous les secrets et easter eggs confirmés dans GTA 6 (GTA VI) : références Vice City, mystères de Leonida, objets cachés, liens avec GTA V et Red Dead Redemption.",
-    "metaKeywords": ["secrets GTA 6", "easter eggs GTA 6", "mystères GTA 6", "secrets Vice City GTA 6", "easter eggs GTA VI", "objets cachés GTA 6", "références GTA 6", "mystères Leonida"],
-    "ogTitle": "Secrets & Easter Eggs GTA 6 — Tous les mystères de GTA VI | CodeTricheGTA6",
-    "ogDescription": "Tous les secrets et easter eggs confirmés dans GTA 6 : références Vice City, liens RDR et mystères de Leonida.",
-    "breadcrumbHome": "Accueil",
-    "breadcrumbName": "Secrets & Easter Eggs GTA 6",
-    "titleAccent": "GTA 6 —",
-    "subtitle": "Tous les secrets, easter eggs et mystères confirmés dans GTA 6. Références Vice City, liens RDR et mystères de Leonida.",
-    "notice": "<strong className=\"text-accent-teal\">Sources officielles + analyse communautaire.</strong> Les éléments marqués « Confirmé » sont visibles dans les trailers/screenshots officiels. Les éléments « Rumeur » sont des théories communautaires basées sur des indices visuels.",
-    "categories": {
-      "viceCity": {
-        "title": "RÉFÉRENCES VICE CITY",
-        "items": {
-          "0": { "name": "Logos néon rétro", "desc": "Les enseignes néon de Vice City reprennent le style visuel de GTA: Vice City (2002), avec des polices et couleurs identiques.", "status": "Confirmé" },
-          "1": { "name": "Voodoo Lounge", "desc": "Un bar nommé Voodoo Lounge visible dans les screenshots, référence directe à l'ambiance vaudou de Vice City.", "status": "Confirmé" },
-          "2": { "name": "Malibu Club", "desc": "Le retour potentiel du mythique Malibu Club de GTA: Vice City, visible en arrière-plan dans les trailers.", "status": "Rumeur" },
-          "3": { "name": "Station radio Emotion 98.3", "desc": "Une station radio aux airs nostalgiques faisant écho aux bandes-sons cultes de Vice City.", "status": "Rumeur" }
-        }
-      },
-      "rdr": {
-        "title": "LIENS RED DEAD REDEMPTION",
-        "items": {
-          "0": { "name": "Duke Arms Company", "desc": "La marque d'armes Duke dans GTA 6 est un clin d'œil direct à la famille Dutch van der Linde dans Red Dead Redemption.", "status": "Confirmé" },
-          "1": { "name": "Rideout Customs", "desc": "Le garage de customisation Rideout rappelle les mécaniques de customisation de RDR2.", "status": "Confirmé" },
-          "2": { "name": "Animaux sauvages", "desc": "Le système de chasse et d'animaux dans les marais évoque directement les mécaniques de RDR2.", "status": "Confirmé" }
-        }
-      },
-      "leonida": {
-        "title": "MYSTÈRES DE LEONIDA",
-        "items": {
-          "0": { "name": "Alligators géants", "desc": "Des alligators de taille inhabituelle dans les marais de Grassrivers — le début d'un mystère animal ?", "status": "Confirmé" },
-          "1": { "name": "Épaves sous-marines", "desc": "Des épaves de navires visibles sous l'eau, suggérant des trésors cachés à explorer en plongée.", "status": "Confirmé" },
-          "2": { "name": "Mont Kalaga", "desc": "Le parc national du Mont Kalaga cache potentiellement des secrets en altitude, à l'image du Mont Chiliad.", "status": "Rumeur" },
-          "3": { "name": "Signal radio mystérieux", "desc": "Des fréquences radio captées dans des zones reculées pourraient cacher des ARG ou des mystères.", "status": "Rumeur" }
-        }
-      },
-      "hidden": {
-        "title": "DÉTAILS CACHÉS",
-        "items": {
-          "0": { "name": "Journaux intimes", "desc": "Des lettres et documents épars à travers la carte racontant des histoires parallèles.", "status": "Rumeur" },
-          "1": { "name": "Graffiti et messages", "desc": "Des graffitis sur les murs de Vice City contenant des indices et références à d'autres jeux Rockstar.", "status": "Confirmé" },
-          "2": { "name": "Costumes cachés", "desc": "Des tenues spéciales inspirées de personnages historiques de la série GTA, disséminées dans Leonida.", "status": "Rumeur" },
-          "3": { "name": "Fusil harpon", "desc": "Arme spéciale confirmée pour l'exploration sous-marine, permettant de découvrir des zones secrètes.", "status": "Confirmé" }
-        }
-      }
-    },
-    "theoriesTitle": "THÉORIES DE LA COMMUNAUTÉ",
-    "theories": {
-      "0": { "title": "Le fantôme de Vice City", "desc": "Des joueurs pensent avoir repéré une silhouette fantomatique dans les néons de Vice City, rappelant le fantôme du Mont Gordo dans GTA V." },
-      "1": { "title": "Le monstre des marais", "desc": "La zone de Grassrivers pourrait cacher une créature mythique, comme le bigfoot de GTA San Andreas et RDR2." },
-      "2": { "title": "L'île secrète des Keys", "desc": "Une petite île inhabitée visible sur la carte des Leonida Keys pourrait renfermer un secret majeur." },
-      "3": { "title": "Le code mural", "desc": "Des graffitis dans les ruelles de Vice City pourraient former un code à déchiffrer, à l'image du mystère du Mont Chiliad." }
-    },
-    "faqTitle": "QUESTIONS FRÉQUENTES",
-    "faqs": {
-      "0": { "question": "Y a-t-il des easter eggs dans GTA 6 ?", "answer": "Oui. Les trailers et screenshots officiels ont déjà révélé plusieurs easter eggs : références à Vice City Stories, logos Rockstar cachés, clins d'œil à Red Dead Redemption et des mystères inexpliqués dans les marais de Grassrivers." },
-      "1": { "question": "GTA 6 a-t-il des liens avec GTA V ?", "answer": "GTA 6 est un univers parallèle. Les marques fictives (Ammu-Nation, Burger Shot, Ponsonbys) reviennent, mais les personnages de GTA V n'apparaissent pas dans l'histoire. Des références visuelles au Los Santos de GTA V sont visibles dans les médias." },
-      "2": { "question": "Quel est le mystère des marais de Grassrivers ?", "answer": "Les marais de Grassrivers (inspirés des Everglades) sont la zone la plus mystérieuse de la carte. Les trailers montrent des alligators, des épaves et une ambiance mystérieuse. Les joueurs s'attendent à des secrets similaires au Mont Chiliad de GTA V." },
-      "3": { "question": "Peut-on trouver des armes secrètes dans GTA 6 ?", "answer": "Les trailers confirment au moins une arme spéciale : le fusil harpon (Speargun) pour l'exploration sous-marine. D'autres armes secrètes et objets cachés seront découverts après la sortie du jeu." }
-    },
-    "allLocationsLink": "Explorer tous les lieux de GTA 6 →",
-    "statusBadge": {
-      "Confirmé": "bg-accent-teal/10 text-accent-teal border-accent-teal/30",
-      "Rumeur": "bg-accent-sunset/10 text-accent-sunset border-accent-sunset/30"
-    }
-  },
-  "ProblemsSolutions": {
-    "metaTitle": "Problèmes GTA 6 — Solutions, bugs et corrections GTA VI",
-    "metaDescription": "Problèmes connus et solutions pour GTA 6 (GTA VI) : bugs, problèmes de lancement, performances, crashes et corrections. Guide de dépannage complet.",
-    "metaKeywords": ["problèmes GTA 6", "bug GTA 6", "crash GTA 6", "GTA 6 ne se lance pas", "lag GTA 6", "corrections GTA 6", "dépannage GTA 6", "GTA VI problème", "GTA 6 FPS drop", "GTA 6 erreur"],
-    "ogTitle": "Problèmes GTA 6 — Solutions, bugs et corrections GTA VI | CodeTricheGTA6",
-    "ogDescription": "Problèmes connus et solutions pour GTA 6 : bugs, crashes, performances et erreurs de lancement.",
-    "breadcrumbHome": "Accueil",
-    "breadcrumbName": "Problèmes GTA 6",
-    "titleAccent": "PROBLÈMES & SOLUTIONS",
-    "subtitle": "Solutions aux problèmes courants de GTA 6 : bugs, crashes, performances et erreurs de lancement.",
-    "notice": "<strong className=\"text-accent-teal\">Cette page sera mise à jour le jour de la sortie.</strong> Les solutions listées sont basées sur les problèmes courants des jeux AAA et les retours des versions précédentes de GTA. Des solutions spécifiques seront ajoutées après le lancement le 19 novembre 2026.",
-    "specsTitle": "CONFIGURATIONS REQUISES",
-    "specs": {
-      "minimum": {
-        "title": "Minimum (PC)",
-        "items": { "0": "OS : Windows 10/11 64-bit", "1": "CPU : Intel i5-11600K / AMD Ryzen 5 5600X", "2": "GPU : NVIDIA RTX 3070 / AMD RX 6800 XT", "3": "RAM : 16 Go", "4": "Stockage : 150 Go SSD" }
-      },
-      "recommended": {
-        "title": "Recommandée (PC)",
-        "items": { "0": "OS : Windows 11 64-bit", "1": "CPU : Intel i7-12700K / AMD Ryzen 7 7800X3D", "2": "GPU : NVIDIA RTX 4070 Ti / AMD RX 7800 XT", "3": "RAM : 32 Go", "4": "Stockage : 150 Go SSD NVMe" }
-      },
-      "consoles": "<strong className=\"text-accent-teal\">Consoles :</strong> PS5, PS5 Pro et Xbox Series X|S. Le SSD interne est requis. Pas de support PS4 ou Xbox One."
-    },
-    "categories": {
-      "0": {
-        "title": "PROBLÈMES DE LANCEMENT",
-        "problems": {
-          "0": { "name": "Écran noir au démarrage", "cause": "Pilotes GPU obsolètes ou conflit de résolution.", "fix": "Mettez à jour vos pilotes graphiques. Sur PC, lancez le jeu en mode fenêtré puis passez en plein écran. Sur console, redémarrez en mode sans échec et reconstruisez la base de données." },
-          "1": { "name": "Erreur de connexion aux serveurs Rockstar", "cause": "Serveurs surchargés le jour de lancement ou problème de connexion.", "fix": "Vérifiez le statut des serveurs Rockstar (support.rockstargames.com). Attendez quelques minutes et réessayez. Désactivez le VPN si vous en utilisez un." },
-          "2": { "name": "Espace de stockage insuffisant", "cause": "GTA 6 nécessite un espace de stockage important (estimé 150+ Go).", "fix": "Libérez de l'espace en supprimant des jeux ou applications inutilisés. Sur PS5, déplacez des jeux sur le stockage externe SSD compatible." }
-        }
-      },
-      "1": {
-        "title": "PROBLÈMES DE PERFORMANCE",
-        "problems": {
-          "0": { "name": "Chutes de FPS en ville", "cause": "Vice City est très chargé en détails — les néons, les PNJ et les véhicules sollicitent le GPU.", "fix": "Réduisez les paramètres de densité de population et de qualité des ombres. Activez le mode Performance (30 FPS stable) plutôt que Fidélité si vous préférez la fluidité." },
-          "1": { "name": "Textures qui ne se chargent pas", "cause": "Stockage trop lent ou mémoire VRAM insuffisante.", "fix": "Installez le jeu sur un SSD (indispensable sur PC). Augmentez le budget texture dans les paramètres si votre VRAM le permet. Sur PS5 Standard, envisagez un SSD M.2 externe." },
-          "2": { "name": "Saccades pendant les courses de véhicules", "cause": "Streaming de monde ouvert trop lent lors des déplacements rapides.", "fix": "Réduisez la distance de dessin. Fermez les applications en arrière-plan. Sur PC, vérifiez que le jeu est installé sur un SSD NVMe." }
-        }
-      },
-      "2": {
-        "title": "CRASHES & GEL",
-        "problems": {
-          "0": { "name": "Crash aléatoire en partie", "cause": "Bug du jeu ou surchauffe matérielle.", "fix": "Mettez à jour le jeu vers la dernière version. Sur console, assurez-vous que la ventilation n'est pas obstruée. Sur PC, surveillez la température du GPU avec MSI Afterburner." },
-          "1": { "name": "Gel pendant les cinématiques", "cause": "Bug de synchronisation audio/vidéo ou surcharge mémoire.", "fix": "Redémarrez le jeu. Si le problème persiste, désactivez le mode cinématique et passez en mode fenêtré. Vérifiez que vos pilotes audio sont à jour." },
-          "2": { "name": "Corruption de sauvegarde", "cause": "Crash pendant la sauvegarde ou problème de stockage.", "fix": "Activez la sauvegarde cloud (PS Plus / Xbox Cloud). Effectuez des sauvegardes manuelles régulières. Ne pas éteindre la console pendant une sauvegarde auto." }
-        }
-      },
-      "3": {
-        "title": "PROBLÈMES AUDIO & AFFICHAGE",
-        "problems": {
-          "0": { "name": "Son qui grésille ou se coupe", "cause": "Conflit de périphérique audio ou pilote obsolète.", "fix": "Sur PS5, vérifiez les paramètres audio (PCM vs Bitstream). Sur PC, mettez à jour les pilotes audio et désactivez l'audio spatial tiers. Réglez sur Stéréo si le 5.1 pose problème." },
-          "1": { "name": "Écran qui tremble (screen tearing)", "cause": "Désynchronisation entre le GPU et l'écran.", "fix": "Activez le VSync ou la technologie adaptative (G-Sync / FreeSync). Sur PS5/Xbox, activez le VRR si votre écran le supporte." },
-          "2": { "name": "Problèmes de HDR", "cause": "Mauvaise calibration HDR ou moniteur incompatible.", "fix": "Désactivez le HDR si les couleurs semblent incorrectes. Calibrez le HDR dans les paramètres du jeu et de la console. Vérifiez que votre écran supporte bien le HDR10." }
-        }
-      }
-    },
-    "causeLabel": "Cause",
-    "fixLabel": "Solution",
-    "faqTitle": "QUESTIONS FRÉQUENTES",
-    "faqs": {
-      "0": { "question": "GTA 6 ne se lance pas, que faire ?", "answer": "Vérifiez que votre console ou PC répond aux configurations minimales. Sur PS5/Xbox, essayez de réinstaller le jeu ou de vider le cache. Sur PC, mettez à jour vos pilotes GPU et vérifiez l'intégrité des fichiers via le launcher Rockstar ou Steam." },
-      "1": { "question": "GTA 6 a des chutes de FPS, comment optimiser ?", "answer": "Réduisez les paramètres graphiques (ombres, rayons, résolution). Fermez les applications en arrière-plan. Sur PC, mettez à jour vos pilotes GPU. Sur PS5, activez le mode Performance dans les paramètres du jeu." },
-      "2": { "question": "GTA 6 crash pendant une mission, que faire ?", "answer": "Sauvegardez régulièrement. Si un crash persiste à un point précis, essayez de recharger une sauvegarde antérieure. Sur console, réinstallez le jeu si le problème continue. Sur PC, vérifiez la RAM et la température du GPU." },
-      "3": { "question": "Y a-t-il des mises à jour pour corriger les bugs ?", "answer": "Rockstar publie régulièrement des patchs correctifs après la sortie d'un GTA. Activez les mises à jour automatiques sur votre plateforme pour recevoir les corrections dès qu'elles sont disponibles." }
-    },
-    "newsLink": "Voir les actualités GTA 6 →"
-  },
-  "Walkthrough": {
-    "metaTitle": "Solution GTA 6 — Guide complet des missions GTA VI",
-    "metaDescription": "Solution complète de GTA 6 (GTA VI) : guide pas à pas de toutes les missions, braquages, missions secondaires et activités. Walkthrough complet francophone.",
-    "metaKeywords": ["solution GTA 6", "guide GTA 6", "walkthrough GTA 6", "missions GTA 6", "missions secondaires GTA VI", "guide complet GTA 6", "braquages GTA 6 guide", "soluce GTA 6"],
-    "ogTitle": "Solution GTA 6 — Guide complet des missions GTA VI | CodeTricheGTA6",
-    "ogDescription": "Solution complète de GTA 6 : guide pas à pas, braquages, missions secondaires et activités.",
-    "breadcrumbHome": "Accueil",
-    "breadcrumbName": "Solution GTA 6",
-    "titleAccent": "SOLUTION & GUIDE —",
-    "subtitle": "Guide complet des missions de GTA 6. Solution pas à pas, braquages, missions secondaires et activités.",
-    "notice": "<strong className=\"text-accent-teal\">Guide pré-sortie basé sur les trailers et sources officielles.</strong> Les solutions détaillées pas à pas seront ajoutées après la sortie du jeu le 19 novembre 2026.",
-    "chapters": {
-      "0": {
-        "title": "PROLOGUE — VICE CITY",
-        "description": "Arrivée à Vice City. Premiers pas dans l'état de Leonida, rencontres clés et prise de contact avec le monde criminel.",
-        "missions": { "0": "Bienvenue à Vice City", "1": "Premiers contacts", "2": "Le travail de Raul", "3": "Impressions" }
-      },
-      "1": {
-        "title": "ACTE I — CONNEXIONS",
-        "description": "Jason et Lucia s'infiltrent dans le milieu criminel de Vice City. Premiers braquages et alliances avec les gangs locaux.",
-        "missions": { "0": "Petits boulots, gros risques", "1": "La connexion Bautista", "2": "Braquage du magasin de Port Gellhorn", "3": "Livraison sous pression", "4": "Le réseau de Cal Hampton" }
-      },
-      "2": {
-        "title": "ACTE II — ASCENSION",
-        "description": "Les braquages s'intensifient. Jason et Lucia montent en puissance et s'attaquent à des cibles plus ambitieuses.",
-        "missions": { "0": "Le casse de la bijouterie", "1": "Course poursuite dans les Keys", "2": "Opération Grassrivers", "3": "Le convoyeur blindé", "4": "Négociations à Ambrosia" }
-      },
-      "3": {
-        "title": "ACTE III — EMPIRE",
-        "description": "Construction de l'empire criminel. Acquisition de business, gestion d'équipes et investissements stratégiques.",
-        "missions": { "0": "Propriété et pouvoir", "1": "Le grand braquage de banque", "2": "Mains sur la bourse", "3": "Guerre des gangs", "4": "L'héritage de Vice City" }
-      }
-    },
-    "sideActivitiesTitle": "ACTIVITÉS SECONDAIRES",
-    "sideActivities": {
-      "0": { "name": "Courses de rue", "desc": "Compétitions de vitesse illégales à travers Vice City et les Leonida Keys." },
-      "1": { "name": "Chasse & pêche", "desc": "Expéditions dans les marais de Grassrivers et au Mont Kalaga." },
-      "2": { "name": "Missions de livraison", "desc": "Transport de marchandises à travers Leonida pour des PNJ." },
-      "3": { "name": "Exploration sous-marine", "desc": "Plongée et exploration des épaves avec le fusil harpon." },
-      "4": { "name": "Activités nautiques", "desc": "Courses de bateaux, jet ski et exploration des côtes." },
-      "5": { "name": "Customisation", "desc": "Personnalisation de véhicules dans les garages spécialisés." }
-    },
-    "comingSoon": "Bientôt",
-    "faqTitle": "QUESTIONS FRÉQUENTES",
-    "faqs": {
-      "0": { "question": "Combien de missions compte GTA 6 ?", "answer": "Le nombre exact de missions n'est pas encore confirmé par Rockstar. GTA V comptait plus de 80 missions principales. GTA 6 devrait proposer au minimum un volume comparable, avec des missions plus longues et plus détaillées, ainsi que de nombreuses missions secondaires." },
-      "1": { "question": "Y a-t-il des missions secondaires dans GTA 6 ?", "answer": "Oui. GTA 6 propose des missions secondaires variées : courses de rue, chasse, pêche, livraisons, missions pour des PNJ, et des activités propres à chaque région de Leonida (Vice City, Grassrivers, Port Gellhorn, etc.)." },
-      "2": { "question": "Peut-on choisir l'ordre des missions dans GTA 6 ?", "answer": "GTA 6 offre plus de liberté que ses prédécesseurs. Les missions principales suivent une trame narrative, mais le joueur peut librement explorer et réaliser des activités secondaires entre les missions de l'histoire." },
-      "3": { "question": "Quels braquages sont confirmés dans GTA 6 ?", "answer": "Les trailers officiels montrent des braquages de banque, des vols de bijouterie et des attaques de convois. Le système de braquages propose plusieurs approches (furtive, agressive, astucieuse) affectant le déroulement et la récompense." }
-    },
-    "cheatsLink": "Voir tous les codes GTA 6 →"
-  },
-  "MakeMoney": {
-    "metaTitle": "Comment gagner argent GTA 6 — Guide farming & astuces GTA VI",
-    "metaDescription": "Toutes les méthodes pour gagner de l'argent dans GTA 6 (GTA VI) : missions, braquages, business, investments, astuces farming. Guide complet francophone.",
-    "metaKeywords": ["comment gagner argent GTA 6", "argent GTA 6", "farm argent GTA 6", "astuces argent GTA VI", "braquages GTA 6", "business GTA 6", "gagner argent Vice City", "guide richesse GTA 6"],
-    "ogTitle": "Comment gagner argent GTA 6 — Guide farming & astuces GTA VI | CodeTricheGTA6",
-    "ogDescription": "Toutes les méthodes pour gagner de l'argent dans GTA 6 — braquages, business, investissements et activités secondaires.",
-    "breadcrumbHome": "Accueil",
-    "breadcrumbName": "Comment gagner argent GTA 6",
-    "title": "ARGENT",
-    "titleAccent": "COMMENT GAGNER DE L'—",
-    "subtitle": "Toutes les méthodes confirmées pour gagner de l'argent dans GTA 6 — braquages, business, investissements et activités secondaires.",
-    "notice": "<strong className=\"text-accent-teal\">Informations basées sur les trailers et sources officielles.</strong> Les détails chiffrés (montants exacts, rentabilité) seront ajoutés après la sortie du jeu le 19 novembre 2026.",
-    "methods": {
-      "0": {
-        "title": "BRAQUAGES (HEISTS)",
-        "items": {
-          "0": { "name": "Braquages principaux", "desc": "Missions scénarisées à plusieurs étapes, la source de revenus la plus lucrative confirmée dans les trailers." },
-          "1": { "name": "Braquages secondaires", "desc": "Vols de magasins, cambriolages et attaques de convois rapportant des sommes plus modestes." },
-          "2": { "name": "Approches multiples", "desc": "Chaque braquage offre plusieurs stratégies (silencieuse, brute, astucieuse) affectant le gain final." }
-        }
-      },
-      "1": {
-        "title": "BUSINESS & PROPRIÉTÉS",
-        "items": {
-          "0": { "name": "Entreprises achetables", "desc": "Achetez et gérez des businesses à Vice City générant des revenus passifs réguliers." },
-          "1": { "name": "Immobilier", "desc": "Plusieurs propriétés disponibles à l'achat, du studio au manoir, avec revenus locatifs." },
-          "2": { "name": "Customisation de business", "desc": "Personnalisez vos établissements pour augmenter leurs revenus (déco, personnel, stock)." }
-        }
-      },
-      "2": {
-        "title": "INVESTISSEMENTS",
-        "items": {
-          "0": { "name": "Bourse BAWSAQ", "desc": "Marché influencé par les actions des joueurs en ligne. Achetez bas, vendez haut." },
-          "1": { "name": "Bourse LCN", "desc": "Marché local de Vice City, plus prévisible mais moins volatil que BAWSAQ." },
-          "2": { "name": "Missions de manipulation", "desc": "Certaines missions influencent les cours de bourse — planifiez vos investissements en amont." }
-        }
-      },
-      "3": {
-        "title": "ACTIVITÉS SECONDAIRES",
-        "items": {
-          "0": { "name": "Chasse & pêche", "desc": "Vendez vos prises au marché de Port Gellhorn et dans les marais de Grassrivers." },
-          "1": { "name": "Courses de rue", "desc": "Participez aux courses illégales de Vice City pour gagner des prix et des véhicules." },
-          "2": { "name": "Missions de livraison", "desc": "Travaillez pour des PNJ en livrant des marchandises à travers Leonida." }
-        }
-      }
-    },
-    "farmingTipsTitle": "ASTUCES DE FARMING",
-    "farmingTips": {
-      "0": { "title": "Priorité aux braquages", "desc": "Les braquages principaux offrent les plus grosses récompenses. Préparez votre équipe et votre équipement avant de vous lancer." },
-      "1": { "title": "Investissez tôt", "desc": "Achetez des propriétés et des business dès que possible pour maximiser les revenus passifs tout au long de l'histoire." },
-      "2": { "title": "Surveillez la bourse", "desc": "Les missions de l'histoire influencent les cours. Investissez avant les missions qui vont faire fluctuer le marché." },
-      "3": { "title": "Coffre de véhicule", "desc": "Stockez vos armes et objets de valeur dans le coffre de votre voiture pour les récupérer gratuitement après une mission." },
-      "4": { "title": "Activités secondaires", "desc": "Les courses de rue, la chasse et les missions de livraison sont des sources de revenus régulières entre les braquages." }
-    },
-    "faqTitle": "QUESTIONS FRÉQUENTES",
-    "faqs": {
-      "0": { "question": "Comment gagner de l'argent rapidement dans GTA 6 ?", "answer": "Les méthodes principales confirmées dans GTA 6 incluent les braquages (heists), les missions de l'histoire, la gestion de business (établissements achetables), les investissements en bourse in-game et les activités secondaires comme la chasse et la pêche. Les braquages seraient la source de revenus la plus lucrative." },
-      "1": { "question": "Y a-t-il une bourse dans GTA 6 ?", "answer": "D'après les trailers et screenshots officiels, GTA 6 inclut un système d'investissement sur les marchés financiers de Vice City (BAWSAQ et LCN), similaire à GTA V mais avec davantage de profondeur. Les prix fluctueraient en fonction des actions du joueur." },
-      "2": { "question": "Peut-on acheter des propriétés dans GTA 6 ?", "answer": "Oui. GTA 6 permet l'achat et la gestion de propriétés, y compris des businesses générant des revenus passifs. Le système est inspiré de GTA V Online mais avec davantage de profondeur et de personnalisation." },
-      "3": { "question": "Les braquages rapportent-ils beaucoup d'argent dans GTA 6 ?", "answer": "Les braquages (heists) sont le cœur du gameplay de GTA 6 et devraient être la source de revenus la plus importante, comme dans tous les GTA. Rockstar a confirmé un système de braquages plus élaboré avec plusieurs approches possibles." }
-    },
-    "cheatsLink": "Voir tous les codes GTA 6 →"
-  },
-  "WeaponsGTA6": {
-    "metaTitle": "Armes GTA 6 — Toutes les armes confirmées de GTA VI",
-    "metaDescription": "Guide complet des armes de GTA 6 (GTA VI) : pistolets, fusils d'assaut, snipers, armes lourdes, armes de mêlée et armes spéciales. Liste officielle avec sources Rockstar.",
-    "metaKeywords": ["armes GTA 6", "armes GTA VI", "toutes les armes GTA 6", "liste armes GTA 6", "meilleures armes GTA 6", "pistolets GTA 6", "fusil d'assaut GTA 6", "sniper GTA 6", "armes lourdes GTA 6"],
-    "ogTitle": "Armes GTA 6 — Toutes les armes confirmées de GTA VI | CodeTricheGTA6",
-    "ogDescription": "Guide complet des armes officiellement confirmées dans GTA 6 : pistolets, fusils, snipers, armes lourdes et spéciales.",
-    "breadcrumbHome": "Accueil",
-    "breadcrumbName": "Armes GTA 6",
-    "title": "ARMES GTA 6",
-    "titleAccent": "TOUTES LES —",
-    "subtitle": "Guide complet des armes officiellement confirmées dans GTA 6 : pistolets, fusils, snipers, armes lourdes et spéciales. Sources Rockstar.",
-    "notice": "<strong className=\"text-accent-teal\">Sources officielles uniquement.</strong> Chaque arme listée a été identifiée dans les trailers officiels, les screenshots Rockstar ou le site GTA VI. Les stats détaillées seront ajoutées après la sortie du jeu.",
-    "categories": {
-      "0": {
-        "title": "PISTOLETS & REVOLVERS",
-        "weapons": {
-          "0": { "name": "Girardi ES9", "desc": "Pistolet semi-automatique inspiré du Beretta 92FS. Arme de Jason.", "edition": false },
-          "1": { "name": "Klose K17", "desc": "Pistolet inspiré du Glock 17. Arme principale de Lucia. Mode automatique complet.", "edition": false },
-          "2": { "name": "Capo Pistol", "desc": "Pistolet inspiré du Colt M1911. Vu entre les mains de Jason et Raul Bautista.", "edition": false },
-          "3": { "name": "Nipper .38", "desc": "Pistolet compact visible sur l'artwork officiel, tenu par Lucia.", "edition": false },
-          "4": { "name": "Hawk & Little Morgan Revolver", "desc": "Revolver inspiré du Smith & Wesson 629. Version personnalisée Ultime.", "edition": true },
-          "5": { "name": "Mustang .357 Revolver", "desc": "Revolver inspiré du Colt Python. Vu entre les mains d'un gang de motards.", "edition": false }
-        }
-      },
-      "1": {
-        "title": "FUSILS À POMPE & MITRAILLETTES",
-        "weapons": {
-          "0": { "name": "Double-Barreled Shotgun", "desc": "Fusil à pompe double canon. Vu utilisé par un chasseur visant un alligator.", "edition": false },
-          "1": { "name": "Pump Action Shotgun", "desc": "Fusil à pompe inspiré du Mossberg 590/Remington 870. Plusieurs variantes chez Ammu-Nation.", "edition": false },
-          "2": { "name": "MP5-inspired SMG", "desc": "Mitraillette inspirée du MP5. Utilisée par Jason et Lucia lors du braquage.", "edition": false },
-          "3": { "name": "MAC-10/11 SMG", "desc": "Mitraillette compacte avec skin Vice City en précommande.", "edition": false }
-        }
-      },
-      "2": {
-        "title": "FUSILS D'ASSAUT & SNIPERS",
-        "weapons": {
-          "0": { "name": "Duke Carbine Rifle", "desc": "Fusil d'assaut inspiré du M4 avec insigne Duke Arms. Le plus visible dans les médias officiels.", "edition": false },
-          "1": { "name": "AK-47-inspired Assault Rifle", "desc": "Fusil d'assaut inspiré de l'AK-47 avec variantes en bois. Visible chez Ammu-Nation.", "edition": false },
-          "2": { "name": "Duke Assault Sniper Rifle", "desc": "Fusil sniper d'assaut de la marque Duke. Vu entre les mains d'un chasseur/braconnier.", "edition": false },
-          "3": { "name": "Remington 700-inspired Sniper", "desc": "Fusil sniper à verrou inspiré du Remington 700. Utilisé au Mont Kalaga.", "edition": false }
-        }
-      },
-      "3": {
-        "title": "ARMES LOURDES, MÊLÉE & SPÉCIALES",
-        "weapons": {
-          "0": { "name": "Grenade Launcher", "desc": "Lance-grenades utilisé par Lucia dans le Trailer 2.", "edition": false },
-          "1": { "name": "M249-inspired LMG", "desc": "Mitrailleuse légère inspirée du M249. Ramassée chez Ammu-Nation.", "edition": false },
-          "2": { "name": "Baseball Bat", "desc": "Batte de baseball visible dans les screenshots de Port Gellhorn.", "edition": false },
-          "3": { "name": "Hammer", "desc": "Marteau vu en dual-wield dans le Trailer 1.", "edition": false },
-          "4": { "name": "Golf Club", "desc": "Club de golf tenu par Cal Hampton dans les screenshots officiels.", "edition": false },
-          "5": { "name": "Knife", "desc": "Couteau visible près des revolvers personnalisés.", "edition": false },
-          "6": { "name": "Speargun", "desc": "Fusil harpon confirmé pour le combat sous-marin.", "edition": false }
-        }
-      }
-    },
-    "editionLabel": "Édition Ultime",
-    "weaponSystemTitle": "SYSTÈME D'ARMES — NOUVEAUTÉS GTA VI",
-    "weaponSystem": {
-      "0": { "title": "Inventaire limité", "desc": "Système de sacoche : impossible de porter toutes les armes à la fois" },
-      "1": { "title": "Coffre de véhicule", "desc": "Stockez des armes dans le coffre et changez de loadout entre les missions" },
-      "2": { "title": "Personnalisation poussée", "desc": "Accessoires, optiques, finitions et gravures inspirées de RDR2" },
-      "3": { "title": "Marques fictives", "desc": "Duke, Girardi, Klose, Hawk & Little, Capo" }
-    },
-    "faqTitle": "QUESTIONS FRÉQUENTES",
-    "faqs": {
-      "0": { "question": "Combien d'armes y a-t-il dans GTA 6 ?", "answer": "D'après les trailers et screenshots officiels, plus de 20 armes ont été identifiées : pistolets, revolvers, fusils à pompe, mitraillettes, fusils d'assaut, snipers, armes lourdes et armes de mêlée. La liste complète sera connue après la sortie du jeu le 19 novembre 2026." },
-      "1": { "question": "Peut-on personnaliser les armes dans GTA 6 ?", "answer": "Oui. GTA 6 intègre un système de personnalisation poussé inspiré de Red Dead Redemption 2 : accessoires, optiques, finitions et gravures sur chaque arme. L'édition Ultime inclut des variantes personnalisées exclusives." },
-      "2": { "question": "Quel est le système d'inventaire d'armes dans GTA 6 ?", "answer": "GTA 6 utilise un système de sacoche limitée — impossible de porter toutes les armes en même temps. Les armes excédentaires peuvent être stockées dans le coffre de votre véhicule et changées entre les missions." },
-      "3": { "question": "Y a-t-il des armes exclusives dans l'édition Ultime ?", "answer": "Oui. L'édition Ultime de GTA 6 inclut des variantes personnalisées exclusives : le Girardi ES9 personnalisé, le Klose K17 personnalisé, et le Hawk & Little Morgan Revolver personnalisé." }
-    },
-    "allWeaponsLink": "Voir toutes les armes GTA 6 →"
   },
   "News": {
     "metaTitle": "Actualités GTA 6 — Dernières nouvelles sur GTA VI",
@@ -1124,7 +1021,13 @@
   "Gta5Vs6Comparison": {
     "metaTitle": "Comparaison GTA 5 vs GTA 6 — Quelles différences ?",
     "metaDescription": "Comparaison détaillée entre GTA 5 et GTA 6 : moteur graphique, monde ouvert, mécaniques, personnages et multijoueur. Tout ce qui change entre les deux opus.",
-    "metaKeywords": ["GTA 5 vs GTA 6", "comparaison GTA 6", "différence GTA 5 GTA 6", "GTA VI nouveautés", "GTA 6 améliorations"],
+    "metaKeywords": [
+      "GTA 5 vs GTA 6",
+      "comparaison GTA 6",
+      "différence GTA 5 GTA 6",
+      "GTA VI nouveautés",
+      "GTA 6 améliorations"
+    ],
     "breadcrumbHome": "Accueil",
     "breadcrumbName": "GTA 5 vs GTA 6",
     "title": "GTA 5 vs",
@@ -1188,7 +1091,13 @@
   "Gta6PreparationGuide": {
     "metaTitle": "Guide de préparation GTA 6 — Tout savoir avant la sortie",
     "metaDescription": "Guide complet pour préparer la sortie de GTA 6 : configuration PC, éditions, précommande, checklist et tout ce qu'il faut savoir avant le 19 novembre 2026.",
-    "metaKeywords": ["guide préparation GTA 6", "config PC GTA 6", "éditions GTA 6", "précommande GTA 6", "sortie GTA 6"],
+    "metaKeywords": [
+      "guide préparation GTA 6",
+      "config PC GTA 6",
+      "éditions GTA 6",
+      "précommande GTA 6",
+      "sortie GTA 6"
+    ],
     "breadcrumbHome": "Accueil",
     "breadcrumbName": "Guide de préparation",
     "title": "GUIDE DE",
@@ -1199,46 +1108,106 @@
       "0": {
         "title": "CONFIGURATION PC RECOMMANDÉE",
         "items": {
-          "0": { "label": "Système d'exploitation", "desc": "Windows 10/11 64-bit. Linux via Proton probablement supporté via Steam." },
-          "1": { "label": "Processeur", "desc": "Intel Core i5-11600K ou AMD Ryzen 5 5600X minimum. i7-12700K ou Ryzen 7 7800X3D recommandé pour 60 FPS." },
-          "2": { "label": "Carte graphique", "desc": "NVIDIA RTX 3070 ou AMD RX 6800 XT minimum pour 1080p/60 FPS. RTX 4070 Ti ou RX 7800 XT pour 1440p/60 FPS avec ray tracing." },
-          "3": { "label": "Mémoire RAM", "desc": "16 Go DDR4 minimum. 32 Go DDR5 recommandé pour une expérience optimale sans ralentissements." },
-          "4": { "label": "Stockage", "desc": "SSD NVMe obligatoire (150 Go minimum). Un HDD sera insuffisant pour les temps de chargement et le streaming de textures." }
+          "0": {
+            "label": "Système d'exploitation",
+            "desc": "Windows 10/11 64-bit. Linux via Proton probablement supporté via Steam."
+          },
+          "1": {
+            "label": "Processeur",
+            "desc": "Intel Core i5-11600K ou AMD Ryzen 5 5600X minimum. i7-12700K ou Ryzen 7 7800X3D recommandé pour 60 FPS."
+          },
+          "2": {
+            "label": "Carte graphique",
+            "desc": "NVIDIA RTX 3070 ou AMD RX 6800 XT minimum pour 1080p/60 FPS. RTX 4070 Ti ou RX 7800 XT pour 1440p/60 FPS avec ray tracing."
+          },
+          "3": {
+            "label": "Mémoire RAM",
+            "desc": "16 Go DDR4 minimum. 32 Go DDR5 recommandé pour une expérience optimale sans ralentissements."
+          },
+          "4": {
+            "label": "Stockage",
+            "desc": "SSD NVMe obligatoire (150 Go minimum). Un HDD sera insuffisant pour les temps de chargement et le streaming de textures."
+          }
         }
       },
       "1": {
         "title": "ÉDITIONS & PRÉCOMMANDE",
         "items": {
-          "0": { "label": "Édition Standard", "desc": "Le jeu de base à 69,99 € / 69,99 $. Inclut le mode histoire complet et l'accès à GTA Online 2.0." },
-          "1": { "label": "Édition Ultime", "desc": "À 89,99 € / 89,99 $. Inclut le Pass contenus exclusifs, véhicules bonus, propriétés de départ et bonus GTA$ en ligne." },
-          "2": { "label": "Contenu de précommande", "desc": "Toute précommande reçoit le Pack Vice City Vintage avec véhicules et skins exclusifs, indépendamment de l'édition choisie." },
-          "3": { "label": "Plateformes", "desc": "PS5 et Xbox Series X|S au lancement. Version PC attendue 6 à 12 mois après la sortie console, selon le pattern de GTA V." }
+          "0": {
+            "label": "Édition Standard",
+            "desc": "Le jeu de base à 69,99 € / 69,99 $. Inclut le mode histoire complet et l'accès à GTA Online 2.0."
+          },
+          "1": {
+            "label": "Édition Ultime",
+            "desc": "À 89,99 € / 89,99 $. Inclut le Pass contenus exclusifs, véhicules bonus, propriétés de départ et bonus GTA$ en ligne."
+          },
+          "2": {
+            "label": "Contenu de précommande",
+            "desc": "Toute précommande reçoit le Pack Vice City Vintage avec véhicules et skins exclusifs, indépendamment de l'édition choisie."
+          },
+          "3": {
+            "label": "Plateformes",
+            "desc": "PS5 et Xbox Series X|S au lancement. Version PC attendue 6 à 12 mois après la sortie console, selon le pattern de GTA V."
+          }
         }
       },
       "2": {
         "title": "CHECKLIST AVANT LA SORTIE",
         "items": {
-          "0": { "label": "Mettre à jour le firmware console", "desc": "Assurez-vous que votre PS5 ou Xbox Series est à jour avec le dernier firmware pour éviter les problèmes de compatibilité." },
-          "1": { "label": "Libérer de l'espace de stockage", "desc": "Le jeu nécessitera au moins 150 Go. Supprimez les jeux et applications inutilisés pour faire de la place." },
-          "2": { "label": "Configurer le compte Rockstar", "desc": "Créez ou mettez à jour votre compte Rockstar Social Club pour accéder à GTA Online et aux fonctionnalités connectées." },
-          "3": { "label": "Rejoindre la communauté", "desc": "Suivez les canaux officiels Rockstar et la communauté pour les dernières annonces et les codes de triche dès la sortie." },
-          "4": { "label": "Préparer sa config PC", "desc": "Si vous jouez sur PC, mettez à jour vos pilotes GPU et assurez-vous d'avoir un SSD NVMe avec assez d'espace libre." }
+          "0": {
+            "label": "Mettre à jour le firmware console",
+            "desc": "Assurez-vous que votre PS5 ou Xbox Series est à jour avec le dernier firmware pour éviter les problèmes de compatibilité."
+          },
+          "1": {
+            "label": "Libérer de l'espace de stockage",
+            "desc": "Le jeu nécessitera au moins 150 Go. Supprimez les jeux et applications inutilisés pour faire de la place."
+          },
+          "2": {
+            "label": "Configurer le compte Rockstar",
+            "desc": "Créez ou mettez à jour votre compte Rockstar Social Club pour accéder à GTA Online et aux fonctionnalités connectées."
+          },
+          "3": {
+            "label": "Rejoindre la communauté",
+            "desc": "Suivez les canaux officiels Rockstar et la communauté pour les dernières annonces et les codes de triche dès la sortie."
+          },
+          "4": {
+            "label": "Préparer sa config PC",
+            "desc": "Si vous jouez sur PC, mettez à jour vos pilotes GPU et assurez-vous d'avoir un SSD NVMe avec assez d'espace libre."
+          }
         }
       },
       "3": {
         "title": "CE QU'IL FAUT SAVOIR",
         "items": {
-          "0": { "label": "Date de sortie", "desc": "19 novembre 2026 sur PS5 et Xbox Series X|S. La version PC est attendue en 2027." },
-          "1": { "label": "Deux protagonistes", "desc": "Jason Duval et Lucia Caminos, inspirés du duo Bonnie & Clyde. Première héroïne jouable de la série." },
-          "2": { "label": "Monde ouvert massif", "desc": "L'État de Leonida, inspiré de la Floride, inclut Vice City, les Keys, les Everglades et plus encore." },
-          "3": { "label": "Météo dynamique", "desc": "Système météo en temps réel avec ouragans, inondations et cyclones tropicaux qui affectent le gameplay." }
+          "0": {
+            "label": "Date de sortie",
+            "desc": "19 novembre 2026 sur PS5 et Xbox Series X|S. La version PC est attendue en 2027."
+          },
+          "1": {
+            "label": "Deux protagonistes",
+            "desc": "Jason Duval et Lucia Caminos, inspirés du duo Bonnie & Clyde. Première héroïne jouable de la série."
+          },
+          "2": {
+            "label": "Monde ouvert massif",
+            "desc": "L'État de Leonida, inspiré de la Floride, inclut Vice City, les Keys, les Everglades et plus encore."
+          },
+          "3": {
+            "label": "Météo dynamique",
+            "desc": "Système météo en temps réel avec ouragans, inondations et cyclones tropicaux qui affectent le gameplay."
+          }
         }
       }
     },
     "linksTitle": "GUIDES ASSOCIÉS",
     "links": {
-      "cheatCodes": { "title": "Codes de triche GTA 6", "desc": "Histoire des codes, prévisions et fonctionnement" },
-      "releaseDate": { "title": "Date de sortie GTA 6", "desc": "Sortie le 19 novembre 2026 — tout savoir" }
+      "cheatCodes": {
+        "title": "Codes de triche GTA 6",
+        "desc": "Histoire des codes, prévisions et fonctionnement"
+      },
+      "releaseDate": {
+        "title": "Date de sortie GTA 6",
+        "desc": "Sortie le 19 novembre 2026 — tout savoir"
+      }
     },
     "faqTitle": "QUESTIONS FRÉQUENTES",
     "faqs": {

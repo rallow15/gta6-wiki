@@ -49,7 +49,7 @@ export default async function CheatCodesGTA6Page({
   const t = await getTranslations("CheatCodes");
   const isEn = locale === "en";
   const canonicalPath = isEn ? "/en/cheat-codes-gta-6" : "/code-triche-gta-6";
-  const codesPath = isEn ? "/en/codes" : "/codes";
+  const hubPath = isEn ? "/en/gta-6-before-release" : "/gta-6-avant-sortie";
 
   const faqs = [
     { question: t("faqs.0.question"), answer: t("faqs.0.answer") },
@@ -190,7 +190,7 @@ export default async function CheatCodesGTA6Page({
         </div>
 
         <div className="mt-8 text-center">
-          <Link href={codesPath} className="text-accent-primary hover:underline">{t("codesHubLink")}</Link>
+          <Link href={hubPath} className="text-accent-primary hover:underline">{t("preReleaseHubLink")}</Link>
         </div>
       </SectionPage>
     </>

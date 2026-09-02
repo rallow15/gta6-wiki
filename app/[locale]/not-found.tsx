@@ -88,7 +88,7 @@ export default function NotFound() {
               {t("homeLink")}
             </Link>
             <Link
-              href="/codes"
+              href="/cheat-codes-gta-6"
               className="nb-btn-ghost px-8 py-3.5 text-sm font-semibold"
             >
               <Code className="h-4 w-4" />

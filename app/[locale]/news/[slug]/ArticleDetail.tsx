@@ -4,7 +4,9 @@ import { Link } from "@/i18n/navigation";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
+import { CalendarDays } from "lucide-react";
 import type { Article } from "@/lib/articles";
+import { SITE_LAST_UPDATED } from "@/lib/site";
 
 const tagColors: Record<string, string> = {
   "Annonce": "bg-neon-pink/10 text-neon-pink border-neon-pink/20",
@@ -95,6 +97,17 @@ export default function ArticleDetail({ article }: { article: Article }) {
                 <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6H10" />
               </svg>
             </a>
+          </motion.div>
+
+          {/* Last updated */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.25 }}
+            className="mt-3 flex items-center gap-2 text-xs text-text-muted"
+          >
+            <CalendarDays className="w-3.5 h-3.5" />
+            <span>{t("lastUpdated")} {SITE_LAST_UPDATED}</span>
           </motion.div>
 
           {/* Content */}

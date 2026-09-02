@@ -5,20 +5,20 @@ import { BASE_URL } from "@/lib/site";
 // French URLs have no prefix; English URLs use /en/ prefix.
 // Dynamic [slug] detail pages live in their own per-section sitemaps.
 // Pages marked noindex are intentionally excluded.
-// Removed: platform-specific cheat pages (ps5/xbox/pc), animals, npcs (low-value/placeholder).
+// Removed: thin pre-release pages (walkthrough, money, tips, secrets, problems),
+// duplicate codes/weapons-gta-6 pages, platform-specific cheat pages, animals, npcs.
 export default function sitemap(): MetadataRoute.Sitemap {
   // Use a static date for lastModified — update when content actually changes.
   // This avoids signalling to Google that every page changed on every deploy.
-  const lastUpdated = "2026-08-11";
+  const lastUpdated = "2026-09-02";
 
   // French pages (root, no locale prefix — localized paths from routing.ts)
   const frPages: MetadataRoute.Sitemap = [
     { url: `${BASE_URL}/`, lastModified: lastUpdated, changeFrequency: "daily", priority: 1 },
-    { url: `${BASE_URL}/codes`, lastModified: lastUpdated, changeFrequency: "monthly", priority: 0.5 },
     { url: `${BASE_URL}/code-triche-gta-6`, lastModified: lastUpdated, changeFrequency: "weekly", priority: 1 },
+    { url: `${BASE_URL}/gta-6-avant-sortie`, lastModified: lastUpdated, changeFrequency: "weekly", priority: 0.9 },
     { url: `${BASE_URL}/vehicules`, lastModified: lastUpdated, changeFrequency: "weekly", priority: 0.8 },
     { url: `${BASE_URL}/armes`, lastModified: lastUpdated, changeFrequency: "weekly", priority: 0.8 },
-    { url: `${BASE_URL}/armes-gta-6`, lastModified: lastUpdated, changeFrequency: "weekly", priority: 0.8 },
     { url: `${BASE_URL}/personnages`, lastModified: lastUpdated, changeFrequency: "weekly", priority: 0.8 },
     { url: `${BASE_URL}/lieux`, lastModified: lastUpdated, changeFrequency: "weekly", priority: 0.8 },
     { url: `${BASE_URL}/galerie`, lastModified: lastUpdated, changeFrequency: "monthly", priority: 0.6 },
@@ -26,11 +26,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/date-de-sortie-gta-6`, lastModified: lastUpdated, changeFrequency: "weekly", priority: 0.9 },
     { url: `${BASE_URL}/meilleures-voitures-gta-6`, lastModified: lastUpdated, changeFrequency: "weekly", priority: 0.8 },
     { url: `${BASE_URL}/carte-vice-city-gta-6`, lastModified: lastUpdated, changeFrequency: "weekly", priority: 0.8 },
-    { url: `${BASE_URL}/astuces-gta-6`, lastModified: lastUpdated, changeFrequency: "weekly", priority: 0.8 },
-    { url: `${BASE_URL}/comment-gagner-argent-gta-6`, lastModified: lastUpdated, changeFrequency: "weekly", priority: 0.8 },
-    { url: `${BASE_URL}/solution-gta-6-guide-missions`, lastModified: lastUpdated, changeFrequency: "weekly", priority: 0.8 },
-    { url: `${BASE_URL}/secrets-easter-eggs-gta-6`, lastModified: lastUpdated, changeFrequency: "weekly", priority: 0.7 },
-    { url: `${BASE_URL}/problemes-gta-6-solutions`, lastModified: lastUpdated, changeFrequency: "weekly", priority: 0.7 },
     { url: `${BASE_URL}/comparaison-gta-5-gta-6`, lastModified: lastUpdated, changeFrequency: "weekly", priority: 0.8 },
     { url: `${BASE_URL}/guide-preparation-gta-6`, lastModified: lastUpdated, changeFrequency: "weekly", priority: 0.8 },
     { url: `${BASE_URL}/a-propos`, lastModified: lastUpdated, changeFrequency: "yearly", priority: 0.3 },
@@ -41,11 +36,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // English pages (/en/ prefix)
   const enPages: MetadataRoute.Sitemap = [
     { url: `${BASE_URL}/en`, lastModified: lastUpdated, changeFrequency: "daily", priority: 1 },
-    { url: `${BASE_URL}/en/codes`, lastModified: lastUpdated, changeFrequency: "monthly", priority: 0.5 },
     { url: `${BASE_URL}/en/cheat-codes-gta-6`, lastModified: lastUpdated, changeFrequency: "weekly", priority: 1 },
+    { url: `${BASE_URL}/en/gta-6-before-release`, lastModified: lastUpdated, changeFrequency: "weekly", priority: 0.9 },
     { url: `${BASE_URL}/en/vehicles`, lastModified: lastUpdated, changeFrequency: "weekly", priority: 0.8 },
     { url: `${BASE_URL}/en/weapons`, lastModified: lastUpdated, changeFrequency: "weekly", priority: 0.8 },
-    { url: `${BASE_URL}/en/weapons-gta-6`, lastModified: lastUpdated, changeFrequency: "weekly", priority: 0.8 },
     { url: `${BASE_URL}/en/characters`, lastModified: lastUpdated, changeFrequency: "weekly", priority: 0.8 },
     { url: `${BASE_URL}/en/locations`, lastModified: lastUpdated, changeFrequency: "weekly", priority: 0.8 },
     { url: `${BASE_URL}/en/gallery`, lastModified: lastUpdated, changeFrequency: "monthly", priority: 0.6 },
@@ -53,11 +47,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/en/release-date-gta-6`, lastModified: lastUpdated, changeFrequency: "weekly", priority: 0.9 },
     { url: `${BASE_URL}/en/best-cars-gta-6`, lastModified: lastUpdated, changeFrequency: "weekly", priority: 0.8 },
     { url: `${BASE_URL}/en/vice-city-map-gta-6`, lastModified: lastUpdated, changeFrequency: "weekly", priority: 0.8 },
-    { url: `${BASE_URL}/en/tips-gta-6`, lastModified: lastUpdated, changeFrequency: "weekly", priority: 0.8 },
-    { url: `${BASE_URL}/en/how-to-make-money-gta-6`, lastModified: lastUpdated, changeFrequency: "weekly", priority: 0.8 },
-    { url: `${BASE_URL}/en/gta-6-walkthrough`, lastModified: lastUpdated, changeFrequency: "weekly", priority: 0.8 },
-    { url: `${BASE_URL}/en/secrets-easter-eggs-gta-6`, lastModified: lastUpdated, changeFrequency: "weekly", priority: 0.7 },
-    { url: `${BASE_URL}/en/gta-6-problems-solutions`, lastModified: lastUpdated, changeFrequency: "weekly", priority: 0.7 },
     { url: `${BASE_URL}/en/gta-5-vs-gta-6-comparison`, lastModified: lastUpdated, changeFrequency: "weekly", priority: 0.8 },
     { url: `${BASE_URL}/en/gta-6-preparation-guide`, lastModified: lastUpdated, changeFrequency: "weekly", priority: 0.8 },
     { url: `${BASE_URL}/en/about`, lastModified: lastUpdated, changeFrequency: "yearly", priority: 0.3 },

@@ -21,7 +21,8 @@ export const articles: Article[] = [
     content: [
       "Le 4 décembre 2023, Rockstar Games a officiellement annoncé Grand Theft Auto VI, marquant le retour dans Vice City au sein de l'état fictif de Leonida. Sam Houser a déclaré que le jeu serait « la plus grande et la plus immersive évolution de la série Grand Theft Auto ».",
       "L'annonce a été accompagnée d'une fenêtre de sortie pour l'automne 2025 sur PS5 et Xbox Series X|S. La bande-annonce a explosé les records de vues sur YouTube, devenant la bande-annonce de jeu la plus vue en 24 heures.",
-      "Ce moment a marqué l'histoire du jeu vidéo : plus de 10 ans après GTA V, les fans découvraient enfin le prochain chapitre de la série mythique."
+      "Ce moment a marqué l'histoire du jeu vidéo : plus de 10 ans après GTA V, les fans découvraient enfin le prochain chapitre de la série mythique. L'annonce a également relancé l'intérêt pour les codes de triche, les véhicules et l'univers de Vice City que nous couvrons sur ce site.",
+      "Pour CodeTricheGTA6, cette annonce a fixé le cadre de notre couverture : suivre chaque communication officielle, vérifier les sources et proposer des fiches précises sur les personnages, les armes et les lieux confirmés par Rockstar."
     ],
     tag: "Annonce",
     image: `${base}/OfficialScreenshots-GTAVI-PromotionalWebsite-ViceCity-SS1.jpg`,
@@ -36,7 +37,8 @@ export const articles: Article[] = [
     content: [
       "Le 5 décembre 2023, Rockstar a dévoilé la première bande-annonce officielle de GTA VI. En quelques heures, la vidéo a dépassé les 100 millions de vues, pulvérisant tous les records existants pour une bande-annonce de jeu vidéo.",
       "La trailer nous montre Vice City sous les néons, les palmeraies et les ambiances tropicales. On y aperçoit pour la première fois les deux protagonistes : Jason et Lucia, dans une dynamique à la Bonnie & Clyde.",
-      "Les fans ont immédiatement remarqué les détails : les clubs néon, les Everglades, les courses de rue, et cette atmosphère unique qui mélange crime et glamour sous le soleil de Floride."
+      "Les fans ont immédiatement remarqué les détails : les clubs néon, les Everglades, les courses de rue, et cette atmosphère unique qui mélange crime et glamour sous le soleil de Floride.",
+      "Cette première bande-annonce a permis d'identifier les premiers véhicules, les premières armes et les régions clés de Leonida. Ces éléments ont servi de base pour construire nos fiches détaillées sur le site."
     ],
     tag: "Bande-annonce",
     image: `${base}/OfficialScreenshots-GTAVI-PromotionalWebsite-ViceCity-SS5.jpg`,
@@ -51,7 +53,8 @@ export const articles: Article[] = [
     content: [
       "Le 2 mai 2025, Rockstar Games a annoncé le premier report officiel de GTA VI. Le jeu, initialement prévu pour l'automne 2025, est repoussé au 26 mai 2026.",
       "Le PDG de Take-Two, Strauss Zelnick, a expliqué que l'équipe avait besoin de temps supplémentaire pour atteindre le niveau de qualité attendu par les fans. L'annonce a provoqué une chute d'environ 10% du cours de bourse de Take-Two Interactive.",
-      "Malgré la déception des fans, la communauté a globalement salué la décision de Rockstar de privilégier la qualité plutôt que de sortir un jeu inachevé."
+      "Malgré la déception des fans, la communauté a globalement salué la décision de Rockstar de privilégier la qualité plutôt que de sortir un jeu inachevé.",
+      "Ce premier report a modifié notre calendrier éditorial : les guides de solution, les codes exacts et les astuces chiffrées ne seront possibles qu'après la sortie finale. En attendant, nous avons renforcé les fiches sur les éléments déjà confirmés."
     ],
     tag: "Date de sortie",
     image: `${base}/OfficialScreenshots-GTAVI-PromotionalWebsite-LeonidaKeys-SS2.jpg`,
@@ -65,8 +68,9 @@ export const articles: Article[] = [
     excerpt: "La deuxième bande-annonce dévoile les protagonistes Jason et Lucia, et les régions de Leonida : Vice City, Grassrivers, Port Gellhorn et plus encore.",
     content: [
       "Le 6 mai 2025, Rockstar a publié la deuxième bande-annonce de GTA VI, capturée sur PS5. Cette trailer révèle les deux protagonistes jouables : Jason Duval et Lucia Caminos, dans une histoire d'amour et de crime à Vice City.",
-      "Les fans ont pu découvrir les multiples régions de Leonida : Vice City avec ses néons et ses plages, les Everglades de Grassrivers, les Keys tropicales de Leonida Keys, le port industriel de Port Gellhorn, la zone d'Ambrosia, et le parc national du Mount Kalaga.",
-      "Des personnages secondaires ont également été présentés : Raul Bautista le braqueur de banques, Cal Hampton, Boobie Ike, Dre'Quan Priest, Real Dimez et Brian Heder le contrebandier."
+      "Les fans ont pu découvrir les multiples régions de Leonida : Vice City avec ses néons et ses plages, les Everglades de Grassrivers, les Keys tropicales de Leonida Keys, le port industriel de Port Gellhorn, la zone d'Ambrosia, et le parc national du Mont Kalaga.",
+      "Des personnages secondaires ont également été présentés : Raul Bautista le braqueur de banques, Cal Hampton, Boobie Ike, Dre'Quan Priest, Real Dimez et Brian Heder le contrebandier.",
+      "Cette seconde bande-annonce a été décisive pour nos fiches. Nous avons pu confirmer les noms des régions, identifier de nouveaux véhicules et ajouter les personnages secondaires à notre encyclopédie, toujours en croisant les sources officielles."
     ],
     tag: "Bande-annonce",
     image: `${base}/OfficialScreenshots-GTAVI-PromotionalWebsite-JasonDuval-SS1.jpg`,
@@ -81,7 +85,8 @@ export const articles: Article[] = [
     content: [
       "Rockstar a lancé les pages officielles des protagonistes sur rockstargames.com. Lucia Caminos est la première femme protagoniste de la série GTA — une combattante qui a purgé une peine à la prison de Leonida pour avoir protégé sa famille.",
       "Jason Duval a grandi parmi les escrocs, a servi dans l'armée, et a fini par travailler pour des trafiquants de drogue dans les Keys. Leur histoire commence quand « un casse facile tourne mal ».",
-      "Leur dynamique à la Bonnie & Clyde promet une narration inédite dans la série, avec la possibilité de basculer entre les deux personnages comme dans GTA V — mais avec une connexion émotionnelle plus profonde entre les protagonistes."
+      "Leur dynamique à la Bonnie & Clyde promet une narration inédite dans la série, avec la possibilité de basculer entre les deux personnages comme dans GTA V — mais avec une connexion émotionnelle plus profonde entre les protagonistes.",
+      "Ces profils officiels ont permis de structurer nos fiches personnages. Nous distinguons explicitement les informations issues des bios Rockstar (origines, statut de protagonistes) des interprétations narratives qui restent spéculatives."
     ],
     tag: "Personnages",
     image: `${base}/OfficialScreenshots-GTAVI-PromotionalWebsite-LuciaCaminos-SS3.jpg`,
@@ -96,7 +101,8 @@ export const articles: Article[] = [
     content: [
       "Le 6 novembre 2025, Rockstar a annoncé un deuxième report officiel de GTA VI. La date de sortie passe du 26 mai 2026 au 19 novembre 2026.",
       "Rockstar a déclaré : « Ces mois supplémentaires nous permettront de finaliser le jeu avec le niveau de polish que vous attendez et méritez. » Le jeu est désormais environ 18 mois en retard par rapport à l'objectif interne initial de printemps 2025.",
-      "L'annonce a provoqué une nouvelle baisse d'environ 10% du cours de Take-Two en bourse. Malgré tout, les fans restent confiants que l'attente en vaudra la peine."
+      "L'annonce a provoqué une nouvelle baisse d'environ 10% du cours de Take-Two en bourse. Malgré tout, les fans restent confiants que l'attente en vaudra la peine.",
+      "Cette date du 19 novembre 2026 est désormais la référence officielle de toutes nos pages. Elle figure sur notre compte à rebours, nos métadonnées et notre page dédiée, et nous ne publierons de guides définitifs qu'à partir de cette date."
     ],
     tag: "Date de sortie",
     image: `${base}/OfficialScreenshots-GTAVI-PromotionalWebsite-ViceCity-SS7.jpg`,
@@ -111,7 +117,8 @@ export const articles: Article[] = [
     content: [
       "Le 24 juin 2026, Rockstar a ouvert les pré-commandes de GTA VI à minuit heure locale. Deux éditions sont proposées : la Standard à 79,99$ et l'Ultimate Edition à 99,99$.",
       "L'Ultimate Edition comprend des véhicules exclusifs (Vapid Dominator Buggy '67, Grotti Cheetah '95), des boutiques de customisation (Rideout Customs, One-Eyed Willie's), une collection de voitures classiques, des armes et tatouages exclusifs par le collectif d'artistes FAILE.",
-      "Toutes les pré-commandes reçoivent le Vintage Vice City Pack, incluant la Vapid Stanier '55 et le garage Shore Court. Les pré-commandes digitales incluent également un mois gratuit de GTA+. Les éditions physiques contiennent uniquement un code de téléchargement — pas de disque."
+      "Toutes les pré-commandes reçoivent le Vintage Vice City Pack, incluant la Vapid Stanier '55 et le garage Shore Court. Les pré-commandes digitales incluent également un mois gratuit de GTA+. Les éditions physiques contiennent uniquement un code de téléchargement — pas de disque.",
+      "Cette annonce a enrichi notre page de date de sortie et nos fiches véhicules avec des modèles confirmés. Nous avons également ajouté une section dédiée au contenu de l'Édition Ultime dans notre hub pré-sortie."
     ],
     tag: "Pré-commande",
     image: `${base}/OfficialScreenshots-GTAVI-PromotionalWebsite-UltimateEdition-GrottiCheetah01.jpg`,
@@ -126,7 +133,8 @@ export const articles: Article[] = [
     content: [
       "Le PlayStation Blog a confirmé des fonctionnalités exclusives pour la version PS5 de GTA VI : retours haptiques du DualSense, gâchettes adaptatives pour le tir et la conduite, haut-parleur de la manette intégré, et audio spatial Tempest 3D AudioTech.",
       "Le jeu porte également la mention « PS5 Pro Enhanced », ce qui suggère des améliorations visuelles ou de performance sur la PS5 Pro, bien que les détails restent à confirmer.",
-      "Sony a clairement positionné la PS5 comme la console de référence pour GTA VI, avec un partenariat marketing similaire à celui qu'ils avaient pour GTA V à l'époque."
+      "Sony a clairement positionné la PS5 comme la console de référence pour GTA VI, avec un partenariat marketing similaire à celui qu'ils avaient pour GTA V à l'époque.",
+      "Cette information a été intégrée à notre page de date de sortie et à notre guide de configuration. Elle illustre aussi pourquoi les codes de triche pourraient être saisis différemment selon la plateforme."
     ],
     tag: "Gameplay",
     image: `${base}/OfficialScreenshots-GTAVI-PromotionalWebsite-JasonDuval-SS4.jpg`,
@@ -141,7 +149,8 @@ export const articles: Article[] = [
     content: [
       "Kotaku a analysé la massive diffusion d'informations de juin 2026 et révélé 10 détails inédits sur le gameplay de GTA VI.",
       "Parmi les nouveautés : un téléphone en jeu avec des réseaux sociaux, une customisation de véhicules poussée avec des kits « Retro Build », un système d'armes limité similaire à RDR2, une économie d'objets volés avec recels et cachettes, et une personnalisation profonde des personnages (coiffures, tatouages, ongles).",
-      "Le jeu intégrerait également la pêche, la plongée sous-marine, des raids de gangs, et une structure d'histoire en chapitres. Des connexions avec l'univers GTA/RDR ont été confirmées : le domaine Vercetti, Phil Cassidy, et le président Hardin de RDR2."
+      "Le jeu intégrerait également la pêche, la plongée sous-marine, des raids de gangs, et une structure d'histoire en chapitres. Des connexions avec l'univers GTA/RDR ont été confirmées : le domaine Vercetti, Phil Cassidy, et le président Hardin de RDR2.",
+      "Ces détails ont directement alimenté nos sections gameplay, argent et secrets du hub pré-sortie. Ils confirment aussi l'importance du système de sacoche d'armes, que nous mentionnons dans nos fiches et guides."
     ],
     tag: "Gameplay",
     image: `${base}/OfficialScreenshots-GTAVI-PromotionalWebsite-Grassrivers-SS2.jpg`,
@@ -156,7 +165,8 @@ export const articles: Article[] = [
     content: [
       "GamesRadar a publié une analyse détaillée des 63 captures d'écran officielles de GTA VI, confirmant des activités variées : pêche, kayak, plongée sous-marine, tout-terrain avec le Mud Club, et des raids de camps de gangs.",
       "La customisation est omniprésente : armes, véhicules avec des garages personnels, et des safehouses avec des casiers d'armes. Le jeu reprend la philosophie de RDR2 avec des chargements limités, une structure en chapitres et des activités secondaires profondes.",
-      "Les screenshots montrent également un système de réseaux sociaux en jeu, des courses de rue, et des environnements incroyablement détaillés allant des néons de Vice City aux marécages de Grassrivers."
+      "Les screenshots montrent également un système de réseaux sociaux en jeu, des courses de rue, et des environnements incroyablement détaillés allant des néons de Vice City aux marécages de Grassrivers.",
+      "Cette analyse a permis d'ajouter des sources visuelles à nos fiches véhicules, armes et lieux. Chaque capture est désormais référencée avec son origine officielle dans nos pages correspondantes."
     ],
     tag: "Gameplay",
     image: `${base}/OfficialScreenshots-GTAVI-PromotionalWebsite-MountKalaga-SS3.jpg`,
@@ -171,7 +181,8 @@ export const articles: Article[] = [
     content: [
       "Le 6 août 2026, Rockstar Games a officiellement annoncé « Grand Theft Auto VI: An Extended Look », un événement dédié au gameplay de GTA VI qui sera diffusé en exclusivité sur Netflix le 27 août à 21h00 (heure française). Le showcase sera disponible sur la chaîne YouTube de Rockstar et le site officiel six heures plus tard, à 3h00 du matin heure française.",
       "Contrairement aux deux précédentes bandes-annonces qui utilisaient des séquences cinématiques in-engine, ce showcase promet la première véritable démonstration de gameplay en temps réel de GTA VI. Le titre « An Extended Look » suggère une présentation bien plus longue et détaillée que les trailers précédents.",
-      "Le partenariat Netflix s'inscrit dans la continuité de la collaboration entre Rockstar et la plateforme, qui proposait déjà GTA: The Trilogy – The Definitive Edition via Netflix Games sur mobile. Le VP de Netflix Brandon Riegg a déclaré : « Les révélations de Grand Theft Auto sont devenues des moments culturels à part entière. L'anticipation autour de GTA VI est sans précédent. » La date de sortie reste confirmée pour le 19 novembre 2026 sur PS5 et Xbox Series X|S."
+      "Le partenariat Netflix s'inscrit dans la continuité de la collaboration entre Rockstar et la plateforme, qui proposait déjà GTA: The Trilogy – The Definitive Edition via Netflix Games sur mobile. Le VP de Netflix Brandon Riegg a déclaré : « Les révélations de Grand Theft Auto sont devenues des moments culturels à part entière. L'anticipation autour de GTA VI est sans précédent. » La date de sortie reste confirmée pour le 19 novembre 2026 sur PS5 et Xbox Series X|S.",
+      "Pour notre site, cet événement marquera probablement le passage à des contenus plus concrets. Nous mettrons à jour nos fiches et notre hub pré-sortie dès la diffusion pour intégrer les mécaniques officiellement présentées."
     ],
     tag: "Bande-annonce",
     image: `${base}/OfficialScreenshots-GTAVI-PromotionalWebsite-ViceCity-SS3.jpg`,
@@ -187,7 +198,8 @@ export const articles: Article[] = [
       "À partir du 20 août 2026, un hacker (ou groupe) se faisant appeler « Cyberleek » a commencé à publier quotidiennement des extraits de gameplay de GTA VI, ainsi que ce qui semble être la carte complète de Leonida, l'État fictif inspiré de la Floride. Les vidéos montrent des courses-poursuites, des braquages de commerces et des séquences en quasi-final build.",
       "La présence du titre « Sports Car » de Tate McRae (sorti début 2025) dans certaines bandes suggère que le build leaké est relativement récent. Take-Two Interactive, maison-mère de Rockstar, a déposé des subpoenas devant le tribunal du district sud de New York exigeant que Microsoft et Discord transmettent les identifiants d'appareils Windows et les données des membres de trois serveurs Discord pour identifier la source.",
       "Cyberleek affirme protester contre le virage tout-numérique du jeu (GTA VI sortira pour la première fois sans disque physique, uniquement avec un code de téléchargement). Mais le hacker sollicite des dons en cryptomonnaie et aurait facturé 165 000 $ pour des espaces publicitaires sur d'autres fuites. Le mouvement Stop Killing Games a dénoncé ces fuites comme « destructrices » et appelé à ne pas financer le hacker.",
-      "Selon Bloomberg, Rockstar ne prévoit pas de modifier sa stratégie marketing : le showcase Netflix « An Extended Look » du 27 août et la date de sortie du 19 novembre 2026 sont maintenus. D'anciens développeurs et analystes estiment que ces fuites n'affecteront guère le succès du jeu, les fans réservant leur jugement au visionnage officiel ou à la sortie."
+      "Selon Bloomberg, Rockstar ne prévoit pas de modifier sa stratégie marketing : le showcase Netflix « An Extended Look » du 27 août et la date de sortie du 19 novembre 2026 sont maintenus. D'anciens développeurs et analystes estiment que ces fuites n'affecteront guère le succès du jeu, les fans réservant leur jugement au visionnage officiel ou à la sortie.",
+      "Sur CodeTricheGTA6, nous ne reprenons pas les fuites comme des certitudes. Cet article a pour but de documenter l'événement et ses conséquences légales, tout en renvoyant vers les sources journalistiques qui l'analysent."
     ],
     tag: "Fuite",
     image: `${base}/OfficialScreenshots-GTAVI-PromotionalWebsite-ViceCity-SS8.jpg`,

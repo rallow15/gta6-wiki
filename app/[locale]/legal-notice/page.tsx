@@ -47,6 +47,7 @@ export default async function MentionsLegalesPage({
     <SectionPage
       title={t("title")}
       subtitle={t("subtitle")}
+      showMeta={false}
     >
       <div className="nb-card p-6 sm:p-8 space-y-6 text-text-secondary text-sm leading-relaxed">
         <div>

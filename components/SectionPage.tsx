@@ -1,15 +1,22 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import Link from "next/link";
+import PageMeta from "@/components/PageMeta";
+import { SITE_LAST_UPDATED } from "@/lib/site";
 
 interface SectionPageProps {
   title: string;
   titleAccent?: string;
   subtitle: string;
   children: React.ReactNode;
+  /** ISO date displayed as last updated. Defaults to the global site last-updated date. */
+  lastUpdated?: string;
+  /** Optional note displayed under the meta block. */
+  metaNote?: string;
+  /** Set to false to hide the E-E-A-T meta block (e.g. legal pages). */
+  showMeta?: boolean;
 }
 
-export default function SectionPage({ title, titleAccent, subtitle, children }: SectionPageProps) {
+export default function SectionPage({ title, titleAccent, subtitle, children, lastUpdated = SITE_LAST_UPDATED, metaNote, showMeta = true }: SectionPageProps) {
   return (
     <>
       <Navbar />
@@ -28,6 +35,7 @@ export default function SectionPage({ title, titleAccent, subtitle, children }: 
             </h1>
             <p className="mt-3 text-text-muted max-w-xl">{subtitle}</p>
           </div>
+          {showMeta && <PageMeta lastUpdated={lastUpdated} note={metaNote} />}
           {children}
         </div>
       </main>

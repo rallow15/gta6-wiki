@@ -8,6 +8,7 @@ export const SITE_LOCALE_FR = "fr_FR";
 export const SITE_LOCALE_EN = "en_US";
 export const DEFAULT_OG_IMAGE = "/images/logo/logo-neon-sign.png";
 export const LOGO_ICON = "/images/logo/logo-icon.png";
+export const SITE_LAST_UPDATED = "2026-09-02";
 
 // Legacy exports (default to French)
 export const SITE_NAME = SITE_NAME_FR;
