@@ -10,7 +10,7 @@ import { BASE_URL } from "@/lib/site";
 export default function sitemap(): MetadataRoute.Sitemap {
   // Use a static date for lastModified — update when content actually changes.
   // This avoids signalling to Google that every page changed on every deploy.
-  const lastUpdated = "2026-09-02";
+  const lastUpdated = "2026-09-17";
 
   // French pages (root, no locale prefix — localized paths from routing.ts)
   const frPages: MetadataRoute.Sitemap = [

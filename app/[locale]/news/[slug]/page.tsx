@@ -3,8 +3,8 @@ import { notFound } from "next/navigation";
 import { articles, getArticleById } from "@/lib/articles";
 import ArticleDetail from "./ArticleDetail";
 import { JsonLd } from "@/components/JsonLd";
-import { BASE_URL } from "@/lib/site";
-import { breadcrumbJsonLd, newsArticleJsonLd } from "@/lib/seo";
+import { BASE_URL, getSiteName } from "@/lib/site";
+import { breadcrumbJsonLd, buildAlternates, newsArticleJsonLd } from "@/lib/seo";
 
 export function generateStaticParams() {
   return articles.map((article) => ({ slug: article.id }));
@@ -13,58 +13,65 @@ export function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ locale: string; slug: string }>;
 }): Promise<Metadata> {
-  const { slug } = await params;
+  const { locale, slug } = await params;
   const article = getArticleById(slug);
   if (!article) return { title: "Article introuvable" };
 
-  const url = `/actualites/${article.id}`;
+  const isEn = locale === "en";
+  const frPath = `/actualites/${article.id}`;
+  const enPath = `/en/news/${article.id}`;
+  const url = isEn ? enPath : frPath;
+  const siteName = getSiteName(locale);
+
   return {
     title: article.title,
     description: article.excerpt,
-    alternates: { canonical: url },
+    alternates: buildAlternates(locale, frPath, enPath),
     keywords: [
       article.title,
       "GTA 6",
       "GTA VI",
       article.tag,
-      "actualité GTA 6",
+      isEn ? "GTA 6 news" : "actualité GTA 6",
     ],
     openGraph: {
-      title: `${article.title} | CodeTricheGTA6`,
+      title: `${article.title} | ${siteName}`,
       description: article.excerpt,
       url,
       type: "article",
       publishedTime: article.date,
+      locale: isEn ? "en_US" : "fr_FR",
       images: [{ url: article.image, width: 1200, height: 630, alt: article.title }],
     },
     twitter: {
       card: "summary_large_image",
-      title: `${article.title} | CodeTricheGTA6`,
+      title: `${article.title} | ${siteName}`,
       description: article.excerpt,
       images: [article.image],
     },
   };
 }
 
-export default async function ArticlePage({ params }: { params: Promise<{ slug: string }> }) {
-  const { slug } = await params;
+export default async function ArticlePage({ params }: { params: Promise<{ locale: string; slug: string }> }) {
+  const { locale, slug } = await params;
   const article = getArticleById(slug);
 
   if (!article) {
     notFound();
   }
 
-  const url = `${BASE_URL}/actualites/${article.id}`;
+  const isEn = locale === "en";
+  const url = `${BASE_URL}${isEn ? `/en/news/${article.id}` : `/actualites/${article.id}`}`;
   return (
     <>
       <JsonLd
         data={[
-          newsArticleJsonLd(article, url),
+          newsArticleJsonLd(article, url, locale),
           breadcrumbJsonLd([
-            { name: "Accueil", url: BASE_URL },
-            { name: "Actualités", url: `${BASE_URL}/actualites` },
+            { name: isEn ? "Home" : "Accueil", url: BASE_URL },
+            { name: isEn ? "News" : "Actualités", url: `${BASE_URL}${isEn ? "/en/news" : "/actualites"}` },
             { name: article.title, url },
           ]),
         ]}

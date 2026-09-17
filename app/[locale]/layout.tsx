@@ -51,13 +51,6 @@ export async function generateMetadata({
     authors: [{ name: siteName }],
     creator: siteName,
     publisher: siteName,
-    alternates: {
-      canonical: locale === "fr" ? "/" : "/en/",
-      languages: {
-        fr: "/",
-        en: "/en/",
-      },
-    },
     robots: {
       index: true,
       follow: true,

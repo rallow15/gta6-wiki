@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { characters, getCharacterById } from "@/lib/characters";
 import CharacterDetail from "./CharacterDetail";
 import { JsonLd } from "@/components/JsonLd";
-import { BASE_URL } from "@/lib/site";
-import { breadcrumbJsonLd, personJsonLd } from "@/lib/seo";
+import { BASE_URL, getSiteName } from "@/lib/site";
+import { breadcrumbJsonLd, buildAlternates, personJsonLd } from "@/lib/seo";
 import { getTranslations } from "next-intl/server";
 
 export function generateStaticParams() {
@@ -13,45 +13,53 @@ export function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ locale: string; slug: string }>;
 }): Promise<Metadata> {
-  const { slug } = await params;
+  const { locale, slug } = await params;
   const character = getCharacterById(slug);
   if (!character) return { title: "Personnage introuvable" };
 
-  const url = `/personnages/${character.id}`;
-  const title = `${character.name} — Personnage GTA 6`;
-  const description = `${character.description} Rôle : ${character.role}. Origine : ${character.origin}.`;
+  const isEn = locale === "en";
+  const frPath = `/personnages/${character.id}`;
+  const enPath = `/en/characters/${character.id}`;
+  const url = isEn ? enPath : frPath;
+  const title = isEn ? `${character.name} — GTA 6 Character` : `${character.name} — Personnage GTA 6`;
+  const description = isEn
+    ? `${character.description} Role: ${character.role}. Origin: ${character.origin}.`
+    : `${character.description} Rôle : ${character.role}. Origine : ${character.origin}.`;
+  const siteName = getSiteName(locale);
+
   return {
     title,
     description,
-    alternates: { canonical: url },
+    alternates: buildAlternates(locale, frPath, enPath),
     keywords: [
       character.name,
       `${character.name} GTA 6`,
       `${character.name} GTA VI`,
-      `${character.name} personnage`,
+      isEn ? `${character.name} character` : `${character.name} personnage`,
       character.role,
-      "personnages GTA 6",
+      isEn ? "GTA 6 characters" : "personnages GTA 6",
     ],
     openGraph: {
-      title: `${title} | CodeTricheGTA6`,
+      title: `${title} | ${siteName}`,
       description,
       url,
       type: "article",
+      locale: isEn ? "en_US" : "fr_FR",
       images: [{ url: character.image, width: 1200, height: 630, alt: character.name }],
     },
     twitter: {
       card: "summary_large_image",
-      title: `${title} | CodeTricheGTA6`,
+      title: `${title} | ${siteName}`,
       description,
       images: [character.image],
     },
   };
 }
 
-export default async function CharacterPage({ params }: { params: Promise<{ slug: string }> }) {
-  const { slug } = await params;
+export default async function CharacterPage({ params }: { params: Promise<{ locale: string; slug: string }> }) {
+  const { locale, slug } = await params;
   const character = getCharacterById(slug);
   const t = await getTranslations("Characters");
 
@@ -64,7 +72,8 @@ export default async function CharacterPage({ params }: { params: Promise<{ slug
     );
   }
 
-  const url = `${BASE_URL}/personnages/${character.id}`;
+  const isEn = locale === "en";
+  const url = `${BASE_URL}${isEn ? `/en/characters/${character.id}` : `/personnages/${character.id}`}`;
   const notice = {
     strong: t("noticeStrong"),
     rest: t("noticeRest"),
@@ -73,10 +82,10 @@ export default async function CharacterPage({ params }: { params: Promise<{ slug
     <>
       <JsonLd
         data={[
-          personJsonLd(character, url),
+          personJsonLd(character, url, locale),
           breadcrumbJsonLd([
-            { name: "Accueil", url: BASE_URL },
-            { name: "Personnages", url: `${BASE_URL}/personnages` },
+            { name: isEn ? "Home" : "Accueil", url: BASE_URL },
+            { name: isEn ? "Characters" : "Personnages", url: `${BASE_URL}${isEn ? "/en/characters" : "/personnages"}` },
             { name: character.name, url },
           ]),
         ]}

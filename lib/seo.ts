@@ -1,10 +1,18 @@
 // JSON-LD structured-data builders for SEO (schema.org).
 // All functions return plain objects, ready to be serialized by <JsonLd />.
 
-import { BASE_URL, SITE_NAME, SITE_TAGLINE, getSiteName, getSiteTagline, getSiteLocale } from "@/lib/site";
+import { BASE_URL, getSiteName, getSiteTagline, getSiteLocale } from "@/lib/site";
 import type { Article } from "@/lib/articles";
 import type { Character } from "@/lib/characters";
 import type { Location, Vehicle } from "@/lib/data";
+
+// Helper for consistent canonical + hreflang metadata.
+export function buildAlternates(locale: string, frPath: string, enPath: string) {
+  return {
+    canonical: locale === "en" ? enPath : frPath,
+    languages: { fr: frPath, en: enPath },
+  };
+}
 
 export function websiteJsonLd(locale: string = "fr") {
   const siteName = getSiteName(locale);
@@ -112,7 +120,7 @@ export function newsArticleJsonLd(article: Article, url: string, locale: string 
   };
 }
 
-export function personJsonLd(character: Character, url: string) {
+export function personJsonLd(character: Character, url: string, locale: string = "fr") {
   return {
     "@context": "https://schema.org",
     "@type": "Person",
@@ -122,6 +130,7 @@ export function personJsonLd(character: Character, url: string) {
     image: `${BASE_URL}${character.image}`,
     jobTitle: character.role,
     knowsAbout: [character.origin],
+    inLanguage: locale === "en" ? "en-US" : "fr-FR",
     subjectOf: {
       "@type": "CreativeWork",
       name: "Grand Theft Auto VI",
