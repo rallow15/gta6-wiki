@@ -153,7 +153,7 @@
     "breadcrumbName": "GTA 6 — before release",
     "title": "BEFORE RELEASE",
     "titleAccent": "GTA 6 —",
-    "subtitle": "Everything we know and expect from Grand Theft Auto VI before November 19, 2026. Official sources, verified analysis and clear disclaimers.",
+    "subtitle": "Everything we know and expect from Grand Theft Auto VI before November 19, 2026. Updated after the Netflix 'An Extended Look' showcase on August 27, 2026.",
     "notice": "<strong className=\"text-lagoon-cyan\">Game not released yet.</strong> This page collects information confirmed by Rockstar (trailers, screenshots, press releases) and clearly labeled editorial analysis. No definitive guide is possible before launch.",
     "intro": "Grand Theft Auto VI releases on November 19, 2026. Until then, players are already looking for guides, cheats, tips and walkthroughs. This page aims to gather, in one place, everything Rockstar has officially confirmed and what can reasonably be expected, without inventing false information. Each section cites its sources and distinguishes facts from predictions.",
     "sections": {
@@ -181,23 +181,27 @@
       },
       "gameplay": {
         "title": "GAMEPLAY & TIPS",
-        "intro": "Official trailers and screenshots have revealed several gameplay mechanics: limited weapon satchel, deep customization, underwater exploration and a duo of playable protagonists.",
+        "intro": "Official trailers, screenshots and the Netflix 'An Extended Look' showcase have revealed several mechanics: limited weapon satchel, duo of protagonists, Heat system, Focus, Waink app and deep customization.",
         "items": {
           "0": {
             "title": "Limited weapon satchel",
-            "desc": "Unlike GTA V, GTA 6 appears to limit the number of weapons you can carry. Prepare loadouts in your vehicle trunk before each mission."
+            "desc": "Unlike GTA V, GTA 6 limits the number of weapons you can carry. Prepare loadouts in your vehicle trunk before each mission."
           },
           "1": {
             "title": "Jason & Lucia, two styles",
-            "desc": "Jason and Lucia Caminos are the two playable protagonists. Their criminal partnership and complementary skills will be at the heart of gameplay."
+            "desc": "Jason and Lucia Caminos are the two playable protagonists. Their romantic/criminal partnership and open-world switch will be at the heart of gameplay."
           },
           "2": {
-            "title": "Land, sea & air exploration",
-            "desc": "Leonida includes city, swamps, mountains and coastlines. Boats, jet skis, seaplanes and submarines will let you explore every corner."
+            "title": "Heat & Focus system",
+            "desc": "Police no longer appear automatically: they must be alerted by witnesses. Players manage evidence (clothes, appearance, weapon, vehicle, CCTV). Focus mode slows time and indicates lethal or incapacitating zones."
           },
           "3": {
-            "title": "Deep customization",
-            "desc": "Weapons, vehicles and characters will be heavily customizable, with shops like Rideout Customs and One-Eyed Willie's Mod Shop (Ultimate Edition)."
+            "title": "Land, sea & air exploration",
+            "desc": "Leonida includes city, swamps, mountains and coastlines. Fan boats, kayaks, scooters, jet skis, seaplanes and submarines will let you explore every corner."
+          },
+          "4": {
+            "title": "Vehicle theft & Waink",
+            "desc": "The Waink app scans vehicles (value, security, tracker, required tool). Theft uses slim jim, cloning or hotwiring. Pay 'n' Spray and vehicle trunks return."
           }
         }
       },
@@ -225,21 +229,25 @@
       },
       "secrets": {
         "title": "SECRETS & EASTER EGGS",
-        "intro": "Official trailers and screenshots already contain references and mysteries. Here we distinguish what is confirmed (visible on screen) from community theories.",
+        "intro": "Official trailers, screenshots and the official showcase contain confirmed references and clues. Here we distinguish visible facts from community theories.",
         "items": {
           "0": {
             "title": "Vice City references",
             "desc": "Neon style, signs and musical atmosphere recall GTA: Vice City (2002). The Voodoo Lounge and several graffiti are already visible in captures."
           },
           "1": {
+            "title": "Vercetti Estate",
+            "desc": "The showcase and screenshots suggest a nod to Tommy Vercetti's mansion, the Vercetti Estate — a major Easter egg for series fans."
+          },
+          "2": {
             "title": "Red Dead Redemption links",
             "desc": "The Duke Arms weapon brand echoes Dutch van der Linde. The wildlife and hunting system also recalls RDR2."
           },
-          "2": {
-            "title": "Leonida mysteries",
-            "desc": "Alligators, underwater wrecks, Mount Kalaga: several visual elements suggest secrets to be discovered after release."
-          },
           "3": {
+            "title": "Leonida mysteries",
+            "desc": "Alligators, underwater wrecks, Mount Kalaga, Grassrivers swamps: several visual elements suggest secrets to be discovered after release."
+          },
+          "4": {
             "title": "Speargun & exploration",
             "desc": "The special Speargun weapon is confirmed for underwater exploration, opening the way to hidden zones and items."
           }
@@ -269,23 +277,23 @@
       },
       "tech": {
         "title": "SYSTEM REQUIREMENTS & EXPECTED ISSUES",
-        "intro": "GTA 6 launches on PS5, Xbox Series X|S and PC. Exact PC specs are not official yet. The advice below is based on current AAA standards and Rockstar's history.",
+        "intro": "GTA 6 launches on PS5 and Xbox Series X|S on November 19, 2026. The PC version has no announced date. Exact PC specs are not official yet. The advice below is based on current AAA standards and Rockstar's history.",
         "items": {
           "0": {
             "title": "Confirmed platforms",
-            "desc": "PS5, PS5 Pro (with exclusive DualSense features), Xbox Series X|S and PC will launch simultaneously. No PS4 or Xbox One versions."
+            "desc": "PS5, PS5 Pro (with exclusive DualSense features) and Xbox Series X|S launch on November 19, 2026. PC version date not announced. No PS4 or Xbox One versions."
           },
           "1": {
             "title": "SSD storage required",
             "desc": "Streaming Leonida's open world will require an SSD. Plan for at least 150 GB of free space, likely more with updates."
           },
           "2": {
-            "title": "Launch day",
-            "desc": "Expect server queues and day-one patches on launch day. Save often and enable automatic updates."
+            "title": "Pre-load & launch day",
+            "desc": "Pre-load starts November 12, 2026. Expect server queues and day-one patches on launch day. Save often and enable automatic updates."
           },
           "3": {
             "title": "PC optimization",
-            "desc": "On PC, up-to-date GPU drivers, VSync/FreeSync and installation on an NVMe SSD will be essential to avoid stuttering and FPS drops."
+            "desc": "Once the PC version is announced, up-to-date GPU drivers, VSync/FreeSync and installation on an NVMe SSD will be essential to avoid stuttering and FPS drops."
           }
         }
       }
@@ -294,6 +302,7 @@
     "methodologyText": "Every piece of information on this page is either a fact confirmed by Rockstar Games, Take-Two Interactive or their official partners (trailers, press releases, rockstargames.com), or a prediction explicitly grounded in previous games' mechanics. We do not publish unverified leaks as certainties.",
     "sources": [
       "Official Rockstar Games trailers (December 2023 and May 2025)",
+      "Netflix 'Grand Theft Auto VI: An Extended Look' showcase (August 27, 2026)",
       "Official GTA VI promotional screenshots and website",
       "Take-Two Interactive press releases",
       "Rockstar Newswire interviews and announcements"
@@ -795,7 +804,7 @@
   },
   "ReleaseDate": {
     "metaTitle": "GTA 6 Release Date: November 19, 2026",
-    "metaDescription": "GTA 6 (Grand Theft Auto VI) release date: November 19, 2026 on PS5, Xbox Series X|S and PC. Delay history, editions, pricing and platforms.",
+    "metaDescription": "GTA 6 (Grand Theft Auto VI) release date: November 19, 2026 on PS5 and Xbox Series X|S. PC version has no announced date. Delay history, editions, pricing and platforms.",
     "metaKeywords": [
       "GTA 6 release date",
       "when does GTA 6 come out",
@@ -806,12 +815,12 @@
       "GTA 6 platforms"
     ],
     "ogTitle": "GTA 6 Release Date: November 19, 2026 | GTA6CheatCodes",
-    "ogDescription": "GTA 6 (Grand Theft Auto VI) release date: November 19, 2026 on PS5, Xbox Series X|S and PC. Delay history, editions, pricing and platforms.",
+    "ogDescription": "GTA 6 (Grand Theft Auto VI) release date: November 19, 2026 on PS5 and Xbox Series X|S. PC version has no announced date. Delay history, editions, pricing and platforms.",
     "breadcrumbHome": "Home",
     "breadcrumbName": "GTA 6 Release Date",
     "title": "RELEASE DATE",
     "titleAccent": "GTA 6 —",
-    "subtitle": "Grand Theft Auto VI releases on November 19, 2026 on PS5, Xbox Series X|S and PC.",
+    "subtitle": "Grand Theft Auto VI releases on November 19, 2026 on PS5 and Xbox Series X|S. PC version has no announced date.",
     "releaseDateLabel": "Official Release Date",
     "releaseDateValue": "NOVEMBER 19, 2026",
     "timelineTitle": "DELAY HISTORY",
@@ -854,17 +863,17 @@
     "platforms": {
       "0": "<strong>PS5</strong> — DualSense haptic feedback, adaptive triggers, controller speaker, Tempest 3D audio. Rated \"PS5 Pro Enhanced\".",
       "1": "<strong>Xbox Series X|S</strong> — next-gen optimizations.",
-      "2": "<strong>PC</strong> — confirmed to launch alongside consoles."
+      "2": "<strong>PC</strong> — release date not announced."
     },
     "faqTitle": "FREQUENTLY ASKED QUESTIONS",
     "faqs": {
       "0": {
         "question": "When does GTA 6 come out?",
-        "answer": "Grand Theft Auto VI (GTA 6) releases on November 19, 2026 on PlayStation 5, Xbox Series X|S and PC, as announced by Rockstar Games on November 6, 2025."
+        "answer": "Grand Theft Auto VI (GTA 6) releases on November 19, 2026 on PlayStation 5 and Xbox Series X|S, as announced by Rockstar Games on November 6, 2025. The PC version has no announced date."
       },
       "1": {
         "question": "What platforms is GTA 6 coming to?",
-        "answer": "GTA 6 is coming to PlayStation 5, Xbox Series X|S and PC. The PS5 version features exclusive DualSense capabilities (haptic feedback, adaptive triggers, Tempest 3D audio)."
+        "answer": "GTA 6 is coming to PlayStation 5 and Xbox Series X|S. The PC version has no announced date. The PS5 version features exclusive DualSense capabilities (haptic feedback, adaptive triggers, Tempest 3D audio)."
       },
       "2": {
         "question": "Why was GTA 6 delayed?",
@@ -1109,19 +1118,19 @@
         "items": {
           "0": {
             "label": "Standard Edition",
-            "desc": "The base game at $69.99 / €69.99. Includes the complete story mode and access to GTA Online 2.0."
+            "desc": "The base game at $79.99 / €79.99. Includes the complete story mode and the Vintage Vice City Pack with pre-order."
           },
           "1": {
             "label": "Ultimate Edition",
-            "desc": "At $89.99 / €89.99. Includes exclusive content Pass, bonus vehicles, starter properties and GTA$ bonus online."
+            "desc": "At $99.99 / €99.99. Includes exclusive vehicles, customization shops, classic car collection, FAILE weapons and online content bonuses."
           },
           "2": {
             "label": "Pre-order content",
-            "desc": "All pre-orders receive the Vice City Vintage Pack with exclusive vehicles and skins, regardless of edition."
+            "desc": "All pre-orders receive the Vintage Vice City Pack ('55 Vapid Stanier and Shore Court garage), plus 1 month GTA+ for digital pre-orders."
           },
           "3": {
             "label": "Platforms",
-            "desc": "PS5 and Xbox Series X|S at launch. PC version expected 6-12 months after console release, following GTA V's pattern."
+            "desc": "PS5 and Xbox Series X|S at launch on November 19, 2026. PC version has no announced date."
           }
         }
       },
@@ -1155,7 +1164,7 @@
         "items": {
           "0": {
             "label": "Release date",
-            "desc": "November 19, 2026 on PS5 and Xbox Series X|S. PC version expected in 2027."
+            "desc": "November 19, 2026 on PS5 and Xbox Series X|S. PC version has no announced date."
           },
           "1": {
             "label": "Two protagonists",
@@ -1191,15 +1200,15 @@
       },
       "1": {
         "question": "Should I preorder GTA 6?",
-        "answer": "Preordering guarantees the Vice City Vintage Pack (exclusive vehicles and skins). The Ultimate Edition adds a content Pass and online bonuses. If you're certain you'll play at launch, preordering offers bonus content at no extra cost."
+        "answer": "Preordering guarantees the Vintage Vice City Pack ('55 Vapid Stanier, Shore Court garage, skins). The Ultimate Edition adds exclusive vehicles, customization shops and online content. Digital preorders include 1 month of GTA+."
       },
       "2": {
         "question": "Will GTA 6 launch on PC at the same time as consoles?",
-        "answer": "No. Rockstar has confirmed launch on PS5 and Xbox Series X|S on November 19, 2026. The PC version is expected 6-12 months later, following GTA V's pattern which arrived on PC 18 months after consoles."
+        "answer": "No. Rockstar has confirmed launch on PS5 and Xbox Series X|S on November 19, 2026. The PC version has no announced date."
       },
       "3": {
         "question": "Can I play GTA 6 on PS4 or Xbox One?",
-        "answer": "No. GTA 6 is being developed exclusively for the current generation (PS5 and Xbox Series X|S). The PC version will be available later. Previous generation consoles will not be supported."
+        "answer": "No. GTA 6 is being developed exclusively for the current generation (PS5 and Xbox Series X|S). The PC version has no announced date. Previous generation consoles will not be supported."
       }
     }
   }

@@ -4,9 +4,14 @@ import LocationDetail from "./LocationDetail";
 import { JsonLd } from "@/components/JsonLd";
 import { BASE_URL } from "@/lib/site";
 import { breadcrumbJsonLd, placeJsonLd } from "@/lib/seo";
+import { routing } from "@/i18n/routing";
 
 export function generateStaticParams() {
-  return locations.map((l) => ({ slug: l.id }));
+  return routing.locales.flatMap((locale) =>
+    locations.map((l) =>
+      locale === routing.defaultLocale ? { slug: l.id } : { locale, slug: l.id }
+    )
+  );
 }
 
 export async function generateMetadata({

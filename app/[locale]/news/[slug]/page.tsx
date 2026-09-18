@@ -5,9 +5,16 @@ import ArticleDetail from "./ArticleDetail";
 import { JsonLd } from "@/components/JsonLd";
 import { BASE_URL, getSiteName } from "@/lib/site";
 import { breadcrumbJsonLd, buildAlternates, newsArticleJsonLd } from "@/lib/seo";
+import { routing } from "@/i18n/routing";
 
 export function generateStaticParams() {
-  return articles.map((article) => ({ slug: article.id }));
+  return routing.locales.flatMap((locale) =>
+    articles.map((article) =>
+      locale === routing.defaultLocale
+        ? { slug: article.id }
+        : { locale, slug: article.id }
+    )
+  );
 }
 
 export async function generateMetadata({

@@ -205,6 +205,65 @@ export const articles: Article[] = [
     image: `${base}/OfficialScreenshots-GTAVI-PromotionalWebsite-ViceCity-SS8.jpg`,
     sourceUrl: "https://www.bbc.com/news/articles/c07r3183gn3o",
     sourceName: "BBC News"
+  },
+  {
+    id: "gta6-extended-look-netflix-recap-2026",
+    title: "GTA VI: An Extended Look — tout ce qu'a révélé le showcase Netflix",
+    date: "27 Août 2026",
+    excerpt: "Le showcase « An Extended Look » de GTA VI a été diffusé en exclusivité sur Netflix le 27 août 2026. Capturé sur PS5, il a révélé gameplay, nouvelles mécaniques, personnages et la date de sortie maintenue au 19 novembre 2026.",
+    content: [
+      "Le 27 août 2026, Rockstar Games et Netflix ont diffusé « Grand Theft Auto VI: An Extended Look », un showcase d'environ 26 à 30 minutes consacré au gameplay de GTA VI. Le programme a d'abord été diffusé en exclusivité sur Netflix, six heures avant d'apparaître sur YouTube et les autres plateformes officielles de Rockstar. Toutes les séquences montrées ont été capturées sur une PlayStation 5 de base.",
+      "Le showcase a confirmé que Grand Theft Auto VI sortira le 19 novembre 2026 sur PlayStation 5 et Xbox Series X|S. La version PC n'a pas de date annoncée. Rockstar a également précisé que le jeu ne contiendrait pas de microtransactions en mode histoire, qu'aucune IA générative n'était utilisée et que GTA Online n'aurait pas de date de lancement confirmée.",
+      "Jason Duval et Lucia Caminos sont présentés comme un couple de criminels à la Bonnie and Clyde, tous deux jouables et interchangeables en monde ouvert. Le gameplay montre un switch rapide entre les deux personnages, des braquages coopératifs, des échanges par téléphone et des activités relationnelles (gym, plage, zoo, kayak). Leur proximité affecte visiblement certains éléments narratifs.",
+      "Plusieurs mécaniques inédites ont été détaillées : le système de Heat (recherche policière basée sur les témoins et les preuves), le mode Focus qui ralentit le temps et indique les zones létales/incapacitantes, le vol de véhicules par « slim jim » ou clonage de clés via l'application Waink, et la gestion de l'apparence pour échapper à la police (vêtements, coiffure, barbe, véhicule).",
+      "Le monde ouvert de Leonida s'enrichit d'activités variées : fan boats dans les marais de Grassrivers, kayaks, scooters électriques, parachutisme, séances de sport, clubbing/danse, et des interactions PNJ via les réseaux sociaux in-game. Les personnages Raul Bautista et Boobie Ike ont été particulièrement mis en avant comme figures centrales de l'intrigue.",
+      "Pour CodeTricheGTA6, ce showcase confirme que le jeu s'oriente vers un open world beaucoup plus systémique que GTA V, avec des mécaniques de survie criminelle (Heat, preuves, argent physique) et une profondeur de personnages inédite dans la série. Nous mettrons à jour nos guides dès la sortie du 19 novembre 2026."
+    ],
+    tag: "Gameplay",
+    image: `${base}/OfficialScreenshots-GTAVI-PromotionalWebsite-JasonDuval-SS4.jpg`,
+    sourceUrl: "https://www.netflix.com/tudum/articles/grand-theft-auto-6-extended-first-look",
+    sourceName: "Netflix Tudum"
+  },
+  {
+    id: "gta6-nouvelles-mecaniques-gameplay-2026",
+    title: "GTA 6 — 10 nouvelles mécaniques de gameplay détaillées",
+    date: "28 Août 2026",
+    excerpt: "Après le showcase Netflix, voici 10 nouvelles mécaniques de GTA 6 : système Heat, profil criminel, Focus, braquages dynamiques, économie physique et lifestyle des protagonistes.",
+    content: [
+      "Le showcase « Grand Theft Auto VI: An Extended Look » du 27 août 2026 a révélé une quantité de détails gameplay inédits. Nous en retenons dix mécaniques qui changent profondément l'expérience par rapport à GTA V.",
+      "1. Système de Heat — La police n'apparaît plus automatiquement sur la minimap. Les crimes doivent d'abord être vus ou dénoncés. Une fois active, la recherche gère plusieurs preuves : vêtements, apparence, arme, véhicule et images de caméras de surveillance. Le joueur peut éliminer chaque preuve individuellement pour faire tomber les soupçons.",
+      "2. Profil criminel — Chaque protagoniste dispose d'un tracker de comportement allant de Professionnel à Violent/Psycho, avec un état possible irréversible. Ce profil influence la façon dont les PNJ et la police réagissent à Jason et Lucia.",
+      "3. Gunplay & Focus — Le viseur assisté est désormais optionnel ; le free aim est le mode par défaut. La capacité Focus ralentit le temps et colore les zones létales en rouge et les zones incapacitantes/désarmantes en jaune, permettant des tirs tactiques de suppression ou de désarmement.",
+      "4. Véhicules et carburant — Les voitures consomment du carburant et peuvent être ravitaillées/réparées dans les stations-service. L'application Waink scanne les véhicules pour afficher leur valeur, niveau de sécurité, traceur et outil requis (slim jim, clonage, hotwire). Les voitures de luxe disposent de traceurs sensibles à la vitesse.",
+      "5. Vol et personnalisation — Le Pay 'n' Spray fait son retour. Les véhicules volés peuvent être enregistrés comme véhicules personnels et leurs coffres servent de stockage d'armes et de vêtements. Le changement d'apparence permet d'éviter la reconnaissance par la police.",
+      "6. Braquages dynamiques — Presque chaque commerce peut être braqué. Les plans intérieurs varient, et le joueur choisit entre approche bruyante, discrète, rapide ou maximisant le butin. Les choix de complices et d'équipement influencent le résultat.",
+      "7. Économie physique — Trois formes d'argent coexistent : fonds bancaires (via appli), cash physique (perdu à la mort, à déposer aux distributeurs) et butin en sac (revendu aux receleurs). Cette triple monnaie force une gestion réaliste des gains.",
+      "8. Lifestyle & stats — Gym, alimentation et sommeil affectent visiblement le corps et le visage des personnages. Le manque de sommeil donne un visage fatigué ; la surconsommation entraîne une prise de poids. Les coiffures et barbes évoluent aux safehouses, les nouveaux styles nécessitant barbiers ou salons.",
+      "9. Monde ouvert réactif — Des centaines d'intérieurs sont accessibles, le trafic est plus dense et réactif, et les PNJ publient sur les réseaux sociaux des événements en temps réel. Le téléphone intègre des applications comme BuckMe, RydeMe, Scooter Bros, WhatUp, Waink, Snapmatic et une app fitness.",
+      "10. Contrôles refondus — L'accroupissement est séparé de la prise de couverture et permet de se déplacer latéralement. Le changement d'épaule de visée revient, la course se déclenche via une pression sur L2/joystick, et sur PlayStation le frein à main est assigné à la touche X."
+    ],
+    tag: "Gameplay",
+    image: `${base}/OfficialScreenshots-GTAVI-PromotionalWebsite-UltimateEdition-GrottiCheetah01.jpg`,
+    sourceUrl: "https://in.ign.com/grand-theft-auto-vi/270362/69-new-gta-6-gameplay-details-we-saw-at-rockstar-hq",
+    sourceName: "IGN"
+  },
+  {
+    id: "cyberleek-recapitulatif-reaction-officielle-2026",
+    title: "Cyberleek : récapitulatif des fuites et réaction officielle",
+    date: "31 Août 2026",
+    excerpt: "Fin août 2026, le groupe Cyberleek a diffusé clips, captures et extraits de GTA VI. Take-Two et Rockstar ont réagi par des subpoenas et des retraits DMCA, sans confirmer l'authenticité du contenu.",
+    content: [
+      "À partir du 18 août 2026, une campagne anonyme baptisée Cyberleek (ou Cyberleek) a commencé à diffuser sur Internet des extraits de gameplay, des images de carte et une cinématique de quatre minutes présentée comme le prologue de Lucia. Le contenu a été largement partagé sur Discord, X/Twitter et des forums avant d'être repris par la presse spécialisée le 20 août.",
+      "Le matériel, non vérifié, montrait notamment Jason conduisant, se battant avec des PNJ, jouant au basket, ainsi qu'une cinématique d'introduction centrée sur Lucia. Des images prétendaient représenter la carte complète de Leonida avec des zones non nommées auparavant : Dalton Island, Tequesta Retreat, Gloriana Key, Catalan Key et Catalan Bay.",
+      "L'identité de Cyberleek reste inconnue. Le groupe a publié un « édit » se présentant comme une protestation contre les précommandes numériques avant les tests, le contenu payant déjà présent sur disque et la fermeture des serveurs rendant les jeux injouables. En parallèle, il a promu un memecoin Solana ($CYBERLEEK) qui aurait généré environ 11,8 millions de dollars d'échanges le 18 août selon certains trackers, ce qui a valu au groupe d'être accusé de capitaliser sur les fuites.",
+      "Rockstar Games n'a pas publiquement confirmé l'authenticité des éléments diffusés. Cependant, Take-Two Interactive, maison mère de Rockstar, a déposé des subpoenas devant des tribunaux pour obtenir des informations de plateformes, et des retraits sous DMCA ont ciblé certains contenus, suggérant qu'une partie du matériel pourrait bien appartenir à Rockstar.",
+      "L'impact marketing semble limité : Rockstar et Netflix ont maintenu le showcase « An Extended Look » du 27 août et la date de sortie du 19 novembre 2026. D'anciens développeurs et analystes estiment que ces fuites n'affecteront pas significativement le succès commercial du jeu, les joueurs préférant se baser sur les présentations officielles ou l'expérience de jeu.",
+      "Sur CodeTricheGTA6, nous ne reprenons pas les fuites comme des certitudes. Cet article a pour vocation de documenter l'événement, les réponses légales et le contexte médiatique, en renvoyant vers les sources journalistiques qui analysent les fuites. Les informations non confirmées doivent être traitées avec prudence jusqu'à une éventuelle confirmation officielle."
+    ],
+    tag: "Fuite",
+    image: `${base}/OfficialScreenshots-GTAVI-PromotionalWebsite-ViceCity-SS7.jpg`,
+    sourceUrl: "https://www.dexerto.com/gta/who-is-cyberleek-gta-6-leaks-memecoin-explained-3400200/",
+    sourceName: "Dexerto"
   }
 ];
 

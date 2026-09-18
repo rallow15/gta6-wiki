@@ -5,9 +5,14 @@ import { JsonLd } from "@/components/JsonLd";
 import { BASE_URL, getSiteName } from "@/lib/site";
 import { breadcrumbJsonLd, buildAlternates, personJsonLd } from "@/lib/seo";
 import { getTranslations } from "next-intl/server";
+import { routing } from "@/i18n/routing";
 
 export function generateStaticParams() {
-  return characters.map((c) => ({ slug: c.id }));
+  return routing.locales.flatMap((locale) =>
+    characters.map((c) =>
+      locale === routing.defaultLocale ? { slug: c.id } : { locale, slug: c.id }
+    )
+  );
 }
 
 export async function generateMetadata({

@@ -5,9 +5,14 @@ import VehicleDetail from "./VehicleDetail";
 import { JsonLd } from "@/components/JsonLd";
 import { BASE_URL } from "@/lib/site";
 import { breadcrumbJsonLd, vehicleJsonLd } from "@/lib/seo";
+import { routing } from "@/i18n/routing";
 
 export function generateStaticParams() {
-  return vehicles.map((v) => ({ slug: v.id }));
+  return routing.locales.flatMap((locale) =>
+    vehicles.map((v) =>
+      locale === routing.defaultLocale ? { slug: v.id } : { locale, slug: v.id }
+    )
+  );
 }
 
 export async function generateMetadata({
