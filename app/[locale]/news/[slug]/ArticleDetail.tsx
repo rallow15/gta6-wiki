@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 import { CalendarDays } from "lucide-react";
 import type { Article } from "@/lib/articles";
 import { SITE_LAST_UPDATED } from "@/lib/site";
+import AdSenseDisplay from "@/components/AdSenseDisplay";
 
 const tagColors: Record<string, string> = {
   "Annonce": "bg-neon-pink/10 text-neon-pink border-neon-pink/20",
@@ -118,8 +119,17 @@ export default function ArticleDetail({ article }: { article: Article }) {
             className="mt-8 space-y-4"
           >
             {article.content.map((paragraph, i) => (
-              <div key={i} className="nb-card p-6">
-                <p className="text-text-secondary leading-relaxed">{paragraph}</p>
+              <div key={i}>
+                <div className="nb-card p-6">
+                  <p className="text-text-secondary leading-relaxed">{paragraph}</p>
+                </div>
+                {/* Inline ad after the 2nd paragraph and a trailing ad after the last paragraph */}
+                {i === 1 && article.content.length > 2 && (
+                  <AdSenseDisplay adSlot="1061060484" />
+                )}
+                {i === article.content.length - 1 && (
+                  <AdSenseDisplay adSlot="1061060484" />
+                )}
               </div>
             ))}
           </motion.div>
